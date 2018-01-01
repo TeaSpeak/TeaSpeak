@@ -1,24 +1,24 @@
 ## A little help sheet about the TeaSpeak Server Query event-system
 ### Available events
-- Server
-    - Server Edit
-- Client (Misc)
-    - Poke
-    - Update
-    - Command
-- Client (Groups)
-    - Group added
-    - Groups removed
-    - Channel group changed
-- Client (View)
+- [Server](#Server-based-events)
+    - [Server Edit](#Server-Edit)
+- [Client (Misc)](#Miscellaneous-client-events)
+    - [Poke](#Client-Poke)
+    - [Update](#Client-Updated)
+    - [Command](#Client-Command)
+- [Client (View)](#Client-view-events)
     - client joined
     - client switch
     - client leave
-- Chat
+- [Client (Groups)](#Client-group-events)
+    - Group added
+    - Groups removed
+    - Channel group changed
+- [Chat](#Chat-events)
     - chat composing
     - chat message
     - chat closed
-- Channel
+- [Channel](#Channel-events)
     - channel created
     - channel moved
     - channel edited
