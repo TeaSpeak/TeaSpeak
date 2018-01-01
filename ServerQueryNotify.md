@@ -1,5 +1,5 @@
 ## A little help sheet about the TeaSpeak Server Query event-system
-## Notify-System since until TeaSpeak 1.0.8-beta
+## Notify-System since until TeaSpeak 1.0.9-beta
 ### Available events
 - [Server](#server-based-events)
     - [Server Edit](#server-Edit)
