@@ -1,5 +1,5 @@
-##A little help sheet about the TeaSpeak Server Query event-system
-###Available events
+## A little help sheet about the TeaSpeak Server Query event-system
+### Available events
 - Server
     - Server Edit
 - Client (Misc)
@@ -25,15 +25,15 @@
     - channel description changed
     - channel deleted
 
-##Event Description
-###General query command syntax
+## Event Description
+### General query command syntax
 Enable events (No permissions required): ``` servernotifyregister event={server|client|chat|channel} specifier=~see event documentation~```
 
 
-###Server based events
+### Server based events
 Enable/disable server based events: ```servernotifyregister event=server specifier={edit}```
       
-- ####Server Edit
+- #### Server Edit
     * Description: This event gets fired when somebody edit the server settings
     * Command: ```notifyserverupdated```
     * Arguments:
@@ -41,123 +41,123 @@ Enable/disable server based events: ```servernotifyregister event=server specifi
         * Every changed value.
     * Example: ```...```
     
-###Miscellaneous client events
+### Miscellaneous client events
 Enable/disable client based events: ```servernotifyregister event=client specifier={poke|update|command}```
       
-- ####Client Poke
+- #### Client Poke
     * Description: This event gets fired when you got poked by a client
     * Command: ```notifyclientpoke```
     * Arguments:
         * Typical invoker arguments
         * ```msg``` -> The given message
     * Example: ```...```
-- ####Client Updated
+- #### Client Updated
     * Description: This event gets fired when a property of a subscribed client gets updated
     * Command: ```notifyclientupdated```
     * Arguments:
         * ```clid``` -> The client id which get updated
         * Every changed value.
     * Example: ```...```
-- ####Client Command
+- #### Client Command
     * Description: This event gets fired when the query recived as plugin msg
     * Command: ```notifyplugincmd```
     * Arguments:
         * ```name``` -> The plugin message channel name
         * ```data``` -> The plugin message data
     * Example: ```...```
-###Client view events
+### Client view events
 Enable/disable client view based events: ```servernotifyregister event=client specifier={join|switch|leave}```
       
-- ####Client Join
+- #### Client Join
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Client Switch
+- #### Client Switch
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Client Leave
+- #### Client Leave
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-###Client group events
+### Client group events
 Enable/disable client group based events: ```servernotifyregister event=client specifier={add|remove|change}```
       
-- ####Client group added
+- #### Client group added
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Client group removed
+- #### Client group removed
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Client channel group changed
+- #### Client channel group changed
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
     
-###Chat events
+### Chat events
 Enable/disable chat based events: ```servernotifyregister event=chat specifier={composing|receive|close}```
       
-- ####Chat composing
+- #### Chat composing
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Chat receive
+- #### Chat receive
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Chat closed
+- #### Chat closed
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
     
-###Channel events
+### Channel events
 Enable/disable chat based events: ```servernotifyregister event=channel specifier={create|edit|desc|move|delete}```
       
-- ####Channel create
+- #### Channel create
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Channel edit
+- #### Channel edit
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Channel description changed
+- #### Channel description changed
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Channel moved
+- #### Channel moved
     * Description: ???
     * Command: ```???```
     * Arguments:
         * ???
     * Example: ```???```
-- ####Channel deleted
+- #### Channel deleted
     * Description: ???
     * Command: ```???```
     * Arguments:
