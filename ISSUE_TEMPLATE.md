@@ -15,4 +15,4 @@
 
 
 
-*Delete me: If you dont follow this issue template, you may dont get a response or the issue get instandly closed.*
+*Delete me: If you dont follow this issue template, you may not get a response or the issue get instandly closed.*
