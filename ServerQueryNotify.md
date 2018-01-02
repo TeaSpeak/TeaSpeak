@@ -30,181 +30,181 @@
 ### General query command syntax
 | Command | Description |
 |:---|---:|
-| ```servernotifyregister event=all specifier=all```                                                    | Enable *all* events (No permissions required) |
-| ```servernotifyregister event={server/client/chat/channel} specifier=all```                           | Enable *all* events for a *specific group* (No permissions required) |
-| ```servernotifyregister event={server/client/chat/channel} specifier=~see event documentation~```     | Enable one event (No permissions required) | 
-| ```servernotifylist [-all]```                                                                         | List all enabled events |
-| ```servernotifyunregister event=all specifier=all```                                                  | Disable *all* events (No permissions required) |
-| ```servernotifyunregister event={server/client/chat/channel} specifier=all```                         | Disable *all* events for a *specific group* (No permissions required) |
- ```servernotifyunregister event={server/client/chat/channel} specifier=~see event documentation~```    | Disable one event (No permissions required) ||
+| `servernotifyregister event=all specifier=all`                                                    | Enable *all* events<br/>(No permissions required) |
+| `servernotifyregister event={server/client/chat/channel} specifier=all`                           | Enable *all* events for a *specific group*<br/>(No permissions required) |
+| `servernotifyregister event={server/client/chat/channel} specifier=~see event documentation~`     | Enable one event<br/>(No permissions required) | 
+| `servernotifylist [-all]`                                                                         | List all enabled events<br/>(No permissions required) |
+| `servernotifyunregister event=all specifier=all`                                                  | Disable *all* events<br/>(No permissions required) |
+| `servernotifyunregister event={server/client/chat/channel} specifier=all`                         | Disable *all* events for a *specific group*<br/>(No permissions required) |
+| `servernotifyunregister event={server/client/chat/channel} specifier=~see event documentation~`   | Disable one event<br/>(No permissions required) |
 
 ### Server based events
-Enable/disable server based events: ```servernotifyregister event=server specifier={edit}```
+Enable/disable server based events: `servernotifyregister event=server specifier={edit}`
       
 - #### Server Edit
     * Description: This event gets fired when somebody edit the server settings
-    * Command: ```notifyserverupdated```
+    * Command: `notifyserverupdated`
     * Arguments:
         * Typical invoker arguments
         * Every changed value.
-    * Example: ```...```
+    * Example: `...`
     
 ### Miscellaneous client events
-Enable/disable client based events: ```servernotifyregister event=client specifier={poke|update|command}```
+Enable/disable client based events: `servernotifyregister event=client specifier={poke|update|command}`
       
 - #### Client Poke
     * Description: This event gets fired when you got poked by a client
-    * Command: ```notifyclientpoke```
+    * Command: `notifyclientpoke`
     * Arguments:
         * Typical invoker arguments
-        * ```msg``` -> The given message
-    * Example: ```...```
+        * `msg` -> The given message
+    * Example: `...`
 - #### Client Updated
     * Description: This event gets fired when a property of a subscribed client gets updated
-    * Command: ```notifyclientupdated```
+    * Command: `notifyclientupdated`
     * Arguments:
-        * ```clid``` -> The client id which get updated
+        * `clid` -> The client id which get updated
         * Every changed value.
-    * Example: ```...```
+    * Example: `...`
 - #### Client Command
     * Description: This event gets fired when the query recived as plugin msg
-    * Command: ```notifyplugincmd```
+    * Command: `notifyplugincmd`
     * Arguments:
-        * ```name``` -> The plugin message channel name
-        * ```data``` -> The plugin message data
-    * Example: ```...```
+        * `name` -> The plugin message channel name
+        * `data` -> The plugin message data
+    * Example: `...`
 ### Client view events
-Enable/disable client view based events: ```servernotifyregister event=client specifier={join|switch|leave}```
+Enable/disable client view based events: `servernotifyregister event=client specifier={join|switch|leave}`
       
 - #### Client Join
     * Description: This event gets fired when a client joins the view
-    * Command: ```notifycliententerview```
+    * Command: `notifycliententerview`
     * Arguments:
-        * ```cfid``` -> Old channel id
-        * ```ctid``` -> Joined channel id
-        * ```reasonId``` -> Joined | View entered (See ReasonId table)
+        * `cfid` -> Old channel id
+        * `ctid` -> Joined channel id
+        * `reasonId` -> Joined | View entered (See ReasonId table)
         * Default client properties.
-    * Example: ```???```
+    * Example: `???`
 - #### Client Switch
     * Description: This event gets fired when a client switched/moved the channel
-    * Command: ```notifyclientmoved```
+    * Command: `notifyclientmoved`
     * Arguments:
-        * ```clid``` -> Client id
-        * ```cfid``` -> Old channel id
-        * ```ctid``` -> New channel id
-        * ```reasonId``` -> See ReasonId table
-        * ```reasonmsg``` -> The message for this action
+        * `clid` -> Client id
+        * `cfid` -> Old channel id
+        * `ctid` -> New channel id
+        * `reasonId` -> See ReasonId table
+        * `reasonmsg` -> The message for this action
         * Typical invoker arguments
-    * Example: ```???```
+    * Example: `???`
 - #### Client Leave
     * Description: This event gets fired when a client leave the server, get kicked or get banned
-    * Command: ```notifyclientleftview```
+    * Command: `notifyclientleftview`
     * Arguments:
-        * ```clid``` -> Client id
-        * ```cfid``` -> Old channel id
-        * ```ctid``` -> New channel id
-        * ```reasonId``` -> See ReasonId table
-        * ```reasonmsg``` -> The message for this action
+        * `clid` -> Client id
+        * `cfid` -> Old channel id
+        * `ctid` -> New channel id
+        * `reasonId` -> See ReasonId table
+        * `reasonmsg` -> The message for this action
         * Typical invoker arguments
-        * In case of ban: ```bantime``` -> The length in seconds
-    * Example: ```???```
+        * In case of ban: `bantime` -> The length in seconds
+    * Example: `???`
 ### Client group events
-Enable/disable client group based events: ```servernotifyregister event=client specifier={add|remove|change}```
+Enable/disable client group based events: `servernotifyregister event=client specifier={add|remove|change}`
       
 - #### Client group add
     * Description: ???
-    * Command: ```notifyservergroupclientadded```
+    * Command: `notifyservergroupclientadded`
     * Arguments:
-        * ```sgid``` -> Server group id
-        * ```name``` -> The group name
-        * ```clid``` -> Client id
-        * ```cluid``` -> The client unique id
-    * Example: ```???```
+        * `sgid` -> Server group id
+        * `name` -> The group name
+        * `clid` -> Client id
+        * `cluid` -> The client unique id
+    * Example: `???`
 - #### Client group remove
     * Description: ???
-    * Command: ```notifyservergroupclientdeleted```
+    * Command: `notifyservergroupclientdeleted`
     * Arguments:
-        * ```sgid``` -> Server group id
-        * ```name``` -> The group name
-        * ```clid``` -> Client id
-        * ```cluid``` -> The client unique id
-    * Example: ```???```
+        * `sgid` -> Server group id
+        * `name` -> The group name
+        * `clid` -> Client id
+        * `cluid` -> The client unique id
+    * Example: `???`
 - #### Client channel group change
     * Description: ???
-    * Command: ```notifyclientchannelgroupchanged```
+    * Command: `notifyclientchannelgroupchanged`
     * Arguments:
-        * ```cgid``` -> Channel group id
-        * ```clid``` -> Client id
-        * ```cid```  -> The target channel
-        * ```cgi```  -> The inherited channel
-    * Example: ```???```
+        * `cgid` -> Channel group id
+        * `clid` -> Client id
+        * `cid`  -> The target channel
+        * `cgi`  -> The inherited channel
+    * Example: `???`
     
 ### Chat events
-Enable/disable chat based events: ```servernotifyregister event=chat specifier={composing|receive|close}```
+Enable/disable chat based events: `servernotifyregister event=chat specifier={composing|receive|close}`
       
 - #### Chat composing
     * Description: ???
-    * Command: ```notifyclientchatcomposing```
+    * Command: `notifyclientchatcomposing`
     * Arguments:
-        * ```clid``` -> The client id
-        * ```cluid``` -> The client unique id
-    * Example: ```???```
+        * `clid` -> The client id
+        * `cluid` -> The client unique id
+    * Example: `???`
 - #### Chat receive
     * Description: ???
-    * Command: ```notifytextmessage```
+    * Command: `notifytextmessage`
     * Arguments:
-        * ```targetmode``` -> The message target ({SERVER|CHANNEL|PRIVATE})
-        * ```target``` -> The message sender
-        * ```msg``` -> The actual message
-    * Example: ```???```
+        * `targetmode` -> The message target ({SERVER|CHANNEL|PRIVATE})
+        * `target` -> The message sender
+        * `msg` -> The actual message
+    * Example: `???`
 - #### Chat close
     * Description: ???
-    * Command: ```notifyclientchatclosed```
+    * Command: `notifyclientchatclosed`
     * Arguments:
-        * ```clid``` -> The client id
-        * ```cluid``` -> The client unique id
-    * Example: ```???```
+        * `clid` -> The client id
+        * `cluid` -> The client unique id
+    * Example: `???`
     
 ### Channel events
-Enable/disable chat based events: ```servernotifyregister event=channel specifier={create|edit|desc|move|delete}```
+Enable/disable chat based events: `servernotifyregister event=channel specifier={create|edit|desc|move|delete}`
       
 - #### Channel create
     * Description: ???
-    * Command: ```notifychannelcreated```
+    * Command: `notifychannelcreated`
     * Arguments:
-        * ```cid``` -> The channel id
+        * `cid` -> The channel id
         * All channel properties
         * Typical invoker arguments
-    * Example: ```???```
+    * Example: `???`
 - #### Channel edit
     * Description: ???
-    * Command: ```notifychanneledited```
+    * Command: `notifychanneledited`
     * Arguments:
-        * ```cid``` -> The channel id
-        * ```reasonid``` -> const 0x0A
+        * `cid` -> The channel id
+        * `reasonid` -> const 0x0A
         * Typical invoker arguments   
-    * Example: ```???```
+    * Example: `???`
 - #### Channel description changed
     * Description: ???
-    * Command: ```notifychanneldescriptionchanged```
+    * Command: `notifychanneldescriptionchanged`
     * Arguments:
-        * ```cid``` -> The channel id
-    * Example: ```???```
+        * `cid` -> The channel id
+    * Example: `???`
 - #### Channel moved
     * Description: ???
-    * Command: ```notifychannelmoved```
+    * Command: `notifychannelmoved`
     * Arguments:
-        * ```cid``` -> The channel id
-        * ```reasonid``` -> const 0x01
-        * ```cpid``` -> The new parent channel
-        * ```order``` -> The new channel above
+        * `cid` -> The channel id
+        * `reasonid` -> const 0x01
+        * `cpid` -> The new parent channel
+        * `order` -> The new channel above
         * Typical invoker arguments
-    * Example: ```???```
+    * Example: `???`
 - #### Channel deleted
     * Description: ???
-    * Command: ```notifychanneldeleted```
+    * Command: `notifychanneldeleted`
     * Arguments:
-        * ```cid``` -> The channel id
-        * ```reasonid``` -> const 0x0A
+        * `cid` -> The channel id
+        * `reasonid` -> const 0x0A
         * Typical invoker arguments   
-    * Example: ```???```
+    * Example: `???`
