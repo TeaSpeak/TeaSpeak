@@ -28,15 +28,15 @@
 
 ## Event Description
 ### General query command syntax
-| Description | Command |
+| Command | Description |
 |:---|---:|
-| Enable *all* events (No permissions required) | ```servernotifyregister event=all specifier=all``` |
-| Enable *all* events for a *specific group* (No permissions required) | ```servernotifyregister event={server|client|chat|channel} specifier=all``` |
-| Enable one event (No permissions required) | ```servernotifyregister event={server|client|chat|channel} specifier=~see event documentation~``` |
-| List all enabled events | ```servernotifylist [-all]``` |
-| Disable *all* events (No permissions required) | ```servernotifyunregister event=all specifier=all``` |
-| Disable *all* events for a *specific group* (No permissions required) | ```servernotifyunregister event={server|client|chat|channel} specifier=all``` |
-| Disable one event (No permissions required) | ```servernotifyunregister event={server|client|chat|channel} specifier=~see event documentation~``` |
+| ```servernotifyregister event=all specifier=all```                                                    | Enable *all* events (No permissions required) |
+| ```servernotifyregister event={server/client/chat/channel} specifier=all```                           | Enable *all* events for a *specific group* (No permissions required) |
+| ```servernotifyregister event={server/client/chat/channel} specifier=~see event documentation~```     | Enable one event (No permissions required) | 
+| ```servernotifylist [-all]```                                                                         | List all enabled events |
+| ```servernotifyunregister event=all specifier=all```                                                  | Disable *all* events (No permissions required) |
+| ```servernotifyunregister event={server/client/chat/channel} specifier=all```                         | Disable *all* events for a *specific group* (No permissions required) |
+ ```servernotifyunregister event={server/client/chat/channel} specifier=~see event documentation~```    | Disable one event (No permissions required) ||
 
 ### Server based events
 Enable/disable server based events: ```servernotifyregister event=server specifier={edit}```
