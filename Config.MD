@@ -1,6 +1,6 @@
 This is the default configuration file called `config.yml` which is being generated on start if it doesn't exist.
 
-```yaml
+```yml
 #The configuration version.
 #Do NOT modify!
 version: 1
