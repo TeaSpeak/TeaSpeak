@@ -3,3 +3,6 @@
 + Customizable Messages (Query MOTD, Timeouts, etc...)
 + Unlimited Slots (Premium Version) / 254 Slots (Free Version)
 + Customizable Version/Platform/License (Premium Version)
++ Global ban system ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/11))
++ Ability to directly edit bans without re-adding ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/18))
++ More infos about channels [`created_at`, `created_by`] ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
