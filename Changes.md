@@ -7,4 +7,5 @@
 + Customizable Version/Platform/License (Premium Version)
 + Global ban system ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/11))
 + Ability to directly edit bans without re-adding ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/18))
-+ More infos about channels [`created_at`, `created_by`] ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
++ More infos in `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
++ More infos in `clientdblist`, `clientdbfind` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
