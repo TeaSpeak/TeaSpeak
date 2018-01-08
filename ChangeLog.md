@@ -1,4 +1,10 @@
 # Changelog:
+* **1.0.14b**:
+    - Fixed the query server (donst worked anymore... i just accidentally deleted one line of code :/)
+    
+* **1.0.13b**:
+    - Fixed subchannel deletion crash
+    
 * **1.0.12b**:
     - Channel subscribe|unsubscribe hotfix
     - Possible server crash fixed
