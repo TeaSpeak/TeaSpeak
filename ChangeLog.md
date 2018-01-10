@@ -1,4 +1,10 @@
 # Changelog:
+* **1.0.16b**:
+    - Implemented licensing system for the premium licensing :)
+    
+* **1.0.15b**:
+    - Fixed possible server crash
+    
 * **1.0.14b**:
     - Fixed the query server (donst worked anymore... i just accidentally deleted one line of code :/)
     
