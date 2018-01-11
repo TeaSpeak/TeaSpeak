@@ -12,7 +12,7 @@
     - Fixed possible server crash
     
 * **1.0.14b**:
-    - Fixed the query server (donst worked anymore... i just accidentally deleted one line of code :/)
+    - Fixed the query server (didn't work anymore... i just accidentally deleted one line of code :/)
     
 * **1.0.13b**:
     - Fixed subchannel deletion crash
@@ -25,15 +25,15 @@
         
 * **1.0.11b**:
     - More messaged configurable in config
-    - rewrote dbid structure
-    - added global bans
+    - Rewrote dbid structure
+    - Added global bans
     - Fixed ban system
-    - some small fixes
+    - Some small fixes
     - Created new command `banedit`
     - Fixed invalid client id
-    - fixed client properties crash
-    - fixed default enabled events
-    - Added file transfare permissions & fixed channel password
+    - Fixed client properties crash
+    - Fixed default enabled events
+    - Added file transfer permissions & fixed channel password
         
 * **1.0.10b**:
     - Fixed channel rename duplicated name bug
@@ -44,47 +44,47 @@
     - Implemented the new query notify-system
         
 * **1.0.8b**:
-    - removed useless zeros from log timestamp
-    - fixed shutdown crash/hangup
-    - implement name ban regex
-    - fixed invalid config read. Nobody could join
+    - Removed useless zeros from log timestamp
+    - Fixed shutdown crash/hangup
+    - Implement name ban regex
+    - Fixed invalid config read. Nobody could join
         
 * **1.0.7b**:
-    - fixed ThreadPool library
-    - fixed snapshotdeploy again.
-        - invalid group remapping
-        - server crash
-        - invalid permissions remapping
-    - fixed server admin group assignment on server 0
-    - fixed "The icon for client [...] was not found."
-    - fixed ack/and join spam crash
-    - fixed packet queue deadlock
-    - fixed perma ban
-    - fixed channel merge on corrupt tree
+    - Fixed ThreadPool library
+    - Fixed snapshotdeploy again.
+        - Invalid group remapping
+        - Server crash
+        - Invalid permissions remapping
+    - Fixed server admin group assignment on server 0
+    - Fixed "The icon for client [...] was not found."
+    - Fixed ack/and join spam crash
+    - Fixed packet queue deadlock
+    - Fixed permanent ban
+    - Fixed channel merge on corrupt tree
     - Implemented a config file
         
 * **1.0.6b**:
-    - fixed shutdown hangup bug.
-    - using libevent for query and file client as well (performance improve)
+    - Fixed shutdown hangup bug.
+    - Using libevent for query and file client as well (performance improve)
     
 * **1.0.5b**:
-    - automatically get local address and bind on it
+    - Automatically get local address and bind on it
     - Performance improve (-20% CPU)
     - Using a thread pool for client packet handling
-    - server binds (if not defined elsewhere) on default assigned server address. Not on localhost anymore
-    - reenabled weblist reports
+    - Server binds (if not defined elsewhere) on default assigned server address. Not on localhost anymore
+    - Reenabled weblist reports
     
 * **1.0.4b**:
-    - ~private ~
+    - ~ private ~
     
 * **1.0.3b**:
-    - ~private ~
+    - ~ private ~
     
 * **1.0.2b**:
-    - ~private ~
+    - ~ private ~
     
 * **1.0.1b**:
-    - ~private ~
+    - ~ private ~
     
 * **1.0.0b**:
-    - ~private ~
+    - ~ private ~
