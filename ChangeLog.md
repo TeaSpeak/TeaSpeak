@@ -1,4 +1,10 @@
 # Changelog:
+* **1.0.17b**:
+    - Fixed spelling mistake in default group
+    - Fixed static port in weblist. Now showing real server port
+    - Forcing the user to start the server on first time with the minimal script
+    - Direct start server after creation
+    
 * **1.0.16b**:
     - Implemented licensing system for the premium licensing :)
     
