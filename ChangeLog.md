@@ -4,6 +4,11 @@
     - Fixed static port in weblist. Now showing real server port
     - Forcing the user to start the server on first time with the minimal script
     - Direct start server after creation
+    - Renamed `sender` in `notifyplugincmd` to `invokerid`
+    - Added property `invokerids` in `notifyconnectioninforequest`
+    - Sending by default two query lines for TS3 query support (most programs try to receive 2 lines)
+    - Fixed the `servernapshotdeloy` function
+    - Fixed `CELT Mono` codec (Not transmitting)
     
 * **1.0.16b**:
     - Implemented licensing system for the premium licensing :)
