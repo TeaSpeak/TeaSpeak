@@ -1,4 +1,12 @@
 # Changelog:
+* **1.0.19b**
+    - Released music bot system (test if yourself with .mbot <command>)
+    - implemented sticky option
+    - fixed a little server crash
+      
+* **1.0.18b**:
+    - ~ unknown ~
+
 * **1.0.17b**:
     - Fixed spelling mistake in default group
     - Fixed static port in weblist. Now showing real server port
