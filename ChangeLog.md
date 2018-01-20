@@ -1,6 +1,10 @@
 # Changelog:
 * **1.0.20b**
     - Fixed critical server snapshot deploy
+    - Added possibility to kick client on invalid badges
+    - Implemented permission grant system
+    - Implement permission grant system in server snapshots
+    - Moved annoying invalid handshake to debug
     
 * **1.0.19b**
     - Released music bot system (test if yourself with .mbot <command>)
