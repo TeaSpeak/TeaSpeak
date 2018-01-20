@@ -1,4 +1,7 @@
 # Changelog:
+* **1.0.20b**
+    - Fixed critical server snapshot deploy
+    
 * **1.0.19b**
     - Released music bot system (test if yourself with .mbot <command>)
     - implemented sticky option
