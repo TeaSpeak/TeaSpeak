@@ -1,4 +1,10 @@
 # Changelog:
+* **1.0.21b**
+    - Fixed hang up on badge control
+    - Fixed channel create with order id
+    - Fixed join crash bug
+    - Fixed broken channel tree recover tool (subchannels got shuffled on restart)
+    
 * **1.0.20b**
     - Fixed critical server snapshot deploy
     - Added possibility to kick client on invalid badges
