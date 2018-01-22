@@ -1,4 +1,11 @@
 # Changelog:
+* **1.0.22b**
+    - Make mute notify configurable
+    - Fixed query connection spam crash
+    - Added global join limit and some join improvements
+    - Disconnect client on handshake fail (with reason)
+    - Fixed default setup with no music bot permissions
+    
 * **1.0.21b**
     - Fixed hang up on badge control
     - Fixed channel create with order id

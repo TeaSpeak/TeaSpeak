@@ -18,11 +18,15 @@
 - [Chat](#chat-events)
     - [Chat composing](#chat-composing)
     - [Chat receive](#chat-receive)
+        - Receive server
+        - Receive channel
+        - Receive private
     - [Chat close](#chat-close)
 - [Channel](#channel-events)
     - [Channel create](#channel-create)
     - [Channel edit](#channel-edit)
     - [channel description change](#channel-description-changed)
+    - [channel password change](#channel-password-changed)
     - [Channel move](#channel-moved)
     - [Channel delete](#channel-deleted)
 
@@ -140,7 +144,7 @@ Enable/disable client group based events: `servernotifyregister event=client spe
     * Example: `???`
     
 ### Chat events
-Enable/disable chat based events: `servernotifyregister event=chat specifier={composing|receive|close}`
+Enable/disable chat based events: `servernotifyregister event=chat specifier={composing|receive_server|receive_channel|receive_private|close}`
       
 - #### Chat composing
     * Description: ???
@@ -187,6 +191,12 @@ Enable/disable chat based events: `servernotifyregister event=channel specifier=
 - #### Channel description changed
     * Description: ???
     * Command: `notifychanneldescriptionchanged`
+    * Arguments:
+        * `cid` -> The channel id
+    * Example: `???`
+- #### Channel password changed
+    * Description: ???
+    * Command: `notifychannelpasswordchanged`
     * Arguments:
         * `cid` -> The channel id
     * Example: `???`
