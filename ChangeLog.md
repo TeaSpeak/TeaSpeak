@@ -1,4 +1,18 @@
 # Changelog:
+* **1.0.23b**
+    - Fixed permission grand for `b_client_music_channel_list`
+    - Fixed permission grand for `b_client_music_server_list`
+    - Added new permission `b_virtualserver_modify_music_bot_limit`
+    - Added new server property `virtualserver_music_bot_limit`
+    - Big music bot update
+        - fixed youtube (streaming now not downloading)
+        - added stream support
+        - added youtube stream support (May not working cuz googlevideo stuff)
+        - added volume support
+    - moved rsa puzzle from a single vs instance to global
+    - some little performance improvements
+    - fixed small channel delete crash
+    
 * **1.0.22b**
     - Make mute notify configurable
     - Fixed query connection spam crash
