@@ -20,6 +20,7 @@
     - Fixed query token list
     - Fixed virtual server client/query count
     - Fixed channel group modify grant permission
+    - Fixed (possible) client crash on join (not 100% sure but should be)
     
 * **1.0.23b**
     - Fixed grant permission for `b_client_music_channel_list`
