@@ -1,4 +1,26 @@
 # Changelog:
+* **1.0.24b**
+    - Fixed group rename
+    - Fixed query group assignment (if assigned with a server then server bound only)
+    - Updating displaying server version in the config, if not otherwise specified
+    - Implemented geo location lookup
+    - Fixed music bot performance issue
+    - Fixed grant permissions (got deleted to if the perm was removed)
+    - Graping channel commands only if they start with one point
+    - Added new command to the terminal `permgrant`
+        * Usage: `permgrant <ServerId> <GroupId> <Permission Name> <Grant>`
+        * Description: Update a groups grant permission (may when you failed your grant permission)
+    - Fixed channel crash
+    - Moved VoiceServer ticker to an instance ticker
+    - Merged the old instance ticker into the new instance ticker
+    - Fixed disconnect|cmd handle server crash
+    - Implemented query ban system
+    - Fixed several query commands
+    - Fixed log. (Directly writing now)
+    - Fixed query token list
+    - Fixed virtual server client/query count
+    - Fixed channel group modify grant permission
+    
 * **1.0.23b**
     - Fixed grant permission for `b_client_music_channel_list`
     - Fixed grant permission for `b_client_music_server_list`
