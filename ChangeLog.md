@@ -1,4 +1,9 @@
 # Changelog:
+* **1.0.27b**
+    - Increased slot limit to 1024
+    - Fixed talk power issue
+    - Fixed critical channel tree bug
+    
 * **1.0.26b**
     - Added a config option to limit the command handle threads
     - Fixed YatQA grant permission
