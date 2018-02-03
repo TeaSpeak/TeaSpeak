@@ -1,4 +1,10 @@
 # Changelog:
+* **1.0.26b**
+    - Added a config option to limit the command handle threads
+    - Fixed YatQA grant permission
+    - Fixed general grant permission bug
+    - Sql API rewrite
+    
 * **1.0.25b**
     - Added an auto restart script (`teastart_autorestart.sh`)
     
