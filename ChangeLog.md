@@ -4,6 +4,9 @@
     - Fixed YatQA grant permission
     - Fixed general grant permission bug
     - Sql API rewrite
+    - Fixed *critical* mutex issue (Thread library)
+    - Fixed music bot forward and rewind
+    - Fixed server hang up on license request (if failed)
     
 * **1.0.25b**
     - Added an auto restart script (`teastart_autorestart.sh`)
