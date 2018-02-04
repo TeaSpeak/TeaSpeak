@@ -3,6 +3,11 @@
     - Increased slot limit to 1024
     - Fixed talk power issue
     - Fixed critical channel tree bug
+    - Fixed another crash
+    - Add a server start delay for performance improvements
+    - Fixed possible crash on disconnect
+    - Fixed several threading bugs
+    - Changed build system number assignment a littlebit (attached a release number behind)
     
 * **1.0.26b**
     - Added a config option to limit the command handle threads
