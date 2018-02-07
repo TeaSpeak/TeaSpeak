@@ -1,4 +1,9 @@
 # Changelog:
+* **1.0.28b**
+    - Merged io loops globally
+    - Fixed query group client removement
+    - Impelemented support for global group assignment (assign while bound to server 0)
+    
 * **1.0.27b**
     - Increased slot limit to 1024
     - Fixed talk power issue
@@ -8,6 +13,11 @@
     - Fixed possible crash on disconnect
     - Fixed several threading bugs
     - Changed build system number assignment a littlebit (attached a release number behind)
+    - Validate group add data
+    - Validate client db ids when they given by the client
+    - Fixed variable cross initialisation bug
+    - Removed a race condition
+    - Implemented `serverinstance_serverquery_ban_time`
     
 * **1.0.26b**
     - Added a config option to limit the command handle threads
