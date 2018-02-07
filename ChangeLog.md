@@ -3,6 +3,10 @@
     - Merged io loops globally
     - Fixed query group client removement
     - Impelemented support for global group assignment (assign while bound to server 0)
+      Commands wich could be used unbound to a server:
+        - `servergroupaddclient [sid=0]`
+        - `servergroupdelclient [sid=0]`
+        - `servergroupclientlist [sid=0]`
     
 * **1.0.27b**
     - Increased slot limit to 1024
