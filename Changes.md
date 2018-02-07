@@ -10,3 +10,4 @@
 + More infos in `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
 + More infos in `clientdblist`, `clientdbfind` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
 + Added parameter `sender=clid` to `notifyplugincmd` 
++ Added instance group assignment (servergroup[add|del|list]clients could be used on unbound state too)
