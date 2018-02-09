@@ -7,6 +7,8 @@
         - `servergroupaddclient [sid=0]`
         - `servergroupdelclient [sid=0]`
         - `servergroupclientlist [sid=0]`
+    - Improved crashlog
+    - Fixed critical crash in library (Fixed in build 12)
     
 * **1.0.27b**
     - Increased slot limit to 1024
