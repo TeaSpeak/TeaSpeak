@@ -1,4 +1,9 @@
 # Changelog:
+* **1.0.29b***
+    - Fixed channel tree crash on root channel change
+    - Merge all build into a new version
+    - TeaSpeak neary stable :)
+    
 * **1.0.28b**
     - Merged io loops globally
     - Fixed query group client removement
