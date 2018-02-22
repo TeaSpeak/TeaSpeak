@@ -1,8 +1,18 @@
 # Changelog:
+* **1.1.0***
+    - Server version for the TeaSpeak Web client :)
+    - New property `virtualserver_web_host` and `virtualserver_web_port`
+        By default `virtualserver_web_host` is equal to `virtualserver_host` and
+        `virtualserver_web_port` is the `virtualserver_port` multiplied with 2 (e.g. standard port: 19974)
+    - Rewrote client initialise system (hopefully client isn't crashing anymore)
+    - Fixed channel tree bug (similar to the one in 1.0.27b)
+    
 * **1.0.29b***
     - Fixed channel tree crash on root channel change
     - Merge all build into a new version
-    - TeaSpeak neary stable :)
+    - TeaSpeak nearly stable :)
+    - Fixed a `serversnapsotdeploy` bug (v. 1)
+    - Fixed query `notifyclientupdated` without subscription
     
 * **1.0.28b**
     - Merged io loops globally
