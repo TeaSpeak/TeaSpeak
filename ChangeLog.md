@@ -6,6 +6,9 @@
         `virtualserver_web_port` is the `virtualserver_port` multiplied with 2 (e.g. standard port: 19974)
     - Rewrote client initialise system (hopefully client isn't crashing anymore)
     - Fixed channel tree bug (similar to the one in 1.0.27b)
+    - Fixed 100% CPU usage (sometimes)
+    - Fixed several music bot crashes
+    - Fixed `teastart.sh`
     
 * **1.0.29b***
     - Fixed channel tree crash on root channel change
