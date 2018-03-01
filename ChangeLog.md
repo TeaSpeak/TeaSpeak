@@ -9,6 +9,9 @@
     - Fixed 100% CPU usage (sometimes)
     - Fixed several music bot crashes
     - Fixed `teastart.sh`
+    - Fixed music bot hangup
+    - Fixed server snapsoht deploy (not testing hash ans striping string)
+    - Fixed channel & server group icon
     
 * **1.0.29b***
     - Fixed channel tree crash on root channel change
