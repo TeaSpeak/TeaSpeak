@@ -10,9 +10,10 @@
     - Fixed several music bot crashes
     - Fixed `teastart.sh`
     - Fixed music bot hangup
-    - Fixed server snapsoht deploy (not testing hash ans striping string)
+    - Fixed server snapshot deploy (now testing hash and striping string)
     - Fixed channel & server group icon
     - Fixed server binding issues
+    - Fixed `servercreate` command
     
 * **1.0.29b***
     - Fixed channel tree crash on root channel change
