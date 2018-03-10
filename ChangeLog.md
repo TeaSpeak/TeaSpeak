@@ -2,7 +2,7 @@
 * **1.1.1***
     - Fixed server hangup on stop
     - Implemented a configurable log system (log per server)
-    
+    - Fixed teastart_minimal.sh (Some systems dosnt support select)
 * **1.1.0***
     - Server version for the TeaSpeak Web client :)
     - New property `virtualserver_web_host` and `virtualserver_web_port`
