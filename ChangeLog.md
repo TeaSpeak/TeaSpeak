@@ -1,11 +1,15 @@
 # Changelog:
+* **1.1.5**
+    - Now loading *all* data from `serversnapshotdeploy` (still not override's old serverId)
+    - Implement command `serversnapshotcreate` (useable for TeaSpeak)
+    
 * **1.1.4**
     - Improved music bots (Using half of the performance now)
     - Some Web client updates (SSH certificate is now configurable (You require a up2date))
     - Music bots buffering
     - Fixed file client hangup on disconnect
     - *Huge* (1/2) sql improvements (Thanks to `arhangel777`)
-        - Server's startiong now much faster
+        - Server's starting now much faster
     
 * **1.1.3**
     - Just an private increment (cause i switch my PC)
