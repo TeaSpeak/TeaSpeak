@@ -1,4 +1,10 @@
 # Changelog:
+* **1.1.6**
+    - Fixed (re)join default channel by path
+    - Increasing numbers instead appending a '1' on client join
+    - Implement a web auto forward (if you try to connect to the WS port)
+    - Fixed possible crash with ssl connections
+    
 * **1.1.5**
     - Now loading *all* data from `serversnapshotdeploy` (still not override's old serverId)
     - Implement command `serversnapshotcreate` (useable for TeaSpeak)
