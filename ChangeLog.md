@@ -4,6 +4,7 @@
     - Increasing numbers instead appending a '1' on client join
     - Implement a web auto forward (if you try to connect to the WS port)
     - Fixed possible crash with ssl connections
+    - Caching the permission if a client is allowed to speak
     
 * **1.1.5**
     - Now loading *all* data from `serversnapshotdeploy` (still not override's old serverId)
