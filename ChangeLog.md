@@ -1,4 +1,9 @@
 # Changelog:
+* **1.1.7**
+    - Fixed some SQL stuff (internal library)
+    - Fixed incorrect/missing permissions `serversnapshotcreate` and `serversnapshotdeploy`
+    - Added some display values when you create a music bot
+    
 * **1.1.6**
     - Fixed (re)join default channel by path
     - Increasing numbers instead appending a '1' on client join
@@ -15,7 +20,7 @@
     - Some Web client updates (SSH certificate is now configurable (You require a up2date))
     - Music bots buffering
     - Fixed file client hangup on disconnect
-    - *Huge* (1/2) sql improvements (Thanks to `arhangel777`)
+    - *Huge* (1/2) sql improvements (Thanks to @[lexesv](https://github.com/lexesv))
         - Server's starting now much faster
     
 * **1.1.3**
