@@ -1,4 +1,8 @@
 # Changelog:
+* **1.1.9**
+    - Fixing some channel multi threading crash bugs
+    - Deleting a temp channel instant when its empty
+
 * **1.1.8**
     - Fixing shutdown fail on huge virtual server amount
     - Fixing internal threading library bug (Thread.join(<timeout>) didn't wait, possible crashes!)
