@@ -1,4 +1,10 @@
 # Changelog:
+* **1.1.8**
+    - Fixing shutdown fail on huge virtual server amount
+    - Fixing internal threading library bug (Thread.join(<timeout>) didn't wait, possible crashes!)
+    - Fixed terminal "crash" on TeaSpeak crash while its in minimal mode
+    - Fixed some possible shutdown crashes
+    
 * **1.1.7**
     - Fixed some SQL stuff (internal library)
     - Fixed incorrect/missing permissions `serversnapshotcreate` and `serversnapshotdeploy`
