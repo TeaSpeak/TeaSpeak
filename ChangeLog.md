@@ -1,9 +1,14 @@
 # Changelog:
+* **1.1.10**
+    - Implemented shutdown time limit (server kills himself, if the shutdown takes more than 30 seconds)
+    - Using new crash handler (using now google's `breakpad`)
+    
 * **1.1.9**
     - Fixing some channel multi threading crash bugs
     - Deleting a temp channel instant when its empty
     - Fixed file client crashes and query | file client memory leak
     - Fixed critical memory bug in one of my internal libraries (>= build 3)
+    - Fixed music bot hangup on server stop
 
 * **1.1.8**
     - Fixing shutdown fail on huge virtual server amount
