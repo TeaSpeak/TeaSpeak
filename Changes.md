@@ -11,3 +11,7 @@
 + More infos in `clientdblist`, `clientdbfind` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
 + Added parameter `sender=clid` to `notifyplugincmd` 
 + Added instance group assignment (servergroup[add|del|list]clients could be used on unbound state too)
++ Adding possibility to schedule a shutdown with the query command `serverprocessstop`
+    - `serverprocessstop type=cancel|schedule time=60 msg=` 
+        - `time` just required when `type` = `schedule` 
+        - `msg` optional
