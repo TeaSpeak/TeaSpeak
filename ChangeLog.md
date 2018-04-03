@@ -4,6 +4,8 @@
     - Fixed icon not exists bug
     - Speed up connection statistics
     - Fixed transferred data since start (bytes) (>= build 2)
+    - Rewrite of the voice client accept system (not spawning a new thread on each handshake)
+        Is now more powerful, and stable
     
 * **1.1.10**
     - Implemented shutdown time limit (server kills himself, if the shutdown takes more than 30 seconds)
