@@ -1,4 +1,13 @@
 # Changelog:
+* **1.1.12**
+    - Implement 4 new server properties:
+        - `virtualserver_last_client_connect`
+        - `virtualserver_last_query_connect`
+        - `virtualserver_last_client_disconnect`
+        - `virtualserver_last_query_disconnect`  
+        I think the name explains the meaning by its self (Unit: Unix timestamp in seconds)
+    - Fixed issue [#77](https://github.com/TeaSpeak/TeaSpeak/issues/77) (Missing grant permission for `i_group_show_name_in_tree`)
+        
 * **1.1.11**
     - Implement a shutdown count down (Terminal: `shutdown <delay> <reason>` Query: `serverprocessstop type=cancel|schedule time=60 msg=`)
     - Fixed icon not exists bug
