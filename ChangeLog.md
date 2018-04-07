@@ -1,4 +1,8 @@
 # Changelog:
+* **1.1.15**
+    - Improved the permission system. Now like TeamSpeak (Except skip & negate)
+    - Fixed group permanent property
+    
 * **1.1.14**
     - Ignoring unknown properties at `serveredit`
     - Ignoring unknown properties at `channeledit`
