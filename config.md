@@ -3,7 +3,7 @@ This is the default configuration file called `config.yml` which is being genera
 ```yml
 #The configuration version.
 #Do NOT modify!
-version: 5
+version: 8
 log:
   #The log level
   #Available types:
@@ -17,6 +17,15 @@ log:
   level: 1
   #Disable\/enable ascii codes in log
   colored: 0
+  #Virtualserver log chunk size
+  #0 = Disable (Log all to one file)
+  #1 = Individual (Create for each virtual server a new log)
+  #>1 = Chunked (Use for each n virtual servers the same log file)
+  #Do NOT TOUCH unless you're 100% sure!
+  vs_size: 0
+  #The log file path
+  #Do NOT TOUCH unless you're 100% sure!
+  path: logs/log_${time}(%Y-%m-%d_%H:%M:%S)_${group}.log
 messages:
   #The terminal log level
   level: 2
@@ -53,7 +62,7 @@ binding:
 server:
   #The displayed version to the client
   #This option is only for the premium version.
-  version: TeaSpeak 1.0.24-beta
+  version: TeaSpeak 1.1.14-beta
   #The displayed platform to the client
   #This option is only for the premium version.
   platform: Linux C++
@@ -75,8 +84,18 @@ query:
   #The query welcome message
   #Notice: If not like TeamSpeak then some applications may not recognize the Query
   #Default TeamSpeak 3 MOTD:
-  #TS3\r\nWelcome to the TeaSpeak ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\r\n
   motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
+  #Enable\/disable SSL for query
+  #Available modes:
+  #  0: Disabled
+  #  1: Enabled (Enforced encryption)
+  #  2: Hybrid (Prefer encryption but fallback when it isnt available)
+  enableSSL: 2
+  ssl:
+    #The SSL certificate for the query client
+    certificate: certs/query_certificate.pem
+    #The SSL private key for the query client (You have to export the key without a password!)
+    privatekey: certs/query_privatekey.pem
 voice:
   #Enable\/disable the mute notify
   notifymute: 1
@@ -87,8 +106,6 @@ voice:
     #The puzzle level. (A higher number will result a longer calculation time for the client RSA puzzle)
     #Do NOT TOUCH unless you're 100% sure!
     puzzle_level: 1000
-  #The fallback country if lookup fails
-  fallback_country: DE
   #Maximum amount of join attemps per second.
   connect_limit: 10
   #Maximum amount of join attemps per second per ip.
@@ -98,5 +115,57 @@ voice:
     kick_invalid_packet: 0
     #Enable\/disable for kicking clients if the send a corrupt badge info
     kick_invalid_badges: 1
+web:
+  #Disable\/enable the possibility to connect via the TeaSpeak web client
+  enabled: 1
+  ssl:
+    #The SSL certificate for the web client
+    certificate: certs/default_certificate.pem
+    #The SSL private key for the web client (You have to export the key without a password!)
+    privatekey: certs/default_privatekey.pem
+threads:
+  #Thread pool size for the ticking task of a VirtualServer
+  #Do NOT TOUCH unless you're 100% sure!
+  ticking: 1
+  voice:
+    #Max number of threads for command handling on the instance
+    #Do NOT TOUCH unless you're 100% sure!
+    execute_limit: 10
+    #Threads per server for command executing
+    #Do NOT TOUCH unless you're 100% sure!
+    execute_per_server: 3
+    #LibEvent events per server
+    #Do NOT TOUCH unless you're 100% sure!
+    events_per_server: 3
+    #Minimum IO threads
+    #Do NOT TOUCH unless you're 100% sure!
+    io_min: 3
+    #IO Thread increase per server
+    #Do NOT TOUCH unless you're 100% sure!
+    io_per_server: 2
+    #Max IO threads
+    #Do NOT TOUCH unless you're 100% sure!
+    io_limit: 10
+  music:
+    #Max number of threads for command handling on the instance
+    #Do NOT TOUCH unless you're 100% sure!
+    execute_limit: 15
+    #Threads per server for command executing
+    #Do NOT TOUCH unless you're 100% sure!
+    execute_per_bot: 1
+geolocation:
+  #The fallback country if lookup fails
+  fallback_country: DE
+  mapping:
+    #The mapping fole for the given provider
+    #Default for IP2Location: geoloc\/IP2Location.CSV
+    #Default for Software77: geoloc\/IpToCountry.csv
+    file: geoloc/IP2Location.CSV
+    #The IP 2 location resolver
+    #0 = IP2Location
+    #1 = Software77
+    type: 0
+  #Disable\/enable the IP2Location lookup
+  force_fallback_country: 0
 
  ```
