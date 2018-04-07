@@ -1,4 +1,8 @@
 # Changelog:
+* **1.1.13**
+    - Using boringssl (for compatibility with WebRTC)
+    - Implemented a optional query ssl/tls encryption
+    
 * **1.1.12**
     - Implement 4 new server properties:
         - `virtualserver_last_client_connect`
