@@ -1,4 +1,9 @@
 # Changelog:
+* **1.1.14**
+    - Ignoring unknown properties at `serveredit`
+    - Ignoring unknown properties at `channeledit`
+    - Fixed a query connection crash
+    
 * **1.1.13**
     - Using boringssl (for compatibility with WebRTC)
     - Implemented a optional query ssl/tls encryption
