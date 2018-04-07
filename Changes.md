@@ -15,3 +15,4 @@
     - `serverprocessstop type=cancel|schedule time=60 msg=` 
         - `time` just required when `type` = `schedule` 
         - `msg` optional
++ Added optional query ssl/tls encryption
