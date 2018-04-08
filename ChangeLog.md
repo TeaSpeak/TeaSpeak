@@ -1,7 +1,9 @@
 # Changelog:
 * **1.1.15**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
+    - Fixed "crazy" grant value on permission add
     - Fixed group permanent property
+    - Fixed ssl/tls crash (on too long messages)
     
 * **1.1.14**
     - Ignoring unknown properties at `serveredit`
