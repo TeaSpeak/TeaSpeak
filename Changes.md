@@ -4,6 +4,7 @@
 + Additional ServerQueryNotify events ([read more](https://github.com/TeaSpeak/TeaSpeak/blob/master/ServerQueryNotify.md))
 + Customizable Messages (Query MOTD, Timeouts, etc...)
 + Unrestricted slots (Okey only 1024, but who needs more than that?!)
++ Built in music bot system
 + Customizable Version/Platform/License (Premium Version)
 + Global ban system ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/11))
 + Ability to directly edit bans without re-adding ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/18))
