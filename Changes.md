@@ -10,7 +10,7 @@
 + Ability to directly edit bans without re-adding ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/18))
 + More infos in `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
 + More infos in `clientdblist`, `clientdbfind` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
-+ Added parameter `invokerid=<clid>` to `notifyplugincmd` to `notifyconnectioninforequest`
++ Added parameter `invokerid=<clid>` to `notifyplugincmd` and `notifyconnectioninforequest`
 + Added instance group assignment (servergroup[add|del|list]. Clients could be used on unbound state too)
 + Adding possibility to schedule a shutdown with the query command `serverprocessstop`
     - `serverprocessstop type=cancel|schedule time=60 msg=` 
