@@ -1,6 +1,7 @@
 # Changelog:
 * **1.1.16**
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
+    - First working release with web client (closed alpha)
     
 * **1.1.15**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
