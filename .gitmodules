@@ -1,6 +1,0 @@
-[submodule "TeaMusic-Providers"]
-	path = TeaMusic-Providers
-	url = /home/wolverindev/TeamSpeak/TeaMusic-Providers/
-[submodule "music"]
-	path = music
-	url = https://github.com/TeaSpeak/TeaMusic-Providers.git
