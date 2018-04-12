@@ -3,7 +3,7 @@
 + Ability to allow clients/queries to view the clientdblist without IP's by not assigning b_client_remoteaddress_view to them. ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/13))
 + Additional ServerQueryNotify events ([read more](https://github.com/TeaSpeak/TeaSpeak/blob/master/ServerQueryNotify.md))
 + Customizable Messages (Query MOTD, Timeouts, etc...) ([read more](https://github.com/TeaSpeak/TeaSpeak/blob/master/config.md))
-+ Unrestricted slots (Okay only 1024, but who needs more than that?!)
++ Unrestricted slots (Okay only 1024 per virtual server, but who needs more than that?!)
 + Built in music bot system (Low bandwidth usage, remote client is not necessary) ([read more](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/))
 + Customizable Version/Platform/License (Premium Version) ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/6))
 + Global ban system ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/11))
