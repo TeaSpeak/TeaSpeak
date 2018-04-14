@@ -3,6 +3,8 @@
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
     - First working release with web client (closed alpha)
     - Fixed server snapshot deploy bug
+    - Fixed issue that firefox cant connect
+    - Fixed file override (When you upload a new avatar)
     
 * **1.1.15**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
