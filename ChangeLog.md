@@ -1,11 +1,17 @@
 # Changelog:
+* **1.1.17**
+    - Moved the default web client port to 9987 (So TeamSpeak and TeaSpeak Web are bound to the same port!)
+        Notice:
+            Old already started servers are still bound to 19974 (Server properts: `virtualserver_web_port`)
+    
 * **1.1.16**
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
     - First working release with web client (closed alpha)
     - Fixed server snapshot deploy bug
     - Fixed issue that firefox cant connect
     - Fixed file override (When you upload a new avatar)
-    - Fixed the implementation of `b_group_is_permanent` (>= build 8)
+    - Fixed the implementation of `b_group_is_permanent` (>= build 8) ([#89](https://github.com/TeaSpeak/TeaSpeak/issues/89))
+    - Fixed invalid property `client_lastconnected` (Was named `client_ip`) ([#90](https://github.com/TeaSpeak/TeaSpeak/issues/90))
     
 * **1.1.15**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
