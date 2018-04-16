@@ -5,6 +5,7 @@
     - Fixed server snapshot deploy bug
     - Fixed issue that firefox cant connect
     - Fixed file override (When you upload a new avatar)
+    - Fixed the implementation of `b_group_is_permanent` (>= build 8)
     
 * **1.1.15**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
