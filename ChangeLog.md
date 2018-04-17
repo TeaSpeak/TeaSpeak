@@ -3,6 +3,8 @@
     - Moved the default web client port to 9987 (So TeamSpeak and TeaSpeak Web are bound to the same port!)  
         Notice:  
         Old already started servers are still bound to 19974 (Server properts: `virtualserver_web_port`)
+    - Fixed issue [#96](https://github.com/TeaSpeak/TeaSpeak/issues/96)
+    - Fixed issue [#94](https://github.com/TeaSpeak/TeaSpeak/issues/94) (Missing `clientinfo` properties)
     
 * **1.1.16**
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
