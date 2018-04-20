@@ -17,3 +17,5 @@
         - `time` just required when `type` = `schedule` 
         - `msg` optional
 + Added optional query SSL/TLS encryption
++ Added the possibility to send text messages to yourself ([read more #106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
++ Added the possibility to limit the number of connections for one client by his ip and hwid

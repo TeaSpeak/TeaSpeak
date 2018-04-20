@@ -1,4 +1,9 @@
 # Changelog:
+* **1.1.18**
+    - Implemented disconnect on `MODALQUIT` ([#104](https://github.com/TeaSpeak/TeaSpeak/issues/104))
+    - Added the possibility to send text messages to yourself ([#106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
+    - Added new permissions (`i_client_max_clones_ip` and `i_client_max_clones_hwid`) ([#48]()https://github.com/TeaSpeak/TeaSpeak/issues/48)
+    
 * **1.1.17**
     - Moved the default web client port to 9987 (So TeamSpeak and TeaSpeak Web are bound to the same port!)  
         Notice:  
@@ -6,6 +11,7 @@
     - Fixed issue [#96](https://github.com/TeaSpeak/TeaSpeak/issues/96)
     - Fixed issue [#94](https://github.com/TeaSpeak/TeaSpeak/issues/94) (Missing `clientinfo` properties)
     - Fixed a buggy perm system (Removing the permission `b_serverinstance_permission_list` is not the best idea) [#102](https://github.com/TeaSpeak/TeaSpeak/issues/102) and [#101](https://github.com/TeaSpeak/TeaSpeak/issues/101)
+    - Fixed issue [#92](https://github.com/TeaSpeak/TeaSpeak/issues/92)
     
 * **1.1.16**
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
@@ -36,7 +42,7 @@
         - `virtualserver_last_client_connect`
         - `virtualserver_last_query_connect`
         - `virtualserver_last_client_disconnect`
-        - `virtualserver_last_query_disconnect`  
+        - `virtualserver_last_query_disconnect`
         I think the name explains the meaning by its self (Unit: Unix timestamp in seconds)
     - Fixed issue [#77](https://github.com/TeaSpeak/TeaSpeak/issues/77) (Missing grant permission for `i_group_show_name_in_tree`)
         
