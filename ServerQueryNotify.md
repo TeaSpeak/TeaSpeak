@@ -29,18 +29,19 @@
     - [channel password change](#channel-password-changed)
     - [Channel move](#channel-moved)
     - [Channel delete](#channel-deleted)
+- [Music](#music-events)
 
 ## Event Description
 ### General query command syntax
 | Command | Description |
 |:---|---:|
 | `servernotifyregister event=all specifier=all`                                                    | Enable *all* events<br/>(No permissions required) |
-| `servernotifyregister event={server/client/chat/channel} specifier=all`                           | Enable *all* events for a *specific group*<br/>(No permissions required) |
-| `servernotifyregister event={server/client/chat/channel} specifier=~see event documentation~`     | Enable one event<br/>(No permissions required) | 
+| `servernotifyregister event={server/client/chat/channel/music} specifier=all`                           | Enable *all* events for a *specific group*<br/>(No permissions required) |
+| `servernotifyregister event={server/client/chat/channel/music} specifier=~see event documentation~`     | Enable one event<br/>(No permissions required) | 
 | `servernotifylist [-all]`                                                                         | List all enabled events<br/>(No permissions required) |
 | `servernotifyunregister event=all specifier=all`                                                  | Disable *all* events<br/>(No permissions required) |
-| `servernotifyunregister event={server/client/chat/channel} specifier=all`                         | Disable *all* events for a *specific group*<br/>(No permissions required) |
-| `servernotifyunregister event={server/client/chat/channel} specifier=~see event documentation~`   | Disable one event<br/>(No permissions required) |
+| `servernotifyunregister event={server/client/chat/channel/music} specifier=all`                         | Disable *all* events for a *specific group*<br/>(No permissions required) |
+| `servernotifyunregister event={server/client/chat/channel/music} specifier=~see event documentation~`   | Disable one event<br/>(No permissions required) |
 
 ### Server based events
 Enable/disable server based events: `servernotifyregister event=server specifier={edit}`
@@ -218,3 +219,14 @@ Enable/disable chat based events: `servernotifyregister event=channel specifier=
         * `reasonid` -> const 0x0A
         * Typical invoker arguments   
     * Example: `???`
+  
+### Music Events
+Enable/disable music based events: `servernotifyregister event=music specifier={queue|player}`
+- #### Queue Events
+    * `notifymusicqueueadd`
+    * `notifymusicqueueremove`
+    * `notifymusicqueueorderchange`
+    More info here: [click me]()
+- #### Player Events
+    * `notifymusicplayersongchange`
+    More info here: [click me]()
