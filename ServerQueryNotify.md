@@ -226,7 +226,7 @@ Enable/disable music based events: `servernotifyregister event=music specifier={
     * `notifymusicqueueadd`
     * `notifymusicqueueremove`
     * `notifymusicqueueorderchange`
-    More info here: [click me]()
+    More info here: [click me](https://github.com/TeaSpeak/TeaSpeak/blob/master/documentation/Music%20bot%20query%20interface.md#Events)
 - #### Player Events
     * `notifymusicplayersongchange`
-    More info here: [click me]()
+    More info here: [click me](https://github.com/TeaSpeak/TeaSpeak/blob/master/documentation/Music%20bot%20query%20interface.md#Events)
