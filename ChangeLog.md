@@ -1,8 +1,15 @@
 # Changelog:
+* **1.1.19**
+    - Implemented a advanced music bot query interface ([](read more))
+    - Fixed all listed issues ([#112](https://github.com/TeaSpeak/TeaSpeak/issues/112))
+    - Fixed command `banlist` (Invalid result)
+    - Implemented requested enchantment [#111](https://github.com/TeaSpeak/TeaSpeak/issues/111)
+    
 * **1.1.18**
     - Implemented disconnect on `MODALQUIT` ([#104](https://github.com/TeaSpeak/TeaSpeak/issues/104))
     - Added the possibility to send text messages to yourself ([#106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
     - Added new permissions (`i_client_max_clones_ip` and `i_client_max_clones_hwid`) ([#48]()https://github.com/TeaSpeak/TeaSpeak/issues/48)
+    - Fixed a critical decompress issue!
     
 * **1.1.17**
     - Moved the default web client port to 9987 (So TeamSpeak and TeaSpeak Web are bound to the same port!)  
