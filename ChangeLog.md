@@ -1,4 +1,11 @@
 # Changelog:
+* **1.1.20**
+    - Fixed several server crashes
+    - Fixed file upload not working sometimes
+    - Fixed file transfer hangup bug
+    - Order now icons after the age
+    - Add a fix to fixing invalid icon id's in groups, channels and server on startup
+     
 * **1.1.19**
     - Implemented a advanced music bot query interface ([](read more))
     - Fixed all listed issues ([#112](https://github.com/TeaSpeak/TeaSpeak/issues/112))
