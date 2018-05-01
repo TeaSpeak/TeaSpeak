@@ -8,6 +8,7 @@
     - Fixed invalid icon removement (tested for an invalid path)
     - Improved temporary channel deletion
     - Fixed various channel tree bugs and exploits
+    - Fixed icon id bug
     
 * **1.1.20**
     - Fixed several server crashes
