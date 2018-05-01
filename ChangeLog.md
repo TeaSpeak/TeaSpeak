@@ -1,4 +1,14 @@
 # Changelog:
+* **1.1.21**
+    - **Big** property update (Using ids now and reducing the memory usage)
+    - Validating properties within commands  
+    **Attention**: This update can cause the loss of some properties
+    - Fixed incorrect variable `client_lastconnected`
+    - Fixed command `permfind`
+    - Fixed invalid icon removement (tested for an invalid path)
+    - Improved temporary channel deletion
+    - Fixed various channel tree bugs and exploits
+    
 * **1.1.20**
     - Fixed several server crashes
     - Fixed file upload not working sometimes
