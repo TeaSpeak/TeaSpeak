@@ -1,4 +1,8 @@
 # Changelog:
+* **1.1.22**
+    - Added a forward parameter for the web client (when you client the accept certificate link)
+    - Fixed icon|file transfer bug
+    
 * **1.1.21**
     - **Big** property update (Using ids now and reducing the memory usage)
     - Validating properties within commands  
@@ -9,6 +13,7 @@
     - Improved temporary channel deletion
     - Fixed various channel tree bugs and exploits
     - Fixed icon id bug
+    - Fixed memory leak on file transfare timeout
     
 * **1.1.20**
     - Fixed several server crashes
