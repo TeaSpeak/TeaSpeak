@@ -10,12 +10,13 @@
 + Ability to directly edit bans without re-adding ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/18))
 + More infos in `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
 + More infos in `clientdblist`, `clientdbfind` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
-+ Added parameter `invokerid=<clid>` to `notifyplugincmd`([#35](https://github.com/TeaSpeak/TeaSpeak/issues/35)) and `notifyconnectioninforequest`([#36](https://github.com/TeaSpeak/TeaSpeak/issues/36))
-+ Added instance group assignment (servergroup[add|del|list]. Clients could be used on unbound state too)
++ Parameter `invokerid=<clid>` in `notifyplugincmd`([#35](https://github.com/TeaSpeak/TeaSpeak/issues/35)) and `notifyconnectioninforequest`([#36](https://github.com/TeaSpeak/TeaSpeak/issues/36))
++ Instance group assignment (servergroup[add|del|list]. Clients could be used on unbound state too)
 + Adding possibility to schedule a shutdown with the query command `serverprocessstop`
     - `serverprocessstop type=cancel|schedule time=60 msg=` 
         - `time` just required when `type` = `schedule` 
         - `msg` optional
-+ Added optional query SSL/TLS encryption
-+ Added the possibility to send text messages to yourself ([read more #106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
-+ Added the possibility to limit the number of connections for one client by his ip and hwid
++ Optional query SSL/TLS encryption
++ Possibility to send text messages to yourself ([read more #106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
++ Possibility to limit the number of connections for one client by his ip and hwid
++ Parameter `hwid` in `banadd` so hwid bans can be added manually
