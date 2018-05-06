@@ -1,4 +1,7 @@
 # Changelog:
+* **1.1.23**
+    - Added alternative database support (MySQL)
+    
 * **1.1.22**
     - Added a forward parameter for the web client (when you client the accept certificate link)
     - Fixed icon|file transfer bug
