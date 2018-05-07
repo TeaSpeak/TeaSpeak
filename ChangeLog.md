@@ -1,4 +1,7 @@
 # Changelog:
+* **1.1.24**
+    - Improved the licensing system (...and i don't worked over 4 years on it o.O)
+    
 * **1.1.23**
     - Added alternative database support (MySQL)
     
