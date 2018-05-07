@@ -275,3 +275,4 @@ enum SongLoaderType {
 ## Notes
 There's still a concept mistake:  
 If you have enough `i_client_music_play_power` you can control every bot, not only your own  
+Make the client property `player_volume` editable  
