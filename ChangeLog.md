@@ -1,15 +1,17 @@
 # Changelog:
-* **1.1.24**
+* **1.1.24b**
     - Improved the licensing system (...and i don't worked over 4 years on it o.O)
-    
-* **1.1.23**
+    - Fixed default channel codec (Now opus voice again)
+    Note: Server starts to become more stable :)
+        
+* **1.1.23b**
     - Added alternative database support (MySQL)
     
-* **1.1.22**
+* **1.1.22b**
     - Added a forward parameter for the web client (when you client the accept certificate link)
     - Fixed icon|file transfer bug
     
-* **1.1.21**
+* **1.1.21b**
     - **Big** property update (Using ids now and reducing the memory usage)
     - Validating properties within commands  
     **Attention**: This update can cause the loss of some properties
@@ -21,26 +23,26 @@
     - Fixed icon id bug
     - Fixed memory leak on file transfare timeout
     
-* **1.1.20**
+* **1.1.20b**
     - Fixed several server crashes
     - Fixed file upload not working sometimes
     - Fixed file transfer hangup bug
     - Order now icons after the age
     - Add a fix to fixing invalid icon id's in groups, channels and server on startup
      
-* **1.1.19**
+* **1.1.19b**
     - Implemented a advanced music bot query interface ([](read more))
     - Fixed all listed issues ([#112](https://github.com/TeaSpeak/TeaSpeak/issues/112))
     - Fixed command `banlist` (Invalid result)
     - Implemented requested enchantment [#111](https://github.com/TeaSpeak/TeaSpeak/issues/111)
     
-* **1.1.18**
+* **1.1.18b**
     - Implemented disconnect on `MODALQUIT` ([#104](https://github.com/TeaSpeak/TeaSpeak/issues/104))
     - Added the possibility to send text messages to yourself ([#106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
     - Added new permissions (`i_client_max_clones_ip` and `i_client_max_clones_hwid`) ([#48]()https://github.com/TeaSpeak/TeaSpeak/issues/48)
     - Fixed a critical decompress issue!
     
-* **1.1.17**
+* **1.1.17b**
     - Moved the default web client port to 9987 (So TeamSpeak and TeaSpeak Web are bound to the same port!)  
         Notice:  
         Old already started servers are still bound to 19974 (Server properts: `virtualserver_web_port`)
@@ -49,7 +51,7 @@
     - Fixed a buggy perm system (Removing the permission `b_serverinstance_permission_list` is not the best idea) [#102](https://github.com/TeaSpeak/TeaSpeak/issues/102) and [#101](https://github.com/TeaSpeak/TeaSpeak/issues/101)
     - Fixed issue [#92](https://github.com/TeaSpeak/TeaSpeak/issues/92)
     
-* **1.1.16**
+* **1.1.16b**
     - Fixed client side crash on join ([#82](https://github.com/TeaSpeak/TeaSpeak/issues/82)|[#53](https://github.com/TeaSpeak/TeaSpeak/issues/53))
     - First working release with web client (closed alpha)
     - Fixed server snapshot deploy bug
@@ -58,22 +60,22 @@
     - Fixed the implementation of `b_group_is_permanent` (>= build 8) ([#89](https://github.com/TeaSpeak/TeaSpeak/issues/89))
     - Fixed invalid property `client_lastconnected` (Was named `client_ip`) ([#90](https://github.com/TeaSpeak/TeaSpeak/issues/90))
     
-* **1.1.15**
+* **1.1.15b**
     - Improved the permission system. Now like TeamSpeak (Except skip & negate)
     - Fixed "crazy" grant value on permission add
     - Fixed group permanent property
     - Fixed ssl/tls crash (on too long messages)
     
-* **1.1.14**
+* **1.1.14b**
     - Ignoring unknown properties at `serveredit`
     - Ignoring unknown properties at `channeledit`
     - Fixed a query connection crash
     
-* **1.1.13**
+* **1.1.13b**
     - Using boringssl (for compatibility with WebRTC)
     - Implemented a optional query ssl/tls encryption
     
-* **1.1.12**
+* **1.1.12b**
     - Implement 4 new server properties:
         - `virtualserver_last_client_connect`
         - `virtualserver_last_query_connect`
@@ -82,7 +84,7 @@
         I think the name explains the meaning by its self (Unit: Unix timestamp in seconds)
     - Fixed issue [#77](https://github.com/TeaSpeak/TeaSpeak/issues/77) (Missing grant permission for `i_group_show_name_in_tree`)
         
-* **1.1.11**
+* **1.1.11b**
     - Implement a shutdown count down (Terminal: `shutdown <delay> <reason>` Query: `serverprocessstop type=cancel|schedule time=60 msg=`)
     - Fixed icon not exists bug
     - Speed up connection statistics
@@ -90,40 +92,40 @@
     - Rewrite of the voice client accept system (not spawning a new thread on each handshake)
         Is now more powerful, and stable
     
-* **1.1.10**
+* **1.1.10b**
     - Implemented shutdown time limit (server kills himself, if the shutdown takes more than 30 seconds)
     - Using new crash handler (using now google's `breakpad`)
     
-* **1.1.9**
+* **1.1.9b**
     - Fixing some channel multi threading crash bugs
     - Deleting a temp channel instant when its empty
     - Fixed file client crashes and query | file client memory leak
     - Fixed critical memory bug in one of my internal libraries (>= build 3)
     - Fixed music bot hangup on server stop
 
-* **1.1.8**
+* **1.1.8b**
     - Fixing shutdown fail on huge virtual server amount
     - Fixing internal threading library bug (Thread.join(<timeout>) didn't wait, possible crashes!)
     - Fixed terminal "crash" on TeaSpeak crash while its in minimal mode
     - Fixed some possible shutdown crashes
     
-* **1.1.7**
+* **1.1.7b**
     - Fixed some SQL stuff (internal library)
     - Fixed incorrect/missing permissions `serversnapshotcreate` and `serversnapshotdeploy`
     - Added some display values when you create a music bot
     
-* **1.1.6**
+* **1.1.6b**
     - Fixed (re)join default channel by path
     - Increasing numbers instead appending a '1' on client join
     - Implement a web auto forward (if you try to connect to the WS port)
     - Fixed possible crash with ssl connections
     - Caching the permission if a client is allowed to speak
     
-* **1.1.5**
+* **1.1.5b**
     - Now loading *all* data from `serversnapshotdeploy` (still not override's old serverId)
     - Implement command `serversnapshotcreate` (useable for TeaSpeak)
     
-* **1.1.4**
+* **1.1.4b**
     - Improved music bots (Using half of the performance now)
     - Some Web client updates (SSH certificate is now configurable (You require a up2date))
     - Music bots buffering
@@ -131,19 +133,19 @@
     - *Huge* (1/2) sql improvements (Thanks to @[lexesv](https://github.com/lexesv))
         - Server's starting now much faster
     
-* **1.1.3**
+* **1.1.3b**
     - Just an private increment (cause i switch my PC)
     
-* **1.1.2**
+* **1.1.2b**
     - Fixed geo location!
     - Fixed libyaml (not requires gcc-6 anymore)
     
-* **1.1.1**
+* **1.1.1b**
     - Fixed server hangup on stop
     - Implemented a configurable log system (log per server)
     - Fixed teastart_minimal.sh (Some systems dosnt support select)
     
-* **1.1.0***
+* **1.1.0b**
     - Server version for the TeaSpeak Web client :)
     - New property `virtualserver_web_host` and `virtualserver_web_port`
         By default `virtualserver_web_host` is equal to `virtualserver_host` and
@@ -159,7 +161,7 @@
     - Fixed server binding issues
     - Fixed `servercreate` command
     
-* **1.0.29b***
+* **1.0.29b**
     - Fixed channel tree crash on root channel change
     - Merge all build into a new version
     - TeaSpeak nearly stable :)
