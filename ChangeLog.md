@@ -1,4 +1,11 @@
 # Changelog:
+* **1.1.25b**
+    - Fixed issue [#75](https://github.com/TeaSpeak/TeaSpeak/issues/75)
+    - Fixed a channel tree issue
+    - Fixed a server crash
+    - Full implementation of `<server/channel>groupcopy`
+    - Moved some messages to trace
+    
 * **1.1.24b**
     - Improved the licensing system (...and i don't worked over 4 years on it o.O)
     - Fixed default channel codec (Now opus voice again)
