@@ -5,6 +5,7 @@
     - Fixed a server crash
     - Full implementation of `<server/channel>groupcopy`
     - Moved some messages to trace
+    - Fixed icon bug
     
 * **1.1.24b**
     - Improved the licensing system (...and i don't worked over 4 years on it o.O)
