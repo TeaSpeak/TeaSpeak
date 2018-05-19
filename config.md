@@ -3,7 +3,7 @@ This is the default configuration file called `config.yml` which is being genera
 ```yml
 #The configuration version.
 #Do NOT modify!
-version: 8
+version: 10
 log:
   #The log level
   #Available types:
@@ -15,7 +15,7 @@ log:
   #  5: Critical
   #  6: Off
   level: 1
-  #Disable\/enable ascii codes in log
+  #Disable/enable ascii codes in log
   colored: 0
   #Virtualserver log chunk size
   #0 = Disable (Log all to one file)
@@ -37,15 +37,29 @@ messages:
     stop: Application stopped
     #The application crashed message
     crash: Application crashed
-  client:
-    #The default client description (if not set)
+  manager:
+    #The default manager description (if not set)
     defaultDescription: I don't have a description
   channel:
     #The default channel topic
     defaultTopic: Hey, I'm a new channel!
+  #The idle time kick message
+  idle_time: Idle time exceeded
+  mute:
+    #The mute notify message
+    mute_message: "Hey!\nI muted you!"
+    #The unmute notify message
+    unmute_message: "Hey!\nI unmuted you!"
 general:
-  #The configuration file
-  dbFile: TeaData.sqlite
+  #The database url
+  #Available urls:
+  #  sqlite://[file]
+  #  mysql://[host][:port]/[database][?propertyName1=propertyValue1[&propertyName2=propertyValue2]...]
+  #
+  #More info about about the mysql url could be found here: https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-configuration-properties.html
+  #There's also a new property called 'connections', which describes how many connections and queries could be executed synchronously
+  #MySQL example: mysql://localhost:3306/teaspeak?userName=root&password=mysecretpassword&connections=4
+  database_url: sqlite://TeaData.sqlite
   #Insert here your license code (if you have one)
   license: none
 binding:
@@ -60,17 +74,17 @@ binding:
     #The default port for the query server
     port: 10101
 server:
-  #The displayed version to the client
+  #The displayed version to the manager
   #This option is only for the premium version.
-  version: TeaSpeak 1.1.14-beta
-  #The displayed platform to the client
+  version: TeaSpeak 1.1.26-beta
+  #The displayed platform to the manager
   #This option is only for the premium version.
   platform: Linux C++
   #The displayed licence type to every TeaSpeak 3 Client
   #Available types:
   #  0: No Licence
   #  1: Authorised TeaSpeak Host Provider License (ATHP)
-  #  2: Offline\/Lan Licence
+  #  2: Offline/Lan Licence
   #  3: Non-Profit License (NPL)
   #  4: Unknown Licence
   #  5: ~placeholder~
@@ -85,43 +99,51 @@ query:
   #Notice: If not like TeamSpeak then some applications may not recognize the Query
   #Default TeamSpeak 3 MOTD:
   motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
-  #Enable\/disable SSL for query
+  #Enable/disable SSL for query
   #Available modes:
   #  0: Disabled
   #  1: Enabled (Enforced encryption)
   #  2: Hybrid (Prefer encryption but fallback when it isnt available)
   enableSSL: 2
   ssl:
-    #The SSL certificate for the query client
+    #The SSL certificate for the query manager
+    #The SSL certificate for the query manager
     certificate: certs/query_certificate.pem
-    #The SSL private key for the query client (You have to export the key without a password!)
+    #The SSL private key for the query manager (You have to export the key without a password!)
     privatekey: certs/query_privatekey.pem
 voice:
-  #Enable\/disable the mute notify
+  #Enable/disable the mute notify
   notifymute: 1
   rsa:
     #The amount of precomputed puzzles
     #Do NOT TOUCH unless you're 100% sure!
     puzzle_pool_size: 128
-    #The puzzle level. (A higher number will result a longer calculation time for the client RSA puzzle)
+  handshake:
+    #The puzzle level. (A higher number will result a longer calculation time for the manager RSA puzzle)
     #Do NOT TOUCH unless you're 100% sure!
     puzzle_level: 1000
+    #Enforces the cookie exchange (Low level protection against distributed denial of service attacks (DDOS attacks))
+    #This option is highly recommended!
+    #Do NOT TOUCH unless you're 100% sure!
+    enforce_cookie: 1
   #Maximum amount of join attemps per second.
   connect_limit: 10
   #Maximum amount of join attemps per second per ip.
   client_connect_limit: 3
   protocol:
-    #Enable\/disable for kicking clients if the send a corrupt protocol
+    #Enable/disable for kicking clients if the send a corrupt protocol
     kick_invalid_packet: 0
-    #Enable\/disable for kicking clients if the send a corrupt badge info
+    #Enable/disable for kicking clients if the send a corrupt badge info
     kick_invalid_badges: 1
+    #Its just a test for the new TeamSpeak licensing system (you require a extra plugin!)
+    experimental_31: 0
 web:
-  #Disable\/enable the possibility to connect via the TeaSpeak web client
+  #Disable/enable the possibility to connect via the TeaSpeak web manager
   enabled: 1
   ssl:
-    #The SSL certificate for the web client
+    #The SSL certificate for the web manager
     certificate: certs/default_certificate.pem
-    #The SSL private key for the web client (You have to export the key without a password!)
+    #The SSL private key for the web manager (You have to export the key without a password!)
     privatekey: certs/default_privatekey.pem
 threads:
   #Thread pool size for the ticking task of a VirtualServer
@@ -158,14 +180,13 @@ geolocation:
   fallback_country: DE
   mapping:
     #The mapping fole for the given provider
-    #Default for IP2Location: geoloc\/IP2Location.CSV
-    #Default for Software77: geoloc\/IpToCountry.csv
+    #Default for IP2Location: geoloc/IP2Location.CSV
+    #Default for Software77: geoloc/IpToCountry.csv
     file: geoloc/IP2Location.CSV
     #The IP 2 location resolver
     #0 = IP2Location
     #1 = Software77
     type: 0
-  #Disable\/enable the IP2Location lookup
+  #Disable/enable the IP2Location lookup
   force_fallback_country: 0
-
  ```
