@@ -50,6 +50,7 @@
     - Fixed default setup permissions
     - Implemented idle time ([#124](https://github.com/TeaSpeak/TeaSpeak/issues/124))
     - Made mute message configurable
+    - Music bot now rejoining their last channel again
      
 * **1.1.19b**
     - Implemented a advanced music bot query interface ([](read more))
