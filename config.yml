@@ -1,6 +1,3 @@
-This is the default configuration file called `config.yml` which is being generated on start if it doesn't exist.
-
-```yml
 #The configuration version.
 #Do NOT modify!
 version: 10
@@ -189,4 +186,3 @@ geolocation:
     type: 0
   #Disable/enable the IP2Location lookup
   force_fallback_country: 0
- ```
