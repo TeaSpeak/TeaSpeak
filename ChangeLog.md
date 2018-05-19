@@ -47,6 +47,9 @@
     - Fixed file transfer hangup bug
     - Order now icons after the age
     - Add a fix to fixing invalid icon id's in groups, channels and server on startup
+    - Fixed default setup permissions
+    - Implemented idle time ([#124](https://github.com/TeaSpeak/TeaSpeak/issues/124))
+    - Made mute message configurable
      
 * **1.1.19b**
     - Implemented a advanced music bot query interface ([](read more))
