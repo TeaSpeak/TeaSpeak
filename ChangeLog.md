@@ -1,4 +1,12 @@
 # Changelog:
+* **1.1.26b**
+    - Waiting for a acknowledge of the `clientinitiv` packet before setting up crypto. Fixed (hopefully) the client crash 
+    - Client connection core code improvement (faster and saver)
+    - Improved the ping and timeout system
+    - Fixed invalid client id on massive client joins (> 10/s)
+    - Fixed memory leak (280 bytes/connection)
+    - Fixed config override on invalid config
+     
 * **1.1.25b**
     - Fixed issue [#75](https://github.com/TeaSpeak/TeaSpeak/issues/75)
     - Fixed a channel tree issue
@@ -6,6 +14,8 @@
     - Full implementation of `<server/channel>groupcopy`
     - Moved some messages to trace
     - Fixed icon bug
+    - Fixed not working music bot
+    - Fixed icons (again)
     
 * **1.1.24b**
     - Improved the licensing system (...and i don't worked over 4 years on it o.O)
