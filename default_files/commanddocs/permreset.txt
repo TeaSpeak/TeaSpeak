@@ -1,0 +1,15 @@
+Usage: permreset
+
+Permissions:
+  b_virtualserver_permission_reset
+
+Description:
+  Restores the default permission settings on the selected virtual server and
+  creates a new initial administrator token. Please note that in case of an
+  error during the permreset call - e.g. when the database has been modified or
+  corrupted - the virtual server will be deleted from the database.
+
+Example:
+  permreset
+  token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok

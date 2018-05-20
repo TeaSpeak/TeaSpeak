@@ -1,0 +1,13 @@
+Usage: clientsetserverquerylogin client_login_name={username}
+
+Permissions:
+  b_client_create_modify_serverquery_login
+
+Description:
+  Updates your own ServerQuery login credentials using a specified username.
+  The password will be auto-generated.
+
+Example:
+  clientsetserverquerylogin client_login_name=admin
+  client_login_password=+r\/TQqvR
+  error id=0 msg=ok

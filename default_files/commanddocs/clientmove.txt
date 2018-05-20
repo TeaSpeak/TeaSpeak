@@ -1,0 +1,14 @@
+Usage: clientmove clid={clientID}... cid={channelID} [cpw={channelPassword}]
+
+Permissions:
+  i_client_move_power
+  i_client_needed_move_power
+
+Description:
+  Moves one or more clients specified with clid to the channel with ID cid. If
+  the target channel has a password, it needs to be specified with cpw. If the
+  channel has no password, the parameter can be omitted.
+
+Example:
+  clientmove clid=5|clid=6 cid=3
+  error id=0 msg=ok

@@ -1,0 +1,13 @@
+Usage: messageget msgid={messageID}
+
+Permissions:
+
+Description:
+  Displays an existing offline message with ID msgid from your inbox. Please
+  note that this does not automatically set the flag_read property of the
+  message.
+
+Example:
+  messageget msgid=4
+  msgid=4 cluid=xwEzb5ENOaglVHu9oelK++reUyE= subject=Hi! message=Where\sare\syou?!?
+  error id=0 msg=ok

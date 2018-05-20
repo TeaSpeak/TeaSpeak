@@ -1,0 +1,13 @@
+Usage: login client_login_name={username} client_login_password={password}
+       login {username} {password}
+
+Permissions:
+  b_serverquery_login
+
+Description:
+  Authenticates with the TeamSpeak 3 Server instance using given ServerQuery
+  login credentials.
+
+Example:
+  login client_login_name=xyz client_login_password=xyz
+  error id=0 msg=ok

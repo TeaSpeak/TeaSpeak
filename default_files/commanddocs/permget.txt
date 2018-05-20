@@ -1,0 +1,19 @@
+Usage: permget permid={permID}|permid={permID}
+       permget permsid={permName}|permsid={permName}
+
+Permissions:
+  b_client_permissionoverview_own
+
+Description:
+  Displays the current value of the permission specified with permid or permsid
+  for your own connection. This can be useful when you need to check your own
+  privileges.
+
+Example:
+  permget permid=21174
+  permsid=i_client_move_power permid=21174 permvalue=100
+  error id=0 msg=ok
+
+  permget permsid=i_client_move_power
+  permsid=i_client_move_power permid=21174 permvalue=100
+  error id=0 msg=ok

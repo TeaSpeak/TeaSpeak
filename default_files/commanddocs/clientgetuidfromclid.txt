@@ -1,0 +1,11 @@
+Usage: clientgetuidfromclid clid={clientID}
+
+Permissions:
+
+Description:
+  Displays the unique identifier matching the clientID specified by clid.
+
+Example:
+  clientgetuidfromclid clid=8
+  clid=8 cluid=yXM6PUfbCcPU+joxIFek1xOQwwQ= nickname=MuhChy1
+  error id=0 msg=ok

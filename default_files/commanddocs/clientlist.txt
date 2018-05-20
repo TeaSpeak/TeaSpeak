@@ -1,0 +1,19 @@
+Usage: clientlist [-uid] [-away] [-voice] [-times] [-groups] [-info] [-country]
+       [-ip] [-badges]
+
+Permissions:
+  b_virtualserver_client_list
+  i_channel_subscribe_power
+  i_channel_needed_subscribe_power
+
+Description:
+  Displays a list of clients online on a virtual server including their ID,
+  nickname, status flags, etc. The output can be modified using several command
+  options.
+  Please note that the output will only contain clients which are currently in
+  channels you're able to subscribe to.
+
+Example:
+  clientlist -away
+  clid=5 cid=7 client_database_id=40 client_nickname=ScP client_type=0 client_away=1 client_away_message=not\shere|clid=6 ...
+  error id=0 msg=ok

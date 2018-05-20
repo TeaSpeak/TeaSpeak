@@ -1,0 +1,10 @@
+Usage: quit
+
+Permissions:
+
+Description:
+  Closes the ServerQuery connection to the TeamSpeak 3 Server instance.
+
+Example:
+  quit
+  

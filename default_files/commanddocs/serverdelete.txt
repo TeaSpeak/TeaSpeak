@@ -1,0 +1,12 @@
+Usage: serverdelete sid={serverID}
+
+Permissions:
+  b_virtualserver_delete
+
+Description:
+  Deletes the virtual server specified with sid. Please note that only virtual
+  servers in stopped state can be deleted.
+
+Example:
+  serverdelete sid=1
+  error id=0 msg=ok

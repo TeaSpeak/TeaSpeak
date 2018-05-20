@@ -1,0 +1,10 @@
+Usage: ftstop serverftfid={serverFileTransferID} delete={1|0}
+
+Permissions:
+
+Description:
+  Stops the running file transfer with server-side ID serverftfid.
+
+Example:
+  ftstop serverftfid=2 delete=1
+  error id=0 msg=ok

@@ -1,0 +1,15 @@
+Usage: serversnapshotcreate
+
+Permissions:
+  b_virtualserver_snapshot_create
+
+Description:
+  Displays a snapshot of the selected virtual server containing all settings,
+  groups and known client identities. The data from a server snapshot can be
+  used to restore a virtual servers configuration, channels and permissions
+  using the serversnapshotdeploy command.
+
+Example:
+  serversnapshotcreate
+  hash=bnTd2E1kNITHjJYRCFjgbKKO5P8=|virtualserver_unique_identifier=zrPkjznB1tMnRwj01xx7RxXjqeY= virtualserver_name=TeamSpeak\s]I[\sServer ...
+  error id=0 msg=ok

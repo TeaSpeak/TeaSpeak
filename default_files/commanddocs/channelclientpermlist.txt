@@ -1,0 +1,12 @@
+Usage: channelclientpermlist cid={channelID} cldbid={clientDBID} [-permsid]
+
+Permissions:
+  b_virtualserver_channelclient_permission_list
+
+Description:
+  Displays a list of permissions defined for a client in a specific channel.
+
+Example:
+  channelclientpermlist cid=12 cldbid=3
+  cid=12 cldbid=3 permid=4353 permvalue=1 permnegated=0 permskip=0|permid=17276 permvalue=50 permnegated=0 permskip=0|permid=21415 ...
+  error id=0 msg=ok

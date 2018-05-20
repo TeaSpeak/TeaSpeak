@@ -1,0 +1,11 @@
+Usage: logout
+
+Permissions:
+  b_serverquery_login
+
+Description:
+  Deselects the active virtual server and logs out from the server instance.
+
+Example:
+  logout
+  error id=0 msg=ok

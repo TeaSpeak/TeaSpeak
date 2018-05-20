@@ -1,0 +1,11 @@
+Usage: clientdbdelete cldbid={clientDBID}
+
+Permissions:
+  b_client_delete_dbproperties
+
+Description:
+  Deletes a clients properties from the database.
+
+Example:
+  clientdbdelete cldbid=56
+  error id=0 msg=ok

@@ -1,0 +1,11 @@
+Usage: bandelall
+
+Permissions:
+  b_client_ban_delete
+
+Description:
+  Deletes all active ban rules from the server.
+
+Example:
+  bandelall
+  error id=0 msg=ok

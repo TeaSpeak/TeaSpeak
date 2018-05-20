@@ -1,0 +1,12 @@
+Usage: customsearch ident={ident} pattern={pattern}
+
+Permissions:
+
+Description:
+  Searches for custom client properties specified by ident and value. The value
+  parameter can include regular characters and SQL wildcard characters (e.g. %).
+
+Example:
+  customsearch ident=forum_account pattern=%ScP%
+  cldbid=2 ident=forum_account value=ScP
+  error id=0 msg=ok

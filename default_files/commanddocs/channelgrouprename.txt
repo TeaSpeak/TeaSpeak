@@ -1,0 +1,12 @@
+Usage: channelgrouprename cgid={groupID} name={groupName}
+
+Permissions:
+  i_group_modify_power
+  i_group_needed_modify_power
+
+Description:
+  Changes the name of a specified channel group.
+
+Example:
+  channelgrouprename cgid=13 name=New\sName
+  error id=0 msg=ok

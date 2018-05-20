@@ -1,0 +1,13 @@
+Usage: channellist [-topic] [-flags] [-voice] [-limits] [-icon] [-secondsempty]
+
+Permissions:
+  b_virtualserver_channel_list
+
+Description:
+  Displays a list of channels created on a virtual server including their ID,
+  order, name, etc. The output can be modified using several command options.
+
+Example:
+  channellist -topic
+  cid=15 pid=0 channel_order=0 channel_name=Default\sChannel channel_topic=Default\sChannel\shas\sno\s[b]topic[\/b] total_clients=2|cid=16 ...
+  error id=0 msg=ok

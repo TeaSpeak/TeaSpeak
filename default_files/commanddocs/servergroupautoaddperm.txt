@@ -1,0 +1,29 @@
+Usage: servergroupautoaddperm sgtype={groupID} [permid={permID}...]
+       [permsid={permName}...] permvalue={permValue}... permnegated={1|0}...
+       permskip={1|0}...
+
+Permissions:
+  b_permission_modify_power_ignore
+
+Description:
+  Adds a set of specified permissions to *ALL* regular server groups on all
+  virtual servers. The target groups will be identified by the value of their
+  i_group_auto_update_type permission specified with sgtype. Multiple
+  permissions can be added at once. A permission can be specified by permid or
+  permsid.
+  
+  The known values for sgtype are:
+  
+  10: Channel Guest
+  15: Server Guest
+  20: Query Guest
+  25: Channel Voice
+  30: Server Normal
+  35: Channel Operator
+  40: Channel Admin
+  45: Server Admin
+  50: Query Admin
+
+Example:
+  servergroupautoaddperm sgtype=45 permsid=b_virtualserver_start permvalue=1 permskip=0 permnegated=0
+  error id=0 msg=ok

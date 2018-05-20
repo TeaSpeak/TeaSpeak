@@ -1,0 +1,23 @@
+Usage: privilegekeyadd tokentype={1|0} tokenid1={groupID} tokenid2={channelID}
+       [tokendescription={description}] [tokencustomset={customFieldSet}]
+
+Permissions:
+  b_virtualserver_token_add
+  i_group_needed_member_add_power
+  i_group_member_add_power
+
+Description:
+  Create a new token. If tokentype is set to 0, the ID specified with tokenid1
+  will be a server group ID. Otherwise, tokenid1 is used as a channel group ID
+  and you need to provide a valid channel ID using tokenid2.
+  The tokencustomset parameter allows you to specify a set of custom client
+  properties. This feature can be used when generating tokens to combine a
+  website account database with a TeamSpeak user. The syntax of the value needs
+  to be escaped using the ServerQuery escape patterns and has to follow the
+  general syntax of:
+  ident=ident1 value=value1|ident=ident2 value=value2|ident=ident3 value=value3
+
+Example:
+  privilegekeyadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset tokencustomset=ident=forum_user\svalue=Sven\sPaulsen\pident=forum_id\svalue=123
+  token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok

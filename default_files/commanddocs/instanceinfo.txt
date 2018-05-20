@@ -1,0 +1,14 @@
+Usage: instanceinfo
+
+Permissions:
+  b_serverinstance_info_view
+
+Description:
+  Displays the server instance configuration including database revision
+  number, the file transfer port, default group IDs, etc.
+  For detailed information, see Server Instance Properties.
+
+Example:
+  instanceinfo
+  serverinstance_database_version=11 serverinstance_filetransfer_port=30033 serverinstance_template_guest_serverquery_group=1 serverinstance_template_serveradmin_group=3 ...
+  error id=0 msg=ok

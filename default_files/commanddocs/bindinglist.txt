@@ -1,0 +1,13 @@
+Usage: bindinglist [subsystem={voice|query|filetransfer}]
+
+Permissions:
+  b_serverinstance_binding_list
+
+Description:
+  Displays a list of IP addresses used by the server instance on multi-homed
+  machines. If no subsystem is specified, "voice" is used by default.
+
+Example:
+  bindinglist
+  ip=0.0.0.0|ip=0::0
+  error id=0 msg=ok

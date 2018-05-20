@@ -1,0 +1,11 @@
+Usage: clientupdate [client_properties...]
+
+Permissions:
+
+Description:
+  Change your ServerQuery clients settings using given properties.
+  For detailed information, see Client Properties.
+
+Example:
+  clientupdate client_nickname=ScP\s(query)
+  error id=0 msg=ok

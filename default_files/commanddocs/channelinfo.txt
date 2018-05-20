@@ -1,0 +1,14 @@
+Usage: channelinfo cid={channelID}
+
+Permissions:
+  b_channel_info_view
+
+Description:
+  Displays detailed configuration information about a channel including ID,
+  topic, description, etc.
+  For detailed information, see Channel Properties.
+
+Example:
+  channelinfo cid=1
+  channel_name=Default\sChannel channel_topic=Default\sChannel\shas\sno\s[b]topic[\/b] channel_description=This\sis\sthe\sdefault\schannel ...
+  error id=0 msg=ok

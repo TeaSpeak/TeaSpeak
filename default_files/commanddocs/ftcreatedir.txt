@@ -1,0 +1,12 @@
+Usage: ftcreatedir cid={channelID} cpw={channelPassword} dirname={dirPath}
+
+Permissions:
+  i_ft_directory_create_power
+  i_ft_needed_file_directory_create_power
+
+Description:
+  Creates new directory in a channels file repository.
+
+Example:
+  ftcreatedir cid=2 cpw= dirname=\/My\sDirectory
+  error id=0 msg=ok

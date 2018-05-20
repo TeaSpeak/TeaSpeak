@@ -1,0 +1,13 @@
+Usage: clientdbinfo cldbid={clientDBID}
+
+Permissions:
+  b_virtualserver_client_dbinfo
+
+Description:
+  Displays detailed database information about a client including unique ID,
+  creation date, etc.
+
+Example:
+  clientdbinfo cldbid=4
+  client_unique_identifier=FPMPSC6MXqXq751dX7BKV0JniSo= client_nickname=ScP client_created=1265411019 ...
+  error id=0 msg=ok

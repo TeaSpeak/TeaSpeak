@@ -1,0 +1,13 @@
+Usage: servergroupaddclient sgid={groupID} cldbid={clientDBID}
+
+Permissions:
+  i_group_member_add_power
+  i_group_needed_member_add_power
+
+Description:
+  Adds a client to the server group specified with sgid. Please note that a
+  client cannot be added to default groups or template groups.
+
+Example:
+  servergroupaddclient sgid=16 cldbid=3
+  error id=0 msg=ok

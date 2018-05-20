@@ -1,0 +1,11 @@
+Usage: clientgetids cluid={clientUID}
+
+Permissions:
+
+Description:
+  Displays all client IDs matching the unique identifier specified by cluid.
+
+Example:
+  clientgetids cluid=dyjxkshZP6bz0n3bnwFQ1CkwZOM=
+  cluid=dyjxkshZP6bz0n3bnwFQ1CkwZOM= clid=1 name=Janko
+  error id=0 msg=ok

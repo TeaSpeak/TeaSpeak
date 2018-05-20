@@ -1,0 +1,13 @@
+Usage: servergroupdelclient sgid={groupID} cldbid={clientDBID}
+
+Permissions:
+  i_group_member_remove_power
+  i_group_needed_member_remove_power
+
+Description:
+  Removes a client specified with cldbid from the server group specified with
+  sgid.
+
+Example:
+  servergroupdelclient sgid=16 cldbid=3
+  error id=0 msg=ok

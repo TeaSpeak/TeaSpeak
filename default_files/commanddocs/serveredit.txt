@@ -1,0 +1,38 @@
+Usage: serveredit [virtualserver_properties...]
+
+Permissions:
+  b_virtualserver_modify_name
+  b_virtualserver_modify_welcomemessage
+  b_virtualserver_modify_maxclients
+  b_virtualserver_modify_reserved_slots
+  b_virtualserver_modify_password
+  b_virtualserver_modify_default_servergroup
+  b_virtualserver_modify_default_channelgroup
+  b_virtualserver_modify_default_channeladmingroup
+  b_virtualserver_modify_ft_settings
+  b_virtualserver_modify_ft_quotas
+  b_virtualserver_modify_channel_forced_silence
+  b_virtualserver_modify_complain
+  b_virtualserver_modify_antiflood
+  b_virtualserver_modify_hostmessage
+  b_virtualserver_modify_hostbanner
+  b_virtualserver_modify_hostbutton
+  b_virtualserver_modify_port
+  b_virtualserver_modify_autostart
+  b_virtualserver_modify_needed_identity_security_level
+  b_virtualserver_modify_priority_speaker_dimm_modificator
+  b_virtualserver_modify_log_settings
+  b_virtualserver_modify_icon_id
+  b_virtualserver_modify_weblist
+  b_virtualserver_modify_min_client_version
+  b_virtualserver_modify_codec_encryption_mode
+
+Description:
+  Changes the selected virtual servers configuration using given properties. 
+  Note that this command accepts multiple properties which means that you're
+  able to change all settings of the selected virtual server at once.
+  For detailed information, see Virtual Server Properties.
+
+Example:
+  serveredit virtualserver_name=TeamSpeak\s]\p[\sServer virtualserver_maxclients=32
+  error id=0 msg=ok

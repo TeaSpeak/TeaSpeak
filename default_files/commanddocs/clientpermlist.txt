@@ -1,0 +1,12 @@
+Usage: clientpermlist cldbid={clientDBID} [-permsid]
+
+Permissions:
+  b_virtualserver_client_permission_list
+
+Description:
+  Displays a list of permissions defined for a client.
+
+Example:
+  clientpermlist cldbid=2
+  cldbid=2 permid=4353 permvalue=1 permnegated=0 permskip=0|permid=17276 permvalue=50 permnegated=0 permskip=0|permid=21415 ...
+  error id=0 msg=ok

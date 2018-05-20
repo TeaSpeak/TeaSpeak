@@ -1,0 +1,18 @@
+Usage: serversnapshotdeploy [-mapping] virtualserver_snapshot
+
+Permissions:
+  b_virtualserver_snapshot_deploy
+
+Description:
+  Restores the selected virtual servers configuration using the data from a
+  previously created server snapshot. Please note that the TeamSpeak 3 Server
+  does NOT check for necessary permissions while deploying a snapshot so the
+  command could be abused to gain additional privileges.
+
+Example:
+  serversnapshotdeploy hash=bnTd2E1kNITHjJYRCFjgbKKO5P8=|virtualserver_unique_identifier=zrPkjznB1tMnRwj01xx7RxXjq= ...
+  error id=0 msg=ok
+
+  serversnapshotdeploy -mapping hash=bnTd2E1kNITHjJYRCFjgbKKO5P8=|virtualserver_...
+  ocid=36 ncid=40|ocid=37 ncid=41|ocid=38 ncid=42|ocid=39 ncid=43
+  error id=0 msg=ok

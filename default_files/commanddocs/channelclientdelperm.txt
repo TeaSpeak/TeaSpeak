@@ -1,0 +1,16 @@
+Usage: channelclientdelperm cid={channelID} cldbid={clientDBID}
+       [permid={permID}...] [permsid={permName}...]
+
+Permissions:
+  i_group_modify_power
+  i_group_needed_modify_power
+  i_permission_modify_power
+
+Description:
+  Removes a set of specified permissions from a client in a specific channel.
+  Multiple permissions can be removed at once. A permission can be specified by
+  permid or permsid.
+
+Example:
+  channelclientdelperm cid=12 cldbid=3 permid=17276|permid=21415
+  error id=0 msg=ok

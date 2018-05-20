@@ -1,0 +1,15 @@
+Usage: channelgroupclientlist [cid={channelID}] [cldbid={clientDBID}]
+       [cgid={groupID}]
+
+Permissions:
+  b_virtualserver_channelgroup_client_list
+
+Description:
+  Displays all the client and/or channel IDs currently assigned to channel
+  groups. All three parameters are optional so you're free to choose the most
+  suitable combination for your requirements.
+
+Example:
+  channelgroupclientlist cid=2 cgid=9
+  cid=2 cldbid=9 cgid=9|cid=2 cldbid=24 cgid=9|cid=2 cldbid=47 cgid=9
+  error id=0 msg=ok

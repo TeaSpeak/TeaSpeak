@@ -1,0 +1,14 @@
+Usage: ftgetfileinfo cid={channelID} cpw={channelPassword} name={filePath}...
+
+Permissions:
+  i_ft_file_browse_power
+  i_ft_needed_file_browse_power
+
+Description:
+  Displays detailed information about one or more specified files stored in a
+  channels file repository.
+
+Example:
+  ftgetfileinfo cid=2 cpw= path=\/Pic1.PNG|cid=2 cpw= path=\/Pic2.PNG
+  cid=2 path=\/ name=Stuff size=0 datetime=1259415210 type=0|name=Pic1.PNG size=563783 datetime=1259425462 type=1|name=Pic2.PNG ...
+  error id=0 msg=ok

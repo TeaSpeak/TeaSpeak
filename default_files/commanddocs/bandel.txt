@@ -1,0 +1,12 @@
+Usage: bandel banid={banID}
+
+Permissions:
+  b_client_ban_delete
+  b_client_ban_delete_own
+
+Description:
+  Deletes the ban rule with ID banid from the server.
+
+Example:
+  bandel banid=3
+  error id=0 msg=ok

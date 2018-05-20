@@ -1,0 +1,14 @@
+Usage: setclientchannelgroup cgid={groupID} cid={channelID} cldbid={clientDBID}
+
+Permissions:
+  i_group_member_add_power
+  i_group_needed_member_add_power
+  i_group_member_remove_power
+  i_group_needed_member_remove_power
+
+Description:
+  Sets the channel group of a client to the ID specified with cgid.
+
+Example:
+  setclientchannelgroup cgid=13 cid=15 cldbid=20
+  error id=0 msg=ok

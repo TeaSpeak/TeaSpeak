@@ -1,0 +1,13 @@
+Usage: clientdblist [start={offset}] [duration={limit}] [-count]
+
+Permissions:
+  b_virtualserver_client_dblist
+
+Description:
+  Displays a list of client identities known by the server including their
+  database ID, last nickname, etc.
+
+Example:
+  clientdblist
+  cldbid=7 client_unique_identifier=DZhdQU58qyooEK4Fr8Ly738hEmc= client_nickname=MuhChy client_created=1259147468 client_lastconnected=1259421233 ...
+  error id=0 msg=ok

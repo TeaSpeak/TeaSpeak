@@ -1,0 +1,20 @@
+Usage: servergroupcopy ssgid={sourceGroupID} tsgid={targetGroupID}
+       name={groupName} type={groupDbType}
+
+Permissions:
+  b_virtualserver_servergroup_create
+  i_group_modify_power
+  i_group_needed_modify_power
+
+Description:
+  Creates a copy of the server group specified with ssgid. If tsgid is set to
+  0, the server will create a new group. To overwrite an existing group, simply
+  set tsgid to the ID of a designated target group. If a target group is set,
+  the name parameter will be ignored.
+  The type parameter can be used to create ServerQuery groups and template
+  groups. For detailed information, see Definitions.
+
+Example:
+  servergroupcopy ssgid=6 tsgid=0 name=My\sGroup\s(Copy) type=1
+  sgid=21
+  error id=0 msg=ok

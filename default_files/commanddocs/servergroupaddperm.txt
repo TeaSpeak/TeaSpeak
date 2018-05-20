@@ -1,0 +1,20 @@
+Usage: servergroupaddperm sgid={groupID} [permid={permID}...]
+       [permsid={permName}...] permvalue={permValue}... permnegated={1|0}...
+       permskip={1|0}...
+
+Permissions:
+  i_group_modify_power
+  i_group_needed_modify_power
+  i_permission_modify_power
+
+Description:
+  Adds a set of specified permissions to the server group specified with sgid.
+  Multiple permissions can be added by providing the four parameters of each
+  permission. A permission can be specified by permid or permsid.
+
+Example:
+  servergroupaddperm sgid=13 permid=17276 permvalue=50 permnegated=0 permskip=0|permid=21415 permvalue=20 permnegated=0
+  error id=0 msg=ok
+
+  servergroupaddperm sgid=3 permsid=b_virtualserver_modify_maxclients permvalue=1 permnegated=0 permskip=0
+  error id=0 msg=ok

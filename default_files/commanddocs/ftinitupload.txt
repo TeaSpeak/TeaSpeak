@@ -1,0 +1,24 @@
+Usage: ftinitupload clientftfid={clientFileTransferID} name={filePath}
+       cid={channelID} cpw={channelPassword} size={fileSize} overwrite={1|0}
+       resume={1|0} [proto=0-1]
+
+Permissions:
+  i_ft_file_upload_power
+  i_ft_needed_file_ upload _power
+  i_ft_quota_mb_upload_per_client
+
+Description:
+  Initializes a file transfer upload. clientftfid is an arbitrary ID to
+  identify the file transfer on client-side. On success, the server generates a
+  new ftkey which is required to start uploading the file through TeamSpeak 3's
+  file transfer interface. Since version 3.0.13 there is an optional proto
+  parameter. The client can request a protocol version with it. Currently only
+  0 and 1 are supported which only differ in the way they handle some timings.
+  The server will reply which protocol version it will support. The server will
+  reply with an ip parameter if it determines the filetransfer subsystem is not
+  reachable by the ip that is currently being used for the query connection.
+
+Example:
+  ftinitupload clientftfid=1 name=\/image.iso cid=5 cpw= size=673460224 overwrite=1 resume=0
+  clientftfid=1 serverftfid=6 ftkey=itRNdsIOvcBiBg\/Xj4Ge51ZSrsShHuid port=30033 seekpos=0 proto=0
+  error id=0 msg=ok

@@ -1,0 +1,13 @@
+Usage: serverrequestconnectioninfo
+
+Permissions:
+  b_virtualserver_connectioninfo_view
+
+Description:
+  Displays detailed connection information about the selected virtual server
+  including uptime, traffic information, etc.
+
+Example:
+  serverrequestconnectioninfo
+  connection_filetransfer_bandwidth_sent=0 connection_filetransfer_bandwidth_received=0 connection_packets_sent_total=241454 ...
+  error id=0 msg=ok

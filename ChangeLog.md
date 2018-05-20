@@ -1,4 +1,15 @@
 # Changelog:
+* **1.1.27b**
+    - Fixed not working server passwords
+    - Moved the config options `kick_on_invalid_badges` and `kick_on_invalid_packets` to the permission system
+    - Using command ack packets as secondary ping system (should be more stable now)
+    - Command `clientupdate` just resets the idle time when some values have been changed
+    - Fixed permission issue [#120](https://github.com/TeaSpeak/TeaSpeak/issues/120)
+    - Fixed query group assignment bug
+    - Fixed invalid guest server query permissions
+    - Added verbose yt log
+    - Added help command documentation
+    
 * **1.1.26b**
     - Waiting for a acknowledge of the `clientinitiv` packet before setting up crypto. Fixed (hopefully) the client crash 
     - Client connection core code improvement (faster and saver)

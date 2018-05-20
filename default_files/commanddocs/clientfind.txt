@@ -1,0 +1,12 @@
+Usage: clientfind pattern={clientName}
+
+Permissions:
+  b_virtualserver_client_search
+
+Description:
+  Displays a list of clients matching a given name pattern.
+
+Example:
+  clientfind pattern=sven
+  clid=7 client_nickname=Sven
+  error id=0 msg=ok

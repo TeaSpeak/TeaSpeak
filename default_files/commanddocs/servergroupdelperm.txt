@@ -1,0 +1,19 @@
+Usage: servergroupdelperm sgid={groupID} [permid={permID}...]
+       [permsid={permName}...]
+
+Permissions:
+  i_group_modify_power
+  i_group_needed_modify_power
+  i_permission_modify_power
+
+Description:
+  Removes a set of specified permissions from the server group specified with
+  sgid. Multiple permissions can be removed at once. A permission can be
+  specified by permid or permsid.
+
+Example:
+  servergroupdelperm sgid=16 permid=17276|permid=21415
+  error id=0 msg=ok
+
+  servergroupdelperm sgid=3 permsid=b_virtualserver_modify_maxclients
+  error id=0 msg=ok

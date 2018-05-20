@@ -1,0 +1,13 @@
+Usage: clientinfo clid={clientID}
+
+Permissions:
+  b_client_info_view
+
+Description:
+  Displays detailed configuration information about a client including unique
+  ID, nickname, client version, etc.
+
+Example:
+  clientinfo clid=6
+  client_unique_identifier=P5H2hrN6+gpQI4n\/dXp3p17vtY0= client_nickname=Rabe85 client_version=3.0.0-alpha24\s[Build:\s8785]\s(UI:\s8785) ...
+  error id=0 msg=ok

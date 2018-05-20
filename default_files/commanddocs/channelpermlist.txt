@@ -1,0 +1,12 @@
+Usage: channelpermlist cid={channelID} [-permsid]
+
+Permissions:
+  b_virtualserver_channel_permission_list
+
+Description:
+  Displays a list of permissions defined for a channel.
+
+Example:
+  channelpermlist cid=2
+  cid=2 permid=4353 permvalue=1 permnegated=0 permskip=0|permid=17276 permvalue=50 ...
+  error id=0 msg=ok

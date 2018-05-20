@@ -1,0 +1,14 @@
+Usage: serverinfo
+
+Permissions:
+  b_virtualserver_info_view
+
+Description:
+  Displays detailed configuration information about the selected virtual server
+  including unique ID, number of clients online, configuration, etc.
+  For detailed information, see Virtual Server Properties.
+
+Example:
+  serverinfo
+  virtualserver_port=9987 virtualserver_unique_identifier=zrPkjznB1tMnRwj01xx7RxXjqeY= virtualserver_name=TeamSpeak\s]I[\sServer ...
+  error id=0 msg=ok

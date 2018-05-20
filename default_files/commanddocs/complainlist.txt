@@ -1,0 +1,13 @@
+Usage: complainlist [tcldbid={targetClientDBID}]
+
+Permissions:
+  b_client_complain_list
+
+Description:
+  Displays a list of complaints on the selected virtual server. If tcldbid is
+  specified, only complaints about the targeted client will be shown.
+
+Example:
+  complainlist tcldbid=3
+  tcldbid=3 tname=Julian fcldbid=56 fname=Sven message=Bad\sguy! timestamp=1259440948 ...
+  error id=0 msg=ok

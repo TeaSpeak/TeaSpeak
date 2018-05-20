@@ -1,0 +1,12 @@
+Usage: gm msg={text}
+
+Permissions:
+  b_serverinstance_textmessage_send
+
+Description:
+  Sends a text message to all clients on all virtual servers in the TeamSpeak 3
+  Server instance.
+
+Example:
+  gm msg=Hello\sWorld!
+  error id=0 msg=ok

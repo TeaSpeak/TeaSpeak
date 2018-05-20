@@ -1,0 +1,15 @@
+Usage: servergroupclientlist sgid={groupID} [-names]
+
+Permissions:
+  b_virtualserver_servergroup_client_list
+
+Description:
+  Displays the IDs of all clients currently residing in the server group
+  specified with sgid. If you're using the optional -names option, the output
+  will also contain the last known nickname and the unique identifier of the
+  clients.
+
+Example:
+  servergroupclientlist sgid=16
+  cldbid=7|cldbid=8|cldbid=9|cldbid=11|cldbid=13|cldbid=16|cldbid=18|cldbid=29|cldbid=32|cldbid=34|cldbid=37|cldbid=40|cldbid=47|cldbid=53
+  error id=0 msg=ok

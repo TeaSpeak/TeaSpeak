@@ -1,0 +1,12 @@
+Usage: servergroupsbyclientid cldbid={clientDBID}
+
+Permissions:
+
+Description:
+  Displays all server groups the client specified with cldbid is currently
+  residing in.
+
+Example:
+  servergroupsbyclientid cldbid=18
+  name=Server\sAdmin sgid=6 cldbid=18
+  error id=0 msg=ok

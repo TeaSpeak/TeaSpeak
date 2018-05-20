@@ -1,0 +1,26 @@
+Usage: serverlist [-uid] [-short] [-all] [-onlyoffline]
+
+Permissions:
+  b_serverinstance_virtualserver_list
+
+Description:
+  Displays a list of virtual servers including their ID, status, number of
+  clients online, etc. If you're using the -all option, the server will list
+  all virtual servers stored in the database. This can be useful when multiple
+  server instances with different machine IDs are using the same database. The
+  machine ID is used to identify the server instance a virtual server is
+  associated with.
+  The status of a virtual server can be either online, offline, booting up,
+  shutting down or virtual online. While most of them are self-explanatory,
+  virtual online is a bit more complicated.
+  Whenever you select a virtual server which is currently stopped with the
+  -virtual parameter, it will be started in virtual mode which means you are
+  able to change its configuration, create channels or change permissions, but
+  no regular TeamSpeak 3 Client can connect. As soon as the last ServerQuery
+  client deselects the virtual server, its status will be changed back to
+  offline.
+
+Example:
+  serverlist
+  virtualserver_id=1 virtualserver_port=9987 virtualserver_status=online virtualserver_clientsonline=6 ...
+  error id=0 msg=ok

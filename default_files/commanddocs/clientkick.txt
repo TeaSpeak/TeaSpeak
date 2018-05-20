@@ -1,0 +1,18 @@
+Usage: clientkick clid={clientID}... reasonid={4|5} [reasonmsg={text}]
+
+Permissions:
+  i_client_kick_from_server_power
+  i_client_kick_from_channel_power
+  i_client_needed_kick_from_server_power
+  i_client_needed_kick_from_channel_power
+
+Description:
+  Kicks one or more clients specified with clid from their currently joined
+  channel or from the server, depending on reasonid. The reasonmsg parameter
+  specifies a text message sent to the kicked clients. This parameter is
+  optional and may only have a maximum of 40 characters.
+  For detailed information, see Definitions.
+
+Example:
+  clientkick clid=5|clid=6 reasonid=4 reasonmsg=Go\saway!
+  error id=0 msg=ok

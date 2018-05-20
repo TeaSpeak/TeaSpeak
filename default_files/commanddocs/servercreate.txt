@@ -1,0 +1,19 @@
+Usage: servercreate virtualserver_name={serverName}
+       [virtualserver_properties...]
+
+Permissions:
+  b_virtualserver_create
+
+Description:
+  Creates a new virtual server using the given properties and displays its ID,
+  port and initial administrator privilege key. If virtualserver_port is not
+  specified, the server will test for the first unused UDP port.
+  The first virtual server will be running on UDP port 9987 by default.
+  Subsequently started virtual servers will be running on increasing UDP port
+  numbers.
+  For detailed information, see Virtual Server Properties.
+
+Example:
+  servercreate virtualserver_name=TeamSpeak\s]\p[\sServer virtualserver_port=9988 virtualserver_maxclients=32
+  sid=2 virtualserver_port=9988 token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok

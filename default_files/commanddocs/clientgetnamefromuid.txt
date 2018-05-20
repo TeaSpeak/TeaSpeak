@@ -1,0 +1,12 @@
+Usage: clientgetnamefromuid cluid={clientUID}
+
+Permissions:
+
+Description:
+  Displays the database ID and nickname matching the unique identifier
+  specified by cluid.
+
+Example:
+  clientgetnamefromuid cluid=dyjxkshZP6bz0n3bnwFQ1CkwZOM=
+  cluid=dyjxkshZP6bz0n3bnwFQ1CkwZOM= cldbid=32 name=Janko
+  error id=0 msg=ok

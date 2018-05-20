@@ -1,0 +1,16 @@
+Usage: channelclientaddperm cid={channelID} cldbid={clientDBID}
+       [permid={permID}...] [permsid={permName}...] permvalue={permValue}...
+
+Permissions:
+  i_group_modify_power
+  i_group_needed_modify_power
+  i_permission_modify_power
+
+Description:
+  Adds a set of specified permissions to a client in a specific channel.
+  Multiple permissions can be added by providing the three parameters of each
+  permission. A permission can be specified by permid or permsid.
+
+Example:
+  channelclientaddperm cid=12 cldbid=3 permid=17276 permvalue=50|permid=21415 permvalue=20
+  error id=0 msg=ok

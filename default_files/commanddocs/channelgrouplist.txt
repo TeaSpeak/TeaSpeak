@@ -1,0 +1,13 @@
+Usage: channelgrouplist
+
+Permissions:
+  b_virtualserver_channelgroup_list
+  b_serverinstance_modify_templates
+
+Description:
+  Displays a list of channel groups available on the selected virtual server.
+
+Example:
+  channelgrouplist
+  cgid=1 name=Channel\sAdmin type=2 iconid=100 savedb=1|cgid=2 ...
+  error id=0 msg=ok

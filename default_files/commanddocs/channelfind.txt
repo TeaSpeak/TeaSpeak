@@ -1,0 +1,12 @@
+Usage: channelfind pattern={channelName}
+
+Permissions:
+  b_virtualserver_channel_search
+
+Description:
+  Displays a list of channels matching a given name pattern.
+
+Example:
+  channelfind pattern=default
+  cid=15 channel_name=Default\sChannel
+  error id=0 msg=ok

@@ -1,0 +1,12 @@
+Usage: permidgetbyname permsid={permName}...
+
+Permissions:
+  b_serverinstance_permission_list
+
+Description:
+  Displays the database ID of one or more permissions specified by permsid.
+
+Example:
+  permidgetbyname permsid=b_serverinstance_help_view|permsid=b_serverinstance_info_view
+  permsid=b_serverinstance_help_view permid=4353|permsid=b_serverinstance_info_view permid=4355
+  error id=0 msg=ok

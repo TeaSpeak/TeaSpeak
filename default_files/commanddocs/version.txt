@@ -1,0 +1,12 @@
+Usage: version
+
+Permissions:
+  b_serverinstance_version_view
+
+Description:
+  Displays the servers version information including platform and build number.
+
+Example:
+  version
+  version=3.0.0-alpha4 build=9155 platform=Linux
+  error id=0 msg=ok

@@ -1,0 +1,12 @@
+Usage: servergroupdel sgid={groupID} force={1|0}
+
+Permissions:
+  b_virtualserver_servergroup_delete
+
+Description:
+  Deletes the server group specified with sgid. If force is set to 1, the
+  server group will be deleted even if there are clients within.
+
+Example:
+  servergroupdel sgid=13
+  error id=0 msg=ok

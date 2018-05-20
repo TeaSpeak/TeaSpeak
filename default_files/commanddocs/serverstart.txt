@@ -1,0 +1,14 @@
+Usage: serverstart sid={serverID}
+
+Permissions:
+  b_virtualserver_start_any
+  b_virtualserver_start
+
+Description:
+  Starts the virtual server specified with sid. Depending on your permissions,
+  you're able to start either your own virtual server only or all virtual
+  servers in the server instance.
+
+Example:
+  serverstart sid=1
+  error id=0 msg=ok

@@ -1,0 +1,23 @@
+Usage: ftinitdownload clientftfid={clientFileTransferID} name={filePath}
+       cid={channelID} cpw={channelPassword} seekpos={seekPosition} [proto=0-1]
+
+Permissions:
+  i_ft_file_download_power
+  i_ft_needed_file_ download _power
+  i_ft_quota_mb_ download _per_client
+
+Description:
+  Initializes a file transfer download. clientftfid is an arbitrary ID to
+  identify the file transfer on client-side. On success, the server generates a
+  new ftkey which is required to start downloading the file through TeamSpeak
+  3's file transfer interface. Since version 3.0.13 there is an optional proto
+  parameter. The client can request a protocol version with it. Currently only
+  0 and 1 are supported which only differ in the way they handle some timings.
+  The server will reply which protocol version it will support. The server will
+  reply with an ip parameter if it determines the filetransfer subsystem is not
+  reachable by the ip that is currently being used for the query connection.
+
+Example:
+  ftinitdownload clientftfid=1 name=\/image.iso cid=5 cpw= seekpos=0
+  clientftfid=1 serverftfid=7 ftkey=NrOga\/4d2GpYC5oKgxuclTO37X83ca\/1 port=30033 size=673460224 proto=0
+  error id=0 msg=ok

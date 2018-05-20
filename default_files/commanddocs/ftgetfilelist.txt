@@ -1,0 +1,14 @@
+Usage: ftgetfilelist cid={channelID} cpw={channelPassword} path={filePath}
+
+Permissions:
+  i_ft_file_browse_power
+  i_ft_needed_file_browse_power
+
+Description:
+  Displays a list of files and directories stored in the specified channels
+  file repository.
+
+Example:
+  ftgetfilelist cid=2 cpw= path=\/
+  cid=2 path=\/ name=Stuff size=0 datetime=1259415210 type=0|name=Pic1.PNG size=563783 datetime=1259425462 type=1|name=Pic2.PNG ...
+  error id=0 msg=ok

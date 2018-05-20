@@ -1,0 +1,12 @@
+Usage: clientgetnamefromdbid cldbid={clientDBID}
+
+Permissions:
+
+Description:
+  Displays the unique identifier and nickname matching the database ID
+  specified by cldbid.
+
+Example:
+  clientgetnamefromdbid cldbid=32
+  cluid=dyjxkshZP6bz0n3bnwFQ1CkwZOM= cldbid=32 name=Janko
+  error id=0 msg=ok

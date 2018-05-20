@@ -1,0 +1,14 @@
+Usage: clientdbedit cldbid={clientDBID} [client_properties...]
+
+Permissions:
+  b_client_modify_dbproperties
+  b_client_modify_description
+  b_client_set_talk_power
+
+Description:
+  Changes a clients settings using given properties.
+  For detailed information, see Client Properties.
+
+Example:
+  clientdbedit cldbid=56 client_description=Best\sguy\sever!
+  error id=0 msg=ok

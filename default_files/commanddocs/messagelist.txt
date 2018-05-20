@@ -1,0 +1,12 @@
+Usage: messagelist
+
+Permissions:
+
+Description:
+  Displays a list of offline messages you've received. The output contains the
+  senders unique identifier, the messages subject, etc.
+
+Example:
+  messagelist
+  msgid=4 cluid=xwEzb5ENOaglVHu9oelK++reUyE= subject=Test timestamp=1259439465 flag_read=0 ...
+  error id=0 msg=ok

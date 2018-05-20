@@ -1,0 +1,10 @@
+Usage: messagedel msgid={messageID}
+
+Permissions:
+
+Description:
+  Deletes an existing offline message with ID msgid from your inbox.
+
+Example:
+  messagedel msgid=4
+  error id=0 msg=ok

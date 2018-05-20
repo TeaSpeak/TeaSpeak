@@ -1,0 +1,11 @@
+Usage: tokenlist
+
+Permissions:
+
+Description:
+  Alias for privilegekeylist.
+
+Example:
+  tokenlist
+  token=88CVUg\/zkujt+y+WfHdko79UcM4R6uyCL6nEfy3B token_type=0 token_id1=9...
+  error id=0 msg=ok

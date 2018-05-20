@@ -1,0 +1,16 @@
+Usage: permfind [permid={permID}...] [permsid={permName}...]
+
+Permissions:
+  b_virtualserver_permission_find
+  b_serverinstance_permission_find 
+
+Description:
+  Displays detailed information about all assignments of the permission
+  specified with permid. The output is similar to permoverview which includes
+  the type and the ID of the client, channel or group associated with the
+  permission. A permission can be specified by permid or permsid.
+
+Example:
+  permfind permid=4353
+  t=0 id1=1 id2=0 p=4353|t=0 id1=2 id2=0 p=4353
+  error id=0 msg=ok

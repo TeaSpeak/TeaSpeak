@@ -1,0 +1,15 @@
+Usage: permoverview cid={channelID} cldbid={clientDBID} [permid={permID}...]
+       [permsid={permName}...]
+
+Permissions:
+  b_client_permissionoverview_view
+
+Description:
+  Displays all permissions assigned to a client for the channel specified with
+  cid. If permid is set to 0, all permissions will be displayed. A permission
+  can be specified by permid or permsid.
+
+Example:
+  permoverview cldbid=57 cid=74 permid=0
+  t=0 id1=5 id2=0 p=37 v=1 n=0 s=0|t=0 id1=5 id2=0 p=38 v=1 n=0 s=0 ...
+  error id=0 msg=ok

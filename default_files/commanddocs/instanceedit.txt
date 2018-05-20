@@ -1,0 +1,12 @@
+Usage: instanceedit [instance_properties...]
+
+Permissions:
+  b_serverinstance_modify_settings
+
+Description:
+  Changes the server instance configuration using given properties.
+  For detailed information, see Server Instance Properties.
+
+Example:
+  instanceedit serverinstance_filetransfer_port=1337
+  error id=0 msg=ok

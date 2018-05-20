@@ -1,0 +1,14 @@
+Usage: banadd [ip={regexp}] [name={regexp}] [uid={clientUID}]
+       [time={timeInSeconds}] [banreason={text}]
+
+Permissions:
+  b_client_ban_create
+
+Description:
+  Adds a new ban rule on the selected virtual server. All parameters are
+  optional but at least one of the following must be set: ip, name, or uid.
+
+Example:
+  banadd ip=1.2.3.4 banreason=just\s4\sfun
+  banid=1
+  error id=0 msg=ok

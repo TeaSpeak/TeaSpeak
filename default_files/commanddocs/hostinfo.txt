@@ -1,0 +1,15 @@
+Usage: hostinfo
+
+Permissions:
+  b_serverinstance_info_view
+
+Description:
+  Displays detailed connection information about the server instance including
+  uptime, number of virtual servers online, traffic information, etc.
+  
+  For detailed information, see Server Instance Properties.
+
+Example:
+  hostinfo
+  instance_uptime=1903203 host_timestamp_utc=1259337246 virtualservers_running_total=1 connection_filetransfer_bandwidth_sent=0 ...
+  error id=0 msg=ok

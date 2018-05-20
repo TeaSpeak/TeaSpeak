@@ -1,0 +1,17 @@
+Usage: sendtextmessage targetmode={1-3} target={clientID} msg={text}
+
+Permissions:
+  i_client_private_textmessage_power
+  i_client_needed_private_textmessage_power
+  b_client_server_textmessage_send
+  b_client_channel_textmessage_send
+
+Description:
+  Sends a text message to a specified target. If targetmode is set to 1, a
+  message is sent to the client with the ID specified by target. If targetmode
+  is set to 2 or 3, the target parameter will be ignored and a message is sent
+  to the current channel or server respectively.
+
+Example:
+  sendtextmessage targetmode=2 target=1 msg=Hello\sWorld!
+  error id=0 msg=ok

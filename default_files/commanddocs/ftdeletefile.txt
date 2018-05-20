@@ -1,0 +1,12 @@
+Usage: ftdeletefile cid={channelID} cpw={channelPassword} name={filePath}...
+
+Permissions:
+  i_ft_file_delete_power
+  i_ft_needed_file_delete_power
+
+Description:
+  Deletes one or more files stored in a channels file repository.
+
+Example:
+  ftdeletefile cid=2 cpw= name=\/Pic1.PNG|name=\/Pic2.PNG
+  error id=0 msg=ok

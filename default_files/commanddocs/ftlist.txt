@@ -1,0 +1,14 @@
+Usage: ftlist
+
+Permissions:
+  b_ft_transfer_list
+
+Description:
+  Displays a list of running file transfers on the selected virtual server. The
+  output contains the path to which a file is uploaded to, the current transfer
+  rate in bytes per second, etc.
+
+Example:
+  ftlist
+  clid=2 path=files\/virtualserver_1\/channel_5 name=image.iso size=673460224 sizedone=450756 clientftfid=2 serverftfid=6 sender=0 status=1 current_speed=60872.8 ...
+  error id=0 msg=ok

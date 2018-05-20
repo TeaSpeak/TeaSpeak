@@ -1,0 +1,16 @@
+Usage: ftrenamefile cid={channelID} cpw={channelPassword}
+       [tcid={targetChannelID}] [tcpw={targetChannelPassword}]
+       oldname={oldFilePath} newname={newFilePath}
+
+Permissions:
+  i_ft_file_rename_power
+  i_ft_needed_file_rename_power
+
+Description:
+  Renames a file in a channels file repository. If the two parameters tcid and
+  tcpw are specified, the file will be moved into another channels file
+  repository.
+
+Example:
+  ftrenamefile cid=2 cpw= tcid=3 tcpw=secret oldname=\/Pic3.PNG newname=\/Pic3.PNG
+  error id=0 msg=ok

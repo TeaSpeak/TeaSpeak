@@ -1,0 +1,14 @@
+Usage: channelgrouppermlist cgid={groupID} [-permsid]
+
+Permissions:
+  b_virtualserver_channelgroup_permission_list
+
+Description:
+  Displays a list of permissions assigned to the channel group specified with
+  cgid. If the -permsid option is specified, the output will contain the
+  permission names instead of the internal IDs.
+
+Example:
+  channelgrouppermlist cgid=13
+  permid=8470 permvalue=1 permnegated=0 permskip=0|permid=8475 permvalue=1 ...
+  error id=0 msg=ok

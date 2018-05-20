@@ -1,0 +1,12 @@
+Usage: servernotifyunregister
+
+Permissions:
+  b_virtualserver_notify_unregister
+
+Description:
+  Unregisters all events previously registered with servernotifyregister so you
+  will no longer receive notification messages.
+
+Example:
+  servernotifyunregister
+  error id=0 msg=ok

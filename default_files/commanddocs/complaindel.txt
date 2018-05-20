@@ -1,0 +1,13 @@
+Usage: complaindel tcldbid={targetClientDBID} fcldbid={fromClientDBID}
+
+Permissions:
+  b_client_complain_delete
+  b_client_complain_delete_own
+
+Description:
+  Deletes the complaint about the client with ID tcldbid submitted by the
+  client with ID fcldbid from the server.
+
+Example:
+  complaindel tcldbid=3 fcldbid=4
+  error id=0 msg=ok

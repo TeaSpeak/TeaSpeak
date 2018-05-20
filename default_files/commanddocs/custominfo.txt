@@ -1,0 +1,11 @@
+Usage: custominfo cldbid={clientDBID}
+
+Permissions:
+
+Description:
+  Displays a list of custom properties for the client specified with cldbid.
+
+Example:
+  custominfo cldbid=3
+  cldbid=3 ident=forum_account value=ScP|ident=forum_id value=123
+  error id=0 msg=ok

@@ -1,0 +1,16 @@
+Usage: banclient clid={clientID} [time={timeInSeconds}] [banreason={text}]
+
+Permissions:
+  i_client_ban_power
+  i_client_needed_ban_power
+
+Description:
+  Bans the client specified with ID clid from the server. Please note that this
+  will create two separate ban rules for the targeted clients IP address and
+  his unique identifier.
+
+Example:
+  banclient clid=4 time=3600
+  banid=2
+  banid=3
+  error id=0 msg=ok

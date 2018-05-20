@@ -1,0 +1,12 @@
+Usage: tokenadd tokentype={1|0} tokenid1={groupID} tokenid2={channelID}
+       [tokendescription={description}] [tokencustomset={customFieldSet}]
+
+Permissions:
+
+Description:
+  Alias for privilegekeyadd.
+
+Example:
+  tokenadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset tokencustomset=ident=forum_user\svalue=Sven\sPaulsen\pident=forum_id\svalue=123
+  token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok

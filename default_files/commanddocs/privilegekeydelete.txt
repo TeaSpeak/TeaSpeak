@@ -1,0 +1,11 @@
+Usage: privilegekeydelete token={tokenKey}
+
+Permissions:
+  b_virtualserver_token_delete
+
+Description:
+  Deletes an existing token matching the token key specified with token.
+
+Example:
+  privilegekeydelete token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok

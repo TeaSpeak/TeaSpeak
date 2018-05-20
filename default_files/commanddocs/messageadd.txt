@@ -1,0 +1,10 @@
+Usage: messageadd cluid={clientUID} subject={subject} message={text}
+
+Permissions:
+
+Description:
+  Sends an offline message to the client specified by cluid.
+
+Example:
+  messageadd cluid=oHhi9WzXLNEFQOwAu4JYKGU+C+c= subject=Hi! message=Where\sare\syou?!?
+  error id=0 msg=ok
