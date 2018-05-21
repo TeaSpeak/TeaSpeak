@@ -9,6 +9,7 @@
     - Fixed invalid guest server query permissions
     - Added verbose yt log
     - Added help command documentation
+    - Improved music bot error output
     
 * **1.1.26b**
     - Waiting for a acknowledge of the `clientinitiv` packet before setting up crypto. Fixed (hopefully) the client crash 
