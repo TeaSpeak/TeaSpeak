@@ -10,6 +10,7 @@
     - Added verbose yt log
     - Added help command documentation
     - Improved music bot error output
+    - Fixed permission system (again for build >= 5 (not working client permissions)
     
 * **1.1.26b**
     - Waiting for a acknowledge of the `clientinitiv` packet before setting up crypto. Fixed (hopefully) the client crash 
