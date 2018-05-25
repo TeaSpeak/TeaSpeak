@@ -1,4 +1,11 @@
 # Changelog:
+* **1.1.28b**
+    - Fixed inherited channel group
+    - Fixed temporary channel groups
+    - Fixed a server crash
+    - Fixed max channel family clients
+    - Start to use the compiler optimisations (`-O2`) for a little performance boost
+    
 * **1.1.27b**
     - Fixed not working server passwords
     - Moved the config options `kick_on_invalid_badges` and `kick_on_invalid_packets` to the permission system
