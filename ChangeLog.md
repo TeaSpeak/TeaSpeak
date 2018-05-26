@@ -26,7 +26,7 @@
     
 * **1.1.26b**
     - Waiting for a acknowledge of the `clientinitiv` packet before setting up crypto. Fixed (hopefully) the client crash 
-    - Client connection core code improvement (faster and saver)
+    - Client connection core code improvement (faster and safer)
     - Improved the ping and timeout system
     - Fixed invalid client id on massive client joins (> 10/s)
     - Fixed memory leak (280 bytes/connection)
