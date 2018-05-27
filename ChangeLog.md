@@ -3,6 +3,7 @@
     - Fixed disappearing server query critical on off log level
     - Added possibility to change the serveradmin password (execute the command `passwd` within TeaSpeak's terminal)
     - Fixed TeaSpeak crash on invalid config entries
+    - Fixed server hangup on music bot song change
     
 * **1.1.28b**
     - Fixed inherited channel group
