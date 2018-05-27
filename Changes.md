@@ -20,3 +20,39 @@
 + Possibility to send text messages to yourself ([read more #106](https://github.com/TeaSpeak/TeaSpeak/issues/106))
 + Possibility to limit the number of connections for one client by his ip and hwid
 + Parameter `hwid` in `banadd` so hwid bans can be added manually
+
+## New Permissions
+ - `b_client_allow_invalid_badges`
+ - `b_client_allow_invalid_packet`
+ - `b_client_ban_create_global`
+ - `b_client_ban_delete_global`
+ - `b_client_ban_delete_own_global`
+ - `b_client_ban_edit`
+ - `b_client_ban_edit_global`
+ - `b_client_ban_list_global`
+ - `b_client_even_textmessage_send`
+ - `b_client_music_channel_list`
+ - `b_client_music_create`
+ - `b_client_music_delete_own`
+ - `b_client_music_server_list`
+ - `b_serverinstance_help_view`
+ - `b_virtualserver_modify_host`
+ - `b_virtualserver_modify_music_bot_limit`
+ - `b_virtualserver_modify_nickname`
+ - `i_channel_group_member_add_power`
+ - `i_channel_group_member_remove_power`
+ - `i_channel_group_modify_power`
+ - `i_channel_group_needed_member_add_power`
+ - `i_channel_group_needed_member_remove_power`
+ - `i_channel_group_needed_modify_power`
+ - `i_client_max_clones_hwid`
+ - `i_client_max_clones_ip`
+ - `i_client_music_delete_power`
+ - `i_client_music_info`
+ - `i_client_music_limit`
+ - `i_client_music_needed_delete_power`
+ - `i_client_music_needed_info`
+ - `i_client_music_needed_play_power`
+ - `i_client_music_needed_rename_power`
+ - `i_client_music_play_power`
+ - `i_client_music_rename_power`
