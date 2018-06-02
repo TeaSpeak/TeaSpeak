@@ -1,5 +1,13 @@
 # Changelog:
+* **1.1.30b**
+    - Fixed several hangups
+    - Fixed issue [158](https://github.com/TeaSpeak/TeaSpeak/issues/158) (Music bot flag and online time)
+    - Implemented suggested build timestamps ([154](https://github.com/TeaSpeak/TeaSpeak/issues/154))
+    - Fixed and improved flood system
+    - Fixed memory leak (caused by my thread library)
+    
 * **1.1.29b**
+    - Fixed possible anti flood abuse ([#148](https://github.com/TeaSpeak/TeaSpeak/issues/148))
     - Fixed disappearing server query critical on off log level
     - Added possibility to change the serveradmin password (execute the command `passwd` within TeaSpeak's terminal)
     - Fixed TeaSpeak crash on invalid config entries
