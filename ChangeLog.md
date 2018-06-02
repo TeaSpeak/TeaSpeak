@@ -5,6 +5,7 @@
     - Implemented suggested build timestamps ([154](https://github.com/TeaSpeak/TeaSpeak/issues/154))
     - Fixed and improved flood system
     - Fixed memory leak (caused by my thread library)
+    - Fixed second memory leak
     - Fixed missing permission check for `channellist`
     - Added possibility to delete old bans
     
