@@ -8,6 +8,8 @@
     - Fixed second memory leak
     - Fixed missing permission check for `channellist`
     - Added possibility to delete old bans
+    - Fixed TeamSpeak client crash on connect caused by an invalid packet order (sometimes)
+    - Improved protocol backend
     
 * **1.1.29b**
     - Fixed possible anti flood abuse ([#148](https://github.com/TeaSpeak/TeaSpeak/issues/148))
