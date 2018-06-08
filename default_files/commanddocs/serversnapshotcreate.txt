@@ -11,5 +11,5 @@ Description:
 
 Example:
   serversnapshotcreate
-  hash=bnTd2E1kNITHjJYRCFjgbKKO5P8=|virtualserver_unique_identifier=zrPkjznB1tMnRwj01xx7RxXjqeY= virtualserver_name=TeamSpeak\s]I[\sServer ...
+  hash=bnTd2E1kNITHjJYRCFjgbKKO5P8=|virtualserver_unique_identifier=zrPkjznB1tMnRwj01xx7RxXjqeY= virtualserver_name=Another\sTeaSpeak\sserver\ssoftware\suser ...
   error id=0 msg=ok

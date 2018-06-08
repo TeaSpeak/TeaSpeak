@@ -34,5 +34,5 @@ Description:
   For detailed information, see Virtual Server Properties.
 
 Example:
-  serveredit virtualserver_name=TeamSpeak\s]\p[\sServer virtualserver_maxclients=32
+  serveredit virtualserver_name=Yet\sanother\sTeaSpeak\sServer virtualserver_maxclients=32
   error id=0 msg=ok

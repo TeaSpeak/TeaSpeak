@@ -7,7 +7,7 @@ Permissions:
 Description:
   Selects the virtual server specified with sid or port to allow further
   interaction. The ServerQuery client will appear on the virtual server and
-  acts like a real TeamSpeak 3 Client, except it's unable to send or receive
+  acts like a real TeaSpeak or TeamSpeak 3 Client, except it's unable to send or receive
   voice data.
   If your database contains multiple virtual servers using the same UDP port,
   use will select a random virtual server using the specified port.

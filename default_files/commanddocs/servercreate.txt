@@ -14,6 +14,6 @@ Description:
   For detailed information, see Virtual Server Properties.
 
 Example:
-  servercreate virtualserver_name=TeamSpeak\s]\p[\sServer virtualserver_port=9988 virtualserver_maxclients=32
+  servercreate virtualserver_name=Another\sTeaSpeak\sserver\ssoftware\suser virtualserver_port=9988 virtualserver_maxclients=32
   sid=2 virtualserver_port=9988 token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
   error id=0 msg=ok
