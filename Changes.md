@@ -1,7 +1,22 @@
-## Things that make TeaSpeak different than TeamSpeak
+# Things that make TeaSpeak different than TeamSpeak
+NOTE: Most of the here described changes only apply to the query interface. 
+      Making use of the functionality in the Teamspeak 3 Client would require a plugin that is planned for the near future.
 
-NOTE: Most of the here described changes only apply to the query interface. Making use of the functionality in the Teamspeak 3 Client would require a plugin that is planned for the near future.
-
+## Overview
+ - [Built in musicbots](#Built-in-musicbots)
+ - [Customizable Messages](#Customizable-Messages)
+ - [Additional Server Query Notifies](#Additional-Server-Query-Notifies)
+ - [Increased slot count](#Increased-slot-count)
+ - [Global group assignment](#Global-group-assignment)
+ - [Global bans](#Global-bans)
+ - [Additional Ban tweaks](#Additional-Ban-tweaks)
+ - [Encrypted Query Connection](#Encrypted-Query-Connection)
+ - [Additional properties](#Additional-props-in-commands)
+ - [Scheduled Shutdowns](#Scheduled-Shutdowns)
+ - [Built-in console](#Built-in-console)
+ - [Advanced ip permission testing](#clientdblist-without-IPs)
+ - [New permissions](#New-Permissions)
+ 
 ### Built in musicbots
 TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
@@ -23,14 +38,14 @@ In TeamSpeak your can register a query client to ServerQueryNotify via `serverno
 ### Increased slot count
 We at TeaSpeak believe that admins that just want to run their own little server for their own little community should be bound to such high restrictions as they are in the non-profit license, therefor on TeaSpeak you can have as many virtual servers you like, with each of them having a slotcount of max 1024 slots. (If you need more take a look at the database)
 
-### Global bans
-With TeaSpeak you can easily create/modify and delete instance-wide banrules. The commands `banlist`, `banadd`, `bandel` and `banedit` have a new `sid` property, that (if 0 or not on a virtual server `use sid...`) will apply the action to the global banlist. So for example `banadd sid=1 ip=8.8.8.8 reason=Google\sDNS` will become `banadd sid=0 ip=8.8.8.8 reason=Google\sDNS` if you want to ban that id globally. You can even use that system in YaTQA, as you see here:
-![](https://i.imgur.com/uesO3Be.png)
-
-# Global group assignment
+### Global group assignment
 TeaSpeak does not only support server bound group assignment. Because with TeaSpeak every user with his unique id has a unique database wide database id,
 its possible to assign a group to a user instance wide. If you want to assign or demote a group instance wide you have to be bound on server zero. (`use 0`)
 There you could use the `servergroup[add|del|list]` like you already know.
+
+### Global bans
+With TeaSpeak you can easily create/modify and delete instance-wide banrules. The commands `banlist`, `banadd`, `bandel` and `banedit` have a new `sid` property, that (if 0 or not on a virtual server `use sid...`) will apply the action to the global banlist. So for example `banadd sid=1 ip=8.8.8.8 reason=Google\sDNS` will become `banadd sid=0 ip=8.8.8.8 reason=Google\sDNS` if you want to ban that id globally. You can even use that system in YaTQA, as you see here:
+![](https://i.imgur.com/uesO3Be.png)
 
 ### Additional Ban tweaks
 Also TeaSpeak allows you to directly editing bans. The Teamspeak 3 Client has a dummy "Edit ban" feature that just executes `bandel <original ban>` and `banadd <modified ban>` afterwards which i would call a workaround rather than proper implementation.
