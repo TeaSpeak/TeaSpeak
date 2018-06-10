@@ -1,8 +1,18 @@
 # Changelog:
+* **1.1.32b**
+    - Improved permission system and implemented skip & negate flag
+    - Fixed missing grant permissions within the default file
+    - Improved snapshot system
+        - Importing TeamSpeak permissions better and migrate new permissions (based on `i_group_auto_update_type`)
+        - Improved snapshot creation (using a better structure at some points)  
+            For TeamSpeak compatibility use `version=0`. Note: This will also exclude **all** new permissions by TeaSpeak
+            Default version is 1
+    - Fixed query flood ignore system (it only updates when you joined a channel, not it applies everywhere) ([#167](https://github.com/TeaSpeak/TeaSpeak/issues/167))
+    
 * **1.1.30b**
     - Fixed several hangups
-    - Fixed issue [158](https://github.com/TeaSpeak/TeaSpeak/issues/158) (Music bot flag and online time)
-    - Implemented suggested build timestamps ([154](https://github.com/TeaSpeak/TeaSpeak/issues/154))
+    - Fixed issue [#158](https://github.com/TeaSpeak/TeaSpeak/issues/158) (Music bot flag and online time)
+    - Implemented suggested build timestamps ([#154](https://github.com/TeaSpeak/TeaSpeak/issues/154))
     - Fixed and improved flood system
     - Fixed memory leak (caused by my thread library)
     - Fixed second memory leak
