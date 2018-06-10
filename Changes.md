@@ -2,26 +2,8 @@
 
 NOTE: Most of the here described changes only apply to the query interface. Making use of the functionality in the Teamspeak 3 Client would require a plugin that is planned for the near future.
 
-### clientdblist without IPs
-In TeaSpeak you have the ability to allow clients/queries to view the clientdblist without IP's by not assigning the `b_client_remoteaddress_view` permission to them. ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/13))
-
-**TeamSpeak:**
-```
-clientdblist
-cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=127.0.0.1|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=8.8.8.8
-error id=0 msg=ok
-
-```
-**TeaSpeak:**
-```
-clientdblist
-cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden
-error id=0 msg=ok
-```
-
-### Additional Server Query Notifies
-In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/ServerQueryNotify.md))
-![](https://i.imgur.com/1D8dhBo.png)
+### Built in musicbots
+TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
 ### Customizable Messages
 In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `config.yml`.
@@ -33,15 +15,22 @@ In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `con
 - The query message-of-the-day (motd) and newline character of the query interface.
 - The country flag a client gets when no valid country can be detected (Either through connecting with a local or not yet registered IP)
 
+### Additional Server Query Notifies
+In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/ServerQueryNotify.md))
+![](https://i.imgur.com/1D8dhBo.png)
+
+
 ### Increased slot count
 We at TeaSpeak believe that admins that just want to run their own little server for their own little community should be bound to such high restrictions as they are in the non-profit license, therefor on TeaSpeak you can have as many virtual servers you like, with each of them having a slotcount of max 1024 slots. (If you need more take a look at the database)
-
-### Built in musicbots
-TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
 ### Global bans
 With TeaSpeak you can easily create/modify and delete instance-wide banrules. The commands `banlist`, `banadd`, `bandel` and `banedit` have a new `sid` property, that (if 0 or not on a virtual server `use sid...`) will apply the action to the global banlist. So for example `banadd sid=1 ip=8.8.8.8 reason=Google\sDNS` will become `banadd sid=0 ip=8.8.8.8 reason=Google\sDNS` if you want to ban that id globally. You can even use that system in YaTQA, as you see here:
 ![](https://i.imgur.com/uesO3Be.png)
+
+# Global group assignment
+TeaSpeak does not only support server bound group assignment. Because with TeaSpeak every user with his unique id has a unique database wide database id,
+its possible to assign a group to a user instance wide. If you want to assign or demote a group instance wide you have to be bound on server zero. (`use 0`)
+There you could use the `servergroup[add|del|list]` like you already know.
 
 ### Additional Ban tweaks
 Also TeaSpeak allows you to directly editing bans. The Teamspeak 3 Client has a dummy "Edit ban" feature that just executes `bandel <original ban>` and `banadd <modified ban>` afterwards which i would call a workaround rather than proper implementation.
@@ -76,8 +65,22 @@ TeaSpeak has a built-in console that can be used from stdout containing the foll
 - `permgrant <ServerId> <GroupId> <Permission Name> <Grant>` to recover permissions without tampering with the database.
 - `passwd <new_password> <repeated>` to change the Admin Server Query password.
 
-# No idea how to write about this since i haven't tested it yet
-+ Instance group assignment (servergroup[add|del|list]. Clients could be used on unbound state too)
+### clientdblist without IPs
+In TeaSpeak you have the ability to allow clients/queries to view the clientdblist without IP's by not assigning the `b_client_remoteaddress_view` permission to them. ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/13))
+
+**TeamSpeak:**
+```
+clientdblist
+cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=127.0.0.1|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=8.8.8.8
+error id=0 msg=ok
+
+```
+**TeaSpeak:**
+```
+clientdblist
+cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden
+error id=0 msg=ok
+```
 
 
 ### New Permissions
