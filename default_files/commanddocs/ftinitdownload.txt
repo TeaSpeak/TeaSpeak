@@ -9,13 +9,8 @@ Permissions:
 Description:
   Initializes a file transfer download. clientftfid is an arbitrary ID to
   identify the file transfer on client-side. On success, the server generates a
-  new ftkey which is required to start downloading the file through TeamSpeak
-  3's file transfer interface. Since version 3.0.13 there is an optional proto
-  parameter. The client can request a protocol version with it. Currently only
-  0 and 1 are supported which only differ in the way they handle some timings.
-  The server will reply which protocol version it will support. The server will
-  reply with an ip parameter if it determines the filetransfer subsystem is not
-  reachable by the ip that is currently being used for the query connection.
+  new ftkey which is required to start downloading the file through TeaSpeak's
+  or TeamSpeak 3's file transfer interface.
 
 Example:
   ftinitdownload clientftfid=1 name=\/image.iso cid=5 cpw= seekpos=0

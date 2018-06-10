@@ -4,8 +4,8 @@ Permissions:
   b_serverinstance_stop
 
 Description:
-  Stops the entire TeamSpeak 3 Server instance by shutting down the process.
+  Stops the entire TeaSpeak Server instance by shutting down the process.
 
 Example:
-  serverprocessstop
+  serverprocessstop [type=<cancel|schedule> [time=60]] [msg=Server\swill\sbe\sclosed\swithin\s60\sseconds!]
   error id=0 msg=ok

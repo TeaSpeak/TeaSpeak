@@ -4,7 +4,7 @@ Permissions:
   b_serverinstance_textmessage_send
 
 Description:
-  Sends a text message to all clients on all virtual servers in the TeamSpeak 3
+  Sends a text message to all clients on all virtual servers in the TeaSpeak
   Server instance.
 
 Example:

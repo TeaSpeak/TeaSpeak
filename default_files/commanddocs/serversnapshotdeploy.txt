@@ -5,7 +5,7 @@ Permissions:
 
 Description:
   Restores the selected virtual servers configuration using the data from a
-  previously created server snapshot. Please note that the TeamSpeak 3 Server
+  previously created server snapshot. Please note that the TeaSpeak Server
   does NOT check for necessary permissions while deploying a snapshot so the
   command could be abused to gain additional privileges.
 
