@@ -1,4 +1,13 @@
 # Changelog:
+* **1.1.32b**
+    - Fixed issue (Check only private textmessage power when chat was closed) [#174](https://github.com/TeaSpeak/TeaSpeak/issues/174)
+    - Fixed issue (Apply virtualserver's guest group to Server Query Guests) [#149](https://github.com/TeaSpeak/TeaSpeak/issues/149)
+    - Fixed command `servergroupbyclientid`
+    - Fixed ban deletion (now it does not delete active bans)
+    - Implemented enchantment request [#151](https://github.com/TeaSpeak/TeaSpeak/issues/151) (Client HWID validation)
+    - Improved default group assignment
+    - Test on group deletion for default groups (server and instance)
+    
 * **1.1.31b**
     - Improved permission system and implemented skip & negate flag
     - Fixed missing grant permissions within the default file
