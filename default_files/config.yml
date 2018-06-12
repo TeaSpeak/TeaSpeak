@@ -73,10 +73,10 @@ binding:
 server:
   #The displayed version to the manager
   #This option is only for the premium version.
-  version: TeaSpeak 1.1.26-beta
+  version: "TeaSpeak 1.1.32-beta [Build: 1528736451]"
   #The displayed platform to the manager
   #This option is only for the premium version.
-  platform: Linux C++
+  platform: Linux
   #The displayed licence type to every TeaSpeak 3 Client
   #Available types:
   #  0: No Licence
@@ -89,6 +89,8 @@ server:
   #  7: Auto-License (Instance based)
   #This option is only for the premium version.
   licence: 7
+  #Enable/disable the deletion of old bans within the database
+  delete_old_bans: 1
 query:
   #Change the query newline character
   nl_char: "\r\n"
@@ -123,15 +125,11 @@ voice:
     #This option is highly recommended!
     #Do NOT TOUCH unless you're 100% sure!
     enforce_cookie: 1
-  #Maximum amount of join attemps per second.
+  #Maximum amount of join attempts per second.
   connect_limit: 10
-  #Maximum amount of join attemps per second per ip.
+  #Maximum amount of join attempts per second per ip.
   client_connect_limit: 3
   protocol:
-    #Enable/disable for kicking clients if the send a corrupt protocol
-    kick_invalid_packet: 0
-    #Enable/disable for kicking clients if the send a corrupt badge info
-    kick_invalid_badges: 1
     #Its just a test for the new TeamSpeak licensing system (you require a extra plugin!)
     experimental_31: 0
 web:
