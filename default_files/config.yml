@@ -96,8 +96,8 @@ query:
   nl_char: "\r\n"
   #The query welcome message
   #Notice: If not like TeamSpeak then some applications may not recognize the Query
-  #Default TeamSpeak 3 MOTD:
-  motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
+  #Default TeamSpeak 3 MOTD: "TS3\r\nWelcome to the TeamSpeak 3 ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\r\n"
+  motd: "TeaSpeak\r\nWelcome to the TeaSpeak ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\r\n"
   #Enable/disable SSL for query
   #Available modes:
   #  0: Disabled
@@ -112,7 +112,7 @@ query:
     privatekey: certs/query_privatekey.pem
 voice:
   #Enable/disable the mute notify
-  notifymute: 1
+  notifymute: 0
   rsa:
     #The amount of precomputed puzzles
     #Do NOT TOUCH unless you're 100% sure!
@@ -174,7 +174,7 @@ geolocation:
   #The fallback country if lookup fails
   fallback_country: DE
   mapping:
-    #The mapping fole for the given provider
+    #The mapping file for the given provider
     #Default for IP2Location: geoloc/IP2Location.CSV
     #Default for Software77: geoloc/IpToCountry.csv
     file: geoloc/IP2Location.CSV
