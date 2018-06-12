@@ -243,9 +243,8 @@ Parameters:
 ### Player state
 ```
 enum ReplayState {
-    SLEEPING,
+    SLEEPING = 0,
     LOADING,
-
     PLAYING,
     PAUSED,
     STOPPED
@@ -255,7 +254,7 @@ enum ReplayState {
 ### Player action
 ```
 enum PlayerAction {
-    STOP,
+    STOP = 0,
     PLAY,
     PAUSE,
     FORWARD,
@@ -266,7 +265,7 @@ enum PlayerAction {
 ### Song loader type
 ```
 enum SongLoaderType {
-    YTDLL,
+    YTDLL = 0,
     FFMPEG
 };
 ```
