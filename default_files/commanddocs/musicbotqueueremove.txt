@@ -1,0 +1,8 @@
+Usage: musicbotqueueremove botId={botId} songId={songId}
+
+Description:
+  Removes a song from the queue of a bot.
+
+Example:
+  musicbotqueueremove botId=3 songId=1
+  error id=0 msg=ok

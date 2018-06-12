@@ -1,0 +1,16 @@
+Usage: musicbotplayerinfo botId={botId}
+
+Description:
+  Aquires information about a musicbot.
+  This will give you detailed informations
+  about the playing status, current title, etc.
+  (See the examples below)
+
+Examples:
+  musicbotplayerinfo botId=3
+  botId=3 player_state=0 player_buffered_index=0 player_replay_index=0 player_max_index=0 player_seekable=0 player_title player_description
+  error id=0 msg=ok
+
+  musicbotplayerinfo botId=3
+  botId=3 player_state=2 player_buffered_index=43440 player_replay_index=26440 player_max_index=178940 player_seekable=1 player_title=JEAW\s\p\sIch\sGamer,\sDu\sSchei├ƒe\s(Reupload\/2009) player_description=unknown
+  error id=0 msg=ok
