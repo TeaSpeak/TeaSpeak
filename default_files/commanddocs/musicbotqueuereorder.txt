@@ -1,5 +1,8 @@
 Usage: musicbotqueuereorder botId={botId} songId={songId} index={newIndex}
 
+Permission:
+  i_client_music_play_power
+
 Description:
   Moves a queued song to another position.
 

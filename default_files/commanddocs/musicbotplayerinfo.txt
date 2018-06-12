@@ -1,5 +1,8 @@
 Usage: musicbotplayerinfo botId={botId}
 
+Permission:
+  i_client_music_play_power
+
 Description:
   Aquires information about a musicbot.
   This will give you detailed informations

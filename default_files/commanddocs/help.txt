@@ -88,6 +88,12 @@ Command Overview:
    messageget                  | display an offline message from your inbox
    messagelist                 | list offline messages from your inbox
    messageupdateflag           | mark an offline message as read
+   musicbotplayeraction        | control a musicbot
+   musicbotplayerinfo          | show info of a musicbot
+   musicbotqueueadd            | add a song to a musicbot queue
+   musicbotqueuelist           | list a musicbot queue
+   musicbotqueueremove         | remove a song from a musicbot queue
+   musicbotqueuereorder        | move a song in a musicbot queue
    permfind                    | find permission assignments by ID
    permget                     | display client permission value for yourself
    permidgetbyname             | find permission ID by name

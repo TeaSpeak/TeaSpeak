@@ -1,5 +1,8 @@
 Usage: musicbotqueueadd botId={botId} type={0/1} url={link/path}
 
+Permission:
+  i_client_music_play_power
+
 Description:
   Adds a song to the queue of a bot.
 

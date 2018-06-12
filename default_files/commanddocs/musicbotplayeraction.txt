@@ -1,0 +1,14 @@
+Usage: musicbotplayeraction botId={botId} action={0-4}
+
+Permission:
+  i_client_music_play_power
+
+Description:
+  Executes a action on a certain musicbot
+
+Note:
+  action 0=stop | 1=play | 2=pause | 3=forward | 4=rewind
+
+Examples:
+  musicbotplayeraction botId=3 action=2
+  error id=0 msg=ok

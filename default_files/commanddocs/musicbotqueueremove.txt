@@ -1,5 +1,8 @@
 Usage: musicbotqueueremove botId={botId} songId={songId}
 
+Permission:
+  i_client_music_play_power
+
 Description:
   Removes a song from the queue of a bot.
 
