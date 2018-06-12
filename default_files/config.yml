@@ -112,7 +112,7 @@ query:
     privatekey: certs/query_privatekey.pem
 voice:
   #Enable/disable the mute notify
-  notifymute: 0
+  notifymute: 1
   rsa:
     #The amount of precomputed puzzles
     #Do NOT TOUCH unless you're 100% sure!
