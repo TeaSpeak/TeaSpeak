@@ -1,4 +1,12 @@
 # Changelog:
+* **1.1.33b**
+    - Made invalid protocol kick messages configurable
+    - Added tree new permissions
+        - `b_client_use_bbcode_any`   Allows the client to use any bbcode within channel description
+        - `b_client_use_bbcode_image`   Allows the client to use the img bbcode tag within channel description
+        - `b_client_use_bbcode_url`   Allows the client to use url bbcode tag within channel description
+    - Fixed invalid permission tree/- mapping
+
 * **1.1.32b**
     - Fixed issue (Check only private textmessage power when chat was closed) [#174](https://github.com/TeaSpeak/TeaSpeak/issues/174)
     - Fixed issue (Apply virtualserver's guest group to Server Query Guests) [#149](https://github.com/TeaSpeak/TeaSpeak/issues/149)
