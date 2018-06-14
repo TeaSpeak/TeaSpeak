@@ -1,0 +1,19 @@
+Usage: musicbotqueuelist botId={botId}
+
+Permission:
+  i_client_music_info
+
+Description:
+  Lists the queue of a musicbot.
+
+Example:
+  musicbotqueuelist botId=3
+  botId=3 index=-5 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei├ƒe\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=-4 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei  e\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=-3 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei  e\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=-2 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei  e\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=-1 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei  e\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=0 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=1 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei├ƒe\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=1 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=3 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei├ƒe\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  botId=3 index=2 loaded=1 url=https:\/\/www.youtube.com\/watch?v=p1S8U7hNYBA invoker=1 songId=2 title=JEAW\s\p\sIch\sGamer,\sDu\sSchei  e\s(Reupload\/2009) description=unknown length=0 thumbnail=https:\/\/i.ytimg.com\/vi\/p1S8U7hNYBA\/default.jpg
+  error id=0 msg=ok

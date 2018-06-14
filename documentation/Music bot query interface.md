@@ -9,46 +9,46 @@
 ### Create a music bot (`musicbotcreate`)
 Command: `musicbotcreate`  
 Parameters:
-  
+
 | Parameter name | Description |  
 | --- | --- |
 | `cid` | The target channel where the bot should join (Not reqired and requires join permissions) |
-  
+
 Permissions:
 
 | Permission name | Description |  
 | --- | --- |  
 | `i_client_music_limit` | client specific music bot limit |  
-  
+
 Properties:
 
 | Property name | Type | Description |  
 | --- | --- | --- |  
 | `virtualserver_music_bot_limit` | Server | Server specific music bot limit |  
-  
+
 Result:  
 If the action was successful, you'le get the property `botId` back, which is the created bot id
-  
+
 Notes:
 The bot's required delete power will be set automatically to the clients bot delete power (if present)  
-  
+
 ### Delete a music bot (`musicbotdelete`)
 Command: `musicbotdelete`  
 Parameters:
-  
+
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id which you want to delete | 
-  
+| `botId` | The target bot id which you want to delete |
+
 Permissions:  
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_delete_power` | This permission must be greater than `i_client_music_needed_delete_power` of the bot |  
 | `b_client_music_delete_own` | If `i_client_music_delete_power` less than required, but you own the bot than you require this permission |  
-  
+
 Properties: None  
-  
+
 ### Receive bot player info (`musicbotplayerinfo`)
 Command: `musicbotplayerinfo`  
 Parameters:  
@@ -56,11 +56,11 @@ Parameters:
 | Parameter name | Description |  
 | --- | --- |  
 | `botId` | The target bot id |  
-  
+
 Permissions: None
-  
+
 Properties: None  
-  
+
 Result:  
 You will receive a bunch of results which contains these parameters:  
 
@@ -74,7 +74,7 @@ You will receive a bunch of results which contains these parameters:
 | `player_seekable` | `true` if seeking supported |  
 | `player_title` | The title of the current song |  
 | `player_description` | The description of the current song |  
-  
+
 ### Start, stop, or pause (`musicbotplayeraction`)
 Command: `musicbotplayeraction`  
 Parameters:  
@@ -83,15 +83,15 @@ Parameters:
 | --- | --- |  
 | `botId` | The target bot id |  
 | `action` | The action what you want ([more info](#Player action)) |  
-  
+
 Permissions:  
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_play_power` | This permission must be greater than `i_client_music_needed_play_power` of the bot |  
-  
+
 Properties: None
-  
+
 ### Queue info (`musicbotqueuelist`)
 Command: `musicbotqueuelist`  
 Parameters:  
@@ -99,13 +99,13 @@ Parameters:
 | Parameter name | Description |  
 | --- | --- |  
 | `botId` | The target bot id |  
-  
+
 Permissions:  
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_info` | This permission must be greater than `i_client_music_needed_info` of the bot |  
-  
+
 Properties: None
 
 Result:
@@ -122,7 +122,7 @@ You will receive a bunch of results which contains these parameters:
 | `title` | Only present if loaded == `true`. The song title of the entry |  
 | `description` | Only present if loaded == `true`. The song description of the entry |  
 | `length` | Only present if loaded == `true`. The song length (in `milliseconds`) of the entry |  
-  
+
 ### Add a queue entry (`musicbotqueueadd`)
 Command: `musicbotqueueadd`  
 Parameters:  
@@ -132,16 +132,16 @@ Parameters:
 | `botId` | The target bot id |  
 | `type` | The type of the song loader ([more info](#Song loader type)) |  
 | `url` | The url of the file or link which will be played |  
-  
+
 Permissions:
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_play_power` | This permission must be greater than `i_client_music_needed_play_power` of the bot |  
-  
+
 Properties: None  
-  
-### Add a queue entry (`musicbotqueueremove`)
+
+### Remove a queue entry (`musicbotqueueremove`)
 Command: `musicbotqueueremove`  
 Parameters:  
 
@@ -149,15 +149,15 @@ Parameters:
 | --- | --- |  
 | `botId` | The target bot id |  
 | `songId` | The song id which you would remove |  
-  
+
 Permissions:
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_play_power` | This permission must be greater than `i_client_music_needed_play_power` of the bot |  
-  
+
 Properties: None  
-  
+
 ### Reorder a entry within the queue (`musicbotqueuereorder`)
 Command: `musicbotqueueremove`  
 Parameters:  
@@ -167,21 +167,21 @@ Parameters:
 | `botId` | The target bot id |  
 | `songId` | The song id which you would line to reorder |  
 | `index` | The new index within the queue |  
-  
+
 Permissions:
 
 | Property name | Description |  
 | --- | --- |  
 | `i_client_music_play_power` | This permission must be greater than `i_client_music_needed_play_power` of the bot |  
-  
+
 Properties: None    
-  
+
 ## Events
 ### Music queue events
 #### Entry add (`notifymusicqueueadd`)
 Event trigger:  
 This event get triggered when somebody add a queue entry  
-  
+
 Parameters:  
 
 | Parameter name | Description |  
@@ -193,11 +193,11 @@ Parameters:
 | `invokerid` | The client id who added this entry |  
 | `invokername` | The client name who added this entry |  
 | `invokeruid` | The client unique id who added this entry |  
-  
+
 #### Entry reordered (`notifymusicqueueorderchange`)
 Event trigger:  
 This event get triggered when somebody reorders a queue entry  
-  
+
 Parameters:  
 
 | Parameter name | Description |  
@@ -208,11 +208,11 @@ Parameters:
 | `invokerid` | The client id who reordered this entry |  
 | `invokername` | The client name who reordered this entry |  
 | `invokeruid` | The client unique id who reordered this entry |  
-  
+
 #### Entry removed (`notifymusicqueueremove`)
 Event trigger:  
 This event get triggered when somebody removes a queue entry  
-  
+
 Parameters:  
 
 | Parameter name | Description |  
@@ -222,11 +222,11 @@ Parameters:
 | `invokerid` | The client id who removed this entry |  
 | `invokername` | The client name who removed this entry |  
 | `invokeruid` | The client unique id who removed this entry |  
-  
+
 #### Player song change (`notifymusicplayersongchange`)
 Event trigger:  
 This event get triggered when the music bot replays the next song
-  
+
 Parameters:  
 
 | Parameter name | Description |  
@@ -238,40 +238,39 @@ Parameters:
 | `description` | Only if song id greater than zero. The description of the new song |  
 | `url` | Only if song id greater than zero. The url of the new song |  
 | `thumbnail` | Only if song id greater than zero. The thumbnail of the new song |  
-  
+
 ## Types
 ### Player state
 ```
 enum ReplayState {
-    SLEEPING,
+    SLEEPING = 0,
     LOADING,
-
     PLAYING,
     PAUSED,
     STOPPED
 };
 ```
-  
+
 ### Player action
 ```
 enum PlayerAction {
-    STOP,
+    STOP = 0,
     PLAY,
     PAUSE,
     FORWARD,
     REWIND      //(Not supported yet)
 };
 ```
-  
+
 ### Song loader type
 ```
 enum SongLoaderType {
-    YTDLL,
+    YTDLL = 0,
     FFMPEG
 };
 ```
-  
-  
+
+
 ## Notes
 There's still a concept mistake:  
 If you have enough `i_client_music_play_power` you can control every bot, not only your own  

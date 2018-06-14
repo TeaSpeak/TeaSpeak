@@ -73,10 +73,10 @@ binding:
 server:
   #The displayed version to the manager
   #This option is only for the premium version.
-  version: TeaSpeak 1.1.26-beta
+  version: "TeaSpeak 1.1.32-beta [Build: 1528736451]"
   #The displayed platform to the manager
   #This option is only for the premium version.
-  platform: Linux C++
+  platform: Linux
   #The displayed licence type to every TeaSpeak 3 Client
   #Available types:
   #  0: No Licence
@@ -89,13 +89,15 @@ server:
   #  7: Auto-License (Instance based)
   #This option is only for the premium version.
   licence: 7
+  #Enable/disable the deletion of old bans within the database
+  delete_old_bans: 1
 query:
   #Change the query newline character
   nl_char: "\r\n"
   #The query welcome message
   #Notice: If not like TeamSpeak then some applications may not recognize the Query
-  #Default TeamSpeak 3 MOTD:
-  motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
+  #Default TeamSpeak 3 MOTD: "TS3\r\nWelcome to the TeamSpeak 3 ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\r\n"
+  motd: "TeaSpeak\r\nWelcome to the TeaSpeak ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\r\n"
   #Enable/disable SSL for query
   #Available modes:
   #  0: Disabled
@@ -123,15 +125,11 @@ voice:
     #This option is highly recommended!
     #Do NOT TOUCH unless you're 100% sure!
     enforce_cookie: 1
-  #Maximum amount of join attemps per second.
+  #Maximum amount of join attempts per second.
   connect_limit: 10
-  #Maximum amount of join attemps per second per ip.
+  #Maximum amount of join attempts per second per ip.
   client_connect_limit: 3
   protocol:
-    #Enable/disable for kicking clients if the send a corrupt protocol
-    kick_invalid_packet: 0
-    #Enable/disable for kicking clients if the send a corrupt badge info
-    kick_invalid_badges: 1
     #Its just a test for the new TeamSpeak licensing system (you require a extra plugin!)
     experimental_31: 0
 web:
@@ -176,7 +174,7 @@ geolocation:
   #The fallback country if lookup fails
   fallback_country: DE
   mapping:
-    #The mapping fole for the given provider
+    #The mapping file for the given provider
     #Default for IP2Location: geoloc/IP2Location.CSV
     #Default for Software77: geoloc/IpToCountry.csv
     file: geoloc/IP2Location.CSV

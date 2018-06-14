@@ -1,0 +1,13 @@
+Usage: musicbotdelete botId={botId}
+
+Permissions:
+  b_client_music_delete_own
+  i_client_music_delete_power
+
+Description:
+  Deletes a musicbot. The bot id is required and can be
+  aquired with the clientlist command (property: client_type=4).
+
+Example:
+  musicbotdelete botId=4
+  error id=0 msg=ok
