@@ -1,4 +1,8 @@
 # Changelog:
+* **1.1.34b**
+    - Implemented ip v6 (currently voice only)
+    - Fixed that the server only bound to the main address and not on any addresses when its bound to 0.0.0.0
+    
 * **1.1.33b**
     - Made invalid protocol kick messages configurable
     - Added tree new permissions
@@ -6,6 +10,7 @@
         - `b_client_use_bbcode_image`   Allows the client to use the img bbcode tag within channel description
         - `b_client_use_bbcode_url`   Allows the client to use url bbcode tag within channel description
     - Fixed invalid permission tree/- mapping
+    - Implemented `b_client_skip_channelgroup_permissions`
 
 * **1.1.32b**
     - Fixed issue (Check only private textmessage power when chat was closed) [#174](https://github.com/TeaSpeak/TeaSpeak/issues/174)
