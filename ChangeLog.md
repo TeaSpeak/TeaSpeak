@@ -2,6 +2,7 @@
 * **1.1.34b**
     - Implemented ip v6 (currently voice only)
     - Fixed that the server only bound to the main address and not on any addresses when its bound to 0.0.0.0
+    - Improved music bot playback to avaid issue [#162](https://github.com/TeaSpeak/TeaSpeak/issues/162)
     
 * **1.1.33b**
     - Made invalid protocol kick messages configurable
