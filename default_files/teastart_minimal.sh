@@ -1,23 +1,50 @@
 #!/usr/bin/env bash
 
-dpkg -s "libav-tools" &> /dev/null
+# pck manager / search pck / update src list / install pck / pck
+packageManagersList=(
+    # apt for debian based distributions
+    'apt;apt list --installed % | grep %;apt update;apt install % -y;libav-tools'
+    # pacman for arch based distributions
+    'pacman;pacman -Q %;pacman -Sy;pacman -S %;ffmpeg'
+    # zypper for opensuse based distributions
+    'zypper;zypper se --installed-only %;zypper ref;zypper in %;ffmpeg'
+)
 
-if [ ! $? -eq 0 ]; then
-    echo "We're missing a required package!"
-    echo "Please install 'libav-tools' (apt-get install libav-tools)"
-    read -r -p "Should we do this for you? [Y/n]: " response
-    response=${response,,}
-    if [[ $response =~ ^(yes|y| ) ]] || [[ -z $response ]]; then
-        dpkg -s "sudo" &> /dev/null
-        if [ $? -eq 0 ]; then
-            sudo apt-get install libav-tools -y
-        else
-            apt-get install libav-tools -y
-        fi
-        ./$0
-    fi
-    exit 0
+# use sudo in case user is not root
+if [ "$EUID" -ne 0 ]; then
+    root="sudo"
 fi
+
+for packageManager in "${packageManagersList[@]}"; do
+    # split string by delimiter and replace "%" with package name
+    IFS=';' read -r -a packageManagerData <<< $packageManager
+    packageManagerData[1]="${packageManagerData[1]//%/${packageManagerData[4]}}"
+    packageManagerData[3]="${packageManagerData[3]//%/${packageManagerData[4]}}"
+    # check if package manager is available
+    if command -v ${packageManagerData[0]} > /dev/null 2>&1; then
+        # check if required package is installed
+        if ! eval "${packageManagerData[1]}" > /dev/null 2>&1; then
+            printf "\nWe're missing a required package!\n"
+            printf "Please install '${packageManagerData[4]}' (${packageManagerData[3]})\n"
+            read -r -p "Should we do this for you? [Y/n]: " response
+            response=${response,,}
+            if [[ $response =~ ^(yes|y| ) ]] || [[ -z $response ]]; then
+                # install package
+                eval $root ${packageManagerData[2]}
+                eval $root ${packageManagerData[3]}
+                ./$0
+            fi
+            exit 0
+        fi
+        break;
+    fi
+    # Couldn't find a supported package manager
+    if [ "$packageManager" = "${packageManagersList[-1]}" ]; then
+        printf '\nYour package manager is not supported!\n'
+        printf 'Please report this problem to\n'
+        printf 'https://github.com/TeaSpeak/TeaSpeak/issues\n\n'
+    fi 
+done
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PAT;./libs/"
 ./TeaSpeakServer
