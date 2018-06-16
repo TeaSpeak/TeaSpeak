@@ -10,9 +10,13 @@ packageManagersList=(
     'zypper;zypper se --installed-only %;zypper ref;zypper in %;ffmpeg'
 )
 
-# use sudo in case user is not root
+# elevate privileges if the user is not root
 if [ "$EUID" -ne 0 ]; then
-    root="sudo"
+    if command -v sudo > /dev/null 2>&1; then
+        root="sudo %"
+    else
+        root='su -c "%"'
+    fi
 fi
 
 for packageManager in "${packageManagersList[@]}"; do
@@ -30,8 +34,8 @@ for packageManager in "${packageManagersList[@]}"; do
             response=${response,,}
             if [[ $response =~ ^(yes|y| ) ]] || [[ -z $response ]]; then
                 # install package
-                eval $root ${packageManagerData[2]}
-                eval $root ${packageManagerData[3]}
+                eval "${root//%/${packageManagerData[2]}}"
+                eval "${root//%/${packageManagerData[3]}}"
                 ./$0
             fi
             exit 0
@@ -43,7 +47,7 @@ for packageManager in "${packageManagersList[@]}"; do
         printf '\nYour package manager is not supported!\n'
         printf 'Please report this problem to\n'
         printf 'https://github.com/TeaSpeak/TeaSpeak/issues\n\n'
-    fi 
+    fi
 done
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PAT;./libs/"
