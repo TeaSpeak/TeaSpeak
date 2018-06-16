@@ -1,7 +1,6 @@
 # Changelog:
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
-    ** Important! This build contains a address sanitizer (this may slow this build a littlebit, but helps me to improve the server stability)
     
 * **1.1.34b**
     - Implemented ip v6 (currently voice only)
