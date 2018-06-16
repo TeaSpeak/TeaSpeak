@@ -1,8 +1,16 @@
 # Changelog:
+* **1.1.35b**
+    - Fixed server crash's caused by heap buffer overflows
+    ** Important! This build contains a address sanitizer (this may slow this build a littlebit, but helps me to improve the server stability)
+    
 * **1.1.34b**
     - Implemented ip v6 (currently voice only)
     - Fixed that the server only bound to the main address and not on any addresses when its bound to 0.0.0.0
-    - Improved music bot playback to avaid issue [#162](https://github.com/TeaSpeak/TeaSpeak/issues/162)
+    - Improved music bot playback to avoid issue [#162](https://github.com/TeaSpeak/TeaSpeak/issues/162)
+    - Implemented query white and black list
+    - Implemented enchantment [#186](https://github.com/TeaSpeak/TeaSpeak/issues/186) (Output current volume instead of "Invalid volume!")
+    - Fixed issue [187](https://github.com/TeaSpeak/TeaSpeak/issues/187)
+    - Fixed invalid sqlite/mysql table setup
     
 * **1.1.33b**
     - Made invalid protocol kick messages configurable
