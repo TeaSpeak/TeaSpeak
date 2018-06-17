@@ -1,6 +1,8 @@
 # Changelog:
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
+    - Fixed MySQL resource leak
+    - Fixed query hangup on exit command
     
 * **1.1.34b**
     - Implemented ip v6 (currently voice only)
