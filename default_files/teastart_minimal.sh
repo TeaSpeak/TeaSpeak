@@ -11,6 +11,7 @@ packageManagersList=(
 )
 
 # elevate privileges if the user is not root
+root="%"
 if [ "$EUID" -ne 0 ]; then
     if command -v sudo > /dev/null 2>&1; then
         root="sudo %"
