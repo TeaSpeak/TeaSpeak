@@ -1,8 +1,13 @@
 # Changelog:
+* **1.1.36b**
+    - Fixed voice client join and left message
+    - Fixed invalid icon id of icon `4294967294` (Just `-2` which indicated a not preset permission)
+
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
     - Fixed MySQL resource leak
     - Fixed query hangup on exit command
+    Note: MySQL is still not the best solution. I recommend sqlite instead!
     
 * **1.1.34b**
     - Implemented ip v6 (currently voice only)
