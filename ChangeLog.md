@@ -1,5 +1,6 @@
 # Changelog:
 * **1.1.36b**
+    - Fixed server crash on virtual server creation and deletion
     - Fixed voice client join and left message
     - Fixed invalid icon id of icon `4294967294` (Just `-2` which indicated a not preset permission)
 
