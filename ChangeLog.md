@@ -3,7 +3,8 @@
     - Fixed server crash on virtual server creation and deletion
     - Fixed voice client join and left message
     - Fixed invalid icon id of icon `4294967294` (Just `-2` which indicated a not preset permission)
-
+    - Implemented crash handler again (for some reason i took him out)
+    
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
     - Fixed MySQL resource leak
