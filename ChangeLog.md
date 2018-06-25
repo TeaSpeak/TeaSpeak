@@ -4,6 +4,10 @@
     - Fixed voice client join and left message
     - Fixed invalid icon id of icon `4294967294` (Just `-2` which indicated a not preset permission)
     - Implemented crash handler again (for some reason i took him out)
+    - First loading servers now than starting the query server
+    - Fixed bug that clients can connect while server is shutting down 
+    - Fixed global permissions does not work anymore
+    - Allow handling of voice packets parallel to command packets (should avoid voice hangup on complicated command)
     
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
@@ -18,7 +22,7 @@
     - Implemented query white and black list
     - Implemented enchantment [#186](https://github.com/TeaSpeak/TeaSpeak/issues/186) (Output current volume instead of "Invalid volume!")
     - Fixed issue [187](https://github.com/TeaSpeak/TeaSpeak/issues/187)
-    - Fixed invalid sqlite/mysql table setup
+    - Fixed invalid sqlite/mysql table setup65
     
 * **1.1.33b**
     - Made invalid protocol kick messages configurable
