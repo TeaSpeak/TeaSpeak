@@ -1,4 +1,17 @@
 # Changelog:
+* **1.1.37b**
+    - Allow handling of voice packets parallel to command packets (should avoid voice hangup on complicated command)
+    - Speeded (extremely) up permission calculation for needed permissions (significant at join or permission edit)
+    - Speeded up client channel permission calculation
+    - Increase join performance
+    - Increase command performance of `permget`
+    - Removed basic memory tracker for speed up
+    - Fixed multithreading issue (within server tick. Could cause server crash)
+    - Improved server tick performance (dont hang up so long on client timeout)
+    - Fixed write bug (delayed datagram writing)
+    -- Summery --
+    TeaSpeak is not running faster and also the sound should not be disturbed when its under heavy load
+    
 * **1.1.36b**
     - Fixed server crash on virtual server creation and deletion
     - Fixed voice client join and left message
@@ -7,7 +20,6 @@
     - First loading servers now than starting the query server
     - Fixed bug that clients can connect while server is shutting down 
     - Fixed global permissions does not work anymore
-    - Allow handling of voice packets parallel to command packets (should avoid voice hangup on complicated command)
     
 * **1.1.35b**
     - Fixed server crash's caused by heap buffer overflows
