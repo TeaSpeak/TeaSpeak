@@ -2,6 +2,7 @@
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
        Note: this only works when you enabled 3.1 support (`voice.protocol.experimental_31`)
+    - Fixed `serversnapshotcreate`
 
 * **1.1.37b**
     - Allow handling of voice packets parallel to command packets (should avoid voice hangup on complicated command)
