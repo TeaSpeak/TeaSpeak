@@ -1,4 +1,13 @@
 # Changelog:
+* **1.1.39b**
+    ** Attention!: ** 
+    This build runs without the web client because im deploying it from my holiday PC
+    This may even cause some mystic linking or dependency errors when you try to start the server
+    
+    - Fixed invalid displayed permission when you dont have the permission to enter a url as bb code
+    - Fixed bb code permission and mapping
+    - Improved library linking and removed RPATH from executable
+    
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
        Note: this only works when you enabled 3.1 support (`voice.protocol.experimental_31`)
@@ -12,7 +21,7 @@
     - Increase command performance of `permget`
     - Removed basic memory tracker for speed up
     - Fixed multithreading issue (within server tick. Could cause server crash)
-    - Improved server tick performance (dont hang up so long on client timeout)
+    - Improved server tick performance (dont Whang up so long on client timeout)
     - Fixed write bug (delayed datagram writing)
     -- Summery --
     TeaSpeak is not running faster and also the sound should not be disturbed when its under heavy load
