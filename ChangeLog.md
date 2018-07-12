@@ -4,9 +4,12 @@
     This build runs without the web client because im deploying it from my holiday PC
     This may even cause some mystic linking or dependency errors when you try to start the server
     
+    Note: Build 1 is in release mode (so its much faster) 
+    
     - Fixed invalid displayed permission when you dont have the permission to enter a url as bb code
     - Fixed bb code permission and mapping
     - Improved library linking and removed RPATH from executable
+    - Don't tick empty server
     
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
