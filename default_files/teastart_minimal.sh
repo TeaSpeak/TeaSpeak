@@ -51,7 +51,7 @@ for packageManager in "${packageManagersList[@]}"; do
     fi
 done
 
-export LD_LIBRARY_PATH="$LD_LIBRARY_PAT;./libs/"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH;./libs/"
 ./TeaSpeakServer
 #Cleanup & reset the terminal
 stty cooked echo
