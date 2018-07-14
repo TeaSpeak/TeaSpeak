@@ -3,6 +3,7 @@
     - Improved server start
       Now caching everything so even *huge* server instance start's really fast (1000 VS < 40 sec)
     - Query starts again before all server are loaded, but it denies to create server until everything is loaded
+    - Fixed deleted token appearing again after server restart
     
 * **1.1.39b**  
     **Attention!:**   
