@@ -1,6 +1,11 @@
 # Changelog:
-* **1.1.39b**
-    ** Attention!: ** 
+* **1.1.40b**
+    - Improved server start
+      Now caching everything so even *huge* server instance start's really fast (1000 VS < 40 sec)
+    - Query starts again before all server are loaded, but it denies to create server until everything is loaded
+    
+* **1.1.39b**  
+    **Attention!:**   
     This build runs without the web client because im deploying it from my holiday PC
     This may even cause some mystic linking or dependency errors when you try to start the server
     
@@ -10,6 +15,7 @@
     - Fixed bb code permission and mapping
     - Improved library linking and removed RPATH from executable
     - Don't tick empty server
+    - Fixed issue [#225](https://github.com/TeaSpeak/TeaSpeak/issues/225)
     
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
