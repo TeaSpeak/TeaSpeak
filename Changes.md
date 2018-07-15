@@ -97,6 +97,10 @@ cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=S
 error id=0 msg=ok
 ```
 
+### Setting token value
+You can pass a new parameter on `tokenadd` named `token`.  
+The type is a string and its optional.  
+The value is the actual token (if its not set it would be generated)  
 
 ### New Permissions
 

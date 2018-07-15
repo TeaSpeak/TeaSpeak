@@ -1,5 +1,5 @@
 Usage: privilegekeyadd tokentype={1|0} tokenid1={groupID} tokenid2={channelID}
-       [tokendescription={description}] [tokencustomset={customFieldSet}]
+       [tokendescription={description}] [tokencustomset={customFieldSet}] [token={token}]
 
 Permissions:
   b_virtualserver_token_add
@@ -23,4 +23,8 @@ Notes:
 Example:
   privilegekeyadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset tokencustomset=ident=forum_user\svalue=WolverinDEV\pident=forum_id\svalue=123
   token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
+  error id=0 msg=ok
+
+  tokenadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset token=NewYear2018#0hsIOUZAS
+  token=NewYear2018#0hsIOUZAS
   error id=0 msg=ok
