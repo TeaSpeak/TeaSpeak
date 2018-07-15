@@ -1,4 +1,4 @@
-Usage: logview [lines={1-100}] [reverse={1|0}] [instance={1|0}] [begin_pos={n}]
+Usage: logview [lines={1-100}] [reverse={1|0}] [instance={1|0}] [begin_pos={n}] [-lagacy]
 
 Permissions:
   b_serverinstance_log_view
@@ -7,7 +7,8 @@ Permissions:
 Description:
   Displays a specified number of entries from the servers log. If instance is
   set to 1, the server will return lines from the master logfile
-  (ts3server_0.log) instead of the selected virtual server logfile.
+  instead of the selected virtual server logfile.
+  If the -lagacy switch is preset the result would be in TeamSpeak format
 
 Example:
   logview lines=30
