@@ -6,6 +6,8 @@
     - Fixed deleted token appearing again after server restart
     - Implemented `logview`
     - Fixed `channel_icon_id` on `channeledit`
+    - **Fixed memory leak within the query system**
+    - **Fixed to many open files on query connections**
     
 * **1.1.39b**  
     **Attention!:**   
