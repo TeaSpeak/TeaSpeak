@@ -21,6 +21,7 @@
     - Improved library linking and removed RPATH from executable
     - Don't tick empty server
     - Fixed issue [#225](https://github.com/TeaSpeak/TeaSpeak/issues/225)
+    - Fixed server crash on `banclient` if client isn't preset
     
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
