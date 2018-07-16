@@ -8,6 +8,8 @@
     - Fixed `channel_icon_id` on `channeledit`
     - **Fixed memory leak within the query system**
     - **Fixed to many open files on query connections**
+    - Fixed server crash on `banclient` if client isn't preset
+    - Fixed `client_idle_time` in `clientinfo`
     
 * **1.1.39b**  
     **Attention!:**   
@@ -21,7 +23,6 @@
     - Improved library linking and removed RPATH from executable
     - Don't tick empty server
     - Fixed issue [#225](https://github.com/TeaSpeak/TeaSpeak/issues/225)
-    - Fixed server crash on `banclient` if client isn't preset
     
 * **1.1.38b**
     - Allow the user to define costume key chains for the server keypair
