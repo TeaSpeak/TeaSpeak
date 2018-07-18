@@ -11,6 +11,7 @@
     - Fixed server crash on `banclient` if client isn't preset
     - Fixed `client_idle_time` in `clientinfo`
     - Fixed on huge server the server shutdown
+    - Fixed music bot parameter ids
     
 * **1.1.39b**  
     **Attention!:**   
