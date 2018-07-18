@@ -10,6 +10,7 @@
     - **Fixed to many open files on query connections**
     - Fixed server crash on `banclient` if client isn't preset
     - Fixed `client_idle_time` in `clientinfo`
+    - Fixed on huge server the server shutdown
     
 * **1.1.39b**  
     **Attention!:**   
