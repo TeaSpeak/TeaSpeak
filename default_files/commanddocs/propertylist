@@ -1,0 +1,10 @@
+Usage: propertylist propertylist [-all] [-server] [-channel] [-client] [-instance] [-group] [-connection]
+
+Permissions: None
+
+Description:
+  Get a full list of all available properties
+
+Example:
+  propertylist -all
+  flag_set=.... name=virtualserver_id flags=256 type=SERVER|name=virtualserver_unique_identifier flags=392 type=SERVER|name=virtualserver_name flags=408 type=SERVER|name=virtualserver_welcomemessage flags=408 type=SERVER|name=virtualserver_platform flags=256 type=SERVER|name=virtualserver_version flags=256 type=SERVER|name=virtualserver_maxclients flags=408 type=SERVER|name=virtualserver_password flags=24 type=SERVER|name=virtualserver_clientsonline flags=128 type=SERVER|name=virtualserver_channelsonline flags=128 type=SERVER|name=virtualserver_queryclientsonline flags=128 type=SERVER|name=virtualserver_created flags=280 type=SERVER|name=virtualserver_uptime flags=128 type=SERVER|name=virtualserver_codec_encryption_mode flags=408 type=SERVER|name=virtualserver_keypair flags=24 type=SERVER|name=virtualserver_hostmessage flags=408 type=SERVER|name=virtualserver_hostmessage_mode flags=408 type=SERVER|name=virtualserver_default_server_group flags=408 type=SERVER|name=virtualserver_default_channel_group flags=408
