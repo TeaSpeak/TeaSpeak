@@ -1,4 +1,4 @@
-Usage: musicbotdelete botId={botId}
+Usage: musicbotdelete botid={botid}
 
 Permissions:
   b_client_music_delete_own
@@ -9,5 +9,5 @@ Description:
   aquired with the clientlist command (property: client_type=4).
 
 Example:
-  musicbotdelete botId=4
+  musicbotdelete botid=4
   error id=0 msg=ok

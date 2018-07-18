@@ -1,4 +1,4 @@
-Usage: musicbotqueueadd botId={botId} type={0/1} url={link/path}
+Usage: musicbotqueueadd botid={botid} type={0/1} url={link/path}
 
 Permission:
   i_client_music_play_power
@@ -12,5 +12,5 @@ Notes:
   type=1 means FFMPEG
 
 Example:
-  musicbotqueueadd botId=3 type=0 url=https://www.youtube.com/watch?v=5h_JkMvcE8k
+  musicbotqueueadd botid=3 type=0 url=https://www.youtube.com/watch?v=5h_JkMvcE8k
   error id=0 msg=ok

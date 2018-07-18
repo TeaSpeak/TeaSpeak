@@ -14,5 +14,5 @@ Notes:
 
 Example:
   musicbotcreate cid=1
-  botId=4
+  botid=4
   error id=0 msg=ok
