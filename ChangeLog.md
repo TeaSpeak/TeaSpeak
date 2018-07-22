@@ -1,4 +1,11 @@
 # Changelog:
+* **1.1.41b**
+    - Fixed server crash on snapshot deploy for override
+    - Fixed query `permreset`
+    - Fixed snapshot channel permissions
+    - Implemented commands `servergroupautoaddperm` and `servergroupautodelperm`
+    - If you don't have permissions to view ip's you don't will get any ip addresses
+    
 * **1.1.40b**
     - Improved server start
       Now caching everything so even *huge* server instance start's really fast (1000 VS < 40 sec)
