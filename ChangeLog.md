@@ -5,6 +5,13 @@
     - Fixed snapshot channel permissions
     - Implemented commands `servergroupautoaddperm` and `servergroupautodelperm`
     - If you don't have permissions to view ip's you don't will get any ip addresses
+    - Testing for group add permission when you create a token
+    - Added properties `client_total_online_time` and `client_total_online_time`
+        - `clientlist -times`
+        - `clientgetvariables`
+        - `clientdbinfo`
+    - Testing for `b_virtualserver_connectioninfo_view` on server connection info
+    - Improved 3.1 protocol (Just applies for TeamSpeak 3 clients >= 3.2.0)
     
 * **1.1.40b**
     - Improved server start

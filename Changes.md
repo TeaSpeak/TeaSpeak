@@ -102,6 +102,9 @@ You can pass a new parameter on `tokenadd` named `token`.
 The type is a string and its optional.  
 The value is the actual token (if its not set it would be generated)  
 
+### New properties
+- `client_total_online_time` | `client_month_online_time`
+
 ### New Permissions
 
 Permission | Description
