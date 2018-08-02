@@ -1,6 +1,7 @@
 # Changelog:
-* **1.1.42b**
+* **1.2.0b**
     - Fixed server hangup on stop
+    - Implemented WebRTC support again (yeah im back from vacation!)
     - Updated IP to location databases
     - Improved broken channel tree recovery and channel tree performance
     - Moved config entry `default_client_description` to a vs property (`virtualserver_default_client_description`) 
