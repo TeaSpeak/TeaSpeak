@@ -20,7 +20,9 @@
             That means if a client/or group changes the permission `i_channel_view_power` he has to rejoin
             This also applies to server/channel groups.
             The reason for this is simple: To reduce the server sided load
-        
+    - Added VPN check support ([#85](https://github.com/TeaSpeak/TeaSpeak/issues/85))
+        - New permission: `b_client_ignore_vpn`
+    
 * **1.1.41b**
     - Fixed server crash on snapshot deploy for override
     - Fixed query `permreset`

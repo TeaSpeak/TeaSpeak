@@ -16,7 +16,7 @@ NOTE: Most of the here described changes only apply to the query interface.
  - [Built-in console](#Built-in-console)
  - [Advanced ip permission testing](#clientdblist-without-IPs)
  - [New permissions](#New-Permissions)
- 
+ - [New features](#New-features)
 ### Built in musicbots
 TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
@@ -146,3 +146,10 @@ Permission | Description
 `i_client_music_needed_play_power` | Needed `i_client_music_play_power` power for this musicbot.
 `i_client_music_rename_power` | Power to use chatcommand `.mbot rename`.
 `i_client_music_needed_rename_power` | Needed `i_client_music_rename_power` power for this musicbot.
+`b_client_ignore_vpn` | Allows the client to bypass the vpn check
+`i_channel_view_power` | The channel view power of a client
+`b_channel_ignore_view_power` | Allows the client to bypass the visibility check and see all channels
+`i_channel_needed_view_power` | The required channel view power for a channel
+
+### New features
+- VPN Testing
