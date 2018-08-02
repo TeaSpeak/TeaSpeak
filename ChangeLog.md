@@ -1,6 +1,7 @@
 # Changelog:
 * **1.1.42b**
     - Fixed server hangup on stop
+    - Updated IP to location databases
     - Improved broken channel tree recovery and channel tree performance
     - Moved config entry `default_client_description` to a vs property (`virtualserver_default_client_description`) 
     - Moved config entry `default_channel_description` to a vs property (`virtualserver_default_channel_description`) 
