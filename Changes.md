@@ -104,7 +104,13 @@ The value is the actual token (if its not set it would be generated)
 
 ### New properties
 - `client_total_online_time` | `client_month_online_time`
-
+- `virtualserver_default_client_description`
+- `virtualserver_default_channel_description`
+- `virtualserver_default_channel_topic`
+- `channel_last_left`
+- `channel_created_at`
+- `channel_created_by`
+		    
 ### New Permissions
 
 Permission | Description

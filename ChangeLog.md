@@ -1,4 +1,24 @@
 # Changelog:
+* **1.1.42b**
+    - Fixed server hangup on stop
+    - Improved broken channel tree recovery and channel tree performance
+    - Moved config entry `default_client_description` to a vs property (`virtualserver_default_client_description`) 
+    - Moved config entry `default_channel_description` to a vs property (`virtualserver_default_channel_description`) 
+    - Added property `virtualserver_default_channel_topic`
+    - Added "private"/invisible channel
+        - New events:
+            - `notifychannelhide`
+            - `notifychannelshow`
+        - New permissions:
+            - `b_channel_ignore_view_power`
+            - `i_channel_view_power`
+            - `i_channel_needed_view_power`
+        Notes:
+            The channel visibility states updates only on a channel permission change  
+            That means if a client/or group changes the permission `i_channel_view_power` he has to rejoin
+            This also applies to server/channel groups.
+            The reason for this is simple: To reduce the server sided load
+        
 * **1.1.41b**
     - Fixed server crash on snapshot deploy for override
     - Fixed query `permreset`
