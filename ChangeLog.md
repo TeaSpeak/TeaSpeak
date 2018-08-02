@@ -5,6 +5,8 @@
     - Moved config entry `default_client_description` to a vs property (`virtualserver_default_client_description`) 
     - Moved config entry `default_channel_description` to a vs property (`virtualserver_default_channel_description`) 
     - Added property `virtualserver_default_channel_topic`
+    - Fixed default serveradmin token creation
+    - Fixed bb code bug (Upper and lowerchase bug)
     - Added "private"/invisible channel
         - New events:
             - `notifychannelhide`
