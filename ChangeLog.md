@@ -9,7 +9,10 @@
             - `i_client_max_temporary_channels`  
             - `i_client_max_semi_channels`  
             - `i_client_max_permanent_channels` 
-            
+    - Fixed issue related with the default channel
+    - Fixed issue ([#255](https://github.com/TeaSpeak/TeaSpeak/issues/255))
+    - Fixed channel temp delete delay
+    
 * **1.2.0b**
     - Fixed server hangup on stop
     - Updated IP to location databases
