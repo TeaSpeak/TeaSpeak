@@ -12,6 +12,8 @@
     - Fixed issue related with the default channel
     - Fixed issue ([#255](https://github.com/TeaSpeak/TeaSpeak/issues/255))
     - Fixed channel temp delete delay
+    - Fixed channel subscribe power on perm not granted
+    - Fixed VPN test for a range of only on ip address
     
 * **1.2.0b**
     - Fixed server hangup on stop
