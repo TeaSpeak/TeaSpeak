@@ -15,8 +15,10 @@ NOTE: Most of the here described changes only apply to the query interface.
  - [Scheduled Shutdowns](#Scheduled-Shutdowns)
  - [Built-in console](#Built-in-console)
  - [Advanced ip permission testing](#clientdblist-without-IPs)
+ - [Limit channels per client](Limit-channels-per-client)
  - [New permissions](#New-Permissions)
  - [New features](#New-features)
+    
 ### Built in musicbots
 TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
@@ -153,3 +155,11 @@ Permission | Description
 
 ### New features
 - VPN Testing
+
+
+### Limit channels per client
+You can limit the channels/client with these permissions:  
+    - `i_client_max_channels`  
+    - `i_client_max_temporary_channels`  
+    - `i_client_max_semi_channels`  
+    - `i_client_max_permanent_channels`  

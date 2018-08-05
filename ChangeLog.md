@@ -1,4 +1,15 @@
 # Changelog:
+* **1.2.1b**
+    - Fixed property `virtualserver_created`
+    - Fixed invalid soft assertion at `ServerChannel.cpp:170`
+    - Fixed speach (Cant send voice packets anymore after 20 when they are encrypted)
+    - Implemented a limit/client for channels ([#247](https://github.com/TeaSpeak/TeaSpeak/issues/247))
+        - New permissions:
+            - `i_client_max_channels`  
+            - `i_client_max_temporary_channels`  
+            - `i_client_max_semi_channels`  
+            - `i_client_max_permanent_channels` 
+            
 * **1.2.0b**
     - Fixed server hangup on stop
     - Updated IP to location databases
