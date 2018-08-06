@@ -3,6 +3,7 @@
     - Fixed wrong implementation of `channelgroupclientlist`
     - Reimplemented the web client! (Unstable yet so its not recommended to use it within a production environment)
     - Fixed issue (invalid permission calculation on channel permissions) ([#241](https://github.com/TeaSpeak/TeaSpeak/issues/241))
+    
 * **1.2.1b**
     - Fixed property `virtualserver_created`
     - Fixed invalid soft assertion at `ServerChannel.cpp:170`
