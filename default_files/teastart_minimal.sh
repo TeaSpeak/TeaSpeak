@@ -3,11 +3,11 @@
 # pck manager / search pck / update src list / install pck / pck
 packageManagersList=(
     # apt for debian based distributions
-    'apt;apt list --installed % | grep %;apt update;apt install % -y;libnice'
+    'apt;apt list --installed % | grep %;apt update;apt install % -y;libnice10'
     # pacman for arch based distributions
-    'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice'
+    'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice10'
     # zypper for opensuse based distributions
-    'zypper;zypper se --installed-only %;zypper ref;zypper in %;libnice'
+    'zypper;zypper se --installed-only %;zypper ref;zypper in %;libnice10'
 )
 
 # elevate privileges if the user is not root
