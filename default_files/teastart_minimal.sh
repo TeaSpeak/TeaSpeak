@@ -5,7 +5,7 @@ packageManagersList=(
     # apt for debian based distributions
     'apt;apt list --installed % | grep %;apt update;apt install % -y;libnice10'
     # pacman for arch based distributions
-    'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice10'
+    'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice'
     # zypper for opensuse based distributions
     'zypper;zypper se --installed-only %;zypper ref;zypper in %;libnice10'
 )
