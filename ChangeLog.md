@@ -3,6 +3,8 @@
     - Fixed wrong implementation of `channelgroupclientlist`
     - Reimplemented the web client! (Unstable yet so its not recommended to use it within a production environment)
     - Fixed issue (invalid permission calculation on channel permissions) ([#241](https://github.com/TeaSpeak/TeaSpeak/issues/241))
+    - Fixed convert error on invalid utf-8 characters (e.g. When you're running a music bot)
+    - Fixed TCP_NO_DELAY (Can cause sometimes a "slow" query connection)
     
 * **1.2.1b**
     - Fixed property `virtualserver_created`
