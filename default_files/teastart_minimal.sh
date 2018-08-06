@@ -3,11 +3,11 @@
 # pck manager / search pck / update src list / install pck / pck
 packageManagersList=(
     # apt for debian based distributions
-    'apt;apt list --installed % | grep %;apt update;apt install % -y;libav-tools'
+    'apt;apt list --installed % | grep %;apt update;apt install % -y;libnice'
     # pacman for arch based distributions
-    'pacman;pacman -Q %;pacman -Sy;pacman -S %;ffmpeg'
+    'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice'
     # zypper for opensuse based distributions
-    'zypper;zypper se --installed-only %;zypper ref;zypper in %;ffmpeg'
+    'zypper;zypper se --installed-only %;zypper ref;zypper in %;libnice'
 )
 
 # elevate privileges if the user is not root
