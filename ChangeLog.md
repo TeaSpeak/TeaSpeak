@@ -1,4 +1,39 @@
 # Changelog:
+* **1.2.3b**
+    - Using server 0 as template server.
+      Now available for default channels and groups
+        These commands are now available to change the templates:
+        - `servergroupcopy`
+        - `servergroupadd`
+        - `servergrouprename`
+        - `servergroupdel`
+        - `servergrouppermlist`
+        - `servergroupaddperm`
+        - `servergroupdelperm`
+        - `servergrouplist`
+        
+        - `channelgroupadd`
+        - `channelgroupcopy`
+        - `channelgrouprename`
+        - `channelgroupdel`
+        - `channelgrouplist`
+        - `channelgrouppermlist`
+        - `channelgroupaddperm`
+        - `channelgroupdelperm`
+        
+        - `channellist`
+        - `channelfind`
+        - `channelinfo`
+        - `channelcreate`
+        - `channeldelete`
+        - `channeledit`
+        - `channelgetdescription`
+        - `channelmove`
+        - `channelpermlist`
+        - `channeladdperm`
+        - `channeldelperm`
+        - `verifychannelpassword`
+        
 * **1.2.2b**
     - Fixed wrong implementation of `channelgroupclientlist`
     - Reimplemented the web client! (Unstable yet so its not recommended to use it within a production environment)
