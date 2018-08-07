@@ -11,7 +11,6 @@
         - `servergroupaddperm`
         - `servergroupdelperm`
         - `servergrouplist`
-        
         - `channelgroupadd`
         - `channelgroupcopy`
         - `channelgrouprename`
@@ -20,7 +19,6 @@
         - `channelgrouppermlist`
         - `channelgroupaddperm`
         - `channelgroupdelperm`
-        
         - `channellist`
         - `channelfind`
         - `channelinfo`
