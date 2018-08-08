@@ -8,6 +8,8 @@ packageManagersList=(
     'pacman;pacman -Q %;pacman -Sy;pacman -S %;libnice'
     # zypper for opensuse based distributions
     'zypper;zypper se --installed-only %;zypper ref;zypper in %;libnice10'
+    # yum for RHEL based distributions
+    'yum;rpm -q %;yum update -y;yum install -y %;libnice'
 )
 
 # elevate privileges if the user is not root
