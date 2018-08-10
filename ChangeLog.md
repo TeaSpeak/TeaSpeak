@@ -1,4 +1,7 @@
 # Changelog:
+* **1.2.4b**
+    - Using a build server now!
+    
 * **1.2.3b**
     - Using server 0 as template server.
       Now available for default channels and groups
