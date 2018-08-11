@@ -1,4 +1,8 @@
 # Changelog:
+* **1.2.5b**
+    - Fixed serverquery event system
+    - Several music bot improvements (for the WebClient)
+    
 * **1.2.4b**
     - Using a build server now!
     
