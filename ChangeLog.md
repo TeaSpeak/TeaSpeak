@@ -3,6 +3,7 @@
     - Fixed serverquery event system
     - Several music bot improvements (for the WebClient)
     - Fixed issue with too long nicknames
+    - Fixed web client crash on invalid client key!
     
 * **1.2.4b**
     - Using a build server now!
