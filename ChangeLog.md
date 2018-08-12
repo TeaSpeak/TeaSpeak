@@ -4,6 +4,8 @@
     - Several music bot improvements (for the WebClient)
     - Fixed issue with too long nicknames
     - Fixed web client crash on invalid client key!
+    - Fixed avatar display
+    - Fixed query cpu leak (Build 8)
     
 * **1.2.4b**
     - Using a build server now!
