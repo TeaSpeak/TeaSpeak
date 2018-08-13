@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.6b**
+    - Fixed the edibility of the default messages
+      Hint: The web client has a GUI for that :)
+    - Music bots are not banable anymore
+    
 * **1.2.5b**
     - Fixed serverquery event system
     - Several music bot improvements (for the WebClient)
@@ -6,6 +11,7 @@
     - Fixed web client crash on invalid client key!
     - Fixed avatar display
     - Fixed query cpu leak (Build 8)
+    - Fixed bbcode detection
     
 * **1.2.4b**
     - Using a build server now!
