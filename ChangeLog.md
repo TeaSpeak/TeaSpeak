@@ -5,6 +5,7 @@
     - Fixed channel tree crash
     - Improved connection handling
     - Fixed channel tree move
+    - Fixed channel tree creation bug
     
 * **1.2.6b**
     - Fixed the edibility of the default messages
