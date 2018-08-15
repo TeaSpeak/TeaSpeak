@@ -2,6 +2,8 @@
 * **1.2.7b**
     - Added new property: `client_myteamspeak_id`
     - Added option to suppress the myTeamSpeak error messages
+    - Fixed channel tree crash
+    - Improved connection handling
     
 * **1.2.6b**
     - Fixed the edibility of the default messages
