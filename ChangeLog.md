@@ -4,6 +4,7 @@
     - Added option to suppress the myTeamSpeak error messages
     - Fixed channel tree crash
     - Improved connection handling
+    - Fixed channel tree move
     
 * **1.2.6b**
     - Fixed the edibility of the default messages
