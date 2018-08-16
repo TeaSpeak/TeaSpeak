@@ -91,6 +91,8 @@ server:
   licence: 7
   #Enable/disable the deletion of old bans within the database
   delete_old_bans: 1
+  #Enable/disable the deletion of invalid icon id permissions
+  delete_missing_icon_permissions: 0
 query:
   #Change the query newline character
   nl_char: "\r\n"
