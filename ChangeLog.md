@@ -1,4 +1,11 @@
 # Changelog:
+* **1.2.8b**
+    - Fixed group sort id for id's over 255
+    - Fixed missing channel join permission testing for `b_channel_join_*`
+    - Fixed granted permission deletion
+    - Fixed double server group adding on `tokenuse`
+    - Added a config option to enable/disable the automatic icon deletion [#295](https://github.com/TeaSpeak/TeaSpeak/issues/295)
+    
 * **1.2.7b**
     - Added new property: `client_myteamspeak_id`
     - Added option to suppress the myTeamSpeak error messages
