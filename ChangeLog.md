@@ -1,10 +1,17 @@
 # Changelog:
+* **1.2.9b**
+    - Fixed issue [#302](https://github.com/TeaSpeak/TeaSpeak/issues/302) (Invalid permission handling with not granted and zero permissions)
+    - Fixed possible channel tree crash when it comes to several synchronous actions
+    - Fixed disappearing people on join ([#305](https://github.com/TeaSpeak/TeaSpeak/issues/305))
+    
 * **1.2.8b**
     - Fixed group sort id for id's over 255
     - Fixed missing channel join permission testing for `b_channel_join_*`
     - Fixed granted permission deletion
     - Fixed double server group adding on `tokenuse`
     - Added a config option to enable/disable the automatic icon deletion [#295](https://github.com/TeaSpeak/TeaSpeak/issues/295)
+    - Implemented a config option to set the default voice server port [#294](https://github.com/TeaSpeak/TeaSpeak/issues/294)
+    - Fixed talk power when its `-1`
     
 * **1.2.7b**
     - Added new property: `client_myteamspeak_id`
