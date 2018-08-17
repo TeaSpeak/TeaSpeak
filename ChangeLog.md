@@ -3,6 +3,8 @@
     - Fixed issue [#302](https://github.com/TeaSpeak/TeaSpeak/issues/302) (Invalid permission handling with not granted and zero permissions)
     - Fixed possible channel tree crash when it comes to several synchronous actions
     - Fixed disappearing people on join ([#305](https://github.com/TeaSpeak/TeaSpeak/issues/305))
+    - Fixed instance "hangup" when you deploy a snapshot and have just one virtual server
+    - Fixed invalid characters disconnecting clients
     
 * **1.2.8b**
     - Fixed group sort id for id's over 255
