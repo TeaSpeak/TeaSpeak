@@ -5,6 +5,7 @@
     - Fixed disappearing people on join ([#305](https://github.com/TeaSpeak/TeaSpeak/issues/305))
     - Fixed instance "hangup" when you deploy a snapshot and have just one virtual server
     - Fixed invalid characters disconnecting clients
+    - Fixed channel creation on server 0
     
 * **1.2.8b**
     - Fixed group sort id for id's over 255
