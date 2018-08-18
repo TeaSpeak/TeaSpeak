@@ -2,6 +2,7 @@
 * **1.2.10b**
     - Improved internal packet management
     - Fixed sometimes first connect attempt timed out
+    - Fixed memory leak [#316](https://github.com/TeaSpeak/TeaSpeak/issues/316)
     
 * **1.2.9b**
     - Fixed issue [#302](https://github.com/TeaSpeak/TeaSpeak/issues/302) (Invalid permission handling with not granted and zero permissions)
