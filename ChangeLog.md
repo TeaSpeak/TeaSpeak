@@ -1,4 +1,8 @@
 # Changelog:
+* **1.2.10b**
+    - Improved internal packet management
+    - Fixed sometimes first connect attempt timed out
+    
 * **1.2.9b**
     - Fixed issue [#302](https://github.com/TeaSpeak/TeaSpeak/issues/302) (Invalid permission handling with not granted and zero permissions)
     - Fixed possible channel tree crash when it comes to several synchronous actions
