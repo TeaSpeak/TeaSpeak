@@ -3,6 +3,10 @@
     - Improved internal packet management
     - Fixed sometimes first connect attempt timed out
     - Fixed memory leak [#316](https://github.com/TeaSpeak/TeaSpeak/issues/316)
+    - Improved client disconnecting
+    - Fixed issue [#319](https://github.com/TeaSpeak/TeaSpeak/issues/319)
+    - Fixed issue [#314](https://github.com/TeaSpeak/TeaSpeak/issues/314) (Now updating the channel tree on perm add/removes)
+    - Fixed issue [#307](https://github.com/TeaSpeak/TeaSpeak/issues/307)
     
 * **1.2.9b**
     - Fixed issue [#302](https://github.com/TeaSpeak/TeaSpeak/issues/302) (Invalid permission handling with not granted and zero permissions)
