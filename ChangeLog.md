@@ -1,4 +1,12 @@
 # Changelog:
+* **1.2.11b**
+    - Added property:
+        - `serverinstance_template_musicdefault_group`
+        - `virtualserver_default_music_group`
+    - Implemented permission `b_virtualserver_connectioninfo_view`
+    - Implemented permission `b_serverinstance_info_view`
+    - **Fixed client invalid parameter bug with invisible channels!**
+    
 * **1.2.10b**
     - Improved internal packet management
     - Fixed sometimes first connect attempt timed out
