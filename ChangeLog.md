@@ -6,6 +6,7 @@
     - Implemented permission `b_virtualserver_connectioninfo_view`
     - Implemented permission `b_serverinstance_info_view`
     - **Fixed client invalid parameter bug with invisible channels!**
+    - Fixed server hangup in connection with web clients
     
 * **1.2.10b**
     - Improved internal packet management
