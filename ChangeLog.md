@@ -7,6 +7,10 @@
     - Implemented permission `b_serverinstance_info_view`
     - **Fixed client invalid parameter bug with invisible channels!**
     - Fixed server hangup in connection with web clients
+    - `servergroupcopy` now check for permission `b_serverinstance_modify_querygroup` and `b_serverinstance_modify_templates`depends on the target
+    - `servergroupcopy` now creates global query groups even when you're server bound
+    - `channelgroupcopy` now check for permission `b_serverinstance_modify_querygroup` and `b_serverinstance_modify_templates`depends on the target
+    - `channelgroupcopy` now creates global query groups even when you're server bound
     
 * **1.2.10b**
     - Improved internal packet management
