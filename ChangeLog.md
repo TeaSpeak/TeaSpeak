@@ -11,6 +11,13 @@
     - `servergroupcopy` now creates global query groups even when you're server bound
     - `channelgroupcopy` now check for permission `b_serverinstance_modify_querygroup` and `b_serverinstance_modify_templates`depends on the target
     - `channelgroupcopy` now creates global query groups even when you're server bound
+    - Allow login when you're already logged in
+    - Fixed issue [#347](https://github.com/TeaSpeak/TeaSpeak/issues/347)
+    - Fixed issue [#346](https://github.com/TeaSpeak/TeaSpeak/issues/346)
+    - Fixed permission test for ... when you upload a icon/avatar
+        - `i_max_icon_filesize`
+        - `i_client_max_avatar_filesize`
+    - Fixed issue with failed to move crash dump
     
 * **1.2.10b**
     - Improved internal packet management
