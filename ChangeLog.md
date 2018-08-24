@@ -1,4 +1,10 @@
 # Changelog:
+* **1.2.12b**
+    - Fixed issue with failed to move crash dump
+    - Fixed nickname already in use issue on double connect
+    - Fixed channel name already in use
+    - Fixed version [#349](https://github.com/TeaSpeak/TeaSpeak/issues/349) (Fixed query notifies for `servergroupadd` and `servergroupdel`)
+    
 * **1.2.11b**
     - Added property:
         - `serverinstance_template_musicdefault_group`
@@ -17,7 +23,6 @@
     - Fixed permission test for ... when you upload a icon/avatar
         - `i_max_icon_filesize`
         - `i_client_max_avatar_filesize`
-    - Fixed issue with failed to move crash dump
     
 * **1.2.10b**
     - Improved internal packet management
