@@ -5,6 +5,7 @@ D1=$(readlink -f "$0") #Get own binary path
 BINARYPATH="$(dirname "${D1}")"
 cd "${BINARYPATH}"
 LIBRARYPATH="./libs/"
+PRELOADPATH="./libs/libjemalloc.so.2"
 BINARYNAME="TeaSpeakServer"
 PID_FILE="tpid.pid"
 
@@ -51,6 +52,7 @@ case "$1" in
 			fi
 			if [ -x "$BINARYNAME" ]; then
 				export LD_LIBRARY_PATH="${LIBRARYPATH}:${LD_LIBRARY_PATH}"
+				export LD_PRELOAD="${PRELOADPATH}"
 				"./${BINARYNAME}" ${COMMANDLINE_PARAMETERS} < /dev/null > /dev/null 2>&1 &
  				PID=$!
 				ps -p ${PID} > /dev/null 2>&1
