@@ -1,4 +1,7 @@
 # Changelog:
+* **1.2.13b**
+    - Fixed memory leak
+    
 * **1.2.12b**
     - Fixed issue with failed to move crash dump
     - Fixed nickname already in use issue on double connect
