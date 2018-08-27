@@ -1,6 +1,14 @@
 # Changelog:
 * **1.2.13b**
     - Fixed memory leak
+    - Fixed issue [#347](https://github.com/TeaSpeak/TeaSpeak/issues/347)
+    - Fixed issue [#333](https://github.com/TeaSpeak/TeaSpeak/issues/333)
+    - Fixed issue [#362](https://github.com/TeaSpeak/TeaSpeak/issues/362)
+    - Fixed issue [#361](https://github.com/TeaSpeak/TeaSpeak/issues/361)
+    - Added debug messages for bans
+    - Fixed not releasing port on server stopping
+    - Fixed issue [#339](https://github.com/TeaSpeak/TeaSpeak/issues/339)
+    - Fixed issue [#368](https://github.com/TeaSpeak/TeaSpeak/issues/368)
     
 * **1.2.12b**
     - Fixed issue with failed to move crash dump
@@ -21,7 +29,6 @@
     - `channelgroupcopy` now check for permission `b_serverinstance_modify_querygroup` and `b_serverinstance_modify_templates`depends on the target
     - `channelgroupcopy` now creates global query groups even when you're server bound
     - Allow login when you're already logged in
-    - Fixed issue [#347](https://github.com/TeaSpeak/TeaSpeak/issues/347)
     - Fixed issue [#346](https://github.com/TeaSpeak/TeaSpeak/issues/346)
     - Fixed permission test for ... when you upload a icon/avatar
         - `i_max_icon_filesize`
