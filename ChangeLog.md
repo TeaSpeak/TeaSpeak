@@ -9,6 +9,8 @@
     - Fixed not releasing port on server stopping
     - Fixed issue [#339](https://github.com/TeaSpeak/TeaSpeak/issues/339)
     - Fixed issue [#368](https://github.com/TeaSpeak/TeaSpeak/issues/368)
+    - Implemented permissions `i_channel_max_depth` and `i_channel_min_depth` ([#377](https://github.com/TeaSpeak/TeaSpeak/issues/377))
+    - Improved disconnect logic
     
 * **1.2.12b**
     - Fixed issue with failed to move crash dump
