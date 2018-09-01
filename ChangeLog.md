@@ -1,4 +1,19 @@
 # Changelog:
+* **1.2.15b**
+    - Implemented file transfer bandwidth
+    - Implemented file transfer quotas
+    - Implemented monthly and global static saving and resetting
+    - Implemented permissions:
+        - `b_virtualserver_channelgroup_list`
+        - `b_virtualserver_servergroup_list`
+        - `b_virtualserver_select`
+        - `b_icon_manage` (On file listing)
+        
+* **1.2.14b**
+    - Fixed too long channel name
+    - Fixed override of query passwords
+    - Improved move/switch logic
+    
 * **1.2.13b**
     - Fixed memory leak
     - Fixed issue [#347](https://github.com/TeaSpeak/TeaSpeak/issues/347)
