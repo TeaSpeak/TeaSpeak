@@ -8,6 +8,11 @@
         - `b_virtualserver_servergroup_list`
         - `b_virtualserver_select`
         - `b_icon_manage` (On file listing)
+    - Fixed channel tree rebuild crash
+    Beta 7:
+        - Fixed invalid channel order
+        - Fixed invalid quotas (Disconnect on file transfare)
+        - Fixed `serversnapshotdeploy`
         
 * **1.2.14b**
     - Fixed too long channel name
