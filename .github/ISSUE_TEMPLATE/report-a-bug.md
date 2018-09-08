@@ -26,6 +26,7 @@ If applicable, add logs (trace level is recommended) to help explain your proble
 **Environment information:**
  Operating system: (`uname -a`)
  TeaSpeak version: [TeaSpeak-1.1.40-beta-1]
+ I am using `experimental_31`: (yes/no)
 
 **Additional context**
 Add any other context about the problem here.
