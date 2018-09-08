@@ -2,6 +2,8 @@
 * **1.2.16b**
     - Improved error handling on double database access
     - Implemented the full whisper system
+    - Made commands `serveredit` and `serverinfo` accessible globally
+    - Implemented server property template implementation
     
 * **1.2.15b**
     - Implemented file transfer bandwidth
