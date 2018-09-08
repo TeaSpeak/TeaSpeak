@@ -1,4 +1,8 @@
 # Changelog:
+* **1.2.16b**
+    - Improved error handling on double database access
+    - Implemented the full whisper system
+    
 * **1.2.15b**
     - Implemented file transfer bandwidth
     - Implemented file transfer quotas
