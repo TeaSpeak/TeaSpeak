@@ -33,7 +33,7 @@ In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `con
 - The country flag a client gets when no valid country can be detected (Either through connecting with a local or not yet registered IP)
 
 ### Additional Server Query Notifies
-In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/ServerQueryNotify.md))
+In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/documentation/ServerQueryNotify.md))
 ![](https://i.imgur.com/1D8dhBo.png)
 
 
