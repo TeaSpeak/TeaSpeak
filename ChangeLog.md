@@ -4,6 +4,10 @@
     - Implemented the full whisper system
     - Made commands `serveredit` and `serverinfo` accessible globally
     - Implemented server property template implementation
+    - Fixed weblist report
+    - Fixed issue [#420](https://github.com/TeaSpeak/TeaSpeak/issues/420) (Snapshot incorrectly transfers server settings)
+    - Implemented [#350](https://github.com/TeaSpeak/TeaSpeak/issues/350)
+    - Added command line parameters `--set_query_password` and `--help` [#404](https://github.com/TeaSpeak/TeaSpeak/issues/404)
     
 * **1.2.15b**
     - Implemented file transfer bandwidth
