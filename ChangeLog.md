@@ -1,9 +1,10 @@
 # Changelog:
 * **1.2.17b**
     - Added permission `b_virtualserver_modify_default_musicgroup`
-    - Added permission `i_channel_ignore_join_power`
+    - Added permission `b_channel_ignore_join_power`
     - Fixed config version auto update
     - Fixed file transfer and server hangup issue
+    - Implemented music provider configurations
     
 * **1.2.16b**
     - Improved error handling on double database access
