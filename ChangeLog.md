@@ -1,4 +1,10 @@
 # Changelog:
+* **1.2.17b**
+    - Added permission `b_virtualserver_modify_default_musicgroup`
+    - Added permission `i_channel_ignore_join_power`
+    - Fixed config version auto update
+    - Fixed file transfer and server hangup issue
+    
 * **1.2.16b**
     - Improved error handling on double database access
     - Implemented the full whisper system
