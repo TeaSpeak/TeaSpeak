@@ -20,7 +20,7 @@ NOTE: Most of the here described changes only apply to the query interface.
  - [New features](#New-features)
     
 ### Built in musicbots
-TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwith usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
+TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwidth usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
 ### Customizable Messages
 In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `config.yml`.
@@ -68,6 +68,7 @@ TeaSpeak is a community driven project so we listen a lot to feature requests
   - `client_hwid` -> Last used hardware id
 - `notifyplugincmd` ([#35](https://github.com/TeaSpeak/TeaSpeak/issues/35)), `notifyconnectioninforequest` ([#36](https://github.com/TeaSpeak/TeaSpeak/issues/36))
   - `invokerid` -> The client id of the invoker
+- New command `propertylist`
 
 ### Scheduled Shutdowns
 TeaSpeak has the possibility to schedule a shutdown with the query command `serverprocessstop`
@@ -152,6 +153,7 @@ Permission | Description
 `i_channel_view_power` | The channel view power of a client
 `b_channel_ignore_view_power` | Allows the client to bypass the visibility check and see all channels
 `i_channel_needed_view_power` | The required channel view power for a channel
+`b_virtualserver_select_godmode` | Allows a query to select a server without being bind to it
 
 ### New features
 - VPN Testing
