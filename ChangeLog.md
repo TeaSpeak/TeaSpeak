@@ -7,6 +7,7 @@
     - Implemented music provider configurations
     - Added permission `b_virtualserver_select_godmode`
     - Fixed crashes from issue [#432](https://github.com/TeaSpeak/TeaSpeak/issues/432)
+    - Implemented issue [#161](https://github.com/TeaSpeak/TeaSpeak/issues/161)
     
 * **1.2.16b**
     - Improved error handling on double database access
