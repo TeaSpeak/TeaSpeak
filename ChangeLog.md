@@ -1,4 +1,11 @@
 # Changelog:
+* **1.2.18b**
+    - Fixed ban issue with internal ban id's
+    - Implemented ban trigger count and log
+    - Added command `bantriggerlist`
+    - Implementing permission `b_client_use_channel_commander`
+    - Fixed crash according to global groups assignments
+    
 * **1.2.17b**
     - Added permission `b_virtualserver_modify_default_musicgroup`
     - Added permission `b_channel_ignore_join_power`

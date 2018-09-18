@@ -2,11 +2,23 @@ Usage: banlist
 
 Permissions:
   b_client_ban_list
+  b_client_remoteaddress_view
 
 Description:
   Displays a list of active bans on the selected virtual server.
 
+Parameter Description:
+    banid [uint64]: Unique ban id
+    created [int64]: Milliseconds since epoch
+    ip [varchar]: Ip of the ban entry
+        Note: You see the IP only when you have the permission b_client_remoteaddress_view
+    invokername [varchar]: Invoker client name
+    invokercldbid [uint64]: Invoker client database id
+    invokeruid [varchar]: Invoker client unique id
+    reason [varchar]: The reason for the ban
+    enforcements [uint64]: The count of how many time the ban rule was triggered (e.g. When a client attempts to join)
+
 Example:
   banlist
-  banid=7 ip=1.2.3.4 created=1259444002242 invokername=Sven invokercldbid=56 invokeruid=oHhi9WzXLNEFQOwAu4JYKGU+C+c= reason enforcements=0
+  banid=7 ip=1.2.3.4 created=1259444002242 invokername=WolverinDEV invokercldbid=56 invokeruid=oHhi9WzXLNEFQOwAu4JYKGU+C+c= reason enforcements=0
   error id=0 msg=ok

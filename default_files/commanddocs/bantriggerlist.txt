@@ -1,0 +1,28 @@
+Usage: bantriggerlist
+
+Permissions:
+  b_client_ban_trigger_list
+
+Description:
+  Displays a list of trigger events for a ban entry
+
+Request parameter description:
+    banid [uint64]: The requested ban id
+    limit [int64]: Limit of entries
+    offset [int64]: Offset of the view
+
+Response parameter Description:
+    banid [uint64]: The requested ban id (Only within the first bulk)
+    serverid [uint16]: The current server id (Only within the first bulk)
+
+    client_unique_identifier [varchar]: Clients given unique identifier
+    client_hardware_identifier [varchar]: Clients given hardware id
+    client_nickname [varchar]: Clients given nickname
+    connection_client_ip [varchar]: Clients give ip address
+        Note: Only availible when permission b_client_remoteaddress_view is granted
+    timestamp [int64]: When the attempt was made (milliseconds since epoch)
+
+Example:
+  bantriggerlist banid=1
+  banid=1 serverid=1 client_unique_identifier=xxjnc14LmvTk+Lyrm8OOeo4tOqw= client_hardware_identifier=a282e3dc4cb8583c6d8e3466f38c1970 client_nickname=WolverinDEV connection_client_ip=127.0.0.1 timestamp=0|client_unique_identifier=xxjnc14LmvTk+Lyrm8OOeo4tOqw= client_hardware_identifier=a282e3dc4cb8583c6d8e3466f38c1970 client_nickname=WolverinDEV connection_client_ip=127.0.0.1 timestamp=0
+  error id=0 msg=ok
