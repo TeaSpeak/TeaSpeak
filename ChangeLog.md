@@ -1,4 +1,10 @@
 # Changelog:
+* **1.2.19b**
+    - Implemented native audio streaming for the web client (No "robovoice" again, currently only chrome support!)
+    - Fixed crash on web client disconnect
+    - Don't ask for the default privilege key anymore, if it doesn't exists
+    - Fixed file transfer instance hangup
+    
 * **1.2.18b**
     - Fixed ban issue with internal ban id's
     - Implemented ban trigger count and log
