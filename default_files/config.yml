@@ -105,11 +105,11 @@ server:
   delete_missing_icon_permissions: 0
 query:
   #Change the query newline character
-  nl_char: "\r\n"
+  nl_char: "\n\r"
   #The query welcome message
   #Notice: If not like TeamSpeak then some applications may not recognize the Query
   #Default TeamSpeak 3 MOTD:
-  motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
+  motd: "TeaSpeak\n\rWelcome on the TeaSpeak ServerQuery interface.\n\r"
   #Enable/disable SSL for query
   #Available modes:
   #  0: Disabled
