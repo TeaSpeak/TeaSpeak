@@ -6,6 +6,8 @@
     - Fixed file transfer instance hangup
     - Fixed issue [#422](https://github.com/TeaSpeak/TeaSpeak/issues/442)
     - Fixed query interface for `serverprocessstop`
+    - Fixed client disconnect when own channel becomes theoretically invisible
+    - Fixed address using on server stop, when a music bot is running
     
 * **1.2.18b**
     - Fixed ban issue with internal ban id's
