@@ -2,7 +2,10 @@
 * **1.2.20b**
     - Several webclient improvements (stability as well)
         Should be now useable with TeaSpeak-Server without crashing :)
-        
+    - Implemented issue [#467](https://github.com/TeaSpeak/TeaSpeak/issues/467)
+    - Fixed music bot crash on delete
+    - Improved file transfer error handling on file opening
+    
 * **1.2.19b**
     - Implemented native audio streaming for the web client (**No "robovoice" again**)
     - Fixed crash on web client disconnect
