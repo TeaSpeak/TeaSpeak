@@ -5,6 +5,7 @@
     - Implemented issue [#467](https://github.com/TeaSpeak/TeaSpeak/issues/467)
     - Fixed music bot crash on delete
     - Improved file transfer error handling on file opening
+    - Improved error handling for eliminating the `invalid clientID` disconnect
     
 * **1.2.19b**
     - Implemented native audio streaming for the web client (**No "robovoice" again**)
