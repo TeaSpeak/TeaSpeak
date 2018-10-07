@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.21b**
+    - Fixed ip v6 binding and MTU issue
+    - Improved buffer strategies
+    - Fixed music bot crash on delete
+    
 * **1.2.20b**
     - Several webclient improvements (stability as well)
         Should be now useable with TeaSpeak-Server without crashing :)
