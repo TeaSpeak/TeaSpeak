@@ -3,7 +3,9 @@
     - Fixed ip v6 binding and MTU issue
     - Improved buffer strategies
     - Fixed music bot crash on delete
-    
+    - Fixed issue [#476](https://github.com/TeaSpeak/TeaSpeak/issues/476)
+    - Removed autoban for display name on `banclient`
+   
 * **1.2.20b**
     - Several webclient improvements (stability as well)
         Should be now useable with TeaSpeak-Server without crashing :)
