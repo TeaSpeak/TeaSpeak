@@ -2,6 +2,8 @@
 * **1.2.22b**
     - Fixed client disconnects on client channel switch
     - Some small improvements
+    - Speeded up loading process
+    - Fixed channel tree remerge on broken channel tree
 
 * **1.2.21b**
     - Fixed ip v6 binding and MTU issue
