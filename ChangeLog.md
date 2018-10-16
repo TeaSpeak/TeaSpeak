@@ -1,4 +1,7 @@
 # Changelog:
+* **1.2.23b**
+    - Fixed stability issues within 22 :)
+    
 * **1.2.22b**
     - Fixed client disconnects on client channel switch
     - Some small improvements
