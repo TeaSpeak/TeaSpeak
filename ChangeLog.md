@@ -1,7 +1,11 @@
 # Changelog:
 * **1.2.23b**
     - Fixed stability issues within 22 :)
-    
+    - Added parameter `hwid` on `banlist`
+    - Added the possibility to edit the `hwid` on `banedit`
+    - Added synonym for `reason` on `banedit` (`banreason`)
+    - Added flags on `banclient` (`no-nickname`, `no-hardware-id`, `no-ip`)
+     
 * **1.2.22b**
     - Fixed client disconnects on client channel switch
     - Some small improvements

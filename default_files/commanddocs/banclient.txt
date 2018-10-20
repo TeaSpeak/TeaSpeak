@@ -1,4 +1,4 @@
-Usage: banclient clid={clientID} [time={timeInSeconds}] [banreason={text}]
+Usage: banclient clid={clientID} [time={timeInSeconds}] [banreason={text}] [-no-nickname] [-no-hardware-id] [-no-ip]
 
 Permissions:
   i_client_ban_power

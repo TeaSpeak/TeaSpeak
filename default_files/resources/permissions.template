@@ -518,6 +518,7 @@ permission:b_client_complain_list=1,75,0,0
 permission:b_client_complain_delete_own=1,75,0,0
 permission:b_client_complain_delete=1,75,0,0
 permission:b_client_ban_list=1,75,0,0
+permission:b_client_ban_list_global=1,75,0,0
 permission:b_client_ban_create=1,75,0,0
 permission:b_client_ban_delete_own=1,75,0,0
 permission:b_client_ban_delete=1,75,0,0
