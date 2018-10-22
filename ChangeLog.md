@@ -1,4 +1,11 @@
 # Changelog:
+* **1.2.24b**
+    - Grouped Web IO threads (configurable of cause)
+    - Implemented support to override config options via command line
+    - Improved config error handling
+    - Added specific soundcloud replay support (`.mbot soundcould <url>`)
+    - Added command line config overrides
+    
 * **1.2.23b**
     - Fixed stability issues within 22 :)
     - Added parameter `hwid` on `banlist`
