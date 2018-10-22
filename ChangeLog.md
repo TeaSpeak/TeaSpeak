@@ -5,6 +5,7 @@
     - Improved config error handling
     - Added specific soundcloud replay support (`.mbot soundcould <url>`)
     - Added command line config overrides
+    - Fixed bans for empty hardware id's. Not ban a empty id by `hwid=empty`
     
 * **1.2.23b**
     - Fixed stability issues within 22 :)
