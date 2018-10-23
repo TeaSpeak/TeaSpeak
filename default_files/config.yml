@@ -1,205 +1,325 @@
-#The configuration version.
-#Do NOT modify!
-version: 10
-log:
-  #The log level
-  #Available types:
-  #  0: Trace
-  #  1: Debug
-  #  2: Info
-  #  3: Warn
-  #  4: Error
-  #  5: Critical
-  #  6: Off
-  level: 1
-  #Disable/enable ascii codes in log
-  colored: 0
-  #Virtualserver log chunk size
-  #0 = Disable (Log all to one file)
-  #1 = Individual (Create for each virtual server a new log)
-  #>1 = Chunked (Use for each n virtual servers the same log file)
-  #Do NOT TOUCH unless you're 100% sure!
-  vs_size: 0
-  #The log file path
-  #Do NOT TOUCH unless you're 100% sure!
-  path: logs/log_${time}(%Y-%m-%d_%H:%M:%S)_${group}.log
-messages:
-  #The terminal log level
-  level: 2
-  voice:
-    #The server stopped message
-    server_stop: Server stopped
-  application:
-    #The server stopped message
-    stop: Application stopped
-    #The application crashed message
-    crash: Application crashed
-  #The idle time kick message
-  idle_time: Idle time exceeded
-  mute:
-    #The mute notify message
-    mute_message: "Hey!\nI muted you!"
-    #The unmute notify message
-    unmute_message: "Hey!\nI unmuted you!"
-    kick_invalid:
-      #The message when a client get kicked caused by an invalid hardware id
-      hardware_id: Invalid hardware id. Protocol hacked?
-      #The message when a client get kicked caused by an invalid command
-      command: Invalid command. Protocol hacked?
-      #The message when a client get kicked caused by an invalid badges
-      badges: Invalid badges. Protocol hacked?
-  vpn:
-    #This is the kick/ban message when a client tries to connect with a vpn
-    #Variables are enabled. Available:
-    # - provider.name => Contains the provider of the ip which has been flaged as vps
-    # - provider.website => Contains the website provider of the ip which has been flaged as vps
-    kick: "Please disable your VPN! (Provider: ${provider.name})"
+#Description:
+#  The current config version
+#Warning:
+#  This is a auto generated id!
+#  Modification could cause data loss!
+#The value must be a positive numeric value between 0 and 1410065408
+version: 11
 general:
-  #The database url
-  #Available urls:
-  #  sqlite://[file]
-  #  mysql://[host][:port]/[database][?propertyName1=propertyValue1[&propertyName2=propertyValue2]...]
-  #
-  #More info about about the mysql url could be found here: https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-configuration-properties.html
-  #There's also a new property called 'connections', which describes how many connections and queries could be executed synchronously
-  #MySQL example: mysql://localhost:3306/teaspeak?userName=root&password=mysecretpassword&connections=4
-  #Attention: If you're using MySQL you need at least 3 connections!
-  database_url: sqlite://TeaData.sqlite
-  #Insert here your license code (if you have one)
+  #Description:
+  #  Insert here your TeaSpeak license code (if you have one)
+  #The value must be a string
   license: none
-  #The crashdump file path
+  #Description:
+  #  Available urls:
+  #    sqlite://[file]
+  #    mysql://[host][:port]/[database][?propertyName1=propertyValue1[&propertyName2=propertyValue2]...]
+  #  
+  #  More info about about the mysql url could be found here: https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-configuration-properties.html
+  #  There's also a new property called 'connections', which describes how many connections and queries could be executed synchronously
+  #  MySQL example: mysql://localhost:3306/teaspeak?userName=root&password=mysecretpassword&connections=4
+  #  Attention: If you're using MySQL you need at least 3 connections!
+  #The value must be a string
+  database_url: sqlite://TeaData.sqlite
+  #Description:
+  #  Define the folder where the crash dump files will be moved, when the server crashes
+  #The value must be a string
   crash_path: crash_dumps/
+  #Description:
+  #  The default channel chat command prefix
+  #The value must be a string
+  command_prefix: .
+log:
+  #Description:
+  #  The log level within the log files
+  #  Available types:
+  #    0: Trace
+  #    1: Debug
+  #    2: Info
+  #    3: Warn
+  #    4: Error
+  #    5: Critical
+  #    6: Off
+  #The value must be a positive numeric value between 0 and 6
+  level: 1
+  #Description:
+  #  The log level within the TeaSpeak server terminal
+  #  Available types:
+  #    0: Trace
+  #    1: Debug
+  #    2: Info
+  #    3: Warn
+  #    4: Error
+  #    5: Critical
+  #    6: Off
+  #The value must be a positive numeric value between 0 and 6
+  terminal_level: 1
+  #Description:
+  #  Disable/enable ascii codes within the log file
+  #The value must be a positive numeric value between 0 and 1
+  colored: 0
+  #Description:
+  #  Virtual server log chunk size
+  #The value must be a unsigned long between 0 and 65535
+  vs_size: 0
+  #Description:
+  #  The log file path
+  #The value must be a string
+  path: logs/log_${time}(%Y-%m-%d_%H:%M:%S)_${group}.log
 binding:
-  file:
-    #The default host for the file server
-    host: 0.0.0.0
-    #The default port for the file server
-    port: 30303
   query:
-    #The default host for the query server
+    #The value must be a positive numeric value between 1 and 65535
+    port: 30303
+    #Notes:
+    #  Multibinding like the voice server isnt supported yet!
+    #The value must be a string
     host: 0.0.0.0
-    #The default port for the query server
+  file:
+    #The value must be a positive numeric value between 1 and 65535
     port: 10101
-server:
-  #The displayed version to the client
-  #This option is only for the premium version.
-  version: "TeaSpeak 1.2.8-beta [Build: 1534434552]"
-  #The displayed platform to the client
-  #This option is only for the premium version.
-  platform: Linux
-  #The displayed licence type to every TeaSpeak 3 Client
-  #Available types:
-  #  0: No Licence
-  #  1: Authorised TeaSpeak Host Provider License (ATHP)
-  #  2: Offline/Lan Licence
-  #  3: Non-Profit License (NPL)
-  #  4: Unknown Licence
-  #  5: ~placeholder~
-  #  6: Auto-License (Server based)
-  #  7: Auto-License (Instance based)
-  #This option is only for the premium version.
-  licence: 7
-  #Enable/disable the deletion of old bans within the database
-  delete_old_bans: 1
-  #Enable/disable the deletion of invalid icon id permissions
-  delete_missing_icon_permissions: 0
+    #Notes:
+    #  Multibinding like the voice server isnt supported yet!
+    #The value must be a string
+    host: 0.0.0.0
 query:
-  #Change the query newline character
-  nl_char: "\r\n"
-  #The query welcome message
-  #Notice: If not like TeamSpeak then some applications may not recognize the Query
-  #Default TeamSpeak 3 MOTD:
-  motd: "TeaSpeak\r\nWelcome on the TeaSpeak ServerQuery interface.\r\n"
-  #Enable/disable SSL for query
-  #Available modes:
-  #  0: Disabled
-  #  1: Enabled (Enforced encryption)
-  #  2: Hybrid (Prefer encryption but fallback when it isnt available)
+  #Description:
+  #  Change the query newline character
+  #The value must be a string
+  nl_char: "\n\r"
+  #Description:
+  #  The query welcome message
+  #Notes:
+  #  If not like TeamSpeak then some applications may not recognize the Query
+  #  Default TeamSpeak 3 MOTD:
+  #  TS3\n\rWelcome to the TeamSpeak 3 ServerQuery interface, type \"help\" for a list of commands and \"help <command>\" for information on a specific command.\n\r\n\r
+  #The value must be a string
+  motd: "TeaSpeak\n\rWelcome on the TeaSpeak ServerQuery interface.\n\r"
+  #Description:
+  #  Enable/disable SSL for query
+  #  Available modes:
+  #    0: Disabled
+  #    1: Enabled (Enforced encryption)
+  #    2: Hybrid (Prefer encryption but fallback when it isnt available)
+  #The value must be a positive numeric value between 0 and 2
   enableSSL: 2
   ssl:
-    #The SSL certificate for the query manager
-    #The SSL certificate for the query manager
+    #Description:
+    #  The SSL certificate for the query client
+    #The value must be a string
     certificate: certs/query_certificate.pem
-    #The SSL private key for the query manager (You have to export the key without a password!)
+    #Description:
+    #  The SSL private key for the query client (You have to export the key without a password!)
+    #The value must be a string
     privatekey: certs/query_privatekey.pem
 voice:
-  #Enable/disable the mute notify
-  notifymute: 1
-  #Supress the MyTS integration warnings
+  #Description:
+  #  Change the default voice server port
+  #  This also defines the start where the instance search for free server ports on a new server creation
+  #Notes:
+  #  This setting only apply once, when you create a new instance.
+  #  Once applied the default server port would not be changed!
+  #  The start point for the server creation still apply.
+  #The value must be a positive numeric value between 1 and 65535
+  default_port: 9987
+  #Description:
+  #  Enable/disable the mute notify
+  #The value must be a positive numeric value between 0 and 1
+  notifymute: 0
+  #Description:
+  #  Supress the MyTS integration warnings
+  #The value must be a positive numeric value between 0 and 1
   suppress_myts_warnings: 1
   rsa:
-    #The amount of precomputed puzzles
-    #Do NOT TOUCH unless you're 100% sure!
+    #Description:
+    #  The amount of precomputed puzzles
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 65536
     puzzle_pool_size: 128
   handshake:
-    #The puzzle level. (A higher number will result a longer calculation time for the manager RSA puzzle)
-    #Do NOT TOUCH unless you're 100% sure!
+    #Description:
+    #  The puzzle level. (A higher number will result a longer calculation time for the manager RSA puzzle)
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a positive numeric value between 512 and 1048576
     puzzle_level: 1000
-    #Enforces the cookie exchange (Low level protection against distributed denial of service attacks (DDOS attacks))
-    #This option is highly recommended!
-    #Do NOT TOUCH unless you're 100% sure!
+    #Description:
+    #  Enforces the cookie exchange (Low level protection against distributed denial of service attacks (DDOS attacks))
+    #Notes:
+    #  This option is highly recommended!
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a positive numeric value between 0 and 1
     enforce_cookie: 1
-  #Maximum amount of join attempts per second.
+  #Description:
+  #  Maximum amount of join attempts per second.
+  #Notes:
+  #  A value of zero means unlimited
+  #The value must be a positive numeric value between 0 and 1024
   connect_limit: 10
-  #Maximum amount of join attempts per second per ip.
+  #Description:
+  #  Maximum amount of join attempts per second per ip.
+  #Notes:
+  #  A value of zero means unlimited
+  #The value must be a positive numeric value between 0 and 1024
   client_connect_limit: 3
   protocol:
-    #Its just a test for the new TeamSpeak licensing system (you require a extra plugin!)
+    #Description:
+    #  Enables the newer and safer protocol based on TeamSpeak's documented standard
+    #Notes:
+    #  An invalid protocol chain could lead clients to calculate a wrong shared secret result
+    #  This may cause a connection setup fail and the client will be unable to connect!
+    #The value must be a positive numeric value between 0 and 1
     experimental_31: 0
+server:
+  #Description:
+  #  Enable/disable the deletion of old bans within the database
+  #The value must be a positive numeric value between 0 and 1
+  delete_old_bans: 1
+  #Description:
+  #  Enable/disable the deletion of invalid icon id permissions
+  #The value must be a positive numeric value between 0 and 1
+  delete_missing_icon_permissions: 1
 web:
-  #Disable/enable the possibility to connect via the TeaSpeak web manager
+  #Description:
+  #  Disable/enable the possibility to connect via the TeaSpeak web client
+  #Notes:
+  #  If you've disabled this feature the TeaClient wound be able to join too.
+  #The value must be a positive numeric value between 0 and 1
   enabled: 1
   ssl:
-    #The SSL certificate for the web manager
+    #Description:
+    #  The SSL certificate for the web client
+    #The value must be a string
     certificate: certs/default_certificate.pem
-    #The SSL private key for the web manager (You have to export the key without a password!)
+    #Description:
+    #  The SSL private key for the web client (You have to export the key without a password!)
+    #The value must be a string
     privatekey: certs/default_privatekey.pem
-threads:
-  #Thread pool size for the ticking task of a VirtualServer
-  #Do NOT TOUCH unless you're 100% sure!
-  ticking: 2
-  voice:
-    #Max number of threads for command handling on the instance
-    #Do NOT TOUCH unless you're 100% sure!
-    execute_limit: 10
-    #Threads per server for command executing
-    #Do NOT TOUCH unless you're 100% sure!
-    execute_per_server: 3
-    #LibEvent events per server
-    #Do NOT TOUCH unless you're 100% sure!
-    events_per_server: 4
-    #Minimum IO threads
-    #Do NOT TOUCH unless you're 100% sure!
-    io_min: 3
-    #IO Thread increase per server
-    #Do NOT TOUCH unless you're 100% sure!
-    io_per_server: 4
-    #Max IO threads
-    #Do NOT TOUCH unless you're 100% sure!
-    io_limit: 10
-  music:
-    #Max number of threads for command handling on the instance
-    #Do NOT TOUCH unless you're 100% sure!
-    execute_limit: 15
-    #Threads per server for command executing
-    #Do NOT TOUCH unless you're 100% sure!
-    execute_per_bot: 1
 geolocation:
-  #The fallback country if lookup fails
+  #Description:
+  #  The fallback country if lookup fails
+  #The value must be a string
   fallback_country: DE
   mapping:
-    #The mapping file for the given provider
-    #Default for IP2Location: geoloc/IP2Location.CSV
-    #Default for Software77: geoloc/IpToCountry.csv
+    #Description:
+    #  The mapping file for the given provider
+    #  Default for IP2Location: geoloc/IP2Location.CSV
+    #  Default for Software77: geoloc/IpToCountry.csv
+    #The value must be a string
     file: geoloc/IP2Location.CSV
-    #The IP 2 location resolver
-    #0 = IP2Location
-    #1 = Software77
+    #Description:
+    #  The IP 2 location resolver
+    #  0 = IP2Location
+    #  1 = Software77
+    #The value must be a positive numeric value between 0 and 2
     type: 0
-  #Disable/enable the IP2Location lookup
-  force_fallback_country: 0
   vpn:
-    #The mapping file for vpn checker (https://github.com/client9/ipcat/blob/master/datacenters.csv)
+    #Description:
+    #  The mapping file for vpn checker (https://github.com/client9/ipcat/blob/master/datacenters.csv)
+    #The value must be a string
     file: geoloc/ipcat.csv
-    #Disable/enable the vpn test
+    #Description:
+    #  Disable/enable the vpn detection
+    #The value must be a positive numeric value between 0 and 1
     enabled: 0
+music:
+  #Description:
+  #  Enable/disable the music bots
+  #The value must be a positive numeric value between 0 and 1
+  enabled: 1
+messages:
+  voice:
+    #The value must be a string
+    server_stop: Server stopped
+  application:
+    #The value must be a string
+    stop: Application stopped
+    #The value must be a string
+    crash: Application crashed
+  #The value must be a string
+  idle_time: Idle time exceeded
+  mute:
+    #The value must be a string
+    mute_message: "Hey!\nI muted you!"
+    #The value must be a string
+    unmute_message: "Hey!\nI unmuted you!"
+  kick_invalid:
+    #The value must be a string
+    hardware_id: Invalid hardware id. Protocol hacked?
+    #The value must be a string
+    command: Invalid command. Protocol hacked?
+    #The value must be a string
+    badges: Invalid badges. Protocol hacked?
+  vpn:
+    #Description:
+    #  This is the kick/ban message when a client tries to connect with a vpn
+    #  Variables are enabled. Available:
+    #   - provider.name => Contains the provider of the ip which has been flaged as vps
+    #   - provider.website => Contains the website provider of the ip which has been flaged as vps
+    #The value must be a string
+    kick: "Please disable your VPN! (Provider: ${provider.name})"
+threads:
+  #Description:
+  #  Thread pool size for the ticking task of a VirtualServer
+  #Warning:
+  #  Do NOT TOUCH unless you're 100% sure!
+  #The value must be a unsigned long between 1 and 128
+  ticking: 2
+  music:
+    #Description:
+    #  Max number of threads for command handling on the instance
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 1024
+    execute_limit: 15
+    #Description:
+    #  Threads per server for command executing
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 128
+    execute_per_bot: 1
+  web:
+    #Description:
+    #  Thread pool size for the ticking task of a VirtualServer
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 128
+    io_loops: 4
+  voice:
+    #Description:
+    #  Kernel events per server
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 16
+    events_per_server: 2
+    #Description:
+    #  Threads per server for command executing
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 128
+    execute_per_server: 2
+    #Description:
+    #  Max number of threads for command handling threads within the instance
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 1024
+    execute_limit: 10
+    #Description:
+    #  Minimum IO threads
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 1024
+    io_min: 2
+    #Description:
+    #  IO Thread increase per server
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 64
+    io_per_server: 2
+    #Description:
+    #  Max IO threads
+    #Warning:
+    #  Do NOT TOUCH unless you're 100% sure!
+    #The value must be a unsigned long between 1 and 1024
+    io_limit: 10
