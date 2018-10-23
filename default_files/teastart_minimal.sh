@@ -56,6 +56,6 @@ done
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH;./libs/"
 export LD_PRELOAD="./libs/libjemalloc.so.2"
 
-./TeaSpeakServer
+./TeaSpeakServer $@
 #Cleanup & reset the terminal
 stty cooked echo
