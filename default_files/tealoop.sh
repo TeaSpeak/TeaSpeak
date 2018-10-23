@@ -2,7 +2,7 @@
 
 while true;
 do
-    ./teastart_minimal.sh
+    ./teastart_minimal.sh $@
     c=5
     echo "Automatically restarting TeaSpeak"
     echo "  Press ^K^C to break this loop!"

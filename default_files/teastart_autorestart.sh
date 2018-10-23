@@ -15,7 +15,7 @@ fi
 PID_FILE="tpid.pid"
 SPID_FILE="stpid.pid"
 
-COMMANDLINE_PARAMETERS="${2}" #add any command line parameters you want to pass here
+COMMANDLINE_PARAMETERS="${@:2}" #add any command line parameters you want to pass here
 D1=$(readlink -f "$0")
 BINARYPATH="$(dirname "${D1}")"
 cd "${BINARYPATH}"
