@@ -69,14 +69,14 @@ log:
 binding:
   query:
     #The value must be a positive numeric value between 1 and 65535
-    port: 30303
+    port: 10101
     #Notes:
     #  Multibinding like the voice server isnt supported yet!
     #The value must be a string
     host: 0.0.0.0
   file:
     #The value must be a positive numeric value between 1 and 65535
-    port: 10101
+    port: 30303
     #Notes:
     #  Multibinding like the voice server isnt supported yet!
     #The value must be a string
