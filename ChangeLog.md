@@ -1,4 +1,10 @@
 # Changelog:
+* **1.2.25b**
+    - Added permissions `b_client_ban_name`, `b_client_ban_ip`, `b_client_ban_hwid`
+    - Return correct ban ID array on `banclient`
+    - Added array handling within info request for commands `clientinfo`, `clientdbinfo`, `clientgetids`, `clientgetdbidfromuid`, `clientgetnamefromdbid`, `clientgetuidfromclid`
+    - Added `cid` to `clientinfo`
+    
 * **1.2.24b**
     - Grouped Web IO threads (configurable of cause)
     - Implemented support to override config options via command line
