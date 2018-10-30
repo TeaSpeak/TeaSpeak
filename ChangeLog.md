@@ -4,6 +4,11 @@
     - Return correct ban ID array on `banclient`
     - Added array handling within info request for commands `clientinfo`, `clientdbinfo`, `clientgetids`, `clientgetdbidfromuid`, `clientgetnamefromdbid`, `clientgetuidfromclid`
     - Added `cid` to `clientinfo`
+    - Fixed `i_needed_modify_power_...` permission resolving
+    - Fixed missing error for empty database for command `permfind`
+    - Implemented `permfind` for `i_needed_modify_power` queries
+    - Fixed file transfer fail for small files ([#482](https://github.com/TeaSpeak/TeaSpeak/issues/482))
+    - Fixed music bot youtubdl module detecting youtube urls again
     
 * **1.2.24b**
     - Grouped Web IO threads (configurable of cause)
