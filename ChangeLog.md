@@ -1,4 +1,8 @@
 # Changelog:
+* **1.2.26b**
+    - Improved server ticking for temporary channels
+    - Improved log handling (async log now) => Should speedup some processes
+    
 * **1.2.25b**
     - Added permissions `b_client_ban_name`, `b_client_ban_ip`, `b_client_ban_hwid`
     - Return correct ban ID array on `banclient`
