@@ -2,6 +2,10 @@
 * **1.2.26b**
     - Improved server ticking for temporary channels
     - Improved log handling (async log now) => Should speedup some processes
+    - Fixed `virtualserver_query_client_connections` counter
+    - Fixed client disconnect on double subchannel deletion
+    - Implemented client property (`client_flag_talking`)
+    - Added parameter `client_talk_power` to `clientlist -voice`
     
 * **1.2.25b**
     - Added permissions `b_client_ban_name`, `b_client_ban_ip`, `b_client_ban_hwid`
