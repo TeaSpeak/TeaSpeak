@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.27b**
+    - Improved the weblist client and added a global config option to disable the TeamSpeak weblist
+    - Fixed web voice bridge for firefox
+    - Fixed potential crash on query server switch
+    
 * **1.2.26b**
     - Improved server ticking for temporary channels
     - Improved log handling (async log now) => Should speedup some processes
@@ -6,6 +11,7 @@
     - Fixed client disconnect on double subchannel deletion
     - Implemented client property (`client_flag_talking`)
     - Added parameter `client_talk_power` to `clientlist -voice`
+    - Added the possibility to edits a music bot client name via `clientedit` with the property `client_nickname`
     
 * **1.2.25b**
     - Added permissions `b_client_ban_name`, `b_client_ban_ip`, `b_client_ban_hwid`
