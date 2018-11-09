@@ -3,6 +3,7 @@
     - Improved the weblist client and added a global config option to disable the TeamSpeak weblist
     - Fixed web voice bridge for firefox
     - Fixed potential crash on query server switch
+    - Implemented command `ftgetfileinfo`
     
 * **1.2.26b**
     - Improved server ticking for temporary channels
