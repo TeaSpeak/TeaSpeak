@@ -30,7 +30,6 @@
     - Implemented support to override config options via command line
     - Improved config error handling
     - Added specific soundcloud replay support (`.mbot soundcould <url>`)
-    - Added command line config overrides
     - Fixed bans for empty hardware id's. Not ban a empty id by `hwid=empty`
     - Fixed issue ([#481](https://github.com/TeaSpeak/TeaSpeak/issues/481))
     - Fixed premium config settings
