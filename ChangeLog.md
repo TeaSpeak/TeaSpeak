@@ -6,6 +6,7 @@
     - Implemented command `ftgetfileinfo`
     - Improved error handling on invalid db properties
     - Added "quick exit" mode when shutdown signal was triggered more than two times
+    - Fixed property `connection_connected_time` on `clientinfo`
     
 * **1.2.26b**
     - Improved server ticking for temporary channels

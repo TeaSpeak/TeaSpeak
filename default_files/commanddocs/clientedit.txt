@@ -1,8 +1,14 @@
 Usage: clientedit clid={clientID} [client_properties...]
 
+Available Properties:
+  client_nickname (Music bot only)
+  client_is_talker
+  client_description
+
 Permissions:
   b_client_modify_description
   b_client_set_talk_power
+  i_client_music_play_power
 
 Description:
   Changes a clients settings using given properties.
