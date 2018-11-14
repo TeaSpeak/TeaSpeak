@@ -4,6 +4,8 @@
     - Fixed web voice bridge for firefox
     - Fixed potential crash on query server switch
     - Implemented command `ftgetfileinfo`
+    - Improved error handling on invalid db properties
+    - Added "quick exit" mode when shutdown signal was triggered more than two times
     
 * **1.2.26b**
     - Improved server ticking for temporary channels
