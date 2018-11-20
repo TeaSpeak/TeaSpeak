@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.28b**
+    - Fixed invalid memory read on printing error information form malformed packets (possible crash)
+    - Fixed issue [#500](https://github.com/TeaSpeak/TeaSpeak/issues/500)
+    - Added a timestamp for query connect. Queries now have an online time
+    
 * **1.2.27b**
     - Improved the weblist client and added a global config option to disable the TeamSpeak weblist
     - Fixed web voice bridge for firefox
