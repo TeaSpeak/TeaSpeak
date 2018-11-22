@@ -3,6 +3,9 @@
     - Fixed invalid memory read on printing error information form malformed packets (possible crash)
     - Fixed issue [#500](https://github.com/TeaSpeak/TeaSpeak/issues/500)
     - Added a timestamp for query connect. Queries now have an online time
+    - Improved server create algorithm, port selection seeded up (> 100VS)
+    - Removed unnecessary sqlite errors
+    - Fixed a possible crash on serverstop, when clients are connected to the server
     
 * **1.2.27b**
     - Improved the weblist client and added a global config option to disable the TeamSpeak weblist
