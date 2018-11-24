@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.29b**
+    - Fixed WebList and server stop/delete bug.
+    - Fixed 'invalid channels flags' when you set a password to the default channel
+    - Fixed weblist showing wrong server password settings
+    
 * **1.2.28b**
     - Fixed invalid memory read on printing error information form malformed packets (possible crash)
     - Fixed issue [#500](https://github.com/TeaSpeak/TeaSpeak/issues/500)
