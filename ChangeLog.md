@@ -1,9 +1,34 @@
 # Changelog:
+* **1.2.30b**
+    - Fixed weblist showing wrong server password settings
+    - Renamed every parameter `botid` to `bot_id`
+    - Renamed every parameter `songid` to `song_id`
+    - Added switch `-bulk` in `musicbotqueueinfo` to send the data as one line with `|`
+    - Added property value `any` or `-1` for `type` within `musicbotqueueadd` to autodetect the best provider
+    - Fixed `virtualserver_filebase` property
+    - Added that the weblist now shows the correct state for channel creation
+    - Added properties ... to `clientinfo`
+        - connection_packets_sent_total
+        - connection_bytes_sent_total
+        - connection_packets_received_total
+        - connection_bytes_received_total
+        - connection_packetloss_total
+        - connection_server2client_packetloss_total
+        - connection_client2server_packetloss_total
+        - connection_bandwidth_sent_last_second_total
+        - connection_bandwidth_sent_last_minute_total
+        - connection_bandwidth_received_last_second_total
+        - connection_bandwidth_received_last_minute_total
+        - connection_filetransfer_bandwidth_sent
+        - connection_filetransfer_bandwidth_received
+        - connection_filetransfer_bytes_received_total
+        - connection_filetransfer_bytes_sent_total
+    - Fixed libevent hangup on release build (missed initialisation call)
+    
 * **1.2.29b**
     - Fixed WebList and server stop/delete bug.
     - Fixed 'invalid channels flags' when you set a password to the default channel
-    - Fixed weblist showing wrong server password settings
-    
+        
 * **1.2.28b**
     - Fixed invalid memory read on printing error information form malformed packets (possible crash)
     - Fixed issue [#500](https://github.com/TeaSpeak/TeaSpeak/issues/500)
