@@ -3,7 +3,7 @@
     - Fixed weblist showing wrong server password settings
     - Renamed every parameter `botid` to `bot_id`
     - Renamed every parameter `songid` to `song_id`
-    - Added switch `-bulk` in `musicbotqueueinfo` to send the data as one line with `|`
+    - Added switch `-bulk` in `musicbotqueuelist` to send the data as one line with `|`
     - Added property value `any` or `-1` for `type` within `musicbotqueueadd` to autodetect the best provider
     - Fixed `virtualserver_filebase` property
     - Added that the weblist now shows the correct state for channel creation
@@ -24,6 +24,16 @@
         - connection_filetransfer_bytes_received_total
         - connection_filetransfer_bytes_sent_total
     - Fixed libevent hangup on release build (missed initialisation call)
+    - Returning database_empty_result on `musicbotqueuelist` when the list is empty
+    - Fixed song id generation
+    - Renamed (fix) `manager` as `event` to `client` within `servernotify(register|unregister|list)`
+    - Added possibility to change the music bots volume via `clientedit` (`player_volume=0.1`)
+    - When a query is in godmode and executes `clientmove` on himself he gets visible
+    - Changed default country (property `client_country`) from `none` to `TS` (`TS` is unassigned)
+    - Added command `musicbotsetsubscription bot_id=[0|<bot id>]` to enable/set subscribed bot and receive status updates when playing
+    - Improved ffmpeg property detection (decreased log error spam)
+    - Improved `Music bot contained empty frame!` message spam
+    - Fixed license check hangup (2x), added connect timeout, and fixed crash on deallocation
     
 * **1.2.29b**
     - Fixed WebList and server stop/delete bug.

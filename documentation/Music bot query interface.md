@@ -27,7 +27,7 @@ Properties:
 | `virtualserver_music_bot_limit` | Server | Server specific music bot limit |  
 
 Result:  
-If the action was successful, you'le get the property `botId` back, which is the created bot id
+If the action was successful, you'le get the property `bot_id` back, which is the created bot id
 
 Notes:
 The bot's required delete power will be set automatically to the clients bot delete power (if present)  
@@ -38,16 +38,26 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id which you want to delete |
+| `bot_id` | The target bot id which you want to delete |
 
 Permissions:  
 
-| Property name | Description |  
+| Permission name | Description |  
 | --- | --- |  
 | `i_client_music_delete_power` | This permission must be greater than `i_client_music_needed_delete_power` of the bot |  
 | `b_client_music_delete_own` | If `i_client_music_delete_power` less than required, but you own the bot than you require this permission |  
 
 Properties: None  
+
+### Set subscribed bot (`musicbotsetsubscription`)
+Command:
+Parameters:
+
+| Parameter name | Description |  
+| --- | --- |  
+| `bot_id` | The target bot id which you want to subscribe (zero for no selection) |
+
+Permissions: None  
 
 ### Receive bot player info (`musicbotplayerinfo`)
 Command: `musicbotplayerinfo`  
@@ -55,7 +65,7 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
+| `bot_id` | The target bot id |  
 
 Permissions: None
 
@@ -66,7 +76,7 @@ You will receive a bunch of results which contains these parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | This is equal to the requested `botId` |  
+| `bot_id` | This is equal to the requested `bot_id` |  
 | `player_state` | The current player state ([more info](#Player state)) |  
 | `player_buffered_index` | Time index until the music if buffered (in `milliseconds`) |  
 | `player_replay_index` | Time index until the music is played (in `milliseconds`) |  
@@ -81,7 +91,7 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
+| `bot_id` | The target bot id |  
 | `action` | The action what you want ([more info](#Player action)) |  
 
 Permissions:  
@@ -98,8 +108,11 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
-
+| `bot_id` | The target bot id |  
+  
+Switches:  
+`-bulk`: Enables that the result will be one line instead or a new line for every entry  
+  
 Permissions:  
 
 | Property name | Description |  
@@ -113,15 +126,16 @@ You will receive a bunch of results which contains these parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | This is equal to the requested `botId` |  
-| `index` | Index of the entry within the queue. Is it less than zero its a history entry. If its zero than its the currently replaying song. |  
-| `loaded` | `true` is the song info loaded and/or a music player initialized |  
-| `url` | The given stream url |  
-| `invoker` | The invoker which inserted the entry |  
-| `songId` | The song id of the entry |  
-| `title` | Only present if loaded == `true`. The song title of the entry |  
-| `description` | Only present if loaded == `true`. The song description of the entry |  
-| `length` | Only present if loaded == `true`. The song length (in `milliseconds`) of the entry |  
+| `bot_id` | This is equal to the requested `bot_id` |  
+| `queue_index` | Index of the entry within the queue. Is it less than zero its a history entry. If its zero than its the currently replaying song. |  
+| `song_loaded` | `true` is the song info loaded and/or a music player initialized |  
+| `song_url` | The given stream url |  
+| `song_invoker` | The invoker which inserted the entry |  
+| `song_id` | The song id of the entry |  
+| `song_title` | Only present if loaded == `true`. The song title of the entry |  
+| `song_description` | Only present if loaded == `true`. The song description of the entry |  
+| `song_thumbnail` | Only present if loaded == `true`. The songs thumbnail |  
+| `song_length` | Only present if loaded == `true`. The song length (in `milliseconds`) of the entry |  
 
 ### Add a queue entry (`musicbotqueueadd`)
 Command: `musicbotqueueadd`  
@@ -129,7 +143,7 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
+| `bot_id` | The target bot id |  
 | `type` | The type of the song loader ([more info](#Song loader type)) |  
 | `url` | The url of the file or link which will be played |  
 
@@ -147,9 +161,12 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
-| `songId` | The song id which you would remove |  
-
+| `bot_id` | The target bot id |  
+| `song_id`[] | The song ids which you would like to remove |  
+  
+Switches:  
+`-skip_error`: Skip errors when a song is missing  
+  
 Permissions:
 
 | Property name | Description |  
@@ -164,8 +181,8 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The target bot id |  
-| `songId` | The song id which you would line to reorder |  
+| `bot_id` | The target bot id |  
+| `song_id` | The song id which you would line to reorder |  
 | `index` | The new index within the queue |  
 
 Permissions:
@@ -186,8 +203,8 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The music bot id |  
-| `songId` | The song id of the added element |  
+| `bot_id` | The music bot id |  
+| `song_id` | The song id of the added element |  
 | `url` | The song url |  
 | `index` | The song index within the queue |  
 | `invokerid` | The client id who added this entry |  
@@ -202,8 +219,8 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The music bot id |  
-| `songId` | The song id of the reordered element |  
+| `bot_id` | The music bot id |  
+| `song_id` | The song id of the reordered element |  
 | `index` | The new song index within the queue |  
 | `invokerid` | The client id who reordered this entry |  
 | `invokername` | The client name who reordered this entry |  
@@ -217,8 +234,8 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The music bot id |  
-| `songId` | The song id of the removed element |  
+| `bot_id` | The music bot id |  
+| `song_id`[] | The song id's of the removed elements |  
 | `invokerid` | The client id who removed this entry |  
 | `invokername` | The client name who removed this entry |  
 | `invokeruid` | The client unique id who removed this entry |  
@@ -231,13 +248,28 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |  
-| `botId` | The music bot id |  
-| `songId` | The new song id. (Zero if bot is in sleep mode) |  
-| `length` | Only if song id greater than zero. The length of the new song (in `milliseconds`) |  
-| `title` | Only if song id greater than zero. The title of the new song |  
-| `description` | Only if song id greater than zero. The description of the new song |  
-| `url` | Only if song id greater than zero. The url of the new song |  
-| `thumbnail` | Only if song id greater than zero. The thumbnail of the new song |  
+| `bot_id` | The music bot id |  
+| `song_id` | The new song id. (Zero if bot is in sleep mode) |  
+| `song_loaded` | `true` is the song info loaded and/or a music player initialized |  
+| `song_url` | The given stream url |  
+| `song_invoker` | The invoker which inserted the entry |  
+| `song_id` | The song id of the entry |  
+| `song_title` | Only present if loaded == `true`. The song title of the entry |  
+| `song_description` | Only present if loaded == `true`. The song description of the entry |  
+| `song_thumbnail` | Only present if loaded == `true`. The songs thumbnail |  
+| `song_length` | Only present if loaded == `true`. The song length (in `milliseconds`) of the entry |  
+
+#### Player status update (Only when subscribed) (`notifymusicstatusupdate`)
+Event trigger:  
+Every second
+
+Parameters:  
+| Parameter name | Description |  
+| --- | --- |  
+| `bot_id` | The music bot id |  
+| `player_state` | The player state (See [player state](#player-state)) |  
+| `player_buffered_index` | Time index until the music if buffered (in `milliseconds`) |  
+| `player_replay_index` | Time index until the music is played (in `milliseconds`) |  
 
 ## Types
 ### Player state
@@ -258,7 +290,7 @@ enum PlayerAction {
     PLAY,
     PAUSE,
     FORWARD,
-    REWIND      //(Not supported yet)
+    REWIND
 };
 ```
 
@@ -266,12 +298,16 @@ enum PlayerAction {
 ```
 enum SongLoaderType {
     YTDLL = 0,
-    FFMPEG
+    FFMPEG = 1,
+    CHANNEL = 2
 };
 ```
+#### Channel
+The URL requires to match a TeaSpeak query command with the parameters `cid`, `name`, `path`  
+Example: `musicbotqueueadd bot_id=5 type=2 url=cid=4\sname=audio.webm\spath`  
 
 
 ## Notes
 There's still a concept mistake:  
 If you have enough `i_client_music_play_power` you can control every bot, not only your own  
-Make the client property `player_volume` editable  
+Change's a bot volume via `clientedit player_volume=0.1`
