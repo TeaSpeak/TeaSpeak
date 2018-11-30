@@ -34,6 +34,8 @@
     - Improved ffmpeg property detection (decreased log error spam)
     - Improved `Music bot contained empty frame!` message spam
     - Fixed license check hangup (2x), added connect timeout, and fixed crash on deallocation
+    - Fixed instance hangup on force quit
+    - Added the possibility to set the default `virtualserver_host` and `virtualserver_web_host` within the config.yml
     
 * **1.2.29b**
     - Fixed WebList and server stop/delete bug.
