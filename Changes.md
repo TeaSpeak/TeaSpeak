@@ -1,7 +1,6 @@
 # Things that make TeaSpeak different than TeamSpeak
-NOTE: Most of the here described changes only apply to the query interface. 
-      Making use of the functionality in the Teamspeak 3 Client would require a plugin that is planned for the near future.
-
+NOTE: Most of the here described changes only apply to the query interface or are useable with the TeaClient or the TeaSpeak web client.  
+  
 ## Overview
 ### New systems
  - [Built in musicbots](#Built-in-musicbots)
