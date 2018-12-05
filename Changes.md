@@ -3,25 +3,46 @@ NOTE: Most of the here described changes only apply to the query interface.
       Making use of the functionality in the Teamspeak 3 Client would require a plugin that is planned for the near future.
 
 ## Overview
+### New systems
  - [Built in musicbots](#Built-in-musicbots)
+ - [Invisible channels](#?)
  - [Customizable Messages](#Customizable-Messages)
- - [Additional Server Query Notifies](#Additional-Server-Query-Notifies)
- - [Increased slot count](#Increased-slot-count)
- - [Global group assignment](#Global-group-assignment)
- - [Global bans](#Global-bans)
- - [Additional Ban tweaks](#Additional-Ban-tweaks)
- - [Encrypted Query Connection](#Encrypted-Query-Connection)
- - [Additional properties](#Additional-props-in-commands)
- - [Scheduled Shutdowns](#Scheduled-Shutdowns)
  - [Built-in console](#Built-in-console)
- - [Advanced ip permission testing](#clientdblist-without-IPs)
- - [Limit channels per client](Limit-channels-per-client)
+ - [VPN Testing](#?)
  - [New permissions](#New-Permissions)
- - [New features](#New-features)
+ - [New properties](#New-properties)
+ - [Limit channels per client](#Limit-channels-per-client)
+
+ 
+### Enchanted systems
+#### Server management
+ - [Scheduled Shutdowns](#Scheduled-Shutdowns)
+ - [Increased slot count](#Increased-slot-count)
+ - [Own binding options for each individual virtual server](#?)
+ - [Additional properties](#Additional-props-in-commands)
+ - [Advanced ip permission testing](#clientdblist-without-IPs)
+ - [Global group assignment](#Global-group-assignment)
+ 
+#### Ban System
+ - [Global bans](#Global-bans) 
+ - [Ban enforcement list](#Ban-enforcement-list)
+ - [Additional Ban tweaks](#Additional-Ban-tweaks)
+ 
+#### Query
+ - [Encrypted Query Connection](#Encrypted-Query-Connection)
+ - [Additional Server Query Notifies](#Additional-Server-Query-Notifies)
+ 
+#### Channels
+ - [Limit channels per client](Limit-channels-per-client)
     
+## New systems
 ### Built in musicbots
 TeaSpeak brings it's own built-in music bot system which brings high-quality, high-performance and low bandwidth usage music bots. For a quick setup grant yourself the music related permissions and then type `.mbot` in the channel chat. If you want more detailed information, click [here](https://forum.teaspeak.de/index.php?threads/teaspeak-music-bot-release.36/).
 
+### Invisible channels
+With TeaSpeak you have the ability to create channels, which are hidden for some users.  
+Just assign the permission `i_channel_view_power` to a channel and watch the magic happen. 
+  
 ### Customizable Messages
 In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `config.yml`.
 - The message that users see when the virtualserver or instance was stopped or crashed.
@@ -32,50 +53,6 @@ In TeaSpeak you can customize a lot of otherwise hardcoded messages via the `con
 - The query message-of-the-day (motd) and newline character of the query interface.
 - The country flag a client gets when no valid country can be detected (Either through connecting with a local or not yet registered IP)
 
-### Additional Server Query Notifies
-In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/documentation/ServerQueryNotify.md))
-![](https://i.imgur.com/1D8dhBo.png)
-
-
-### Increased slot count
-We at TeaSpeak believe that admins that just want to run their own little server for their own little community should be bound to such high restrictions as they are in the non-profit license, therefor on TeaSpeak you can have as many virtual servers you like, with each of them having a slotcount of max 1024 slots. (If you need more take a look at the database)
-
-### Global group assignment
-TeaSpeak does not only support server bound group assignment. Because with TeaSpeak every user with his unique id has a unique database wide database id,
-its possible to assign a group to a user instance wide. If you want to assign or demote a group instance wide you have to be bound on server zero. (`use 0`)
-There you could use the `servergroup[add|del|list]` like you already know.
-
-### Global bans
-With TeaSpeak you can easily create/modify and delete instance-wide banrules. The commands `banlist`, `banadd`, `bandel` and `banedit` have a new `sid` property, that (if 0 or not on a virtual server `use sid...`) will apply the action to the global banlist. So for example `banadd sid=1 ip=8.8.8.8 reason=Google\sDNS` will become `banadd sid=0 ip=8.8.8.8 reason=Google\sDNS` if you want to ban that id globally. You can even use that system in YaTQA, as you see here:
-![](https://i.imgur.com/uesO3Be.png)
-
-### Additional Ban tweaks
-Also TeaSpeak allows you to directly editing bans. The Teamspeak 3 Client has a dummy "Edit ban" feature that just executes `bandel <original ban>` and `banadd <modified ban>` afterwards which i would call a workaround rather than proper implementation.
-In addition to that hardware id's (Which TeamSpeak claims [they would not ban](https://forum.teamspeak.com/threads/124057-Hardware-sided-bans?p=435740#post435740) even though they [do](https://i.imgur.com/JIirVJU.png)) with the new `hwid` property (Example: `banadd hwid=165dwq18q4f6qw5f1f5q64d9qw448wq,165dwq18q4f6qw5f1f5q64d9qw448wq` or `banadd hwid=` to ban empty hwids)
-
-### Encrypted Query Connection
-On Teamspeak everything sent through server query (telnet) is plain text (unencrypted). Even your Admin Server Query password! TeaSpeak gives you the ability to either enforce, allow or deny SSL encrypted telnet sessions so you can use certificates to secure your connection. To use this feature your telnet client must support certificate based encryption!
-
-### Additional props in commands
-TeaSpeak is a community driven project so we listen a lot to feature requests
-- `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
-  - `created_by` -> Client db id (Visible in channel list & channel info)
-  - `created_at` -> Unix timestamp (Milliseconds)
-- `clientdblist -details`, `clientdbfind -details`, `clientdbinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
-  - `client_badges` -> Last used badges string
-  - `client_version` -> Last used version
-  - `client_platform` -> Last used platform
-  - `client_hwid` -> Last used hardware id
-- `notifyplugincmd` ([#35](https://github.com/TeaSpeak/TeaSpeak/issues/35)), `notifyconnectioninforequest` ([#36](https://github.com/TeaSpeak/TeaSpeak/issues/36))
-  - `invokerid` -> The client id of the invoker
-- New command `propertylist`
-
-### Scheduled Shutdowns
-TeaSpeak has the possibility to schedule a shutdown with the query command `serverprocessstop`
-    - `serverprocessstop type=cancel|schedule time=60 msg=`
-        - `time` just required when `type` = `schedule`
-        - `msg` optional
-
 ### Built-in console
 TeaSpeak has a built-in console that can be used from stdout containing the following commands:
 - `end|shutdown <now|<number>[h|m|s]:...> <reason>`
@@ -83,38 +60,7 @@ TeaSpeak has a built-in console that can be used from stdout containing the foll
 - `permgrant <ServerId> <GroupId> <Permission Name> <Grant>` to recover permissions without tampering with the database.
 - `passwd <new_password> <repeated>` to change the Admin Server Query password.
 
-### clientdblist without IPs
-In TeaSpeak you have the ability to allow clients/queries to view the clientdblist without IP's by not assigning the `b_client_remoteaddress_view` permission to them. ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/13))
-
-**TeamSpeak:**
-```
-clientdblist
-cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=127.0.0.1|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=8.8.8.8
-error id=0 msg=ok
-
-```
-**TeaSpeak:**
-```
-clientdblist
-cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden
-error id=0 msg=ok
-```
-
-### Setting token value
-You can pass a new parameter on `tokenadd` named `token`.  
-The type is a string and its optional.  
-The value is the actual token (if its not set it would be generated)  
-
-### New properties
-- `client_total_online_time` | `client_month_online_time`
-- `virtualserver_default_client_description`
-- `virtualserver_default_channel_description`
-- `virtualserver_default_channel_topic`
-- `channel_last_left`
-- `channel_created_at`
-- `channel_created_by`
-		    
-### New Permissions
+#### New Permissions
 
 Permission | Description
 --- | ---
@@ -155,13 +101,97 @@ Permission | Description
 `i_channel_needed_view_power` | The required channel view power for a channel
 `b_virtualserver_select_godmode` | Allows a query to select a server without being bind to it
 
-### New features
-- VPN Testing
+#### New properties
+- `client_total_online_time` | `client_month_online_time`
+- `virtualserver_default_client_description`
+- `virtualserver_default_channel_description`
+- `virtualserver_default_channel_topic`
+- `channel_last_left`
+- `channel_created_at`
+- `channel_created_by`
+		   
 
-
-### Limit channels per client
+#### Limit channels per client
 You can limit the channels/client with these permissions:  
     - `i_client_max_channels`  
     - `i_client_max_temporary_channels`  
     - `i_client_max_semi_channels`  
     - `i_client_max_permanent_channels`  
+    
+## Enchanted systems
+### Server management
+#### Scheduled Shutdowns
+TeaSpeak has the possibility to schedule a shutdown with the query command `serverprocessstop`
+    - `serverprocessstop type=cancel|schedule time=60 msg=`
+        - `time` just required when `type` = `schedule`
+        - `msg` optional
+
+#### Increased slot count
+We at TeaSpeak believe that admins that just want to run their own little server for their own little community should be bound to such high restrictions as they are in the non-profit license, therefor on TeaSpeak you can have as many virtual servers you like, with each of them having a slotcount of max 1024 slots. (If you need more take a look at the database)
+
+#### Own binding options for each individual virtual server
+This need a littlebit more text :)
+
+#### Additional props in commands
+TeaSpeak is a community driven project so we listen a lot to feature requests
+- `channellist`, `channelinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/22))
+  - `created_by` -> Client db id (Visible in channel list & channel info)
+  - `created_at` -> Unix timestamp (Milliseconds)
+- `clientdblist -details`, `clientdbfind -details`, `clientdbinfo` ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/12))
+  - `client_badges` -> Last used badges string
+  - `client_version` -> Last used version
+  - `client_platform` -> Last used platform
+  - `client_hwid` -> Last used hardware id
+- `notifyplugincmd` ([#35](https://github.com/TeaSpeak/TeaSpeak/issues/35)), `notifyconnectioninforequest` ([#36](https://github.com/TeaSpeak/TeaSpeak/issues/36))
+  - `invokerid` -> The client id of the invoker
+- New command `propertylist`
+
+
+#### clientdblist without IPs
+In TeaSpeak you have the ability to allow clients/queries to view the clientdblist without IP's by not assigning the `b_client_remoteaddress_view` permission to them. ([read more](https://github.com/TeaSpeak/TeaSpeak/issues/13))
+
+**TeamSpeak:**
+```
+clientdblist
+cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=127.0.0.1|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=8.8.8.8
+error id=0 msg=ok
+
+```
+**TeaSpeak:**
+```
+clientdblist
+cldbid=3 client_unique_identifier=Dc3Wno3oyXQsrocaODdAAUwiPHo= client_nickname=SpoilerAlarm\s\p\sConnor client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden|cldbid=4 client_unique_identifier=ServerQuery client_nickname=Bluscream\s[YaTQA] client_created=1526131558 client_lastconnected=0 client_totalconnections=0 client_description client_lastip=hidden
+error id=0 msg=ok
+```
+
+#### Global group assignment
+TeaSpeak does not only support server bound group assignment. Because with TeaSpeak every user with his unique id has a unique database wide database id,
+its possible to assign a group to a user instance wide. If you want to assign or demote a group instance wide you have to be bound on server zero. (`use 0`)
+There you could use the `servergroup[add|del|list]` like you already know.
+
+### Ban System
+#### Global banns
+With TeaSpeak you can easily create/modify and delete instance-wide banrules. The commands `banlist`, `banadd`, `bandel` and `banedit` have a new `sid` property, that (if 0 or not on a virtual server `use sid...`) will apply the action to the global banlist. So for example `banadd sid=1 ip=8.8.8.8 reason=Google\sDNS` will become `banadd sid=0 ip=8.8.8.8 reason=Google\sDNS` if you want to ban that id globally. You can even use that system in YaTQA, as you see here:
+![](https://i.imgur.com/uesO3Be.png)  
+  
+#### Ban enforcement list
+TeaSpeak also provides a log where you could lookup every ban enforcements.  
+This chould be easily done with the TeaClient (not yet) or by query with the command `bantriggerlist`  
+  
+#### Additional tweaks
+Also TeaSpeak allows you to directly editing bans. The Teamspeak 3 Client has a dummy "Edit ban" feature that just executes `bandel <original ban>` and `banadd <modified ban>` afterwards which i would call a workaround rather than proper implementation.
+In addition to that hardware id's (Which TeamSpeak claims [they would not ban](https://forum.teamspeak.com/threads/124057-Hardware-sided-bans?p=435740#post435740) even though they [do](https://i.imgur.com/JIirVJU.png)) with the new `hwid` property (Example: `banadd hwid=165dwq18q4f6qw5f1f5q64d9qw448wq,165dwq18q4f6qw5f1f5q64d9qw448wq` or `banadd hwid=` to ban empty hwids)
+
+
+### Query
+#### Additional Server Query Notifies
+In TeamSpeak your can register a query client to ServerQueryNotify via `servernotifyregister` so you don't have to use loops and sleeps in your scripts, but the amount of events provided by TeamSpeak is very limited (`server`|`channel`|`textserver`|`textchannel`|`textprivate`). However on TeaSpeak you have a wide variety of events to use (almost all events that are sent to normal voice clients) (This change is so big that we created an extra page for it [here](https://github.com/TeaSpeak/TeaSpeak/blob/master/documentation/ServerQueryNotify.md))
+![](https://i.imgur.com/1D8dhBo.png)
+
+#### Encrypted Query Connection
+On Teamspeak everything sent through server query (telnet) is plain text (unencrypted). Even your Admin Server Query password! TeaSpeak gives you the ability to either enforce, allow or deny SSL encrypted telnet sessions so you can use certificates to secure your connection. To use this feature your telnet client must support certificate based encryption!
+
+### Setting token value
+You can pass a new parameter on `tokenadd` named `token`.  
+The type is a string and its optional.  
+The value is the actual token (if its not set it would be generated)  
