@@ -1,4 +1,9 @@
 # Changelog:
+* **1.2.31b**
+    - Added config option to force override the voice server ips
+    - Added config option to hide not visible clients compleatly
+    - Fixed TeaSpeak UDP isnt working within win 10 sub systems
+    
 * **1.2.30b**
     - Fixed weblist showing wrong server password settings
     - Renamed every parameter `botid` to `bot_id`
