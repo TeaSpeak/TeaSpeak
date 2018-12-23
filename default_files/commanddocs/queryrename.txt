@@ -1,0 +1,13 @@
+Usage: queryrename client_login_name={username} client_new_login_name={new username}
+
+Permissions:
+  b_client_query_rename
+  b_client_query_rename_own
+
+Description:
+  Renames a query account.
+  The new name must be free and not yet used!
+
+Example:
+  queryrename client_login_name=server_bot client_new_login_name=server_bot_a
+  error id=0 msg=ok

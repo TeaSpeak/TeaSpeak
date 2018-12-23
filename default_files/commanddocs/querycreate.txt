@@ -1,0 +1,16 @@
+Usage: querycreate client_login_name={username} [client_login_password={password}] [server_id={bounded server id}]
+
+Permissions:
+  b_client_query_create
+
+Description:
+  Creates a new query account with your own identity.
+
+Notes:
+  Be aware to not create any query accounts with the serveradmin,
+  they will all have admin query permissions!
+
+Example:
+  querycreate client_login_name=a client_login_password=a server_id=2
+  client_unique_identifier=xxjnc14LmvTk+Lyrm8OOeo4tOqw= client_login_name=server_bot client_login_password=mysecretpassword client_bounded_server=2
+  error id=0 msg=ok

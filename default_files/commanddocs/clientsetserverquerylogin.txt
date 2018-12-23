@@ -1,3 +1,8 @@
+************* ATTENTION *************
+    This command is outdated!
+ Please use the newer query commands
+************* ATTENTION *************
+
 Usage: clientsetserverquerylogin client_login_name={username}
 
 Permissions:

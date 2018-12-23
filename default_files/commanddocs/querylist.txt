@@ -1,0 +1,23 @@
+Usage: querylist [server_id={server id}]
+
+Permissions:
+  b_client_query_list
+  b_client_query_list_own
+
+Description:
+  List all existing query accounts.
+  If no specific server is given, all accounts will be listed.
+  If the permission b_client_query_list isn't preset, all own accounts will be listed
+
+Example:
+
+  Global list:
+    querylist
+    server_id=-1 flag_own=1 flag_all=1 client_unique_identifier=serveradmin client_login_name=serveradmin client_bounded_server=0|client_unique_identifier=serveradmin client_login_name=server_bot client_bounded_server=2|...
+    error id=0 msg=ok
+
+  Server specific list:
+    querylist server_id=2
+    server_id=-1 flag_own=1 flag_all=1 client_unique_identifier=serveradmin client_login_name=server_bot client_bounded_server=2|...
+    error id=0 msg=ok
+

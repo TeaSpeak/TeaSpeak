@@ -1,0 +1,12 @@
+Usage: querydelete client_login_name={username}
+
+Permissions:
+  b_client_query_delete
+  b_client_query_delete_own
+
+Description:
+  Deletes a query account.
+
+Example:
+  querydelete client_login_name=server_bot
+  error id=0 msg=ok

@@ -1,8 +1,24 @@
 # Changelog:
+* **1.2.32b**
+    - Added an advanced query management system (`query_list`, `query_create`, `query_delete`, `query_rename`, `querychangepassword`)
+    - Added new permissions:
+        - `b_client_query_create`
+        - `b_client_query_list`
+        - `b_client_query_list_own`
+        - `b_client_query_rename`
+        - `b_client_query_rename_own`
+        - `b_client_query_change_password`
+        - `b_client_query_change_own_password`
+        - `b_client_query_delete`
+    - Server bounded queries are now directly logged on to their "home" server
+    - Implemented server side check of the `i_client_ban_max_bantime` permissions
+    
 * **1.2.31b**
     - Added config option to force override the voice server ips
     - Added config option to hide not visible clients compleatly
     - Fixed TeaSpeak UDP isnt working within win 10 sub systems
+    - Changed database (sqlite) synchronise mode to full (Hopefully prevents data loss)
+    - Improved license request fail handle
     
 * **1.2.30b**
     - Fixed weblist showing wrong server password settings
