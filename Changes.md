@@ -99,6 +99,10 @@ Permission | Description
 `b_channel_ignore_view_power` | Allows the client to bypass the visibility check and see all channels
 `i_channel_needed_view_power` | The required channel view power for a channel
 `b_virtualserver_select_godmode` | Allows a query to select a server without being bind to it
+`i_server_group_self_add_power` | Power for the client to add himself to this group
+`i_server_group_self_remove_power` | Power for the client to remove himself to this group
+`i_channel_group_self_add_power` | Power for the client to add himself to this channel group
+`i_channel_group_self_remove_power` | Power for the client to remove himself to this channel group
 
 #### New properties
 - `client_total_online_time` | `client_month_online_time`

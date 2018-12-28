@@ -1,4 +1,15 @@
 # Changelog:
+* **1.2.33b**
+    - Fixed bug with join limits (zero means now unlimited)
+    - Added new permissions:
+        - `i_server_group_self_add_power`
+        - `i_server_group_self_remove_power`
+        - `i_channel_group_self_add_power`
+        - `i_channel_group_self_remove_power`
+    - Fixed crash (sometimes when the web client disconnected)
+    - Fixed handup (sometimes when the web client disconnected)
+    - Fixed bug, that music bot dont get deleted when the server gets deleted
+    
 * **1.2.32b**
     - Added an advanced query management system (`query_list`, `query_create`, `query_delete`, `query_rename`, `querychangepassword`)
     - Added new permissions:
@@ -12,6 +23,8 @@
         - `b_client_query_delete`
     - Server bounded queries are now directly logged on to their "home" server
     - Implemented server side check of the `i_client_ban_max_bantime` permissions
+    - Fixed crash ony query group copy
+    - Switching to default license, if the given premium license is expired
     
 * **1.2.31b**
     - Added config option to force override the voice server ips
