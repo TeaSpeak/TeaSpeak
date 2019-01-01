@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BASE_DIR=$(dirname "$0")
+cd "$BASE_DIR"
+
 if [ ! -d logs/ ]; then
     echo "Please start the TeaSpeak-Server for the first time over teastart_minimal.sh"
     echo "You could get the query interface information only over this way!"

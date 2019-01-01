@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+BASE_DIR=$(dirname "$0")
+cd "$BASE_DIR"
+
 while true;
 do
     ./teastart_minimal.sh $@
