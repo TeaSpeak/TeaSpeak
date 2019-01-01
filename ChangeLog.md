@@ -1,4 +1,11 @@
 # Changelog:
+* **1.2.34b**
+    - Fixed critical variability (discovered by @Bluscream)
+    - Fixed issue [#524](https://github.com/TeaSpeak/TeaSpeak/issues/524) (Bans and bantrigger list does not get deleted on server deletion)
+    - Implemented issue [#523](https://github.com/TeaSpeak/TeaSpeak/issues/523) (property `client_nickname` within `use` to improve third party compatibilities)
+    - Added custom shutdown delay messages
+    - Added script to use the precompiled up2date libnice version. WebClient should work with that
+    
 * **1.2.33b**
     - Fixed bug with join limits (zero means now unlimited)
     - Added new permissions:
@@ -9,6 +16,8 @@
     - Fixed crash (sometimes when the web client disconnected)
     - Fixed handup (sometimes when the web client disconnected)
     - Fixed bug, that music bot dont get deleted when the server gets deleted
+    - Fixed some permissions issues (Now enforcing/testing for an explicit set)
+    - Fixed hidden non premium config settings 
     
 * **1.2.32b**
     - Added an advanced query management system (`query_list`, `query_create`, `query_delete`, `query_rename`, `querychangepassword`)
