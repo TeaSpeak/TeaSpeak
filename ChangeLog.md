@@ -5,6 +5,8 @@
     - Implemented issue [#523](https://github.com/TeaSpeak/TeaSpeak/issues/523) (property `client_nickname` within `use` to improve third party compatibilities)
     - Added custom shutdown delay messages
     - Added script to use the precompiled up2date libnice version. WebClient should work with that
+    - Fixed issue [#527](https://github.com/TeaSpeak/TeaSpeak/issues/527)
+    - Added possibility to assign channel commander to a bot (`clientedit clid=<botid> client_is_channel_commander=<flag>`)
     
 * **1.2.33b**
     - Fixed bug with join limits (zero means now unlimited)
