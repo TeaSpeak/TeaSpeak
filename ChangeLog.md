@@ -1,6 +1,6 @@
 # Changelog:
 * **1.2.34b**
-    - Fixed critical variability (discovered by @Bluscream)
+    - Fixed critical vulnerability (discovered by [@Bluscream](https://bluscream.github.io))
     - Fixed issue [#524](https://github.com/TeaSpeak/TeaSpeak/issues/524) (Bans and bantrigger list does not get deleted on server deletion)
     - Implemented issue [#523](https://github.com/TeaSpeak/TeaSpeak/issues/523) (property `client_nickname` within `use` to improve third party compatibilities)
     - Added custom shutdown delay messages
