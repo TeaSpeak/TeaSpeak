@@ -7,6 +7,8 @@
     - Added script to use the precompiled up2date libnice version. WebClient should work with that
     - Fixed issue [#527](https://github.com/TeaSpeak/TeaSpeak/issues/527)
     - Added possibility to assign channel commander to a bot (`clientedit clid=<botid> client_is_channel_commander=<flag>`)
+    - Fixed issue [#530](https://github.com/TeaSpeak/TeaSpeak/issues/530)
+    - Improved `clientedit` and `clientupdate` handling
     
 * **1.2.33b**
     - Fixed bug with join limits (zero means now unlimited)
