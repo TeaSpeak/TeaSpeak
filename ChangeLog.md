@@ -12,9 +12,9 @@
     - Fixed issue [#542](https://github.com/TeaSpeak/TeaSpeak/issues/542) (Disconnected (not connected) for no reason)
     - Implemented issue [#541](https://github.com/TeaSpeak/TeaSpeak/issues/541) (alias `reasonmsg` for `serverprocessstop`)
     - Improved `clientedit` and `clientupdate` handling
-    - Implemented issue [#M4](https://github.com/TeaSpeak/TeaMusic/issues/4) ("normal" music bot UID's) TODO: Needs documentation | Needs test
-    - Implemented issue [#M2](https://github.com/TeaSpeak/TeaMusic/issues/2) (Possibility to grant channel commander) TODO: Needs documentation | Needs test
-    - Implemented issue [#M6](https://github.com/TeaSpeak/TeaMusic/issues/6) (Added option to choose the online since mode for music bots) TODO: Needs documentation | Needs test
+    - Implemented issue [#M4](https://github.com/TeaSpeak/TeaMusic/issues/4) ("normal" music bot UID's)
+    - Implemented issue [#M2](https://github.com/TeaSpeak/TeaMusic/issues/2) (Possibility to grant channel commander)
+    - Implemented issue [#M6](https://github.com/TeaSpeak/TeaMusic/issues/6) (Added option to choose the online since mode for music bots)
     - Implemented issue [#M9](https://github.com/TeaSpeak/TeaMusic/issues/9) (Made the music bot version editiable via `clientedit` (properties: `client_version` `client_platform`))
     - Implemented issue [#M11](https://github.com/TeaSpeak/TeaMusic/issues/11) (Implemented bot types (bots which gets deleted when the owner leaves))
     - Implemented issue [#M8](https://github.com/TeaSpeak/TeaMusic/issues/8) (Send a notify on song change)
