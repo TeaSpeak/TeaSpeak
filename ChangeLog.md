@@ -8,6 +8,8 @@
     - Fixed issue [#530](https://github.com/TeaSpeak/TeaSpeak/issues/530)
     - Fixed issue [#537](https://github.com/TeaSpeak/TeaSpeak/issues/537) (Bantime gets miscalculated on flood bans)
     - Fixed issue [#540](https://github.com/TeaSpeak/TeaSpeak/issues/540) (`serverinfo` used wrong permissions)
+    - Fixed issue [#536](https://github.com/TeaSpeak/TeaSpeak/issues/536) (Talk Power Request greyed out but possible)
+    - Fixed issue [#542](https://github.com/TeaSpeak/TeaSpeak/issues/542) (Disconnected (not connected) for no reason)
     - Implemented issue [#541](https://github.com/TeaSpeak/TeaSpeak/issues/541) (alias `reasonmsg` for `serverprocessstop`)
     - Improved `clientedit` and `clientupdate` handling
     - Implemented issue [#M4](https://github.com/TeaSpeak/TeaMusic/issues/4) ("normal" music bot UID's) TODO: Needs documentation | Needs test
