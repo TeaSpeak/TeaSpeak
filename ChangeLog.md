@@ -1,14 +1,132 @@
 # Changelog:
+* **1.3b**  
+    *General music bot update and permission update*  
+    Note: This update mainly focuses the Music Bot and his API. There are some API breaking changes!  
+    - Added config option to disable IP saving
+    - Added virtualserver property to disable IP logging (`virtualserver_disable_ip_saving`)
+    - Command `querychangepassword` now checks specially the permission `b_client_query_change_password_global` when trying to change a unbound query's password (e.g. `serveradmin`)
+    - Fixed issue [#530](https://github.com/TeaSpeak/TeaSpeak/issues/530)
+    - Fixed issue [#537](https://github.com/TeaSpeak/TeaSpeak/issues/537) (Bantime gets miscalculated on flood bans)
+    - Fixed issue [#540](https://github.com/TeaSpeak/TeaSpeak/issues/540) (`serverinfo` used wrong permissions)
+    - Implemented issue [#541](https://github.com/TeaSpeak/TeaSpeak/issues/541) (alias `reasonmsg` for `serverprocessstop`)
+    - Improved `clientedit` and `clientupdate` handling
+    - Implemented issue [#M4](https://github.com/TeaSpeak/TeaMusic/issues/4) ("normal" music bot UID's) TODO: Needs documentation | Needs test
+    - Implemented issue [#M2](https://github.com/TeaSpeak/TeaMusic/issues/2) (Possibility to grant channel commander) TODO: Needs documentation | Needs test
+    - Implemented issue [#M6](https://github.com/TeaSpeak/TeaMusic/issues/6) (Added option to choose the online since mode for music bots) TODO: Needs documentation | Needs test
+    - Implemented issue [#M9](https://github.com/TeaSpeak/TeaMusic/issues/9) (Made the music bot version editiable via `clientedit` (properties: `client_version` `client_platform`))
+    - Implemented issue [#M11](https://github.com/TeaSpeak/TeaMusic/issues/11) (Implemented bot types (bots which gets deleted when the owner leaves))
+    - Implemented issue [#M8](https://github.com/TeaSpeak/TeaMusic/issues/8) (Send a notify on song change)
+    - Implemented issue [#M16](https://github.com/TeaSpeak/TeaMusic/issues/16) (Max volume via permission)
+    - Implemented issue [#M18](https://github.com/TeaSpeak/TeaMusic/issues/18)
+        - Added music bots and playlists to server snapshots
+        - Snapshot version is now 2
+    - Improved music bot sound ending (Now smooth ending and not like a timeout)
+    - Reworked music bot song replay system (Now using a playlist instead of a queue)
+    - Renamed permission `b_client_is_priority_speaker` to `b_client_use_priority_speaker`
+      Priority speaker could be activated via `clientupdate client_is_priority_speaker=<flag>`
+    - Improved `getconnectioninfo`. Now you dont have to wait one second to receive the information
+    - Fixed bug that channel admins are allowed to assign channel groups within another channel
+    - Fixed command `permfind`
+        - Showing client channel rights
+        - Allow `permid` | `permsid` to be an array
+        - Works with YatQA (Newest TeaSpeak version)
+    - Added or implemented new commands:
+        - `permoverview`
+        - `playlistlist`
+        - `playlistcreate`
+        - `playlistdelete`
+        - `playlistpermlist`
+        - `playlistaddperm`
+        - `playlistdelperm`
+        - `playlistinfo`
+        - `playlistedit`
+        - `playlistsonglist`
+        - `playlistsongadd`
+        - `playlistsongreorder`
+        - `playlistsongremove`
+        - `musicbotplaylistassign`
+    - Added new permissions:
+        - `b_playlist_create`
+        - `i_playlist_view_power`
+        - `i_playlist_needed_view_power`
+        - `i_playlist_modify_power`
+        - `i_playlist_needed_modify_power`
+        - `i_playlist_delete_power`
+        - `i_playlist_needed_delete_power`
+        - `i_playlist_song_add_power`
+        - `i_playlist_song_needed_add_power`
+        - `i_playlist_song_remove_power`
+        - `i_playlist_song_needed_remove_power`
+        - `i_playlist_song_move_power`
+        - `i_playlist_song_needed_move_power`
+        - `b_virtualserver_playlist_permission_list`
+        - `i_playlist_permission_modify_power`
+        - `i_playlist_permission_needed_modify_power`
+        - `b_client_query_change_password_global`
+    - Fixed global `channellist` sort oder (YatQA)
+    - Fixed duplicated permission entries within the database for client and client channel permissions
+    - Improved permission calculation for commands: (Using cached permissions now)
+      This should improve the server performance, specially on channel chat or poke spam
+        - `serveredit`
+        - `serverrequestconnectioninfo`
+        - `servergrouplist`
+        - `clientedit`
+        - `clientupdate`
+        - `clientpoke`
+        - `sendtextmessage`
+        - `channelcreate`
+        - `channeledit`
+        - `channelpermlist`
+        - `servergroupcopy`
+        - `servergroupadd`
+        - `servergrouprename`
+        - `servergroupdel`
+        - `servergroupclientlist`
+        - `servergroupaddclient`
+        - `servergroupdelclient`
+        - `servergrouppermlist`
+        - `servergroupaddperm`
+        - `servergroupdelperm`
+        - `ServerGroupAutoAddPerm`
+        - `ServerGroupAutodelPerm`
+        - `channelgroupadd`
+        - `channelgroupcopy`
+        - `channelgrouprename`
+        - `channelgroupdel`
+        - `channelgrouplist`
+        - `channelgroupclientlist`
+        - `channelgrouppermlist`
+        - `channelgroupaddperm`
+        - `channelgroupdelperm`
+        - `banlist`
+        - `banadd`
+        - `banclient`
+        - `bandel`
+        - `bandelall`
+        - `bantriggerlist`
+        - `tokenlist`
+        - `tokenadd`
+        - `tokenuse`
+        - `tokendelete`
+        - `clientdblist`
+        - `clientdbinfo`
+        - `clientdbfind`
+        - `complainlist`
+        - `complaindel`
+        - `complaindelall`
+        - `clientlist`
+        - `clientinfo`
+        - `messageadd`
+        - `permget`
+        
 * **1.2.34b**
-    - Fixed critical variability (discovered by @Bluscream)
+    - Fixed critical vulnerability (discovered by @Bluscream)
     - Fixed issue [#524](https://github.com/TeaSpeak/TeaSpeak/issues/524) (Bans and bantrigger list does not get deleted on server deletion)
     - Implemented issue [#523](https://github.com/TeaSpeak/TeaSpeak/issues/523) (property `client_nickname` within `use` to improve third party compatibilities)
     - Added custom shutdown delay messages
     - Added script to use the precompiled up2date libnice version. WebClient should work with that
     - Fixed issue [#527](https://github.com/TeaSpeak/TeaSpeak/issues/527)
     - Added possibility to assign channel commander to a bot (`clientedit clid=<botid> client_is_channel_commander=<flag>`)
-    - Fixed issue [#530](https://github.com/TeaSpeak/TeaSpeak/issues/530)
-    - Improved `clientedit` and `clientupdate` handling
     
 * **1.2.33b**
     - Fixed bug with join limits (zero means now unlimited)
