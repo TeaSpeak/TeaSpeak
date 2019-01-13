@@ -1,0 +1,13 @@
+Usage: playlistsongadd playlist_id={playlist_id} url={url} [invoker={loader/provider}]
+
+Permissions:
+  i_playlist_song_add_power
+
+Description:
+  Adds a new song entry to the playlist.
+  Playlists (e.g. from YouTube) will be resolved automatically!)
+
+Example:
+  playlistsongadd playlist_id=13 url=https://www.youtube.com/watch?v=XU8iCAxAsH4
+  song_id=1
+  error id=0 msg=ok

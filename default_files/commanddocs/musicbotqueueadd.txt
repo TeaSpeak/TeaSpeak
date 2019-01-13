@@ -1,3 +1,5 @@
+ATTENTION: This command is currently not supported!
+
 Usage: musicbotqueueadd botid={botid} type={0/1} url={link/path}
 
 Permission:

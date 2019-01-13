@@ -1,0 +1,12 @@
+Usage: playlistinfo playlist_id={playlist_id}
+
+Permissions:
+  i_playlist_view_power
+
+Description:
+  Returns all playlist properties and their values
+
+Example:
+  playlistinfo playlist_id=13
+  playlist_id=13 playlist_title=Yet\sanother\splaylist playlist_description playlist_type=1 playlist_owner_dbid=1 playlist_owner_name=Hello\sWorld playlist_flag_delete_played=1 playlist_flag_finished=0 playlist_replay_mode=0 playlist_current_song_id=0
+  error id=0 msg=ok

@@ -1,3 +1,5 @@
+ATTENTION: This command is currently not supported!
+
 Usage: musicbotqueuelist botid={botid}
 
 Permission:

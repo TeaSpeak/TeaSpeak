@@ -1,0 +1,12 @@
+Usage: musicbotplaylistassign bot_id={botid} playlist_id={playlist_id}
+
+Permission:
+  i_client_music_play_power
+  i_playlist_view_power
+
+Description:
+  Changes/sets the current playlist for a music bot
+
+Examples:
+  musicbotplaylistassign bot_id=10 playlist_id=10
+  error id=0 msg=ok

@@ -1,0 +1,11 @@
+Usage: playlistdelperm playlist_id={playlist_id} permsid={name}
+
+Permissions:
+  i_playlist_permission_modify_power
+
+Description:
+  Removes a permission from the playlist
+
+Example:
+  playlistdelperm playlist_id=13 permsid=i_playlist_needed_delete_power
+  error id=0 msg=ok

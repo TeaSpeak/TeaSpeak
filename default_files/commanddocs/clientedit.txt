@@ -1,19 +1,36 @@
 Usage: clientedit clid={clientID} [client_properties...]
 
 Available Properties:
-  [string] client_nickname (Music bot only)
-  [float] client_player_volume  (Music bot only)
-  [boolean] client_is_talker
-  [string] client_description
+  [string]  client_nickname (Music Bot | Self)
+  [float]   client_player_volume (Music Bot)
+  [string]  client_version (Music Bot)
+  [string]  client_platform (Music Bot)
+  [string]  client_flag_notify_song_change (Music Bot)
+  [string]  client_uptime_mode (Music Bot)
+  [number]  client_bot_type (Music Bot)
+  [boolean] client_is_channel_commander  (Music Bot)
+  [boolean] client_is_priority_speaker  (Music Bot | Self)
+  [boolean] client_talk_request  (Music Bot | Self)
+  [string]  client_description (Music Bot | Self)
+  [boolean] client_is_talker (Music Bot | Self)
 
 
 Permissions:
   b_client_modify_description
+  b_client_modify_own_description
   b_client_set_talk_power
-  i_client_music_play_power
+  i_client_music_modify_power
+  i_client_music_rename_power
+  i_client_music_create_modify_max_volume
+  b_client_use_channel_commander
+  b_client_use_priority_speaker
+  b_client_request_talker
+  b_client_music_modify_temporary
+  b_client_music_modify_semi_permanent
+  b_client_music_modify_permanent
 
 Description:
-  Changes a clients settings using given properties.
+  Changes a clients or music bots settings using given properties.
   For detailed information, see Client Properties.
 
 Example:

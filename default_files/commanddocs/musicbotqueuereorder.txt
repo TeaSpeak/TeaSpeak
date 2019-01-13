@@ -1,3 +1,5 @@
+ATTENTION: This command is currently not supported!
+
 Usage: musicbotqueuereorder botid={botid} songId={songId} index={newIndex}
 
 Permission:

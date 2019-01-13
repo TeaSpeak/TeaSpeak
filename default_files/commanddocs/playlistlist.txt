@@ -1,0 +1,13 @@
+Usage: playlistlist
+
+Permissions:
+  i_playlist_needed_view_power
+
+Description:
+  List all available and viewable playlists.
+  Own playlists are shown, ignoring the view power
+
+Example:
+  playlistlist
+  playlist_id=10 playlist_title=Yet\sanother\splaylist playlist_type=0 playlist_owner_dbid=1 playlist_owner_name=owned\svia\sbot needed_power_modify=-2 needed_power_permission_modify=-2 needed_power_delete=-2 needed_power_song_add=-2 needed_power_song_move=-2 needed_power_song_remove=-2|...
+  error id=0 msg=ok

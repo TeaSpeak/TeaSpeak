@@ -1,0 +1,11 @@
+Usage: playlistdelete playlist_id={playlist_id}
+
+Permissions:
+  i_playlist_delete_power
+
+Description:
+  Deletes a playlist and all their songs
+
+Example:
+  playlistdelete playlist_id=13
+  error id=0 msg=ok

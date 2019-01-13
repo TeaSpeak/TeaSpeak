@@ -1,0 +1,11 @@
+Usage: playlistsongremove playlist_id={playlist_id} song_id={song id}
+
+Permissions:
+  i_playlist_song_remove_power
+
+Description:
+  Removes a song from the playlist
+
+Example:
+  playlistsongremove playlist_id=13 song_id=1
+  error id=0 msg=ok

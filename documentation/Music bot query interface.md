@@ -102,6 +102,7 @@ Permissions:
 
 Properties: None
 
+## The queue section is currently unimplemented, but there will come an update.
 ### Queue info (`musicbotqueuelist`)
 Command: `musicbotqueuelist`  
 Parameters:  
@@ -144,7 +145,7 @@ Parameters:
 | Parameter name | Description |  
 | --- | --- |  
 | `bot_id` | The target bot id |  
-| `type` | The type of the song loader ([more info](#Song loader type)) |  
+| `type` | The type of the song loader ([more info](#song-loader-type)) |  
 | `url` | The url of the file or link which will be played |  
 
 Permissions:
@@ -264,6 +265,7 @@ Event trigger:
 Every second
 
 Parameters:  
+
 | Parameter name | Description |  
 | --- | --- |  
 | `bot_id` | The music bot id |  
@@ -272,36 +274,66 @@ Parameters:
 | `player_replay_index` | Time index until the music is played (in `milliseconds`) |  
 
 ## Types
+### Playlist properties
+
+| Property name | Type | Description |  
+| --- | --- | --- |  
+| `playlist_id` | Number | The identifier for a playlist |  
+| `playlist_title` | String | The title for the playlist |  
+| `playlist_description` | String | The description for the playlist |  
+| `playlist_type` | Number | The type of the playlist. More information [here](#playlist-type) |  
+| `playlist_owner_dbid` | Number | The client database id of the owner |  
+| `playlist_owner_name` | String | The owner's name at the creation point. Will be used as fallback when there is no result for the database id |  
+| `playlist_flag_delete_played` | Boolean | Enable/disable the deletion of songs, after they had been replayed |  
+| `playlist_flag_finished` | Boolean | This flag determines if a playlist had been finished playing. Setting it to zero replays the playlist |  
+| `playlist_replay_mode` | Number | The replay type. More information [here](#playlist-replay-type) |  
+| `playlist_current_song_id` | Number | The current replaying song id |
+
+### Playlist type
+
+| Value | Description |  
+| --- | --- |  
+| 0 | The playlist is bot bound. As soon the bot gets deleted, the playlist gets deleted as well |  
+| 1 | The playlist is global, and does not automatically gets deleted |  
+
+### Playlist replay type
+
+| Value | Description |  
+| --- | --- |  
+| 0 | Normal (Linear with the order) |  
+| 1 | Normal looped (Linear with the order, when finished starting again) |  
+| 2 | Loop single song |  
+| 3 | Shuffle |  
+
 ### Player state
-```
-enum ReplayState {
-    SLEEPING = 0,
-    LOADING,
-    PLAYING,
-    PAUSED,
-    STOPPED
-};
-```
+
+| Value | Description |  
+| --- | --- |  
+| 0 | Sleeping, doing nothing until a new song is available |  
+| 1 | Loading, loads the current song |  
+| 2 | Playing, replaying the current song |  
+| 3 | Pause, current replay had been paused |  
+| 4 | Stopped, current replay had been stopped |  
 
 ### Player action
-```
-enum PlayerAction {
-    STOP = 0,
-    PLAY,
-    PAUSE,
-    FORWARD,
-    REWIND
-};
-```
+
+| Value | Description |  
+| --- | --- |  
+| 0 | Stop, stop the player |  
+| 1 | Play, playback current song |  
+| 2 | Pause, pause the current song |  
+| 3 | Forward, forward to the next song |  
+| 4 | Rewind, jump back to the last song (Currently not supported) |  
+
 
 ### Song loader type
-```
-enum SongLoaderType {
-    YTDLL = 0,
-    FFMPEG = 1,
-    CHANNEL = 2
-};
-```
+
+| Value | Description |  
+| --- | --- |  
+| 0 | Use YoutubeDL for url resolve |  
+| 1 | Use FFMPEG to resolve and replay the url |  
+| 2 | Use the channel file resolver to resulve the url |  
+
 #### Channel
 The URL requires to match a TeaSpeak query command with the parameters `cid`, `name`, `path`  
 Example: `musicbotqueueadd bot_id=5 type=2 url=cid=4\sname=audio.webm\spath`  

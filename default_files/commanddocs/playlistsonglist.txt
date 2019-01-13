@@ -1,0 +1,12 @@
+Usage: playlistsonglist playlist_id={playlist_id}
+
+Permissions:
+  i_playlist_view_power
+
+Description:
+  List all songs which are within a playlist
+
+Example:
+  playlistsonglist playlist_id=13
+  playlist_id=13 song_id=1 song_invoker=1 song_previous_song_id=0 song_url=https:\/\/www.youtube.com\/watch?v=XU8iCAxAsH4 song_url_loader song_loaded=0 song_metadata
+  error id=0 msg=ok
