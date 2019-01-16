@@ -1,4 +1,14 @@
 # Changelog:
+* **1.3.1b**
+    - Fixed invalid memory read issue while `clientgetconnectioninfo`
+    - Permissions `b_client_ban_name` `b_client_ban_ip` `b_client_ban_hwid` are now optional
+    - Fixed that some invisible channels haven't shown up after view power change
+    - Improved timeout and reconnect strategy, now direct reconnect without waiting 20 seconds
+    - Improved (any) DDOS protection
+    - Fixed kick issue for missing parameters
+    - Added `-permsid` switch to `channelpermlist`, `servergrouppermlist`, `channelgrouppermlist`, `clientpermlist` (Required for YatQA)
+    - Does not longer timeout when the client remote address changes (e.g. proxy switch etc)
+    
 * **1.3b**  
     *General music bot update and permission update*  
     Note: This update mainly focuses the Music Bot and his API. There are some API breaking changes!  
