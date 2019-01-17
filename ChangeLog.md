@@ -8,6 +8,7 @@
     - Fixed kick issue for missing parameters
     - Added `-permsid` switch to `channelpermlist`, `servergrouppermlist`, `channelgrouppermlist`, `clientpermlist` (Required for YatQA)
     - Does not longer timeout when the client remote address changes (e.g. proxy switch etc)
+    - Added a poke on permission edit, to prevent issues with the TeamSpeak 3 client.
     
 * **1.3b**  
     *General music bot update and permission update*  
