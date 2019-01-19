@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.2b**
+    - Improved ping timeout (dont enforce a response anymore, but enforce command acks)
+      This should improve the `dropped (No ping response)` thing
+    - Improved channel view and subscribe mechanism, and prevent some client disconnects
+    - Added parameter `playlist_bot_id` in response for command `playlistlist`
+    
 * **1.3.1b**
     - Fixed invalid memory read issue while `clientgetconnectioninfo`
     - Permissions `b_client_ban_name` `b_client_ban_ip` `b_client_ban_hwid` are now optional
