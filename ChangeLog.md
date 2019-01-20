@@ -1,9 +1,15 @@
 # Changelog:
+* **1.3.3b**
+    - Added parameter `playlist_bot_id` in response for command `playlistlist`
+    - When the music bot receives a play command, and the playlist had finished, the playlist will now restart again
+    - Added FFMPEG auto reconnect option within the ffmpeg command
+    - Fixed music bot shuffle mode
+    - Fixed abnormal high `connection timeout` timeouts
+        
 * **1.3.2b**
     - Improved ping timeout (dont enforce a response anymore, but enforce command acks)
       This should improve the `dropped (No ping response)` thing
     - Improved channel view and subscribe mechanism, and prevent some client disconnects
-    - Added parameter `playlist_bot_id` in response for command `playlistlist`
     
 * **1.3.1b**
     - Fixed invalid memory read issue while `clientgetconnectioninfo`
