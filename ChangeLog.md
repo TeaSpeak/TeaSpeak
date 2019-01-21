@@ -5,7 +5,7 @@
     - Added FFMPEG auto reconnect option within the ffmpeg command
     - Fixed music bot shuffle mode
     - Fixed abnormal high `connection timeout` timeouts
-    - Fixed #551
+    - Fixed https://github.com/TeaSpeak/TeaSpeak/issues/551
         
 * **1.3.2b**
     - Improved ping timeout (dont enforce a response anymore, but enforce command acks)
