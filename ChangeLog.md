@@ -5,6 +5,10 @@
     - Added FFMPEG auto reconnect option within the ffmpeg command
     - Fixed music bot shuffle mode
     - Fixed abnormal high `connection timeout` timeouts
+    - Readded permission `b_client_use_priority_speaker` to keep some legacy compatibility
+    - The optimized build uses now optimized libraries as well
+    - Fixed that `client_uptime_mode` applies even after a restart
+    - Fixed YT replay breaks (lead to an change within youtube's API)
         
 * **1.3.2b**
     - Improved ping timeout (dont enforce a response anymore, but enforce command acks)
