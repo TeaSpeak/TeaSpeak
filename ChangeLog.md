@@ -1,4 +1,21 @@
 # Changelog:
+* **1.3.5b**
+    **ATTENTION**: I may recommend to create a sql backup before
+    - Fixed talk power issues for clientkick
+    - Fixed playlist permission showing up in `permfind`
+    - Fixed YatQA issue with `channelinfo` (added an alias for `pid`)
+    - Added primaries keys to the tables `permissions` and `properties` to prevent double entries
+    
+* **1.3.4b**
+    - `playlistedit current_song_id=<id>` changes not the currently playing music bot the bot as well (if assigned)
+    - Added property `playlist_max_songs` to playlists to limit the max amount of songs.
+      The initial value is equal to the owners `i_max_playlist_size` permission
+    - Added permission `i_max_playlists` to prevent playlist spam
+    - Added permission `i_max_playlist_size` to limit the songs within a playlist
+    - Improved error handling for the music bot (`failed to invoke next tick. Ticking lock is still acquired.`)
+    - Improved TeaSpeak Client and Web identity handshake
+    - Improved Query initialization
+    
 * **1.3.3b**
     - Added parameter `playlist_bot_id` in response for command `playlistlist`
     - When the music bot receives a play command, and the playlist had finished, the playlist will now restart again
@@ -9,7 +26,7 @@
     - The optimized build uses now optimized libraries as well
     - Fixed that `client_uptime_mode` applies even after a restart
     - Fixed YT replay breaks (lead to an change within youtube's API)
-        
+    
 * **1.3.2b**
     - Improved ping timeout (dont enforce a response anymore, but enforce command acks)
       This should improve the `dropped (No ping response)` thing
