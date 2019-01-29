@@ -4,7 +4,9 @@
     - Fixed talk power issues for clientkick
     - Fixed playlist permission showing up in `permfind`
     - Fixed YatQA issue with `channelinfo` (added an alias for `pid`)
+    For SQLite users (The MySQL drivers does not support that yet):
     - Added primaries keys to the tables `permissions` and `properties` to prevent double entries
+    - Any database upgrades are not made with transactions to prevent data loss on failure
     
 * **1.3.4b**
     - `playlistedit current_song_id=<id>` changes not the currently playing music bot the bot as well (if assigned)
