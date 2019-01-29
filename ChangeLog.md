@@ -8,6 +8,8 @@
     - Added primaries keys to the tables `permissions` and `properties` to prevent double entries
     - Any database upgrades are not made with transactions to prevent data loss on failure
     - Added `install_music.sh` script
+    - Fixed issue [#564](https://github.com/TeaSpeak/TeaSpeak/issues/564) ((re)connecting loses muted status)
+    - Fixed issue [#560](https://github.com/TeaSpeak/TeaSpeak/issues/560) (Change password of serveradmin does not apply)
     
 * **1.3.4b**
     - `playlistedit current_song_id=<id>` changes not the currently playing music bot the bot as well (if assigned)
