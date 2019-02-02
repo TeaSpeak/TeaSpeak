@@ -6,19 +6,6 @@ BASE_URL="https://repo.teaspeak.de/libnice/"
 BASE_DIR=$(dirname "$0")
 cd "$BASE_DIR"
 
-echo "################## ATTENTION ##################"
-echo "This installation does not support all systems"
-echo "After this install your TeaSpeak Server (or the music bots)"
-echo "may not start anymore because of a linking error"
-echo ""
-echo "A solution will be to delete all system links within your libs folder"
-
-read -e -p "Do you want to continue? [Y/n] " YN
-
-if ! [[ ${YN} == "y" || ${YN} == "Y" || ${YN} == "" ]]; then
-    exit 1
-fi
-
 #Function check
 tar --version &>/dev/null
 if [ $? -ne 0 ]; then
