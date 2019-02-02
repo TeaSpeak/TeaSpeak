@@ -1,4 +1,13 @@
 # Changelog:
+* **1.3.6b**
+    - Improved internal buffer handling and allocations (try to decrease memory fragmentation)
+    - May fixed issue [#556](https://github.com/TeaSpeak/TeaSpeak/issues/556) 
+    - Fixed issue [#560](https://github.com/TeaSpeak/TeaSpeak/issues/560)
+    - Restrict server bound queries to their server ([#566](https://github.com/TeaSpeak/TeaSpeak/issues/566))
+    - Fixed issue [#565](https://github.com/TeaSpeak/TeaSpeak/issues/565)
+    - Fixed serverlist bug ([#F1737](https://forum.teaspeak.de/index.php?threads/teaspeak-1-3-5-beta-serverlist-bug.1737))
+    - Fixed server crash related to the music bots (assert fail)
+    
 * **1.3.5b**
     **ATTENTION**: I may recommend to create a sql backup before
     - Fixed talk power issues for clientkick
