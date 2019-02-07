@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.7b**
+    - Fixed crash on too long command packets
+    - Fixed issue with multible IP bindings ([#F1753](https://forum.teaspeak.de/index.php?threads/how-to-add-multiple-ips.1753/))
+    - Fixed bug that first ban dosn't work
+    - Fixed CPU issues (Hopefully)
+    
 * **1.3.6b**
     - Improved internal buffer handling and allocations (try to decrease memory fragmentation)
     - May fixed issue [#556](https://github.com/TeaSpeak/TeaSpeak/issues/556) 
