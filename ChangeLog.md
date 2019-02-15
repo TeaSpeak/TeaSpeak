@@ -1,4 +1,8 @@
 # Changelog:
+* **1.3.8b**
+    - Fixed sinusbot issues, which was related to a fundamental issues
+    - Improved the web client disconnect (prevent hangup)
+    
 * **1.3.7b**
     - Fixed crash on too long command packets
     - Fixed issue with multible IP bindings ([#F1753](https://forum.teaspeak.de/index.php?threads/how-to-add-multiple-ips.1753/))
