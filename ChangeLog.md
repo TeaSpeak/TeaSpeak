@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.9b**
+    - Make the property `client_country` editable for music bots
+    - Fixed crash related to the query ([F#1789](https://forum.teaspeak.de/index.php?threads/server-1-3-8-beta-crash-on-yatqa-connection.1789))
+    - Improved song load error handling on playback (now broadcasting an error insteadof doing nothing)
+    - Added the possibility to configure the music bot anounce messages
+    
 * **1.3.8b**
     - Fixed sinusbot issues, which was related to a fundamental issues
     - Improved the web client disconnect (prevent hangup)
