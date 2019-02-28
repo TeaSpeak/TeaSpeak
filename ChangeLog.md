@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.10b**
+    - Allowed IP ranges within query whitelist and blacklist
+    - Allowing `http` connections to the web endpoint
+    - Not removing channel commander on channel switch ([F#1809](https://forum.teaspeak.de/index.php?threads/bug-channel-commander.1809/))
+    - Fixed query command parsing capturing spaces (`use sid=1` => server id = `1` | `use sid=1 ` => server id = `1 ` (which isn't a valid number))
+    
 * **1.3.9b**
     - Make the property `client_country` editable for music bots
     - Fixed crash related to the query ([F#1789](https://forum.teaspeak.de/index.php?threads/server-1-3-8-beta-crash-on-yatqa-connection.1789))
