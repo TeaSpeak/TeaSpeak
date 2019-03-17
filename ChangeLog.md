@@ -4,6 +4,11 @@
     - Allowing `http` connections to the web endpoint
     - Not removing channel commander on channel switch ([F#1809](https://forum.teaspeak.de/index.php?threads/bug-channel-commander.1809/))
     - Fixed query command parsing capturing spaces (`use sid=1` => server id = `1` | `use sid=1 ` => server id = `1 ` (which isn't a valid number))
+    - Fixed spelling mistake in `--help` start parameter
+    - Improved RAM consumption
+    - Implemented issue [#579](https://github.com/TeaSpeak/TeaSpeak/issues/579) (Improve buffer allocator)
+    - Fixed issue [#574](https://github.com/TeaSpeak/TeaSpeak/issues/574) (IP v6 & v4 multibinding issue) (and [#291](https://github.com/TeaSpeak/TeaSpeak/issues/291))
+    - Implemented query white and blacklist IP ranges ([#567](https://github.com/TeaSpeak/TeaSpeak/issues/567))
     
 * **1.3.9b**
     - Make the property `client_country` editable for music bots
