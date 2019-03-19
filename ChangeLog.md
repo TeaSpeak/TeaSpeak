@@ -9,6 +9,7 @@
     - Implemented issue [#579](https://github.com/TeaSpeak/TeaSpeak/issues/579) (Improve buffer allocator)
     - Fixed issue [#574](https://github.com/TeaSpeak/TeaSpeak/issues/574) (IP v6 & v4 multibinding issue) (and [#291](https://github.com/TeaSpeak/TeaSpeak/issues/291))
     - Implemented query white and blacklist IP ranges ([#567](https://github.com/TeaSpeak/TeaSpeak/issues/567))
+    - **Fixed insane memory usage due an impl mistake related to the connection statistics**
     
 * **1.3.9b**
     - Make the property `client_country` editable for music bots
