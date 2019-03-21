@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.11b**
+    - Fixed web client connecting issues
+    - Improved internal client ID handling
+    - Fixed global instance statistics
+    - Removed client disconnect on invalid send (attempt to prevent massive client loss)
+    
 * **1.3.10b**
     - Allowed IP ranges within query whitelist and blacklist
     - Allowing `http` connections to the web endpoint
