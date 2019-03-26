@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.12b**
+    - Improved file transfer for the web client
+    NOTE: This version is required to use the Web Client properly
+    - Fixed that sometimes the last few bytes are missing
+    - Fixed weblist server crash on empty server name
+    
 * **1.3.11b**
     - Fixed web client connecting issues
     - Improved internal client ID handling
