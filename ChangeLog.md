@@ -1,4 +1,11 @@
 # Changelog:
+* **1.3.13b**
+    - Added SNI (Server name indication) support for web certificates
+      You now have the possibility to use different certificates for different server names.
+      (E.g.: `www.foo.com` => Cert A; `www.bar.foo.com` => Cert B; ...)
+    - Improved property updates (Comparing old values with new ones)
+    - This version is required to work with firefox again!
+    
 * **1.3.12b**
     - Improved file transfer for the web client
     NOTE: This version is required to use the Web Client properly
