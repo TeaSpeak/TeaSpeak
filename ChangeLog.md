@@ -1,10 +1,23 @@
 # Changelog:
+* **1.3.14b**
+    - Fixed default permission setup
+        - Removed invalid permissions
+        - Fixed parsing of granted permissions as well fixed flag skip and negate support
+        - Added new permissions
+    - Removed trace log from whisper function to improved the CPU usage
+    - Fixed missing permission check for `b_serverinstance_modify_querygroup` and `b_serverinstance_modify_templates`
+    - Removed memory cleanup message (Memory issues are resolved since 1.3.10)
+    - Added check before `notifyclientupdated` to prevent `Disconnected from server (invalid clientID)`
+    - Implemented the log level warning
+    - Fixed remote peer address change detection (broken since 1.3.7)
+    
 * **1.3.13b**
     - Added SNI (Server name indication) support for web certificates
       You now have the possibility to use different certificates for different server names.
       (E.g.: `www.foo.com` => Cert A; `www.bar.foo.com` => Cert B; ...)
     - Improved property updates (Comparing old values with new ones)
     - This version is required to work with firefox again!
+    - Fixed issues related to the config (Server crash on startup)
     
 * **1.3.12b**
     - Improved file transfer for the web client
