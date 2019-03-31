@@ -287,10 +287,10 @@ install)
     action_install_ffmpeg=1
     ;;
 install-ffmpeg)
-    action_install_ytdl=1
+    action_install_ffmpeg=1
     ;;
 install-youtube-dl)
-    action_install_ffmpeg=1
+    action_install_ytdl=1
     ;;
 update-youtube-dl)
     action_update_ytdl=1
