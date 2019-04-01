@@ -10,6 +10,8 @@
     - Added check before `notifyclientupdated` to prevent `Disconnected from server (invalid clientID)`
     - Implemented the log level warning
     - Fixed remote peer address change detection (broken since 1.3.7)
+    - Fixed ultra rare server hangup related to the web client
+    - Fixed rare crash related to the web client and the hangup above
     
 * **1.3.13b**
     - Added SNI (Server name indication) support for web certificates
