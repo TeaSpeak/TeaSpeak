@@ -1,4 +1,11 @@
 # Changelog:
+* **1.3.15b**
+    - Fixed music bot subscribe mode
+    - Fixed channel unsubscribe on leave module (Wrong permission calculation)
+    - Added a virtual server hard limit via config.yml
+    - Fixed empty since bug with YatQA ([#587](https://github.com/TeaSpeak/TeaSpeak/issues/587))
+    - Fixed rare invalid client ID assignment ([F#1900](https://forum.teaspeak.de/index.php?threads/critical-error.1900/))
+    
 * **1.3.14b**
     - Fixed default permission setup
         - Removed invalid permissions
