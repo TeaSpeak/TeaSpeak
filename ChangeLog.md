@@ -5,6 +5,9 @@
     - Added a virtual server hard limit via config.yml
     - Fixed empty since bug with YatQA ([#587](https://github.com/TeaSpeak/TeaSpeak/issues/587))
     - Fixed rare invalid client ID assignment ([F#1900](https://forum.teaspeak.de/index.php?threads/critical-error.1900/))
+    - Fixed a bug that if a client lags the CPU increases
+    - Fixed bug that prevents you from deleting channels with clients
+    - Added check to channel names loaded from database which could cause errors (e.g. duplicated, too long, undefined names)
     
 * **1.3.14b**
     - Fixed default permission setup
