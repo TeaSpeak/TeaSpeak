@@ -1,4 +1,13 @@
 # Changelog:
+* **1.3.16b**
+    - Limited client description lengths to 200 characters
+    - Added check to channel names loaded from database which could cause errors (e.g. duplicated, too long, undefined names)
+    - Fixed ping/pong packets not working like expected
+    - Fixed saving issue related to channel permissions (Permission values sometimes failed to save) (Thanks to @REDOSS)
+    - Fixed bug that the native client don't receive required music bot data (Requires a native client version of `1.2.1`)
+    - Implemented all native identify methods supported by the current client
+    - Added config option to enable/disable name authentication as identify method
+    
 * **1.3.15b**
     - Fixed music bot subscribe mode
     - Fixed channel unsubscribe on leave module (Wrong permission calculation)
@@ -7,7 +16,6 @@
     - Fixed rare invalid client ID assignment ([F#1900](https://forum.teaspeak.de/index.php?threads/critical-error.1900/))
     - Fixed a bug that if a client lags the CPU increases
     - Fixed bug that prevents you from deleting channels with clients
-    - Added check to channel names loaded from database which could cause errors (e.g. duplicated, too long, undefined names)
     
 * **1.3.14b**
     - Fixed default permission setup
