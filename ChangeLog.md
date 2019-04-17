@@ -7,7 +7,8 @@
     - Fixed bug that the native client don't receive required music bot data (Requires a native client version of `1.2.1`)
     - Implemented all native identify methods supported by the current client
     - Added config option to enable/disable name authentication as identify method
-    - Fixed crash on snapshotdeploy while migrating old permissions
+    - Fixed crash on `snapshotdeploy` while migrating old permissions
+    - **Improved whisper performance**
     
 * **1.3.15b**
     - Fixed music bot subscribe mode
