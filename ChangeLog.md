@@ -1,4 +1,13 @@
 # Changelog:
+* **1.3.17b**
+    - Fixed deeply rooted protocol bug (Miscalculation of generation ids)
+        - Fixed voice does not work after some time
+        - Improved connection stability
+    - Testing for permission `i_client_needed_permission_modify_power` on server/channel group assignment
+    - Added new permissions `b_channel_ignore_description_view_power` and `b_channel_ignore_subscribe_power`
+    - Increased max music tick delay to 10ms and moved the warning message to the log level warning
+    - Fixed bug in ordering permissions
+    
 * **1.3.16b**
     - Limited client description lengths to 200 characters
     - Added check to channel names loaded from database which could cause errors (e.g. duplicated, too long, undefined names)
