@@ -1,4 +1,8 @@
 # Changelog:
+* **1.3.18b**
+    - Fixed some permissions not working correctly after server snapshot import
+    - Attempting to fix the voice encryption issue
+    
 * **1.3.17b**
     - Fixed deeply rooted protocol bug (Miscalculation of generation ids)
         - Fixed voice does not work after some time
