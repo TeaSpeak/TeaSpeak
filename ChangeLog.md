@@ -1,4 +1,13 @@
 # Changelog:
+* **1.3.19b**
+    WARNING: This release may contains some deadlocks (hangups).
+             Use this is a test environment first!
+    - Redesigned internal channel tree access system
+        - Improved access security
+        - Prevent client undefined disconnects
+        - Fixed fast channel hide/show sometimes disconnects the client
+    - Fixed client count (TeaClient hasn't been counted)
+    
 * **1.3.18b**
     - Fixed some permissions not working correctly after server snapshot import
     - Attempting to fix the voice encryption issue
