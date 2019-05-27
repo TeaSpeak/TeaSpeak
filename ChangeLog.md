@@ -7,7 +7,11 @@
         - Prevent client undefined disconnects
         - Fixed fast channel hide/show sometimes disconnects the client
     - Fixed client count (TeaClient hasn't been counted)
-    
+    - Testing for the following permissions the granted value (Prevents from setting higher values than granted)
+        - `i_client_needed_kick_from_server_power`
+        - `i_client_needed_kick_from_channel_power`
+        - `i_client_kick_from_channel_power`
+        - `i_client_kick_from_server_power`
 * **1.3.18b**
     - Fixed some permissions not working correctly after server snapshot import
     - Attempting to fix the voice encryption issue
