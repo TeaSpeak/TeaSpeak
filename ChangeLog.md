@@ -4,14 +4,19 @@
              Use this is a test environment first!
     - Redesigned internal channel tree access system
         - Improved access security
-        - Prevent client undefined disconnects
         - Fixed fast channel hide/show sometimes disconnects the client
+    - Fixed undefined disconnect error
     - Fixed client count (TeaClient hasn't been counted)
     - Testing for the following permissions the granted value (Prevents from setting higher values than granted)
         - `i_client_needed_kick_from_server_power`
         - `i_client_needed_kick_from_channel_power`
         - `i_client_kick_from_channel_power`
         - `i_client_kick_from_server_power`
+    - Improved channel edit parameter checking
+    - Fixed two potential mass server disconnect within `channeledit`
+    - Fixed temporary channel auto deletion (testing not for family clients)
+    - Fixed file transfer server crash related to HTTP/HTTPS transfers
+    
 * **1.3.18b**
     - Fixed some permissions not working correctly after server snapshot import
     - Attempting to fix the voice encryption issue
