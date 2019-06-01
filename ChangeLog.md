@@ -16,6 +16,7 @@
     - Fixed two potential mass server disconnect within `channeledit`
     - Fixed temporary channel auto deletion (testing not for family clients)
     - Fixed file transfer server crash related to HTTP/HTTPS transfers
+    - Improved WebRTC session setup (May libnice runs smooth now!)
     
 * **1.3.18b**
     - Fixed some permissions not working correctly after server snapshot import
