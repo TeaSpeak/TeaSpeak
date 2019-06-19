@@ -1,4 +1,8 @@
 # Changelog:
+* **1.3.20b**
+    - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
+    - Added config option to suppress invalid utf8 codes within the protocol (`strict_ut8_mode`)
+    
 * **1.3.19b**
     WARNING: This release may contains some deadlocks (hangups).
              Use this is a test environment first!
