@@ -1,4 +1,9 @@
 # Changelog:
+* **1.3.21b**
+    - Reusing virtual server ids after these servers have been deleted
+    - Fixed channel permission import on `serversnapshotdeploy`
+    - Improved error handling within `serversnapshotdeploy`
+    
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
     - Added config option to suppress invalid utf8 codes within the protocol (`strict_ut8_mode`)
