@@ -3,6 +3,7 @@
     - Reusing virtual server ids after these servers have been deleted
     - Fixed channel permission import on `serversnapshotdeploy`
     - Improved error handling within `serversnapshotdeploy`
+    - Filtering client update events for the query client (Gametracker should now work)
     
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
