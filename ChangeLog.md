@@ -4,6 +4,10 @@
     - Fixed channel permission import on `serversnapshotdeploy`
     - Improved error handling within `serversnapshotdeploy`
     - Filtering client update events for the query client (Gametracker should now work)
+    - `clientupdate` with the same name as before does not result in an error anymore
+    - Fixed file transfer not working for "small" files
+    - Improved HTTP(S) response speed within file transfer
+    - Fixed file transfer connection hangup sometimes
     
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
