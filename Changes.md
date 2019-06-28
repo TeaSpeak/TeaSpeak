@@ -105,6 +105,7 @@ Permission | Description
 `i_channel_group_self_remove_power` | Power for the client to remove himself to this channel group
 
 #### New properties
+- `serverinstance_virtual_server_id_index`
 - `client_total_online_time` | `client_month_online_time`
 - `virtualserver_default_client_description`
 - `virtualserver_default_channel_description`

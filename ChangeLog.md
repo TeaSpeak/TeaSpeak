@@ -8,6 +8,8 @@
     - Fixed file transfer not working for "small" files
     - Improved HTTP(S) response speed within file transfer
     - Fixed file transfer connection hangup sometimes
+    - Added new instance property `serverinstance_virtual_server_id_index`
+    - Fixed bug related to the invisible channel system
     
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
