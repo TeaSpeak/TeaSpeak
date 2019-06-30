@@ -10,6 +10,7 @@
     - Fixed file transfer connection hangup sometimes
     - Added new instance property `serverinstance_virtual_server_id_index`
     - Fixed bug related to the invisible channel system
+    - Added option to customize timeout messages
     
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
