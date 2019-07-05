@@ -11,7 +11,11 @@
     - Added new instance property `serverinstance_virtual_server_id_index`
     - Fixed bug related to the invisible channel system
     - Added option to customize timeout messages
-    - Fixed detection of `virtualserver_codec_encryption_mode` (If its set to a global state it now affects the encrytion)
+    - Fixed detection of `virtualserver_codec_encryption_mode` (If its set to a global state it now affects the encryption)
+    - Improved packet (voice) preparation and send processing
+    - Fixed bug which caused a reconnect timeout after direct disconnect (Reported by [@yamano](https://forum.teaspeak.de/index.php?members/yamano.517/))
+    - Improved CPU performance within FFMPeg music provider
+    - Fixed bug within the ring buffer which caused that the voice transmission hanged up after 40 minutes
     
 * **1.3.20b**
     - Fixed issue [#605](https://github.com/TeaSpeak/TeaSpeak/issues/605)
