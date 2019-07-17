@@ -1,4 +1,12 @@
 # Changelog:
+* **1.3.22b**
+    - Improved the internal permission management system
+        - **Heavily** improved performance on permission calculation & edits
+        - Client moves/join now using a lot less CPU
+    - Showing granted permissions for server/channel-groups, clients, channel, client-channel permissions within `permissionoverview`
+    - Commands `ftcreatedir`, `ftgetfilelist`,`ftgetfileinfo`, `ftdeletefile`, `ftinitupload`, `ftinitdownload` does not return `channel_invalid_password` anymore if no password has been given.   
+      Now a permission-error for `b_ft_ignore_password` will be returned.
+    
 * **1.3.21b**
     - Reusing virtual server ids after these servers have been deleted
     - Fixed channel permission import on `serversnapshotdeploy`
