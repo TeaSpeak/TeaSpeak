@@ -1,4 +1,9 @@
 # Changelog:
+* **1.3.23b**
+    - Fixed all permission issues introduces with 1.3.22-beta0 (Already within 1.3.22-stable)
+    - Fixed voice shuddering/lag and a user timeout issue. (Already within 1.3.22-stable)
+    - Fixed as weired query permission issue. Queries had to send a text message after login if they're bound to a server; else they had no permissions
+    
 * **1.3.22b**
     - Improved the internal permission management system
         - **Heavily** improved performance on permission calculation & edits
@@ -6,6 +11,10 @@
     - Showing granted permissions for server/channel-groups, clients, channel, client-channel permissions within `permissionoverview`
     - Commands `ftcreatedir`, `ftgetfilelist`,`ftgetfileinfo`, `ftdeletefile`, `ftinitupload`, `ftinitdownload` does not return `channel_invalid_password` anymore if no password has been given.   
       Now a permission-error for `b_ft_ignore_password` will be returned.
+    - Fixed connection timeout issue introduced in 1.3.21-beta
+    - Fixed SIGILL crash related to the action `serverselect`. 
+    - Fixed rare client crash due to unordered command packets
+    - Fixed bug related to `channeledit` [#F2099](https://forum.teaspeak.de/index.php?threads/permission-does-not-work.2099/)
     
 * **1.3.21b**
     - Reusing virtual server ids after these servers have been deleted
