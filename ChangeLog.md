@@ -1,4 +1,7 @@
 # Changelog:
+* **1.3.24b**
+    - Added the possibility to change the permission names individually for all client types
+    
 * **1.3.23b**
     - Fixed all permission issues introduces with 1.3.22-beta0 (Already within 1.3.22-stable)
     - Fixed voice shuddering/lag and a user timeout issue. (Already within 1.3.22-stable)
