@@ -1,4 +1,10 @@
 # Changelog:
+* **1.3.25b**
+    - Added support for the commands `clientaddservergroup` as `clientdelservergroup`.
+      For the server these are just aliases to `servergroupaddclient` and `servergroupdelclient`.
+      These parameters now support an server group array as well
+    - Performance improve and cleanup of the internal group manager
+
 * **1.3.24b**
     - Added the possibility to change the permission names individually for all client types
     
