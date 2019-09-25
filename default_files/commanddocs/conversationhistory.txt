@@ -1,0 +1,24 @@
+Usage: conversationhistory cid={channel id} [cpw={channel password}] [timestamp_begin={milliseconds since epoch}] [timestamp_end={milliseconds since epoch}] [message_count={max messages to receive}] [-merge]
+
+Permissions:
+  b_channel_join_ignore_password
+  b_channel_ignore_join_power
+  i_channel_join_power
+
+Description:
+  Queries the channel conversation history from 'timestamp_end' up to 'timestamp_begin'.
+
+Notes:
+  If the 'merge' flag is set each response line will may contain more then one entry
+  If there is no 'timestamp_begin' given, the current unix time will be used.
+  If there is no 'timestamp_end' given, 0 is used which stands for "open end".
+  The 'message_count' is limited to 100 messages
+  If the return code is 0x2201 e.g. 'conversation_more_data' there is more data and the 'message_count' limit has been reached
+
+Example:
+  conversationhistory cid=4
+  cid=4 timestamp=1563549595756 sender_database_id=3 sender_unique_id=xxjnc14LmvTk+Lyrm8OOeo4tOqw= sender_name=WolverinDEV msg=Wow\sthis\sreally\sworks\s(server\srestarted)
+  cid=4 timestamp=1563549584318 sender_database_id=3 sender_unique_id=xxjnc14LmvTk+Lyrm8OOeo4tOqw= sender_name=WolverinDEV msg=This\sis\sanother\smessage
+  cid=4 timestamp=1563549583750 sender_database_id=3 sender_unique_id=xxjnc14LmvTk+Lyrm8OOeo4tOqw= sender_name=WolverinDEV msg=A\smessage\sa\slong\stime\sago
+  error id=0 msg=ok
+

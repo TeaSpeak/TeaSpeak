@@ -1,0 +1,19 @@
+Usage: conversationfetch cid={channel id} [cpw={channel password}] | ...
+
+Permissions:
+  b_channel_join_ignore_password
+  b_channel_ignore_join_power
+  i_channel_join_power
+
+Description:
+  Fetches the newest message timestamps
+
+Notes:
+  The 'error_id' and 'error_msg' fields in the result bulks are only set if there is an error for the given channel
+
+Example:
+  conversationfetch cid=4 | cid=3 cpw=Hello\sWorld | cid=99999
+  cid=4 timestamp=1563550716314|cid=3 timestamp=0|cid=99999 error_id=8704 error_msg=invalid\sconversation\sid
+  error id=0 msg=ok
+
+
