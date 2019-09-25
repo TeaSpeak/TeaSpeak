@@ -12,7 +12,7 @@
     - Improved the `teastart.sh` script
       `./teastart.sh status` now returns 0 if the server is running else 1
     - Web client bandwidth now gets logged within the server
-    - Removed the "I don't have a description" as default value for `virtualserver_default_channel_description` and `virtualserver_default_channel_description`
+    - Removed the "I don't have a description" as default value for `virtualserver_default_channel_description` and `virtualserver_default_client_description`
     - Fixed issue that the old IP address has been shown to all users instead of the new one after an IP change
     
     Stability and networking:
