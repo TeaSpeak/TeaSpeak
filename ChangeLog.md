@@ -1,4 +1,42 @@
 # Changelog:
+* **1.4.0b**
+    - Saving the properties `channel_created_at` and `channel_created_by` within server snapshots
+    - Made the client variable `client_meta_data` editable (Suggested by [@Fire1992](https://forum.teaspeak.de/index.php?members/fire1992.406/))
+    - Commands `servergroupautoaddperm` and `servergroupautodelperm` are now executable on the template server (sid=0) ([#F2120](https://forum.teaspeak.de/index.php?threads/serverautodelperm-error.2120/))
+    - All music bot related properties are now properly saved and loaded again
+    - Commands `channelclientdelperm` and `channelclientdelperm` now updates the target client channel view
+    - Added properties `connection_filetransfer_bytes_received_month` and `connection_filetransfer_bytes_sent_month` to `serverrequestconnectioninfo`
+    - Added a new virtual server property `virtualserver_country_code`
+    - `too_many_clones_already_connected` does not trigger for empty `hwid`s. As well the reasony why (ip, uid, hwid) is not part of the message
+    - The client away message is now limited to 256 characters
+    - Improved the `teastart.sh` script
+      `./teastart.sh status` now returns 0 if the server is running else 1
+    - Web client bandwidth now gets logged within the server
+    - Removed the "I don't have a description" as default value for `virtualserver_default_channel_description` and `virtualserver_default_channel_description`
+    - Fixed issue that the old IP address has been shown to all users instead of the new one after an IP change
+    
+    Stability and networking:
+    - Properties `serverinstance_query_host`, `serverinstance_filetransfer_host` and `virtualserver_host` now support multiple bindings and IPv6 as well
+    - Improved query and file transfer 'out of file descriptor' handling
+    - Added four new instance properties `serverinstance_query_max_connections`, `serverinstance_query_max_connections_per_ip`, `serverinstance_filetransfer_max_connections_per_ip`, `serverinstance_filetransfer_max_connections`
+    - Fixed client disconnect (`Resource deadlock avoided`) when he tries to edit the default channel group permissions (Reported by [@Herbalist](https://forum.teaspeak.de/index.php?members/herbalist.495/))
+    
+    Permissions:
+    - Permissions which will be newly introduce are getting auto applied (using the `i_group_auto_update_type` permission)
+    - Added a new permission `b_virtualserver_modify_country_code` which regulated the editing of the virtual server property `virtualserver_country_code`
+    - Added new permissions (belonging to the chat system) 
+        - `b_channel_create_modify_conversation_history_length`
+        - `b_channel_create_modify_conversation_history_unlimited`
+        - `b_channel_create_modify_conversation_private`
+    - The value `-1` for permission `i_channel_subscribe_power` now prevents the user to subscribe to any channel
+    - Server admins now have the rights to grant the priority speaker permission (`b_client_is_priority_speaker`) ([#604](https://github.com/TeaSpeak/TeaSpeak/issues/604))
+    - Fixed and updated `permissions.template`. No more startup critical errors 
+    
+    Chat-System:
+    - Added new commands `conversationhistory`, `conversationfetch` and `conversationsetsubscription`
+    - Added a new channel properties `channel_conversation_history_length` and `channel_flag_conversation_private`
+    - Added an optional parameter `cid` to `sendtextmessage` for channel messaging    
+
 * **1.3.25b**
     - Added support for the commands `clientaddservergroup` as `clientdelservergroup`.
       For the server these are just aliases to `servergroupaddclient` and `servergroupdelclient`.

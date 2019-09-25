@@ -103,17 +103,25 @@ Permission | Description
 `i_server_group_self_remove_power` | Power for the client to remove himself to this group
 `i_channel_group_self_add_power` | Power for the client to add himself to this channel group
 `i_channel_group_self_remove_power` | Power for the client to remove himself to this channel group
+`b_virtualserver_modify_country_code` | Regulated the option to edit `virtualserver_country_code`  
 
 #### New properties
-- `serverinstance_virtual_server_id_index`
-- `client_total_online_time` | `client_month_online_time`
-- `virtualserver_default_client_description`
-- `virtualserver_default_channel_description`
-- `virtualserver_default_channel_topic`
-- `channel_last_left`
-- `channel_created_at`
-- `channel_created_by`
+Property | Description
+--- | ---
+`serverinstance_query_max_connections_per_ip`, `serverinstance_query_max_connections` | Limits the connection for the query server per ip and the max connections
+`serverinstance_filetransfer_max_connections_per_ip`, `serverinstance_filetransfer_max_connections` | Limits the connection for the file transfer per ip and the max connections
+`serverinstance_virtual_server_id_index` | The start index to count the virtual server id from. If zero the lowest possible value will be used
+`client_total_online_time`, `client_month_online_time` | Online time of the client on the server
+`virtualserver_default_client_description` | The default client description for every client. *1
+`virtualserver_default_channel_description`| The default channel description for every channel. *1
+`virtualserver_default_channel_topic`| The default channel topic for every channel. *1
+`b_virtualserver_modify_country_code` | The country code for the server
+`channel_last_left` | A unix timestamp (in seconds) pointing to the time the last user left this channel
+`channel_created_at` | A unix timestamp (in seconds) pointing to the time when the channel has been created
+`channel_created_by` | Contains the client data base id from the client which created that channel
 		   
+*1)  To take effect the server needs to be restarted 
+		 
 
 #### Limit channels per client
 You can limit the channels/client with these permissions:  
