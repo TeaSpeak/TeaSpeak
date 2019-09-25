@@ -17,7 +17,7 @@ packageManagersList=(
 
 # elevate privileges if the user is not root
 root="%"
-if [ "$EUID" -ne 0 ]; then
+if [[ "$EUID" -ne 0 ]]; then
     if command -v sudo > /dev/null 2>&1; then
         root="sudo %"
     else
@@ -26,7 +26,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 #Test if we've already libnice manually installed
-if [ ! -e libs/libnice.so.10 ]; then
+if [[ ! -e libs/libnice.so.10 ]]; then
     for packageManager in "${packageManagersList[@]}"; do
         # split string by delimiter and replace "%" with package name
         IFS=';' read -r -a packageManagerData <<< $packageManager
@@ -51,7 +51,7 @@ if [ ! -e libs/libnice.so.10 ]; then
             break;
         fi
         # Couldn't find a supported package manager
-        if [ "$packageManager" = "${packageManagersList[-1]}" ]; then
+        if [[ "$packageManager" = "${packageManagersList[-1]}" ]]; then
             printf '\nYour package manager is not supported!\n'
             printf 'Please report this problem to\n'
             printf 'https://github.com/TeaSpeak/TeaSpeak/issues\n\n'
