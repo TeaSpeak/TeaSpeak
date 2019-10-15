@@ -1,7 +1,8 @@
 #!/bin/bash
 
-BASE_DIR=$(readlink -f "$0")
-cd "$BASE_DIR"
+file_base=$(readlink -f "$0")
+directory_base=$(dirname ${file_base})
+cd ${directory_base}
 
 if [[ ! -d logs/ ]]; then
     echo "Please start the TeaSpeak-Server for the first time over teastart_minimal.sh"
@@ -19,10 +20,6 @@ PID_FILE="tpid.pid"
 SPID_FILE="stpid.pid"
 
 COMMANDLINE_PARAMETERS="${@:2}" #add any command line parameters you want to pass here
-D1=$(dirname "$0")
-BINARYPATH="$(dirname "${D1}")"
-cd "${BINARYPATH}"
-echo $(pwd)
 
 if [[ -e ${PID_FILE} ]]; then
     if ( kill -0 $(cat ${PID_FILE}) 2> /dev/null ); then
@@ -67,7 +64,7 @@ case "$1" in
 
         SCREEN_UUID=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)
 		echo "Starting the TeaSpeak server screen (Uid: $SCREEN_UUID)"
-		screen -d -m -S TeaSpeak-$SCREEN_UUID ./tealoop.sh > /dev/null &
+		screen -d -m -S TeaSpeak-${SCREEN_UUID} ./tealoop.sh > /dev/null &
 
         PID=$!
         ps -p ${PID} > /dev/null 2>&1

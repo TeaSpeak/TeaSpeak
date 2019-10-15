@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-BASE_DIR=$(readlink -f "$0")
-cd "$BASE_DIR"
+file_base=$(readlink -f "$0")
+directory_base=$(dirname ${file_base})
+cd ${directory_base}
 
 # pck manager / search pck / update src list / install pck / pck
 packageManagersList=(

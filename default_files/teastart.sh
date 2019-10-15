@@ -1,9 +1,11 @@
 #!/bin/bash
 
 COMMANDLINE_PARAMETERS="${@:2}" #add any command line parameters you want to pass here
-D1=$(readlink -f "$0") #Get own binary path
-BINARYPATH="$(dirname "${D1}")"
-cd "${BINARYPATH}"
+
+file_base=$(readlink -f "$0")
+directory_base=$(dirname ${file_base})
+cd ${directory_base}
+
 LIBRARYPATH="./libs/"
 PRELOADPATH="./libs/libjemalloc.so.2"
 BINARYNAME="TeaSpeakServer"
