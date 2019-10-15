@@ -1,7 +1,7 @@
 #!/bin/bash
 
 COMMANDLINE_PARAMETERS="${@:2}" #add any command line parameters you want to pass here
-D1=$(dirname "$0") #Get own binary path
+D1=$(readlink -f "$0") #Get own binary path
 BINARYPATH="$(dirname "${D1}")"
 cd "${BINARYPATH}"
 LIBRARYPATH="./libs/"

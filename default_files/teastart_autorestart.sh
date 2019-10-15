@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DIR=$(dirname "$0")
+BASE_DIR=$(readlink -f "$0")
 cd "$BASE_DIR"
 
 if [[ ! -d logs/ ]]; then

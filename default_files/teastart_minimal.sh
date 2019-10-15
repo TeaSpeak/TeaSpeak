@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASE_DIR=$(dirname "$0")
+BASE_DIR=$(readlink -f "$0")
 cd "$BASE_DIR"
 
 # pck manager / search pck / update src list / install pck / pck
