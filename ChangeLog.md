@@ -22,6 +22,8 @@
     - Added four new instance properties `serverinstance_query_max_connections`, `serverinstance_query_max_connections_per_ip`, `serverinstance_filetransfer_max_connections_per_ip`, `serverinstance_filetransfer_max_connections`
     - Fixed client disconnect (`Resource deadlock avoided`) when he tries to edit the default channel group permissions (Reported by [@Herbalist](https://forum.teaspeak.de/index.php?members/herbalist.495/))
     - Fixed channel group list now showing template groups
+    - Fixed `b_channel_ignore_subscribe_power` on channel switch
+    - Fixed some channel subscribe power issues
     
     Permissions:
     - Permissions which will be newly introduce are getting auto applied (using the `i_group_auto_update_type` permission)
