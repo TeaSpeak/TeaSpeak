@@ -15,7 +15,8 @@
     - Removed the "I don't have a description" as default value for `virtualserver_default_channel_description` and `virtualserver_default_client_description`
     - Fixed issue that the old IP address has been shown to all users instead of the new one after an IP change
     - Fixed telnet commands parsing, they now get ignored instead of being interpreted as a TS command
-    
+    - Fixed bug that music bots do not reconnect to their last channel
+
     Stability and networking:
     - Properties `serverinstance_query_host`, `serverinstance_filetransfer_host` and `virtualserver_host` now support multiple bindings and IPv6 as well
     - Improved query and file transfer 'out of file descriptor' handling
