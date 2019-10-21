@@ -40,7 +40,10 @@
     Chat-System:
     - Added new commands `conversationhistory`, `conversationfetch` and `conversationsetsubscription`
     - Added a new channel properties `channel_conversation_history_length` and `channel_flag_conversation_private`
-    - Added an optional parameter `cid` to `sendtextmessage` for channel messaging    
+    - Added an optional parameter `cid` to `sendtextmessage` for channel messaging
+
+* **1.3.26b**
+    - Fixed an critical issue within `servergroupcopy` and `channelgroupcopy`
 
 * **1.3.25b**
     - Added support for the commands `clientaddservergroup` as `clientdelservergroup`.
