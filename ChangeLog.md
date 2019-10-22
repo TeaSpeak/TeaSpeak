@@ -44,6 +44,7 @@
 
 * **1.3.26b**
     - Fixed an critical issue within `servergroupcopy` and `channelgroupcopy`
+    - Fixed an out of ourder packet sending bug (Also known as the `invalid clientID disconnect`)
 
 * **1.3.25b**
     - Added support for the commands `clientaddservergroup` as `clientdelservergroup`.
