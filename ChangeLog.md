@@ -1,4 +1,10 @@
 # Changelog:
+* **1.4.1**
+    - Proper saving of music bots last channel
+    - Fixed invalid `client_servergroups`, `client_channel_group_id` and `client_channel_group_inherited_channel_id` properties within the `notifycliententerview`
+    - Fixed missing `notifyclientupdated` notify for queries
+    - Updated the IP2Location databases
+    
 * **1.4.0b**
     - Saving the properties `channel_created_at` and `channel_created_by` within server snapshots
     - Made the client variable `client_meta_data` editable (Suggested by [@Fire1992](https://forum.teaspeak.de/index.php?members/fire1992.406/))
