@@ -4,6 +4,8 @@
     - Fixed invalid `client_servergroups`, `client_channel_group_id` and `client_channel_group_inherited_channel_id` properties within the `notifycliententerview`
     - Fixed missing `notifyclientupdated` notify for queries
     - Updated the IP2Location databases
+    - Implemented issue ([#640](https://github.com/TeaSpeak/TeaSpeak/issues/640))
+    - Fixed UTF-8 Issue when using MySQL backend
     
 * **1.4.0b**
     - Saving the properties `channel_created_at` and `channel_created_by` within server snapshots
