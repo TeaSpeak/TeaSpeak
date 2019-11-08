@@ -6,6 +6,8 @@
     - Updated the IP2Location databases
     - Implemented issue ([#640](https://github.com/TeaSpeak/TeaSpeak/issues/640))
     - Fixed UTF-8 Issue when using MySQL backend
+    - Fixed an invalid read of the WebClients voice bridge on destroy
+    - Fixed issue that the client permission for offline clients we're not saved into the database ([#641](https://github.com/TeaSpeak/TeaSpeak/issues/641))
     
 * **1.4.0b**
     - Saving the properties `channel_created_at` and `channel_created_by` within server snapshots
