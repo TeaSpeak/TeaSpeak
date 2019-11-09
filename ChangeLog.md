@@ -1,5 +1,5 @@
 # Changelog:
-* **1.4.1**
+* **1.4.2**
     - Fixed critical permission issue related to client channel groups
     - Some minor improvements on the IO methods
     
