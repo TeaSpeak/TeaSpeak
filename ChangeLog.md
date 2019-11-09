@@ -1,5 +1,9 @@
 # Changelog:
 * **1.4.1**
+    - Fixed critical permission issue related to client channel groups
+    - Some minor improvements on the IO methods
+    
+* **1.4.1**
     - Proper saving of music bots last channel
     - Fixed invalid `client_servergroups`, `client_channel_group_id` and `client_channel_group_inherited_channel_id` properties within the `notifycliententerview`
     - Fixed missing `notifyclientupdated` notify for queries
