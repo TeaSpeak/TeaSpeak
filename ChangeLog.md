@@ -1,9 +1,16 @@
 # Changelog:
+* **1.4.3**
+    - Removed `libnice` external dependency and deploy it with the TeaSpeak package itself ([#614](https://github.com/TeaSpeak/TeaSpeak/issues/614))
+    - Taking music bots in account when calculating the server slot limit ([#644](https://github.com/TeaSpeak/TeaSpeak/issues/644))
+    
 * **1.4.2**
     - Fixed critical permission issue related to client channel groups
     - Some minor improvements on the IO methods
     - Fixed TS3 client disconnect on too long channel descriptions
-      Not proper edit handling
+      - Not proper edit handling
+      - Added checks for the max length of the description
+        If the description is longer than supported it will be cut of.
+    - Fixed issue [#644](https://github.com/TeaSpeak/TeaSpeak/issues/644)
     
 * **1.4.1**
     - Proper saving of music bots last channel
