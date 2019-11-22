@@ -1,4 +1,11 @@
 # Changelog:
+* **1.4.4**
+    - Deleted unknown permission from database dues to some permission changes
+    - Made the `config.yml` participial reloadable
+    - Added new terminal command `reload config` to reload the `config.yml`
+    - Improved server shutdown (in relation to the music bots)
+    - Automatically downloading a default certificate for the web client
+    
 * **1.4.3**
     - Removed `libnice` external dependency and deploy it with the TeaSpeak package itself ([#614](https://github.com/TeaSpeak/TeaSpeak/issues/614))
     - Taking music bots in account when calculating the server slot limit ([#644](https://github.com/TeaSpeak/TeaSpeak/issues/644))
