@@ -1,6 +1,7 @@
 # Changelog:
 * **1.4.5**
     - Move join flood protection to the beginning of the join process (Servers should not go down for join floods anymore)
+    - `buildVersion.txt` now contains a valid json string containing the library version 
     
 * **1.4.4**
     - Deleted unknown permission from database dues to some permission changes
