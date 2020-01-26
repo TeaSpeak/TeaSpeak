@@ -1,4 +1,10 @@
 # Changelog:
+* **1.4.6**
+    - Changed internal command handling API & system
+    - Reworked permission testing system, overworked all permission checks (now work better with individual channel permissions)
+    - Speed up command building for some commands which result in a lot of data like `serverlist` for a lot of servers
+    - `armv32v7` not also builds with the web client
+    
 * **1.4.5**
     - Move join flood protection to the beginning of the join process (Servers should not go down for join floods anymore)
     - Reorganized internal build system.
