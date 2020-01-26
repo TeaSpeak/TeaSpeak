@@ -4,6 +4,7 @@
     - Reworked permission testing system, overworked all permission checks (now work better with individual channel permissions)
     - Speed up command building for some commands which result in a lot of data like `serverlist` for a lot of servers
     - `armv32v7` not also builds with the web client
+    - Added a channel limit for each virtual server. Editable via `virtualserver_max_channels` with permissions `b_virtualserver_modify_maxchannels`
     
 * **1.4.5**
     - Move join flood protection to the beginning of the join process (Servers should not go down for join floods anymore)
