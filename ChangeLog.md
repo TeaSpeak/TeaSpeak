@@ -1,4 +1,9 @@
 # Changelog:
+* **1.4.7**
+    - Reworked internal packet handling system for the native client.
+      All control commands are now separated from the voice & connection keep alive system.
+      This ensures that the voice still works even if the server is really busy.
+      
 * **1.4.6**
     - Changed internal command handling API & system
     - Reworked permission testing system, overworked all permission checks (now work better with individual channel permissions)
