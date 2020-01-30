@@ -1,0 +1,13 @@
+Usage: playlistclientpermlist playlist_id={playlist_id} [cldbid={database_id}] [-permsid]
+
+Permissions:
+  b_virtualserver_playlist_permission_list
+
+Description:
+  View all permissions, given to a playlist for a specific client.
+  A playlist owner ignores this permission and could view them anyways.
+
+Example:
+  playlistclientpermlist playlist_id=13 cldbid=2
+  playlist_id=13 cldbid=2 permid=253 permvalue=100 permnegated=0 permskip=0|...
+  error id=0 msg=ok
