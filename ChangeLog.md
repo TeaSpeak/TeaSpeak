@@ -1,4 +1,10 @@
 # Changelog:
+* **1.4.8**
+    - Added commands `playlistclientpermlist`, `playlistclientaddperm` and `playlistclientdelperm`
+    - Fixed a bug where clients failed to connect due to invalid padding within the puzzle solve algorithm
+    - Improved client disconnect algorithm
+    - Fixed linking error within the ffmpeg module
+    
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
       All control commands are now separated from the voice & connection keep alive system.
