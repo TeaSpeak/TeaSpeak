@@ -4,6 +4,8 @@
     - Fixed a bug where clients failed to connect due to invalid padding within the puzzle solve algorithm
     - Improved client disconnect algorithm
     - Fixed linking error within the ffmpeg module
+    - Fixed a bug that prevented the real granted permission value from being shown
+    - Improved server behaviour for clients which deny to send any connection info
     
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
