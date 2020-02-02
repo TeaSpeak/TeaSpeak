@@ -1,12 +1,17 @@
 # Changelog:
 * **1.4.8**
-    - Added commands `playlistclientpermlist`, `playlistclientaddperm` and `playlistclientdelperm`
+    - Added commands `playlistclientpermlist`, `playlistclientaddperm` and `playlistclientdelperm`, `playlistsongsetcurrent`
     - Fixed a bug where clients failed to connect due to invalid padding within the puzzle solve algorithm
     - Improved client disconnect algorithm
     - Fixed linking error within the ffmpeg module
     - Fixed a bug that prevented the real granted permission value from being shown
     - Improved server behaviour for clients which deny to send any connection info
-    
+    - Some playlist related changes required for the new control panel
+        - Implemented the rewind action for playlists
+        - Delete played songs only after they've been finished
+        - Restarting playlist from the beginning if the "forward" action has been triggered
+        - Playlist now saves last played song id and replays it after restart
+        
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
       All control commands are now separated from the voice & connection keep alive system.
