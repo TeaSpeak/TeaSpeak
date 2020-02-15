@@ -15,6 +15,7 @@
     - Permission `b_client_is_priority_speaker` will only be taken in account if set as client channel permission
     - Fixed YatQAs server snapshot deploy issue
     - Implemented feature request [#647](https://github.com/TeaSpeak/TeaSpeak/issues/647) (Option to allow only TeaClient & TeaWeb to connect to the server)
+    - Improved query connect performance while calculating permissions
     
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
