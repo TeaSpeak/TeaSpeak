@@ -151,7 +151,7 @@ function install_youtubedl() {
         fi
 
         youtubedl_version=$(youtube-dl --version 2>/dev/null)
-        if [[ ! -z youtubedl_version ]]; then
+        if [[ ! -z $youtubedl_version ]]; then
             echo "Local YouTube-DL version (${youtubedl_version}) is okey. No need to install it"
             return
         fi
