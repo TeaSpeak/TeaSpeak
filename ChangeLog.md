@@ -11,7 +11,11 @@
         - Delete played songs only after they've been finished
         - Restarting playlist from the beginning if the "forward" action has been triggered
         - Playlist now saves last played song id and replays it after restart
-        
+    - Fixed crash when creating a channel on default server
+    - Permission `b_client_is_priority_speaker` will only be taken in account if set as client channel permission
+    - Fixed YatQAs server snapshot deploy issue
+    - Implemented feature request [#647](https://github.com/TeaSpeak/TeaSpeak/issues/647) (Option to allow only TeaClient & TeaWeb to connect to the server)
+    
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
       All control commands are now separated from the voice & connection keep alive system.
