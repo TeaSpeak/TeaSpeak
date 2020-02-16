@@ -16,6 +16,7 @@
     - Fixed YatQAs server snapshot deploy issue
     - Implemented feature request [#647](https://github.com/TeaSpeak/TeaSpeak/issues/647) (Option to allow only TeaClient & TeaWeb to connect to the server)
     - Improved query connect performance while calculating permissions
+    - Fixed some invalid permission calculation when cross chatting within the channel chat
     
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
@@ -23,7 +24,7 @@
       This ensures that the voice still works even if the server is really busy.
    - Do not count empty hardware id's anymore whe testing for the max clones hardware id
    - Added alias `serverinstance_serverquery_max_connections_per_ip` for `serverinstance_query_max_connections_per_ip` within the instance properties
-       
+      
 * **1.4.6**
     - Changed internal command handling API & system
     - Reworked permission testing system, overworked all permission checks (now work better with individual channel permissions)
