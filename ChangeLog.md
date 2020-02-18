@@ -17,6 +17,7 @@
     - Implemented feature request [#647](https://github.com/TeaSpeak/TeaSpeak/issues/647) (Option to allow only TeaClient & TeaWeb to connect to the server)
     - Improved query connect performance while calculating permissions
     - Fixed some invalid permission calculation when cross chatting within the channel chat
+    - Fixed a server crash ([#F2465](https://forum.teaspeak.de/index.php?threads/crash-dump.2465/))
     
 * **1.4.7**
     - Reworked internal packet handling system for the native client.
