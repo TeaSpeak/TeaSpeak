@@ -1,4 +1,9 @@
 # Changelog:
+* **1.4.9**
+    - Added command `playlistclientlist`
+    - Fixed permission auto update now also upgrading the permissions `i_playlist_song_move_power` and `i_playlist_song_needed_move_power`
+    - Music bot streams now try to automatically reconnect tree times if they got disconnected or killed
+    
 * **1.4.8**
     - Added commands `playlistclientpermlist`, `playlistclientaddperm` and `playlistclientdelperm`, `playlistsongsetcurrent`
     - Fixed a bug where clients failed to connect due to invalid padding within the puzzle solve algorithm
