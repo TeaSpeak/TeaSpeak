@@ -1,4 +1,9 @@
 # Changelog:
+* **1.4.10**
+    - Added an automated renewal system for the license keys
+    - Fixed incorrectly implemented `whisper_no_targets` and `whisper_no_targets`
+    - Fixed a bug that the channel required talk power gets lost after server restart
+    
 * **1.4.9**
     - Added command `playlistclientlist`
     - Fixed permission auto update now also upgrading the permissions `i_playlist_song_move_power` and `i_playlist_song_needed_move_power`
