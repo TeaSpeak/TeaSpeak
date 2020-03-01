@@ -5,7 +5,8 @@
     - Fixed a bug that the channel required talk power gets lost after server restart
     - Fixed a query related crash after the server snapshot deploy function
     - Removed the obsolete commands `musicbotqueuelist`, `musicbotqueueadd`, `musicbotqueuereorder` and `musicbotqueueremove`
-    
+    - Fixed YatQa server log not showing
+        
 * **1.4.9**
     - Added command `playlistclientlist`
     - Fixed permission auto update now also upgrading the permissions `i_playlist_song_move_power` and `i_playlist_song_needed_move_power`
@@ -13,7 +14,6 @@
     - Fixed client disconnect for server groups which haven't any permissions set ([#F2492](https://forum.teaspeak.de/index.php?threads/server-kicking-client-and-keep-him-from-connecting-back-after-servergroup-add-remove.2492))
     - Added an "admin only visible" channel to the default template
     - Fixed but that the skip and negate flags for groups are not copied from the default server [#2377](https://forum.teaspeak.de/index.php?threads/template-permissions.2377/)
-    - Fixed YatQa server log not showing
     
 * **1.4.8**
     - Added commands `playlistclientpermlist`, `playlistclientaddperm` and `playlistclientdelperm`, `playlistsongsetcurrent`
