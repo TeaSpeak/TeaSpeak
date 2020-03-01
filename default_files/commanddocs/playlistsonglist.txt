@@ -1,10 +1,12 @@
-Usage: playlistsonglist playlist_id={playlist_id}
+Usage: playlistsonglist playlist_id={playlist_id} [-extract-metadata]
 
 Permissions:
   i_playlist_view_power
 
 Description:
-  List all songs which are within a playlist
+  List all songs which are within a playlist.
+  When "-extract-metadata" is given, the fixed song_metadata content will
+  be given as normal parameters. These will begin with "song_metadata_".
 
 Example:
   playlistsonglist playlist_id=13
