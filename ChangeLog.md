@@ -6,7 +6,8 @@
     - Fixed a query related crash after the server snapshot deploy function
     - Removed the obsolete commands `musicbotqueuelist`, `musicbotqueueadd`, `musicbotqueuereorder` and `musicbotqueueremove`
     - Fixed YatQa server log not showing
-        
+    - Fixed the admin server query password by passing a command line parameter
+    
 * **1.4.9**
     - Added command `playlistclientlist`
     - Fixed permission auto update now also upgrading the permissions `i_playlist_song_move_power` and `i_playlist_song_needed_move_power`
