@@ -7,6 +7,9 @@
     - Removed the obsolete commands `musicbotqueuelist`, `musicbotqueueadd`, `musicbotqueuereorder` and `musicbotqueueremove`
     - Fixed YatQa server log not showing
     - Fixed the admin server query password by passing a command line parameter
+    - Fixed an issue with the music bot queue which prevented the bot from playing any song 
+      when the bot is supposed to delete the last played songs.
+    - Fixed a bug within the YT url resolver which prevents that some YT-URLs could be played shortly after server start
     
 * **1.4.9**
     - Added command `playlistclientlist`
