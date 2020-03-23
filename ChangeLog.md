@@ -11,6 +11,8 @@
       when the bot is supposed to delete the last played songs.
     - Fixed a bug within the YT url resolver which prevents that some YT-URLs could be played shortly after server start
     - Added the ability to send specific user types specific welcome messages
+    - Fixed bug that the admin channel gets exposed after server restart
+    - Fixed a resource leak within the new license client (1.4.10-beta6)
     
 * **1.4.9**
     - Added command `playlistclientlist`
