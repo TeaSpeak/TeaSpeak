@@ -2,7 +2,12 @@
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
       This is linked with the tutorial which could be found here: https://forum.teaspeak.de/index.php?threads/2570/
-
+    - Correctly shutting down WebRTC voice bridge which caused a lot of crashes on web client disconnect
+    - Improved WebRTC voice bridge setup algorithm (a bit faster now)
+    - Removed log spam from the web client when he receives/sends voice data
+    - Using a thread pool for the WebRTC voice bridges (not only thread for each client required anymore)
+    - Checking channel create permissions against the target parent channel
+    
 * **1.4.10**
     - Added an automated renewal system for the license keys
     - Fixed incorrectly implemented `whisper_no_targets` and `whisper_no_targets`
