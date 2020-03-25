@@ -1,4 +1,8 @@
 # Changelog:
+* **1.4.11**
+    - Added an automated rlimit value check for max open file descriptors.
+      This is linked with the tutorial which could be found here: https://forum.teaspeak.de/index.php?threads/2570/
+
 * **1.4.10**
     - Added an automated renewal system for the license keys
     - Fixed incorrectly implemented `whisper_no_targets` and `whisper_no_targets`
