@@ -7,6 +7,7 @@
     - Removed log spam from the web client when he receives/sends voice data
     - Using a thread pool for the WebRTC voice bridges (not only thread for each client required anymore)
     - Checking channel create permissions against the target parent channel
+    - Fixed two music bot hangups
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
