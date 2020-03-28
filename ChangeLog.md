@@ -8,6 +8,7 @@
     - Using a thread pool for the WebRTC voice bridges (not only thread for each client required anymore)
     - Checking channel create permissions against the target parent channel
     - Fixed two music bot hangups
+    - Fixed bug where a command just get handled after another command has been send
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
