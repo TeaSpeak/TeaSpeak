@@ -1,14 +1,15 @@
-Usage: querycreate client_login_name={username} [client_login_password={password}] [server_id={bounded server id}]
+Usage: querycreate client_login_name={username} [client_login_password={password}] [server_id={bounded server id}] [cldbid={client database id}]
 
 Permissions:
   b_client_query_create
+  b_client_query_create_own
 
 Description:
   Creates a new query account with your own identity.
 
 Notes:
-  Be aware to not create any query accounts with the serveradmin,
-  they will all have admin query permissions!
+  Be aware not to create any query accounts with the serveradmin without specifying a cldbid!
+  They will all have admin query permissions!
 
 Example:
   querycreate client_login_name=a client_login_password=a server_id=2

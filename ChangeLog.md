@@ -9,6 +9,8 @@
     - Checking channel create permissions against the target parent channel
     - Fixed two music bot hangups
     - Fixed bug where a command just get handled after another command has been send
+    - Added the possibility to create a query account for another user
+    - Added the permission `b_client_query_create_own`
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
