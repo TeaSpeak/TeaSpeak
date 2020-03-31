@@ -11,6 +11,8 @@
     - Fixed bug where a command just get handled after another command has been send
     - Added the possibility to create a query account for another user
     - Added the permission `b_client_query_create_own`
+    - Fixed issue [#608](https://github.com/TeaSpeak/TeaSpeak/issues/608)
+    - Fixing ffmpeg zombie processes after a stream has been closed
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
