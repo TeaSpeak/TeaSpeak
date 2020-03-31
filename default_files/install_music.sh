@@ -31,6 +31,12 @@ function print_help() {
     echo "  -h or --help               | Show this menu"
 }
 
+function wget_() {
+    wget -h | grep -e "--show-progress" &>/dev/null; _exit_code=$?
+    _wget_show_progress=""
+    [[ $_exit_code -eq 0 ]] && _wget_show_progress="--show-progress"
+    wget "$1" -q ${_wget_show_progress} -O "$2"
+}
 
 # For FFMPEG we're using a prebuild build downloaded from here: https://ffbinaries.com/downloads
 # Arguments:
@@ -91,7 +97,7 @@ function install_ffmpeg() {
     [[ ! -e "${download_file}" ]] || rm "${download_file}"
     [[ $? -eq 0 ]] || error_exit "Failed to remove old downloaded FFMPEG file" # This should never happen
 
-    wget "${download_path}" -q --show-progress -O "${download_file}"
+    wget_ "${download_path}" "${download_file}"
     [[ $? -eq 0 ]] || error_exit "Failed to download FFMPEG"
 
     # Extract and verify downloaded file
@@ -196,14 +202,14 @@ function install_youtubedl() {
     [[ ! -e "${download_file}" ]] || rm "${download_file}"
     [[ $? -eq 0 ]] || error_exit "Failed to remove old downloaded youtube-dl file" # This should never happen
 
-    wget "${download_path}" -q --show-progress -O "${download_file}"
+    wget_ "${download_path}" "${download_file}"
     [[ $? -eq 0 ]] || error_exit "Failed to download youtube-dl"
 
     [[ -x "${download_file}" ]] || chmod +x "${download_file}"
     [[ $? -eq 0 ]] || error_exit "Failed to add execute permissions to the youtube-dl binary"
 
     youtubedl_version=$(${download_file} --version 2>/dev/null)
-    [[ ! -z youtubedl_version ]] || error_exit "Failed to verify downloaded youtube-dl binary"
+    [[ ! -z "$youtubedl_version" ]] || error_exit "Failed to verify downloaded youtube-dl binary"
 
 
      # Install downloaded binary
