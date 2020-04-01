@@ -13,6 +13,7 @@
     - Added the permission `b_client_query_create_own`
     - Fixed issue [#608](https://github.com/TeaSpeak/TeaSpeak/issues/608)
     - Fixing ffmpeg zombie processes after a stream has been closed
+    - Fixed a small bug within the packet generation estimator
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
