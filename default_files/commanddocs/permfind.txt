@@ -9,6 +9,16 @@ Description:
   specified with permid. The output is similar to permoverview which includes
   the type and the ID of the client, channel or group associated with the
   permission. A permission can be specified by permid or permsid.
+  Each result bulk contains the following entries:
+
+  | t |     Meaning     |        id1         |         id2        |
+  |---|-----------------|--------------------|--------------------|
+  | 0 | server group    | group id           | const 0            |
+  | 1 | client (global) | client database id | const 0            |
+  | 2 | channel         | channel id         | const 0            |
+  | 3 | channel group   | const 0            | group id           |
+  | 4 | client channel  | channel id         | client database id |
+
 
 Example:
   permfind permid=4353
