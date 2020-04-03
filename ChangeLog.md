@@ -16,6 +16,7 @@
     - Fixed a small bug within the packet generation estimator
     - Improved `permfind ` speed
     - Fixed `permfind` `id1` and `id2` values (they've be swapped for everything except for server groups)
+    - Fixed invalid stream metadata parsing for FFMPEG stream when using a newer FFMPEG version
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
