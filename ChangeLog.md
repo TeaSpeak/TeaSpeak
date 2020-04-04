@@ -18,6 +18,7 @@
     - Fixed `permfind` `id1` and `id2` values (they've be swapped for everything except for server groups)
     - Fixed invalid stream metadata parsing for FFMPEG stream when using a newer FFMPEG version
     - Increased the web void bridge setup timeout to 20 seconds (it was 10 before)
+    - Splitting up the playlist song response to avoid client drop due to too long packets for huge playlists
     
 * **1.4.10**
     - Added an automated renewal system for the license keys
