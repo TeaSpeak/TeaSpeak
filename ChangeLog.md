@@ -1,4 +1,12 @@
 # Changelog:
+* **1.4.12**
+    - Heavily improved connection statistics performance (Client, Server and Server Instance)
+    - Added packet loss calculation for the UDP clients
+    - Adjusted control packet retransmission according to the official TCP/IP retransmission [rfc6298](https://tools.ietf.org/html/rfc6298)
+      using an RTO of `200ms` (like the linux kernel dos)
+    - Calculating the average server packet loss
+    - Added support for `connection_ping_deviation`
+    
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
       This is linked with the tutorial which could be found here: https://forum.teaspeak.de/index.php?threads/2570/
