@@ -6,6 +6,8 @@
       using an RTO of `200ms` (like the linux kernel dos)
     - Calculating the average server packet loss
     - Added support for `connection_ping_deviation`
+    - Fixed possible invalid memory read within the FFMPEG driver and license validator
+    - Improved FFMPEG exit code handling & stream EOF handling
     
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
