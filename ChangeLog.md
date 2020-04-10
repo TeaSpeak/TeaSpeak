@@ -8,6 +8,8 @@
     - Added support for `connection_ping_deviation`
     - Fixed possible invalid memory read within the FFMPEG driver and license validator
     - Improved FFMPEG exit code handling & stream EOF handling
+    - Improved the packet acknowledge handler a bit
+    - Improve client show algorithm to prevent client hangup on large channels
     
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
