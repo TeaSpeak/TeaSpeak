@@ -10,6 +10,7 @@
     - Improved FFMPEG exit code handling & stream EOF handling
     - Improved the packet acknowledge handler a bit
     - Improve client show algorithm to prevent client hangup on large channels
+    - Fixed invalid channel parameters when trying to set channel to default mode ([#660](https://github.com/TeaSpeak/TeaSpeak/issues/660))
     
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
