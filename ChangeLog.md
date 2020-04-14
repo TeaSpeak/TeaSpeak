@@ -1,4 +1,8 @@
 # Changelog:
+* **1.4.13**
+    - Fixed bug where playlists of a deleted server hasn't been deleted
+    - Fixed bug where conversations hasn't been deleted for a deleted server
+    
 * **1.4.12**
     - Heavily improved connection statistics performance (Client, Server and Server Instance)
     - Added packet loss calculation for the UDP clients
