@@ -15,6 +15,9 @@
     - Improved the packet acknowledge handler a bit
     - Improve client show algorithm to prevent client hangup on large channels
     - Fixed invalid channel parameters when trying to set channel to default mode ([#660](https://github.com/TeaSpeak/TeaSpeak/issues/660))
+    Beta 4:
+    - **Fixed critical server crash due to mischievous packets**
+    - Fixed a crash due to the missing "providers" directory
     
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
