@@ -127,7 +127,7 @@ function install_ffmpeg() {
     [[ -f "${ffmpeg_config}" ]] || echo "" > "${ffmpeg_config}"
     [[ $? -eq 0 ]] || error_exit "Failed to get or create config"
 
-    config=$(cat "${ffmpeg_config}" | sed -E "s/^(ffmpeg_command([ ]+)?=.*)$/; \1/")
+    config=$(cat "${ffmpeg_config}" | sed -E "s/^(ffmpeg_command[ ]*=.*)$/; \1/")
     [[ $? -ne 0 ]] || echo "$config" > ${ffmpeg_config} # Only write again when command above was successfully
     [[ $? -eq 0 ]] || error_exit "Failed to comment old FFMPEG command"
 
@@ -227,7 +227,7 @@ function install_youtubedl() {
     [[ -f "${youtubedl_config}" ]] || echo "" > "${youtubedl_config}"
     [[ $? -eq 0 ]] || error_exit "Failed to get or create config"
 
-    config=$(cat "${youtubedl_config}" | sed -E "s/^(youtubedl_command=([ ]+)?=.*)$/; \1/")
+    config=$(cat "${youtubedl_config}" | sed -E "s/^(youtubedl_command[ ]*=.*)$/; \1/")
     [[ $? -ne 0 ]] || echo "$config" > ${youtubedl_config} # Only write again when command above was successfully
     [[ $? -eq 0 ]] || error_exit "Failed to comment old youtube-dl command"
 
