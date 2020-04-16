@@ -2,6 +2,8 @@
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
     - Fixed bug where conversations hasn't been deleted for a deleted server
+    - Automatically use new available port for new server, if not otherwise specified
+    - Cleaning up any corrupted data, before creating a new server, which could influence the new server
     
 * **1.4.12**
     - Heavily improved connection statistics performance (Client, Server and Server Instance)
