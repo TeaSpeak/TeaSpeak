@@ -20,6 +20,7 @@
     Beta 4:
     - **Fixed critical server crash due to mischievous packets**
     - Fixed a crash due to the missing "providers" directory
+    - The install music script now successfully comments out the old YT-DL path
     
 * **1.4.11**
     - Added an automated rlimit value check for max open file descriptors.
