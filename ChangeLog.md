@@ -4,7 +4,7 @@
     - Fixed bug where conversations hasn't been deleted for a deleted server
     - Automatically use new available port for new server, if not otherwise specified
     - Cleaning up any corrupted data, before creating a new server, which could influence the new server
-    - Reworked the shutdown controller (not attempting to execute `kill` on himself on hangup, this may prevent the server trapping into a dead state)
+    - Reworked the shutdown controller (now attempting to execute `kill` on himself on hangup, this may prevent the server trapping into a dead state)
     - Fixed possible crash due to the file server
     - Fixed another quite unlikely crash
     
