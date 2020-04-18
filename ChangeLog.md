@@ -7,6 +7,7 @@
     - Reworked the shutdown controller (now attempting to execute `kill` on himself on hangup, this may prevent the server trapping into a dead state)
     - Fixed possible crash due to the file server
     - Fixed another quite unlikely crash
+    - Fixed permissions `i_server_group_self_add_power` and `i_server_group_self_remove_power`
     
 * **1.4.12**
     - Heavily improved connection statistics performance (Client, Server and Server Instance)
