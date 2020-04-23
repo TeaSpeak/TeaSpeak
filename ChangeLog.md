@@ -1,4 +1,10 @@
 # Changelog:
+* **1.4.14**
+    - Revised the permission checking on permission add/edit/remove.  
+      Now the server first checks if the client has at least `1` as granted value for the target permission.  
+      If so, on permission add/edit the value will be check against permission `i_permission_modify_power`.  
+      If the target value is higher than the `i_permission_modify_power` an error will be returned.
+      
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
     - Fixed bug where conversations hasn't been deleted for a deleted server
