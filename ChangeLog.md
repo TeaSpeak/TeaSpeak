@@ -9,7 +9,7 @@
     - Implemented bulk client moving
     - Introduced permission `i_client_poke_max_clients`
     - Added the ability to poke multiple clients at once
-    
+      
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
     - Fixed bug where conversations hasn't been deleted for a deleted server
