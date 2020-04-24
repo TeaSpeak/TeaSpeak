@@ -9,6 +9,8 @@
     - Implemented bulk client moving
     - Introduced permission `i_client_poke_max_clients`
     - Added the ability to poke multiple clients at once
+    - Rollback of the shutdown controller change form 1.4.13. It turns out that it was a bit too aggressive.
+      It now also kills the parent controller process which may be the auto restart script.
       
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
