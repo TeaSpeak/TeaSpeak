@@ -12,6 +12,7 @@
     - Rollback of the shutdown controller change form 1.4.13. It turns out that it was a bit too aggressive.
       It now also kills the parent controller process which may be the auto restart script.
     - Big improvements within the packet send prepare & send algorithms
+    - Fixed invalid dates for offline messages (Old, already send message will still have an invalid date!)
     
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
