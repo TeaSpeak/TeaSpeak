@@ -13,6 +13,8 @@
       It now also kills the parent controller process which may be the auto restart script.
     - Big improvements within the packet send prepare & send algorithms
     - Fixed invalid dates for offline messages (Old, already send message will still have an invalid date!)
+    - Fixed missing server group deletions on server deletion. (Cause [#F2671](https://forum.teaspeak.de/index.php?threads/2671))
+    - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs
     
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
