@@ -26,6 +26,8 @@
     - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs
     - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))
     beta6:
+    - Changed default query new line characters to the de facto standard of `\n`.
+      Previously `\n\r` has been used which miss matched *every* known standard.
     - Fixed query related server crash
     - Taking `b_permission_modify_power_ignore` from channel groups/playlist client permissions into account as well
     - Reworked the permission parsing
