@@ -27,7 +27,9 @@
     - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))
     beta6:
     - Changed default query new line characters to the de facto standard of `\n`.
-      Previously `\n\r` has been used which miss matched *every* known standard.
+      Previously `\n\r` has been used. 
+      Attention: Some other software may use `\n\r` which miss matches *every* known established standard.  
+      If required the new line feeds could be changed within the `config.yml`.
     - Fixed query related server crash
     - Taking `b_permission_modify_power_ignore` from channel groups/playlist client permissions into account as well
     - Reworked the permission parsing
