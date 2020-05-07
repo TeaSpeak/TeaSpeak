@@ -1,4 +1,13 @@
 # Changelog:
+* **Unreleased**
+    - Reworked the file transfer (recoded & restructured)
+      - Restructured system so it could be soonly outsourced in a dedicated server, running on a totally different machine
+      - Added needs for the web client file transfer
+      - Improved logging messages
+      - Improved network bandwidth calculation & limit
+      - Improved file io error handling
+      - Improved disk out of space handling
+    
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
       Now the server first checks if the client has at least `1` as granted value for the target permission.  
@@ -16,7 +25,31 @@
     - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))
     - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs
     - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))
-    
+    beta6:
+    - Fixed query related server crash
+    - Taking `b_permission_modify_power_ignore` from channel groups/playlist client permissions into account as well
+    - Reworked the permission parsing
+      - Using bulked response now to individually return the appropriate result for each permission.
+        The parameter `continueonerror` is now not needed anymore
+      - Unified parsing and error response for all methods
+      These changed apply to the following commands:
+      - `servergroupaddperm`
+      - `servergroupdelperm`
+      - `servergroupautoaddperm`
+      - `servergroupautodelperm`
+      - `channelgroupaddperm`
+      - `channelgroupdelperm`
+      - `channeladdperm`
+      - `channeldelperm`
+      - `clientaddperm`
+      - `clientdelperm`
+      - `channelclientaddperm`
+      - `channelclientdelperm`
+      - `playlistaddperm`
+      - `playlistdelperm`
+      - `playlistclientaddperm`
+      - `playlistclientdelperm`
+      
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
     - Fixed bug where conversations hasn't been deleted for a deleted server
