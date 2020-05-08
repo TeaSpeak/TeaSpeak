@@ -12,30 +12,30 @@
     - Revised the permission checking on permission add/edit/remove.  
       Now the server first checks if the client has at least `1` as granted value for the target permission.  
       If so, on permission add/edit the value will be check against permission `i_permission_modify_power`.  
-      If the target value is higher than the `i_permission_modify_power` an error will be returned.
+      If the target value is higher than the `i_permission_modify_power` an error will be returned.  
     - Added an option within the config to disable the max clones permissions instance wide (Usefully when switching to a proxy)
     - Implemented bulk server/channel kicking
     - Implemented bulk client moving
     - Introduced permission `i_client_poke_max_clients`
     - Added the ability to poke multiple clients at once
-    - Rollback of the shutdown controller change form 1.4.13. It turns out that it was a bit too aggressive.
-      It now also kills the parent controller process which may be the auto restart script.
+    - Rollback of the shutdown controller change form 1.4.13. It turns out that it was a bit too aggressive.  
+      It now also kills the parent controller process which may be the auto restart script.  
     - Big improvements within the packet send prepare & send algorithms
     - Fixed invalid dates for offline messages (Old, already send message will still have an invalid date!)
-    - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))
-    - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs
-    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))  
-    beta6:  
-    - Changed default query new line characters to the de facto standard of `\n`.
-      Previously `\n\r` has been used. 
-      Attention: Some other software may use `\n\r` which miss matches *every* known established standard.  
-      If required the new line feeds could be changed within the `config.yml`.
-    - Fixed query related server crash
-    - Taking `b_permission_modify_power_ignore` from channel groups/playlist client permissions into account as well
-    - Reworked the permission parsing
-      - Using bulked response now to individually return the appropriate result for each permission.
-        The parameter `continueonerror` is now not needed anymore
-      - Unified parsing and error response for all methods
+    - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))  
+    - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs  
+    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))    
+    beta6:    
+    - Changed default query new line characters to the de facto standard of `\n`.  
+      Previously `\n\r` has been used.   
+      Attention: Some other software may use `\n\r` which miss matches *every* known established standard.    
+      If required the new line feeds could be changed within the `config.yml`.  
+    - Fixed query related server crash  
+    - Taking `b_permission_modify_power_ignore` from channel groups/playlist client permissions into account as well  
+    - Reworked the permission parsing  
+      - Using bulked response now to individually return the appropriate result for each permission.  
+        The parameter `continueonerror` is now not needed anymore  
+      - Unified parsing and error response for all methods  
       These changed apply to the following commands:
       - `servergroupaddperm`
       - `servergroupdelperm`
@@ -78,7 +78,7 @@
     - Improved the packet acknowledge handler a bit
     - Improve client show algorithm to prevent client hangup on large channels
     - Fixed invalid channel parameters when trying to set channel to default mode ([#660](https://github.com/TeaSpeak/TeaSpeak/issues/660))
-    Beta 4:
+    Beta 4:  
     - **Fixed critical server crash due to mischievous packets**
     - Fixed a crash due to the missing "providers" directory
     - The install music script now successfully comments out the old YT-DL path
@@ -114,8 +114,8 @@
     - Removed the obsolete commands `musicbotqueuelist`, `musicbotqueueadd`, `musicbotqueuereorder` and `musicbotqueueremove`
     - Fixed YatQa server log not showing
     - Fixed the admin server query password by passing a command line parameter
-    - Fixed an issue with the music bot queue which prevented the bot from playing any song 
-      when the bot is supposed to delete the last played songs.
+    - Fixed an issue with the music bot queue which prevented the bot from playing any song   
+      when the bot is supposed to delete the last played songs.  
     - Fixed a bug within the YT url resolver which prevents that some YT-URLs could be played shortly after server start
     - Added the ability to send specific user types specific welcome messages
     - Fixed bug that the admin channel gets exposed after server restart
@@ -150,9 +150,9 @@
     - Fixed a server crash ([#F2465](https://forum.teaspeak.de/index.php?threads/crash-dump.2465/))
     
 * **1.4.7**
-    - Reworked internal packet handling system for the native client.
-      All control commands are now separated from the voice & connection keep alive system.
-      This ensures that the voice still works even if the server is really busy.
+    - Reworked internal packet handling system for the native client.  
+      All control commands are now separated from the voice & connection keep alive system.  
+      This ensures that the voice still works even if the server is really busy.  
    - Do not count empty hardware id's anymore whe testing for the max clones hardware id
    - Added alias `serverinstance_serverquery_max_connections_per_ip` for `serverinstance_query_max_connections_per_ip` within the instance properties
       
@@ -210,24 +210,24 @@
     - Added a new virtual server property `virtualserver_country_code`
     - `too_many_clones_already_connected` does not trigger for empty `hwid`s. As well the reasony why (ip, uid, hwid) is not part of the message
     - The client away message is now limited to 256 characters
-    - Improved the `teastart.sh` script
+    - Improved the `teastart.sh` script  
       `./teastart.sh status` now returns 0 if the server is running else 1
     - Web client bandwidth now gets logged within the server
     - Removed the "I don't have a description" as default value for `virtualserver_default_channel_description` and `virtualserver_default_client_description`
     - Fixed issue that the old IP address has been shown to all users instead of the new one after an IP change
     - Fixed telnet commands parsing, they now get ignored instead of being interpreted as a TS command
-    - Fixed bug that music bots do not reconnect to their last channel
-
-    Stability and networking:
-    - Properties `serverinstance_query_host`, `serverinstance_filetransfer_host` and `virtualserver_host` now support multiple bindings and IPv6 as well
+    - Fixed bug that music bots do not reconnect to their last channel  
+  
+    Stability and networking:  
+    - Properties `serverinstance_query_host`, `serverinstance_filetransfer_host` and `virtualserver_host` now support multiple bindings and IPv6 as well  
     - Improved query and file transfer 'out of file descriptor' handling
     - Added four new instance properties `serverinstance_query_max_connections`, `serverinstance_query_max_connections_per_ip`, `serverinstance_filetransfer_max_connections_per_ip`, `serverinstance_filetransfer_max_connections`
     - Fixed client disconnect (`Resource deadlock avoided`) when he tries to edit the default channel group permissions (Reported by [@Herbalist](https://forum.teaspeak.de/index.php?members/herbalist.495/))
     - Fixed channel group list now showing template groups
     - Fixed `b_channel_ignore_subscribe_power` on channel switch
-    - Fixed some channel subscribe power issues
-    
-    Permissions:
+    - Fixed some channel subscribe power issues  
+      
+    Permissions:  
     - Permissions which will be newly introduce are getting auto applied (using the `i_group_auto_update_type` permission)
     - Added a new permission `b_virtualserver_modify_country_code` which regulated the editing of the virtual server property `virtualserver_country_code`
     - Added new permissions (belonging to the chat system) 
@@ -238,7 +238,7 @@
     - Server admins now have the rights to grant the priority speaker permission (`b_client_is_priority_speaker`) ([#604](https://github.com/TeaSpeak/TeaSpeak/issues/604))
     - Fixed and updated `permissions.template`. No more startup critical errors 
     
-    Chat-System:
+    Chat-System:  
     - Added new commands `conversationhistory`, `conversationfetch` and `conversationsetsubscription`
     - Added a new channel properties `channel_conversation_history_length` and `channel_flag_conversation_private`
     - Added an optional parameter `cid` to `sendtextmessage` for channel messaging
@@ -269,7 +269,7 @@
         - Client moves/join now using a lot less CPU
     - Showing granted permissions for server/channel-groups, clients, channel, client-channel permissions within `permissionoverview`
     - Commands `ftcreatedir`, `ftgetfilelist`,`ftgetfileinfo`, `ftdeletefile`, `ftinitupload`, `ftinitdownload` does not return `channel_invalid_password` anymore if no password has been given.   
-      Now a permission-error for `b_ft_ignore_password` will be returned.
+      Now a permission-error for `b_ft_ignore_password` will be returned.  
     - Fixed connection timeout issue introduced in 1.3.21-beta
     - Fixed SIGILL crash related to the action `serverselect`. 
     - Fixed rare client crash due to unordered command packets
