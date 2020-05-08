@@ -24,8 +24,8 @@
     - Fixed invalid dates for offline messages (Old, already send message will still have an invalid date!)
     - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))
     - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs
-    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))
-    beta6:
+    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))  
+    beta6:  
     - Changed default query new line characters to the de facto standard of `\n`.
       Previously `\n\r` has been used. 
       Attention: Some other software may use `\n\r` which miss matches *every* known established standard.  
