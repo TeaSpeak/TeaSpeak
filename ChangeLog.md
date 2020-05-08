@@ -24,8 +24,9 @@
     - Fixed invalid dates for offline messages (Old, already send message will still have an invalid date!)
     - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))  
     - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs  
-    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))    
-    beta6:    
+    - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))   
+     
+    Beta6:    
     - Changed default query new line characters to the de facto standard of `\n`.  
       Previously `\n\r` has been used.   
       Attention: Some other software may use `\n\r` which miss matches *every* known established standard.    
@@ -77,7 +78,8 @@
     - Improved FFMPEG exit code handling & stream EOF handling
     - Improved the packet acknowledge handler a bit
     - Improve client show algorithm to prevent client hangup on large channels
-    - Fixed invalid channel parameters when trying to set channel to default mode ([#660](https://github.com/TeaSpeak/TeaSpeak/issues/660))
+    - Fixed invalid channel parameters when trying to set channel to default mode ([#660](https://github.com/TeaSpeak/TeaSpeak/issues/660))  
+    
     Beta 4:  
     - **Fixed critical server crash due to mischievous packets**
     - Fixed a crash due to the missing "providers" directory
