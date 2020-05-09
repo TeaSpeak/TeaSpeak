@@ -7,6 +7,7 @@
       - Improved network bandwidth calculation & limit
       - Improved file io error handling
       - Improved disk out of space handling
+    - Added support for web client echo tests within the TeaSpeak server
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
