@@ -25,7 +25,7 @@
     - Fixed missing server group deletions on server deletion. (Cause of [#F2671](https://forum.teaspeak.de/index.php?threads/2671))  
     - `clientpoke`, `clientkick` and `clientmove` now return bulked errors when given bulk inputs  
     - Fixed server statistics on `serverinfo` ([#665](https://github.com/TeaSpeak/TeaSpeak/issues/))   
-     
+    
     Beta6:    
     - Changed default query new line characters to the de facto standard of `\n`.  
       Previously `\n\r` has been used.   
@@ -53,7 +53,10 @@
       - `playlistaddperm`
       - `playlistdelperm`
       - `playlistclientaddperm`
-      - `playlistclientdelperm`
+      - `playlistclientdelperm`  
+      
+    Beta7:
+    - Resetting all offline messages timestamps to avoid a convert error due to corrupt messages in the database
       
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
