@@ -8,6 +8,14 @@
       - Improved file io error handling
       - Improved disk out of space handling
     - Added support for web client echo tests within the TeaSpeak server
+    - Added new error codes:
+      - `file_api_timeout` (0x820)
+    - Dropped support for the `delete_missing_icon_permissions` config setting
+    - Added command bulk support for command `ftdeletefile` (inclusive a bulked response)
+    - Added command bulk result support for `ftgetfileinfo`
+    - Implemented command `ftrenamefile`
+    - Implemented command `ftlist`
+    - Implemented command `ftstop`
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
@@ -58,7 +66,11 @@
       
     Beta7:
     - Resetting all offline messages timestamps to avoid a convert error due to corrupt messages in the database
-      
+    
+    Beta10:  
+    - Fixed crash related to semi permanent and temporary channels  
+    - Checking client move permissions specially for the source and target channel allowing channel group/client permissions to be considered  
+    
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
     - Fixed bug where conversations hasn't been deleted for a deleted server
