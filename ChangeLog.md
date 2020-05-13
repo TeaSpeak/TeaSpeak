@@ -16,6 +16,12 @@
     - Implemented command `ftrenamefile`
     - Implemented command `ftlist`
     - Implemented command `ftstop`
+    - Server bandwidth limits now directly affect all running transfers on editing
+    TODO!!!!!
+    - Client bandwidth limit permission
+    - FFMPEG channel provider
+    - Quotas (Working on)
+    - Server IP address, or 0.0.0.0
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
