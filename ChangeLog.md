@@ -17,11 +17,8 @@
     - Implemented command `ftlist`
     - Implemented command `ftstop`
     - Server bandwidth limits now directly affect all running transfers on editing
-    TODO!!!!!
-    - Client bandwidth limit permission
-    - FFMPEG channel provider
-    - Quotas (Working on)
-    - Server IP address, or 0.0.0.0
+    - Added permissions `i_ft_max_bandwidth_upload`, `i_ft_max_bandwidth_download`
+    - Attention: The playback of music located in the channel file system does currently not work due to the made changes
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
@@ -76,6 +73,8 @@
     Beta10:  
     - Fixed crash related to semi permanent and temporary channels  
     - Checking client move permissions specially for the source and target channel allowing channel group/client permissions to be considered  
+    
+    - Fixed issue [#625](https://github.com/TeaSpeak/TeaSpeak/issues/625)
     
 * **1.4.13**
     - Fixed bug where playlists of a deleted server hasn't been deleted
