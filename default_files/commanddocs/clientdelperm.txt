@@ -1,4 +1,4 @@
-Usage: channeldelperm cldbid={clientDBID} [permid={permID}...]
+Usage: clientdelperm cldbid={clientDBID} [permid={permID}...]
        [permsid={permName}...]
 
 Permissions:
