@@ -18,7 +18,11 @@
     - Implemented command `ftstop`
     - Server bandwidth limits now directly affect all running transfers on editing
     - Added permissions `i_ft_max_bandwidth_upload`, `i_ft_max_bandwidth_download`
-    - Attention: The playback of music located in the channel file system does currently not work due to the made changes
+    
+    Attention: 
+    - The playback of music located in the channel file system does currently not work due to the made changes
+    - The new file web API will break support with older web clients as well newer web clients will not support old servers anymore!
+    - The file server port will currently be ignored from the config.yml!
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
