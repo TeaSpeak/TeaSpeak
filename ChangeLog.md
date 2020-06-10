@@ -1,5 +1,5 @@
 # Changelog:
-* **Unreleased**
+* **1.4.15**
     - Reworked the file transfer (recoded & restructured)
       - Restructured system so it could be soonly outsourced in a dedicated server, running on a totally different machine
       - Added needs for the web client file transfer
