@@ -13,16 +13,16 @@
     - Dropped support for the `delete_missing_icon_permissions` config setting
     - Added command bulk support for command `ftdeletefile` (inclusive a bulked response)
     - Added command bulk result support for `ftgetfileinfo`
-    - Implemented command `ftrenamefile`
+    - Implemented command `ftrenamefile` 
     - Implemented command `ftlist`
     - Implemented command `ftstop`
     - Server bandwidth limits now directly affect all running transfers on editing
     - Added permissions `i_ft_max_bandwidth_upload`, `i_ft_max_bandwidth_download`
-    
+    - Fixed the `connection_filetransfer_bytes_sent_total` and `connection_filetransfer_bytes_received_total` properties
     Attention: 
     - The playback of music located in the channel file system does currently not work due to the made changes
     - The new file web API will break support with older web clients as well newer web clients will not support old servers anymore!
-    - The file server port will currently be ignored from the config.yml!
+      This only applies partially. Most functions are still working, but some are broken.
     
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
