@@ -24,6 +24,10 @@
     - The new file web API will break support with older web clients as well newer web clients will not support old servers anymore!
       This only applies partially. Most functions are still working, but some are broken.
     
+    Beta 2:  
+    - Fixed `b_client_skip_channelgroup_permissions` permission assignment [#F2766](https://forum.teaspeak.de/index.php?threads/2766)
+    - Added command `listfeaturesupport`
+    
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
       Now the server first checks if the client has at least `1` as granted value for the target permission.  

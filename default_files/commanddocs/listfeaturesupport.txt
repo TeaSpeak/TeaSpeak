@@ -1,0 +1,22 @@
+Usage: listfeaturesupport
+
+Description:
+  List all supported features by the server.
+  This could be used to determine if a server has some functionality already
+  and so enable it for the user.
+
+Result:
+  Each bulk contains the following entries:
+  name     The name of the feature
+  version  The version the server supports
+  support  The mode the server supports the feature
+           0 = none
+           1 = full
+           2 = experimental (only applies for the current version, all earlier version are fully supported)
+           3 = deprecated
+  A list with all features and a detailed description could be found in "FeatureList.md"
+
+Example:
+  listfeaturesupport
+  name=error-bulks support=1 version=1 | name=advanced-channel-chat support=1 version=1 | ...
+  error id=0 msg=ok
