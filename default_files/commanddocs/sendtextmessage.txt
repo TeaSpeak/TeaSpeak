@@ -1,4 +1,4 @@
-Usage: sendtextmessage targetmode={1-3} target={clientID} msg={text}
+Usage: sendtextmessage targetmode={1-3} target={clientID} msg={text} [cid={channelId}]
 
 Permissions:
   i_client_private_textmessage_power
