@@ -28,6 +28,11 @@
     - Fixed `b_client_skip_channelgroup_permissions` permission assignment [#F2766](https://forum.teaspeak.de/index.php?threads/2766)
     - Added command `listfeaturesupport`
     
+    Beta 3:
+    - Fixed [#F2734](https://forum.teaspeak.de/index.php?threads/2734) (Some channel admin kick permission)
+    - Fixed a crash due to some server visualisations failing to spawn new native threads
+    - Fixed [#F2771](https://forum.teaspeak.de/index.php?threads/2771) Missing icons for YatQA
+    
 * **1.4.14**
     - Revised the permission checking on permission add/edit/remove.  
       Now the server first checks if the client has at least `1` as granted value for the target permission.  
