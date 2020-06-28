@@ -1,0 +1,17 @@
+Usage: logquery [begin={milliseconds since epoch}] [end={milliseconds since epoch}] [limit={entry count} [groups={server,channel,...}] [instance={0|1}]
+
+Permissions:
+  b_serverinstance_log_view
+  b_virtualserver_log_view
+
+Description:
+  Displays a specified number of entries from the servers log. If instance is
+  set to 1, the server will return entries from the instance log.
+  Available groups are  custom, server, channel, permission, client, files and query.
+
+  The result will have custom key value pairs depending on the action.
+
+Example:
+  logquery limit=8
+  timestamp=1593345495642 invoker_database_id=10 invoker_nickname=Yeahr\slogs\s;) action=client-edit ...
+  error id=0 msg=ok

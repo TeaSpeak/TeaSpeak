@@ -1,4 +1,11 @@
 # Changelog:
+* **1.4.16**
+    - Added a general server action logging system 
+    - Implemented command `logadd`
+    - Added command `logquery`
+    - Removed command `logview`
+    Note: The `virtualserver_log_*` virtual server properties are currently not taken into account.
+    
 * **1.4.15**
     - Reworked the file transfer (recoded & restructured)
       - Restructured system so it could be soonly outsourced in a dedicated server, running on a totally different machine
@@ -27,8 +34,6 @@
     Beta 2:  
     - Fixed `b_client_skip_channelgroup_permissions` permission assignment [#F2766](https://forum.teaspeak.de/index.php?threads/2766)
     - Added command `listfeaturesupport`
-    
-    Beta 3:
     - Fixed [#F2734](https://forum.teaspeak.de/index.php?threads/2734) (Some channel admin kick permission)
     - Fixed a crash due to some server visualisations failing to spawn new native threads
     - Fixed [#F2771](https://forum.teaspeak.de/index.php?threads/2771) Missing icons for YatQA

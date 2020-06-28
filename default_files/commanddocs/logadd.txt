@@ -1,4 +1,4 @@
-Usage: logadd loglevel={1-4} logmsg={text}
+Usage: logadd msg={text} [-instance]
 
 Permissions:
   b_serverinstance_log_add
@@ -7,10 +7,8 @@ Permissions:
 Description:
   Writes a custom entry into the servers log. Depending on your permissions,
   you'll be able to add entries into the server instance log and/or your
-  virtual servers log. The loglevel parameter specifies the type of the entry.
-  
-  For detailed information, see Definitions.
+  virtual servers log.
 
 Example:
-  logadd loglevel=4 logmsg=Informational\smessage!
+  logadd logmsg=Hello\sWorld!
   error id=0 msg=ok
