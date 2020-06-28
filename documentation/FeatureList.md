@@ -3,7 +3,7 @@
 # ToC
 - [Bulked command responds](#bulked-command-responds)
 - [Advanced channel chat](#advanced-channel-chat)
-
+- [Instance User Action Log](#Instance-user-action-logs)
 
 ## Bulked command responds  
 Bulked command responds are an extend of the default `error id=<> msg=<> [return_code=<>]` command responses.
@@ -77,3 +77,23 @@ Version table:
 | `conversationfetch`            | 1 |  |  
 | `conversationmessagedelete`    | 1 |  |  
   
+  
+## Instance user action logs
+This feature describes the ability to query the server instance and virtual server log.  
+Along with the new commands, the server logs all user actions within the `InstanceLogs.sqlite` file.
+
+### Feature info
+A table with supported commands could be found [here](#log-query-supported-commands)  
+  
+Feature name: `log-query`  
+Version table:  
+| Version | Server Release |  
+| -- | -- |  
+| 1 | 1.4.16 |  
+  
+<h3 id="log-query-supported-commands">Supported commands</h3>
+
+| Command | Version |  
+| -- | -- |  
+| `logquery`        | 1 |  
+| `logadd`        | 1 |  
