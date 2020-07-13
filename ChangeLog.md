@@ -10,7 +10,7 @@
     Beta 2:
     - Fixed server crash related to the channel chat conversation system
     - Fixed bug where sometimes the channel chat message deletion failed due to a permission error
-    - Sending a 
+    - Added some more log messages related to the file transfer
     
 * **1.4.15**
     - Reworked the file transfer (recoded & restructured)
