@@ -4,7 +4,13 @@
     - Implemented command `logadd`
     - Added command `logquery`
     - Removed command `logview`
+    - Fixed bug that allowed users with a negative `i_channel_description_view_power` to view the channels description
     Note: The `virtualserver_log_*` virtual server properties are currently not taken into account.
+    
+    Beta 2:
+    - Fixed server crash related to the channel chat conversation system
+    - Fixed bug where sometimes the channel chat message deletion failed due to a permission error
+    - Sending a 
     
 * **1.4.15**
     - Reworked the file transfer (recoded & restructured)
