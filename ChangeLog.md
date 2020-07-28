@@ -1,4 +1,12 @@
 # Changelog:
+* **1.4.17**
+    - Fixed [#2833](https://forum.teaspeak.de/index.php?threads/2833) (Channel editing fired event even if nothing changed)
+    - Made the log levels reloadable
+    - Improved YT-DL loading algorithm
+    - YT-DL now refreshes the `config_youtuble.ini` every time a new query has been made
+    - Fixed crash related to FFMPEG
+    - Fixed talk power issue introduced in 1.4.16b1
+    
 * **1.4.16**
     - Added a general server action logging system 
     - Implemented command `logadd`
