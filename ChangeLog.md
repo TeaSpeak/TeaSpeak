@@ -13,6 +13,10 @@
     - The `logview` unavailable response now contains all parameters as the `logview` command had done previously
     - Added a check for too long client poke or talk power request messages
     
+    Beta 2:
+    - Fixed [#F2690](https://forum.teaspeak.de/index.php?threads/2690/) (Max virtual servers limited by the `config.yml` are getting ignored on server snapshot deploy)
+    - Fixed client unique id a bug introduced in beta 1
+    
 * **1.4.16**
     - Added a general server action logging system 
     - Implemented command `logadd`
