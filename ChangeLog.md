@@ -11,6 +11,7 @@
     - Some internal Voice Connection code cleanup
     - The file server now awaits the client disconnect on download instead of closing the transfer as soon the transfer has finished
     - The `logview` unavailable response now contains all parameters as the `logview` command had done previously
+    - Added a check for too long client poke or talk power request messages
     
 * **1.4.16**
     - Added a general server action logging system 
