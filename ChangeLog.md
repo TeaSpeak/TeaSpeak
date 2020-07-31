@@ -28,6 +28,10 @@
     
     *Attention*: Please backup your database. A downgrade will not be possible!
     
+    Beta 2:
+    - Added pipes for accessing the terminal within `teastart.sh`
+    - Added option `reload` and `execute` to the `teastart.sh`
+    
 * **1.4.17**
     - Fixed [#2833](https://forum.teaspeak.de/index.php?threads/2833) (Channel editing fired event even if nothing changed)
     - Made the log levels reloadable
