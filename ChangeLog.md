@@ -1,6 +1,16 @@
 # Changelog:
 * **1.4.18**
     - Fixed crash on command `banadd` when the query isn't bound to any server
+    - Added the reloadable flag to the following config options:
+        - `allow_session_reinitialize`
+        - `suppress_myts_warnings`
+        - `notifymute`
+        - `connect_limit`
+        - `client_connect_limit`
+        - `experimental_31`
+        - `strict_ut8_mode`
+        - `show_invisible_clients`
+        - `default_music_bot`
     - Heavily improved the database client structure
     - Improved client register and load algorithm
     - Improved database client query algorithms
