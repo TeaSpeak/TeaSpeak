@@ -1,4 +1,23 @@
 # Changelog:
+* **1.4.18**
+    - Fixed crash on command `banadd` when the query isn't bound to any server
+    - Heavily improved the database client structure
+    - Improved client register and load algorithm
+    - Improved database client query algorithms
+    - Heavily improved the `clientdblist` algorithm (Up to 100x faster) and returning the client description as well
+    - Improved the `clientdbfind` algorithm
+    - Improved invalid parameter error message
+    - Rewrote snapshot deploy algorithm
+        - Server ID is now preserved if a snapshot has been deployed on a server
+        - Improved error handling
+        - Correctly applying the server group and channel group mappings
+        - Correctly changing the server properties according to the group mappings
+        - Saving and deploying the client description
+    - Added support for compressed server snapshots
+    - Compressing server snapshots to reduce snapshot size
+    
+    *Attention*: Please backup your database. A downgrade will not be possible!
+    
 * **1.4.17**
     - Fixed [#2833](https://forum.teaspeak.de/index.php?threads/2833) (Channel editing fired event even if nothing changed)
     - Made the log levels reloadable
