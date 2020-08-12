@@ -1,4 +1,9 @@
 # Changelog:
+* **1.4.19**
+    - Added the ability for the web clients to receive commands raw instead of in json format (performance improvement)
+    - Added an API for whispering for the web client
+    - Stripping prefixed `\r` within a query command, which resulted in rare cases in a command not found error
+    
 * **1.4.18**
     - Fixed crash on command `banadd` when the query isn't bound to any server
     - Added the reloadable flag to the following config options:
