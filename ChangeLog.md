@@ -7,6 +7,14 @@
     - Fixed missing logging on the IP address to the database
     - Fixed swapped last and first connected timestamp within the `clientdblist` command
     
+    Beta 1:
+    - Fixed missing grant permissions when deploying a snapshot from TS3
+    - Fixed snapshot channel order id mapping
+    - Trying to automatically start a deployed server
+    - Made the AFK, poke and talk power request max message length editable
+    - Deleting tokens when group has been deleted
+    - Fixed MySQL table upgrade
+    
 * **1.4.18**
     - Fixed crash on command `banadd` when the query isn't bound to any server
     - Added the reloadable flag to the following config options:
