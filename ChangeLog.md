@@ -15,7 +15,7 @@
     - Deleting tokens when group has been deleted
     - Fixed MySQL table upgrade
     
-    Beta 6:
+    Beta 2:
     - Remove the client from only the servers database on `clientdbdelete` and not from the whole instance
     - Applying the clients nickname and description from snapshots
     
