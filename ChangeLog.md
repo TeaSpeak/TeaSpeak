@@ -15,6 +15,10 @@
     - Deleting tokens when group has been deleted
     - Fixed MySQL table upgrade
     
+    Beta 6:
+    - Remove the client from only the servers database on `clientdbdelete` and not from the whole instance
+    - Applying the clients nickname and description from snapshots
+    
 * **1.4.18**
     - Fixed crash on command `banadd` when the query isn't bound to any server
     - Added the reloadable flag to the following config options:
