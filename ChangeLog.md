@@ -1,4 +1,9 @@
 # Changelog:
+* **1.4.20**
+    - Added support for the web client to receive and send whisper
+    - Some minor web client audio improvements
+    - Added support for echo tests
+    
 * **1.4.19**
     - Added the ability for the web clients to receive commands raw instead of in json format (performance improvement)
     - Added an API for whispering for the web client
