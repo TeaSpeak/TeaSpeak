@@ -1,5 +1,10 @@
 # Changelog:
-* **1.4.21**
+* **1.4.20**
+    - Added support for the web client to receive and send whisper
+    - Some minor web client audio improvements
+    - Added support for echo tests
+    
+    Beta 1:
     - Respecting the server logging properties
         - `virtualserver_log_server`
         - `virtualserver_log_channel`
@@ -7,11 +12,6 @@
         - `virtualserver_log_filetransfer`
         - `virtualserver_log_query`
         - `virtualserver_log_permissions`
-    
-* **1.4.20**
-    - Added support for the web client to receive and send whisper
-    - Some minor web client audio improvements
-    - Added support for echo tests
     
 * **1.4.19**
     - Added the ability for the web clients to receive commands raw instead of in json format (performance improvement)
