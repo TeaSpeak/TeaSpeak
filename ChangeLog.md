@@ -8,7 +8,8 @@
         - `virtualserver_log_filetransfer`
         - `virtualserver_log_query`
         - `virtualserver_log_permissions`
-        
+    - Returning the correct server/channel group id for queries on server/channel group add ([#F2953](https://forum.teaspeak.de/index.php?threads/2953/))
+    
 * **1.4.20**
     - Added support for the web client to receive and send whisper
     - Some minor web client audio improvements
