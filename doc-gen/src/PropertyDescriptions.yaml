@@ -1,0 +1,15 @@
+instance: {}
+
+server:
+  virtualserver_unique_identifier: "The unique identifier of the server, used for the client to identify and verify the server"
+  virtualserver_name: "The official name of the server"
+  virtualserver_welcomemessage : "The welcome message for the server, printed in the client log"
+  virtualserver_platform: "The platform the server runs on (set by the TeaSpeak server internally)"
+
+client: {}
+
+channel: {}
+
+playlist: {}
+
+connection: {}
