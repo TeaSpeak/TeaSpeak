@@ -1,4 +1,14 @@
 # Changelog:
+* **1.4.22**
+    - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
+      This can be especially handy for information channel.
+    - Removed flag `channel_flag_conversation_private` (Still settable for backwards compatibility)
+      The permission `b_channel_create_modify_conversation_private` as also been removed
+    - Introduced a new channel property called `channel_conversation_mode`
+      Introduced permissions `b_channel_create_modify_conversation_mode_private`, `b_channel_create_modify_conversation_mode_public` and `b_channel_create_modify_conversation_mode_none`
+    - Added a documentation for all known properties
+    - Fixed reliable crash due to a command
+    
 * **1.4.21**
     - Fixed a crash related to the file transfer (when uploading a file)
     - Respecting the server logging properties (already implemented in 1.4.20-beta1)
