@@ -8,6 +8,7 @@
       Introduced permissions `b_channel_create_modify_conversation_mode_private`, `b_channel_create_modify_conversation_mode_public` and `b_channel_create_modify_conversation_mode_none`
     - Added a documentation for all known properties
     - Fixed reliable crash due to a command
+    - Adding events `notify[server|channel]grouplist` for the query
     
 * **1.4.21**
     - Fixed a crash related to the file transfer (when uploading a file)
