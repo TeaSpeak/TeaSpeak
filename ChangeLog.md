@@ -1,4 +1,16 @@
 # Changelog:
+* **1.5.0**
+    - Introduced the possibility to transmit video (camara and screen) via rtc
+    - Using native encode and decoding of the opus codec
+    - Dropped support for all, non opus codes
+        - All non opus channels will be upgraded to opus voice
+        - Removed the permissions 
+            - `b_channel_create_modify_with_codec_speex8`
+            - `b_channel_create_modify_with_codec_speex16`
+            - `b_channel_create_modify_with_codec_speex32`
+            - `b_channel_create_modify_with_codec_celtmono48`
+    - Fixed some minor web client related crashes
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
