@@ -10,6 +10,7 @@
             - `b_channel_create_modify_with_codec_speex32`
             - `b_channel_create_modify_with_codec_celtmono48`
     - Fixed some minor web client related crashes
+    - XX: Heavily improved the voice whisper performance
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
