@@ -88,9 +88,9 @@ function install_ffmpeg() {
     # Download FFMPEG binaries
     download_file="tmp_files/ffmpeg.zip"
     if [ "$(uname -m)" == "x86_64" ]; then
-      download_path="https://github.com/vot/ffbinaries-prebuilt/releases/download/v4.0/ffmpeg-4.0.1-linux-64.zip"
+      download_path="https://github.com/vot/ffbinaries-prebuilt/releases/download/v4.2.1/ffmpeg-4.2.1-linux-64.zip"
     else
-      download_path="https://github.com/vot/ffbinaries-prebuilt/releases/download/v4.0/ffmpeg-4.0.1-linux-32.zip"
+      download_path="https://github.com/vot/ffbinaries-prebuilt/releases/download/v4.2.1/ffmpeg-4.2.1-linux-32.zip"
     fi
 
     echo "Downloading FFMPEG from ${download_path} to ${download_file}"
@@ -110,7 +110,7 @@ function install_ffmpeg() {
     [[ $? -eq 0 ]] || error_exit "Failed to add execute permissions to the ffmpeg binary"
 
     ffmpeg_version=$(./tmp_files/ffmpeg -version 2>/dev/null | head -n1 | grep -Po '(?<=version )(\d)+\.(\d)+\.(\d)+')
-    [[ "${ffmpeg_version}" == "4.0.1" ]] || error_exit "Invalid downloaded FFMPEG version. Got ${ffmpeg_version} but expected 4.0.1"
+    [[ "${ffmpeg_version}" == "4.2.1" ]] || error_exit "Invalid downloaded FFMPEG version. Got ${ffmpeg_version} but expected 4.2.1"
 
     # Install downloaded binary
     echo "Register FFMPEG for the FFMPEG provider"
