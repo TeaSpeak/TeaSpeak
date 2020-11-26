@@ -10,7 +10,7 @@
             - `b_channel_create_modify_with_codec_speex32`
             - `b_channel_create_modify_with_codec_celtmono48`
     - Fixed some minor web client related crashes
-    - XX: Heavily improved the voice whisper performance
+    - Heavily improved the voice whisper performance
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
@@ -22,6 +22,7 @@
     - Added a documentation for all known properties
     - Fixed reliable crash due to a command
     - Adding events `notify[server|channel]grouplist` for the query
+    - Fixed mass client disconnect
     
 * **1.4.21**
     - Fixed a crash related to the file transfer (when uploading a file)
