@@ -11,6 +11,8 @@
             - `b_channel_create_modify_with_codec_celtmono48`
     - Fixed some minor web client related crashes
     - Heavily improved the voice whisper performance
+    - Improved WebRTC connection establishment (Should work more reliably now)
+    - Fixed a bug which may caused a mass client disconnect
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
