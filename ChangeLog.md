@@ -13,6 +13,10 @@
     - Heavily improved the voice whisper performance
     - Improved WebRTC connection establishment (Should work more reliably now)
     - Fixed a bug which may caused a mass client disconnect
+    - Fixed a crash related to the `channeledit` command
+    - Improved `channeledit` and `channelcreate` value validation and over all performance
+    - Heavily improved `channelcreate` algorithm
+    - Prohibit channel view permissions for the default channel
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
