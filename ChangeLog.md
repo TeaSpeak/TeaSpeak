@@ -16,7 +16,9 @@
     - Fixed a crash related to the `channeledit` command
     - Improved `channeledit` and `channelcreate` value validation and over all performance
     - Heavily improved `channelcreate` algorithm
-    - Prohibit channel view permissions for the default channel
+    - Prohibit channel needed view permissions for the default channel
+    - Correctly testing for permissions `i_channel_create_modify_with_temp_delete_delay` and `b_channel_modify_temp_delete_delay` on channel edit/create
+    - Correctly testing for `b_channel_create_modify_with_force_password` on channel creation
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
