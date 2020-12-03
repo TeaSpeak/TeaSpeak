@@ -19,6 +19,8 @@
     - Prohibit channel needed view permissions for the default channel
     - Correctly testing for permissions `i_channel_create_modify_with_temp_delete_delay` and `b_channel_modify_temp_delete_delay` on channel edit/create
     - Correctly testing for `b_channel_create_modify_with_force_password` on channel creation
+    - Changed the default value for `channel_sidebar_mode` to zero (Public by default)
+    - Added a new channel property called `channel_sidebar_mode` and the appropriate permission `b_channel_create_modify_sidebar_mode` for later use
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
