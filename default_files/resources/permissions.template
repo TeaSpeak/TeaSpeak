@@ -386,6 +386,17 @@ permission:i_ft_needed_file_delete_power=-2,100,0,0
 permission:i_ft_needed_file_rename_power=-2,100,0,0
 permission:i_ft_needed_file_browse_power=-2,100,0,0
 permission:i_ft_needed_directory_create_power=-2,100,0,0
+permission:b_virtualserver_modify_maxchannels=1,100,0,0
+permission:b_channel_create_modify_conversation_mode_private=1,100,0,0
+permission:b_channel_create_modify_conversation_mode_public=1,100,0,0
+permission:b_channel_create_modify_conversation_mode_none=1,100,0,0
+permission:i_client_poke_max_clients=-2,100,0,0
+permission:b_client_query_create_own=1,100,0,0
+permission:i_playlist_song_move_power=100,100,0,0
+permission:i_playlist_song_needed_move_power=-2,100,0,0
+permission:i_ft_max_bandwidth_download=-2,100,0,0
+permission:i_ft_max_bandwidth_upload=-2,100,0,0
+permission:b_channel_create_modify_sidebar_mode=1,100,0,0
 --end
 --start
 name:Server Admin
@@ -707,6 +718,17 @@ permission:i_ft_needed_file_delete_power=-2,75,0,0
 permission:i_ft_needed_file_rename_power=-2,75,0,0
 permission:i_ft_needed_file_browse_power=-2,75,0,0
 permission:i_ft_needed_directory_create_power=-2,75,0,0
+permission:b_virtualserver_modify_maxchannels=1,75,0,0
+permission:b_channel_create_modify_conversation_mode_private=1,75,0,0
+permission:b_channel_create_modify_conversation_mode_public=1,75,0,0
+permission:b_channel_create_modify_conversation_mode_none=1,75,0,0
+permission:i_client_poke_max_clients=-2,75,0,0
+permission:b_client_query_create_own=1,75,0,0
+permission:i_playlist_song_move_power=75,75,0,0
+permission:i_playlist_song_needed_move_power=-2,75,0,0
+permission:i_ft_max_bandwidth_download=-2,75,0,0
+permission:i_ft_max_bandwidth_upload=-2,75,0,0
+permission:b_channel_create_modify_sidebar_mode=1,75,0,0
 --end
 --start
 name:Normal
