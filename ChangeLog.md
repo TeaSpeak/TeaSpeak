@@ -21,6 +21,7 @@
     - Correctly testing for `b_channel_create_modify_with_force_password` on channel creation
     - Changed the default value for `channel_sidebar_mode` to zero (Public by default)
     - Added a new channel property called `channel_sidebar_mode` and the appropriate permission `b_channel_create_modify_sidebar_mode` for later use
+    - Removed not used permission `b_channel_create_private`
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
