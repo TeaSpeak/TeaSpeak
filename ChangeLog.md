@@ -24,6 +24,15 @@
     - Removed not used permission `b_channel_create_private`
     - Fixed a client disconnect when updating the channel groups talk power permissions
     
+    Since Beta 2 or Nightly 19:
+    - Introduced permissions:
+        - `b_video_screen`
+        - `b_video_camera`
+        - `i_video_max_kbps`
+        - `i_video_max_streams`
+        - `i_video_max_screen_streams`
+        - `i_video_max_camera_streams`
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
