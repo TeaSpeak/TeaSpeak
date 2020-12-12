@@ -25,10 +25,11 @@
     - Fixed a client disconnect when updating the channel groups talk power permissions
     
     Since Beta 2 or Nightly 19:
+    - Fixed stun binding range (especially important for servers behind a NAT!)
     - Introduced permissions:
         - `b_video_screen`
         - `b_video_camera`
-        - `i_video_max_kbps`
+        - `i_video_max_kbps` (Doesn't yet affect the transfer rate but will be functional in the next beta)
         - `i_video_max_streams`
         - `i_video_max_screen_streams`
         - `i_video_max_camera_streams`
