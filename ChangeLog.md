@@ -33,6 +33,9 @@
         - `i_video_max_streams`
         - `i_video_max_screen_streams`
         - `i_video_max_camera_streams`
+        
+    Since Beta 3 or Nightly 24:
+    - Added the feature `sidebar-mode` to the server feature list
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
