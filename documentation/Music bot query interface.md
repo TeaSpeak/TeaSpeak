@@ -12,7 +12,7 @@ Parameters:
 
 | Parameter name | Description |  
 | --- | --- |
-| `cid` | The target channel where the bot should join (Not reqired and requires join permissions) |
+| `cid` | The target channel where the bot should join (Not required and requires join permissions) |
 
 Permissions:
 
@@ -27,7 +27,7 @@ Properties:
 | `virtualserver_music_bot_limit` | Server | Server specific music bot limit |  
 
 Result:  
-If the action was successful, you'le get the property `bot_id` back, which is the created bot id
+If the action was successful, you'll get the property `bot_id` back, which is the created bot id
 
 Notes:
 The bot's required delete power will be set automatically to the clients bot delete power (if present)  
