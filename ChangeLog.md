@@ -37,6 +37,10 @@
     Since Beta 3 or Nightly 24:
     - Added the feature `sidebar-mode` to the server feature list
     
+    Since Beta 4 or Nightly XX
+    - Using VP8 as default codec (H264 performs bad even on small packet loss)
+    - Requesting keyframes every 7 seconds for improved user experience
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
