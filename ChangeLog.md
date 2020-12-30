@@ -38,6 +38,7 @@
     - Added the feature `sidebar-mode` to the server feature list
     
     Since Beta 4 or Nightly XX
+    - Fixed a possible server hangup when the WebRTC session has been reset
     - Using VP8 as default codec (H264 performs bad even on small packet loss)
     - Requesting keyframes every 7 seconds for improved user experience
     
