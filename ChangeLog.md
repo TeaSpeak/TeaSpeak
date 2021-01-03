@@ -41,7 +41,8 @@
     - Fixed a possible server hangup when the WebRTC session has been reset
     - Using VP8 as default codec (H264 performs bad even on small packet loss)
     - Requesting keyframes every 7 seconds for improved user experience
-    
+    - Fixed a crash related to the file transfer introduced in 1.3.19
+        
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
