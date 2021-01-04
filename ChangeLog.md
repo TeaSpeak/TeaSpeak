@@ -37,7 +37,7 @@
     Since Beta 3 or Nightly 24:
     - Added the feature `sidebar-mode` to the server feature list
     
-    Since Beta 4 or Nightly XX
+    Since Beta 4
     - Fixed a possible server hangup when the WebRTC session has been reset
     - Using VP8 as default codec (H264 performs bad even on small packet loss)
     - Requesting keyframes every 7 seconds for improved user experience
@@ -45,7 +45,7 @@
     - Fixed a server hangup
     - The server now stops when no file transfer host can be bound
     
-    Since Beta 5/6
+    Since Beta 6 or Nightly 27
     - Implemented the `i_video_max_kbps` permission and allowing the user to have control over the max bitrate
     
 * **1.4.22**
