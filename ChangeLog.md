@@ -29,7 +29,7 @@
     - Introduced permissions:
         - `b_video_screen`
         - `b_video_camera`
-        - `i_video_max_kbps` (Doesn't yet affect the transfer rate but will be functional in the next beta)
+        - `i_video_max_kbps`
         - `i_video_max_streams`
         - `i_video_max_screen_streams`
         - `i_video_max_camera_streams`
@@ -44,6 +44,9 @@
     - Fixed a crash related to the file transfer introduced in 1.3.19
     - Fixed a server hangup
     - The server now stops when no file transfer host can be bound
+    
+    Since Beta 5/6
+    - Implemented the `i_video_max_kbps` permission and allowing the user to have control over the max bitrate
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
