@@ -48,6 +48,10 @@
     Since Beta 6 or Nightly 27
     - Implemented the `i_video_max_kbps` permission and allowing the user to have control over the max bitrate
     
+    Since beta 7
+    - The query whitelist now overrides the query blacklist
+    - The `sendtextmessage` command now allows to specify the target channel is via `target=<cid>`
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
