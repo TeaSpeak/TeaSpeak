@@ -51,6 +51,7 @@
     Since beta 7
     - The query whitelist now overrides the query blacklist
     - The `sendtextmessage` command now allows to specify the target channel is via `target=<cid>`
+    - Fixed concurrency crash related to the channel tree
     
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
