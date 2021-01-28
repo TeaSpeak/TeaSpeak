@@ -53,6 +53,12 @@
     - The `sendtextmessage` command now allows to specify the target channel is via `target=<cid>`
     - Fixed concurrency crash related to the channel tree
     
+    Since beta 8
+    - Improved performance query io and command handling
+    - Improved query disconnect handling
+    - Added an option to to config.yml to specify the maximal query command length
+    - Fixed a crash related to disconnecting query clients
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
