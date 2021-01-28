@@ -54,6 +54,7 @@
     - Fixed concurrency crash related to the channel tree
     
     Since beta 8
+    - Unified the command executors for query, web and native client
     - Improved performance query io and command handling
     - Improved query disconnect handling
     - Added an option to to config.yml to specify the maximal query command length
