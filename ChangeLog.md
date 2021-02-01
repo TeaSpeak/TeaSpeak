@@ -60,6 +60,10 @@
     - Added an option to to config.yml to specify the maximal query command length
     - Fixed a crash related to disconnecting query clients
     
+    Since beta 10
+    - Improved query io performance
+    - Fixed packet loss for busy network cards
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
