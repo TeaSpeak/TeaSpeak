@@ -64,6 +64,10 @@
     - Improved query io performance
     - Fixed packet loss for busy network cards
     
+    Since beta 11
+    - Some small io performance improvements
+    - Caching WebRTC transport certificates which previously heavily impacted the session establishment speed
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
