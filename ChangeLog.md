@@ -68,6 +68,10 @@
     - Some small io performance improvements
     - Caching WebRTC transport certificates which previously heavily impacted the session establishment speed
     
+    Since beta 12:
+    - Fixed an internal server handling error (Client wasn't able to do anything)
+    - Fixed Firefox video not working with VP8
+    
 * **1.4.22**
     - Added conversation mode "none", which implies showing the channel description instead of the channel conversation.
       This can be especially handy for information channel.
