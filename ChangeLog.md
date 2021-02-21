@@ -1,4 +1,9 @@
 # Changelog:
+* **1.5.1** 
+    - Fixed error `channel_default_require_visible` when trying to edit any default channel permissions
+    - Fixed [#F3207](https://forum.teaspeak.de/index.php?threads/3207/) (Channel talk power permission not correctly assigned when executing `channeledit`)
+    - Fixed possible command error when altering the channels required talk powers
+    
 * **1.5.0**
     - Introduced the possibility to transmit video (camara and screen) via rtc
     - Using native encode and decoding of the opus codec
