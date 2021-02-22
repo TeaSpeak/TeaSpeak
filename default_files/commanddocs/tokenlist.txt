@@ -1,11 +1,14 @@
-Usage: tokenlist
+Usage: tokenlist -new [offset=0] [limit=100] [-own-only]
 
 Permissions:
+  b_virtualserver_token_list_all for listing all tokens
 
 Description:
-  Alias for privilegekeylist.
+  Displays a list of available tokens.
+  If "-own-only" has been passed or you dont have permissions to list all
+  tokens, only your tokens will be shown.
 
 Example:
-  tokenlist
-  token=88CVUg\/zkujt+y+WfHdko79UcM4R6uyCL6nEfy3B token_type=0 token_id1=9...
+  tokenlist -new
+  token_count=1 token=f7bSQSyHClRqqSeTbIOwMd0WuUGjIYyP token_id=6 token_created...
   error id=0 msg=ok

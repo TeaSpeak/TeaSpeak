@@ -1,16 +1,13 @@
-Usage: tokenadd tokentype={1|0} tokenid1={groupID} tokenid2={channelID}
-       [tokendescription={description}] [token={token}]
+Usage: tokenadd [token_description={description}] [token_max_uses={max uses}] [token_expired={unix expire timestamp}]
+                [[action_type={type}] [action_id1={first parameter}] [action_id2={second parameter}] [action_text={text parameter}] | ...]
 
 Permissions:
+  b_virtualserver_token_limit
 
 Description:
-  Alias for privilegekeyadd.
+  Create a new token with the defined characteristics
 
 Example:
-  tokenadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset
-  token=eKnFZQ9EK7G7MhtuQB6+N2B1PNZZ6OZL3ycDp2OW
-  error id=0 msg=ok
-
-  tokenadd tokentype=0 tokenid1=6 tokenid2=0 tokendescription=Test\stoken\swith\scustom\sset token=NewYear2018#0hsIOUZAS
-  token=NewYear2018#0hsIOUZAS
-  error id=0 msg=ok
+  tokenadd token_description=My\sDesc token_max_uses=1 action_type=2 action_id1=10 | action_type=2 action_id1=2 | action_type=2 action_id1=3
+  action_id=11 token=tOm5TsoWkjPNvVQOggoDWoyMdZ5HpX3u token_id=7|action_id=12
+  error id=0 msg=ok|id=0 msg=ok|id=4864 msg=Invalid\sgroup\sid

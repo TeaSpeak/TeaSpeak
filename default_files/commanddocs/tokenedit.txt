@@ -1,0 +1,14 @@
+Usage: tokenedit [token_description={description}] [token_max_uses={max uses}] [token_expired={unix expire timestamp}]
+                [[action_id={id}] [action_type={type}] [action_id1={first parameter}] [action_id2={second parameter}] [action_text={text parameter}] | ...]
+
+Permissions:
+  b_virtualserver_token_edit_all
+
+Description:
+  Edit an already existing token.
+  Add new actions or remove any action by only supplying the action id.
+
+Example:
+  tokenedit token_id=6 action_type=2 action_id1=9 | action_id=11
+  action_id=13
+  error id=0 msg=ok|id=0 msg=ok

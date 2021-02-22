@@ -1,0 +1,14 @@
+Usage: tokenactionlist [token_id={token_id}] [token={token}]
+
+Permissions:
+  b_virtualserver_token_list_all for listing actions of not owned tokens
+
+Description:
+  Displays all actions the token does when applied.
+  Either "token_id" or "token" must be supplied to identify the token.
+  Lookup the tokens manual for more information.
+
+Example:
+  tokenactionlist token_id=6
+  action_type=2 action_id=6 action_id1=10 action_id2=0 action_text|action_type=2 action_id=7 action_id1=2 ...
+  error id=0 msg=ok

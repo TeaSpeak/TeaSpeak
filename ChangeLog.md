@@ -3,7 +3,18 @@
     - Fixed error `channel_default_require_visible` when trying to edit any default channel permissions
     - Fixed [#F3207](https://forum.teaspeak.de/index.php?threads/3207/) (Channel talk power permission not correctly assigned when executing `channeledit`)
     - Fixed possible command error when altering the channels required talk powers
-    
+    - Redesigned and overworked the token system
+      - Added commands `tokenactionlist` and `tokenedit`
+      - Token length increased from 20 to 32 characters
+      - `tokenlist`, `tokenadd`, and `tokendelete` do now have a `-new` switch to enable the new token system
+        Please note that the new system will be enabled by default after some time and legacy support will be dropped
+      - Changes to the command `tokenlist` 
+        - It no longer requires any permissions to view the own created tokens 
+        - It now supports two more parameters `offset`, `length` (defaults to 1000)
+      - The command `tokenuse` will no longer require any permissions
+      - `tokendelete` no longer requires any permission if it is the clients own token
+      - Tokens given when joining the server are now taken into account
+      
 * **1.5.0**
     - Introduced the possibility to transmit video (camara and screen) via rtc
     - Using native encode and decoding of the opus codec
