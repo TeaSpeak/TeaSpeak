@@ -24,9 +24,25 @@ Each action will be executed sequentially in order of their action id (ascending
 The order is database depended and might change in future.  
   
 Available actions are:  
-| Name | ID | ID1 | ID2 | Text | Description |  
-| :--- | :---: | --- | --- | --- | :-- |  
-| Add server group | `0x01` | Server group id | *unused* | *unused* | Add the client to the target server group |  
-| Remove server group | `0x02` | Server group id | *unused* | *unused* | Remove the client from the target server group |  
-| Set channel group | `0x03` | Channel group id | Channel id | *unused* | Set the channel group for the client for the target channel |  
-| Allow channel join | `0x04` | *unused* | Channel id | *unused* | Allow the client to join the target channel ignoring if the client has permission to do so. This only applies when connecting (joining the server) and not to a general channel switch. This means that the client must join with the token (e. g. via an invite link). |  
+| Name | ID | ID1 | ID2 | Text |   
+| :--- | :---: | --- | --- | --- | 
+| Add server group | `0x01` | Server group id | *unused* | *unused* | 
+| Remove server group | `0x02` | Server group id | *unused* | *unused* | 
+| Set channel group | `0x03` | Channel group id | Channel id | *unused* | 
+| Allow channel join | `0x04` | *unused* | Channel id | *unused* |   
+
+### Add server group
+Add the client to the target server group.  
+If the client is already a member of that group nothing will happen.  
+
+### Remove server group 
+Remove the client from the target server group.
+If the client is not a member of that group nothing will happen.  
+
+### Set channel group
+Set the channel group for the client for the target channel
+
+### Allow channel join 
+Allow the client to join the target channel ignoring if the client has permission to do so.  
+This only applies when connecting (joining the server) and not to a general channel switch.  
+This means that the client must join with the token (e. g. via an invite link).
