@@ -43,6 +43,6 @@ If the client is not a member of that group nothing will happen.
 Set the channel group for the client for the target channel
 
 ### Allow channel join 
-Allow the client to join the target channel ignoring if the client has permission to do so.  
-This only applies when connecting (joining the server) and not to a general channel switch.  
-This means that the client must join with the token (e. g. via an invite link).
+Allow the client to join the target channel ignoring if the client has permission to do so (including password).    
+This only applies on the next channel join and will not last for the rest of the session.  
+The main purpose is to allow invite links to directly access channels without the need of extra permissions.  
