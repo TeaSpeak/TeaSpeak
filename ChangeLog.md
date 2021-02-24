@@ -3,6 +3,7 @@
     - Fixed error `channel_default_require_visible` when trying to edit any default channel permissions
     - Fixed [#F3207](https://forum.teaspeak.de/index.php?threads/3207/) (Channel talk power permission not correctly assigned when executing `channeledit`)
     - Fixed possible command error when altering the channels required talk powers
+    - Slightly improved performance for queries when joining a server
     - Redesigned and overworked the token system
       - Added commands `tokenactionlist` and `tokenedit`
       - Token length increased from 20 to 32 characters

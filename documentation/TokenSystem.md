@@ -29,7 +29,7 @@ Available actions are:
 | Add server group | `0x01` | Server group id | *unused* | *unused* | 
 | Remove server group | `0x02` | Server group id | *unused* | *unused* | 
 | Set channel group | `0x03` | Channel group id | Channel id | *unused* | 
-| Allow channel join | `0x04` | *unused* | Channel id | *unused* |   
+| Allow channel join | `0x04` | *unused* | Channel id | Channel password |   
 
 ### Add server group
 Add the client to the target server group.  
