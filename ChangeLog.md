@@ -1,4 +1,7 @@
 # Changelog:
+* **1.5.2**
+    - Internally reworked the server & channel group system
+    
 * **1.5.1** 
     - Fixed error `channel_default_require_visible` when trying to edit any default channel permissions
     - Fixed [#F3207](https://forum.teaspeak.de/index.php?threads/3207/) (Channel talk power permission not correctly assigned when executing `channeledit`)
@@ -16,6 +19,10 @@
       - The command `tokenuse` will no longer require any permissions
       - `tokendelete` no longer requires any permission if it is the clients own token
       - Tokens given when joining the server are now taken into account
+      
+    Since beta 2:
+    - Stripping the first 10 ascii control characters from commands
+    - Fixed a really rare crash related to properties
       
 * **1.5.0**
     - Introduced the possibility to transmit video (camara and screen) via rtc
