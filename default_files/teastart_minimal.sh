@@ -5,7 +5,8 @@ directory_base=$(dirname ${file_base})
 cd ${directory_base}
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH;./libs/"
-export LD_PRELOAD="./libs/libjemalloc.so.2"
+# Since 1.5.0 we don't provide jemalloc any more
+#export LD_PRELOAD="./libs/libjemalloc.so.2"
 
 ./TeaSpeakServer $@
 #Cleanup & reset the terminal

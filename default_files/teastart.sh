@@ -9,7 +9,8 @@ directory_base=$(dirname ${file_base})
 cd ${directory_base} || exit 1
 
 LIBRARYPATH="./libs/"
-PRELOADPATH="./libs/libjemalloc.so.2"
+# Since 1.5.0 we don't provide jemalloc any more
+#PRELOADPATH="./libs/libjemalloc.so.2"
 BINARYNAME="TeaSpeakServer"
 PID_FILE="tpid.pid"
 
