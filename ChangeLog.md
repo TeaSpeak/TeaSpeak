@@ -1,6 +1,11 @@
 # Changelog:
-* **1.5.2**
+* **1.5.3**
     - Internally reworked the server & channel group system
+    - The command `channelgroupdel` now tests if the client could actually modify the target group
+    
+* **1.5.2**
+    - Enabled WebRTC stun by default and resolving the stun host name automatically
+    - Fixed a bug which lead to video streams stopped working after toggling them
     
 * **1.5.1** 
     - Fixed error `channel_default_require_visible` when trying to edit any default channel permissions
