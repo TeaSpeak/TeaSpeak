@@ -2,6 +2,8 @@
 * **1.5.3**
     - Internally reworked the server & channel group system
     - The command `channelgroupdel` now tests if the client could actually modify the target group
+    - `servergroupaddclient` now gives a bulked command response and correctly calculates the target permissions
+    - Properly propagating new client permissions when adding/removing groups even on instance level
     
 * **1.5.2**
     - Enabled WebRTC stun by default and resolving the stun host name automatically
