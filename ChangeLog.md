@@ -8,8 +8,11 @@
     - Only showing queries to a client when `i_client_serverquery_view_power` is set and greater or equal than `i_client_needed_serverquery_view_power`
     - Fixed issue [#699](https://github.com/TeaSpeak/TeaSpeak/issues/699)
     - Heavily improved the voice client disconnect algorithm (Now much less resource intense and faster)
-    - Ímproved client join performance
-    - Better handeling of the server modal quit setting on client join
+    - Improved client join performance
+    - Better handling of the server modal quit setting on client join
+    - Prevent error log flood on truncated UDP messages
+    - Reduced spawned thread count of the server and merged the web, query and voice client network event loops
+    - Improved server instance shutdown quality
     
 * **1.5.3**
     - Internally reworked the server & channel group system
