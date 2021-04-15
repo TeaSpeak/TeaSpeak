@@ -1,4 +1,16 @@
 # Changelog:
+* **1.5.4**
+    - Fixed bug that the channel creator hasn't received his channel admin group
+    - Using a bulked command response for `channelsubscribe` and `channelunsubscribe`
+    - Fixed bug that `virtualserver_last_client_disconnect` dosn't gets updated for TeaSpeak native clients
+    - Removed undocumented query commands "join" and "left"
+    - Removed the `b_virtualserver_select_godmode` query permission. Query client are now registered within the channel tree without any exceptions.
+    - Only showing queries to a client when `i_client_serverquery_view_power` is set and greater or equal than `i_client_needed_serverquery_view_power`
+    - Fixed issue [#699](https://github.com/TeaSpeak/TeaSpeak/issues/699)
+    - Heavily improved the voice client disconnect algorithm (Now much less resource intense and faster)
+    - Ímproved client join performance
+    - Better handeling of the server modal quit setting on client join
+    
 * **1.5.3**
     - Internally reworked the server & channel group system
     - The command `channelgroupdel` now tests if the client could actually modify the target group
