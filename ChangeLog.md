@@ -14,6 +14,9 @@
     - Reduced spawned thread count of the server and merged the web, query and voice client network event loops
     - Improved server instance shutdown quality
     
+    Beta 4:
+    - Fixed the instance hangup bug (introduced approximately at 1.5.2)
+    
 * **1.5.3**
     - Internally reworked the server & channel group system
     - The command `channelgroupdel` now tests if the client could actually modify the target group
