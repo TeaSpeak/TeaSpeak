@@ -17,6 +17,10 @@
     Beta 4:
     - Fixed the instance hangup bug (introduced approximately at 1.5.2)
     
+    Beta 6:
+    - Fixed a bug which could cause the CPU to load up to 100% when the web or query client disconnects
+    - Fixed a possible crash on malformed client supplied data
+    
 * **1.5.3**
     - Internally reworked the server & channel group system
     - The command `channelgroupdel` now tests if the client could actually modify the target group
