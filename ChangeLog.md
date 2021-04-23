@@ -21,6 +21,10 @@
     - Fixed a bug which could cause the CPU to load up to 100% when the web or query client disconnects
     - Fixed a possible crash on malformed client supplied data
     
+    Beta 7:
+    - Fixed a crash related to the whisper system which has the characteristics of the long hunted instance
+      crashs
+      
 * **1.5.3**
     - Internally reworked the server & channel group system
     - The command `channelgroupdel` now tests if the client could actually modify the target group
