@@ -1,4 +1,7 @@
 # Changelog:
+* **1.5.5**
+    - Added support for the video broadcaster to see which clients are viewing his video stream
+    
 * **1.5.4**
     - Fixed bug that the channel creator hasn't received his channel admin group
     - Using a bulked command response for `channelsubscribe` and `channelunsubscribe`
