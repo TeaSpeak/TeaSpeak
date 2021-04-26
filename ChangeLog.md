@@ -1,6 +1,7 @@
 # Changelog:
 * **1.5.5**
     - Added support for the video broadcaster to see which clients are viewing his video stream
+    - Counting TeaSpeak native clients as online instance clients
     
 * **1.5.4**
     - Fixed bug that the channel creator hasn't received his channel admin group
