@@ -1,4 +1,10 @@
 # Changelog:
+* **1.5.6**
+    - Fixed the config reload command
+    - Fixed a bug which may cause some memory and CPU leaks
+    - Adding query groups globally for the whole instance instead of creating them for the server
+    - Properly updating all server instances when adding/removing query groups
+    
 * **1.5.5**
     - Added support for the video broadcaster to see which clients are viewing his video stream
     - Counting TeaSpeak native clients as online instance clients
