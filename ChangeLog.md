@@ -1,5 +1,6 @@
 # Changelog:
 * **1.5.6**
+    - Updated the IP2Location database
     - Fixed the config reload command
     - Fixed a bug which may cause some memory and CPU leaks
     - Adding query groups globally for the whole instance instead of creating them for the server
