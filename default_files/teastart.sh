@@ -225,7 +225,7 @@ case "$1" in
         status_server
     ;;
     reload)
-        execute_command "config reload"
+        execute_command "reload config"
         exit 0
     ;;
     execute)
