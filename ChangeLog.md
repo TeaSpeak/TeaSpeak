@@ -5,7 +5,6 @@
     - Fixed a bug which may cause some memory and CPU leaks
     - Adding query groups globally for the whole instance instead of creating them for the server
     - Properly updating all server instances when adding/removing query groups
-    - Removed a stupid permission constraint (checking against `i_client_needed_permission_modify_power`) when adding/removing clients from/to server groups
     
 * **1.5.5**
     - Added support for the video broadcaster to see which clients are viewing his video stream
