@@ -6,6 +6,9 @@
     - Adding query groups globally for the whole instance instead of creating them for the server
     - Properly updating all server instances when adding/removing query groups
     
+    Beta 1:
+    - Fixed a bug which could cause client disconnections after a specific order of channel operations
+    
 * **1.5.5**
     - Added support for the video broadcaster to see which clients are viewing his video stream
     - Counting TeaSpeak native clients as online instance clients
